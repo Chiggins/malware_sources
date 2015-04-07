@@ -1,0 +1,57 @@
+package acntDelphiXE3;
+{$R *.res}
+{$R 'acnt.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA OFF}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'AlphaControls'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  acntDelphiXE3_R,
+  dclstd,
+  dcl31w,
+  vcl,
+  vclx;
+
+contains
+  sRegisterIt in 'sRegisterIt.pas',
+  sPropEditors in 'sPropEditors.pas',
+  sInternalSkins in 'sInternalSkins.pas' {FormInternalSkins},
+  sGradBuilder in 'sGradBuilder.pas' {GradBuilder},
+  sHintEditor in 'sHintEditor.pas',
+  sHintDesigner in 'sHintDesigner.pas' {HintDesigner},
+  sStrEdit in 'sStrEdit.pas' {StrEditDlg},
+  acRootEdit in 'acRootEdit.pas' {acRootPathEditDlg},
+  acSkinInfo in 'acSkinInfo.pas' {SkinInfoForm},
+  acSelectSkin in 'acSelectSkin.pas',
+  acSkinPreview in 'acSkinPreview.pas' {FormSkinPreview},
+  ac3dNewClass in 'ac3dNewClass.pas' {FormNewThirdClass},
+  ac3rdPartyEditor in 'ac3rdPartyEditor.pas' {Form3rdPartyEditor},
+  sImgListEditor in 'sImgListEditor.pas' {FormImgListEditor},
+  acAlphaHintsEdit in 'acAlphaHintsEdit.pas' {TAlphaHintsEdit},
+  acHintPage in 'acHintPage.pas' {TFrameHintPage};
+
+end.

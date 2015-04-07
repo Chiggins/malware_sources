@@ -1,0 +1,128 @@
+package acntDelphiXE3_R;
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA OFF}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE ON}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'AlphaControls run-time library'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  vclx,
+  rtl,
+  vclimg;
+
+contains
+  sEdit in 'sEdit.pas',
+  sMemo in 'sMemo.pas',
+  sComboBoxes in 'sComboBoxes.pas',
+  sPanel in 'sPanel.pas',
+  sConst in 'sConst.pas',
+  sRadioButton in 'sRadioButton.pas',
+  sCheckbox in 'sCheckbox.pas',
+  sPageControl in 'sPageControl.pas',
+  sGraphUtils in 'sGraphUtils.pas',
+  sSpinEdit in 'sSpinEdit.pas',
+  sBevel in 'sBevel.pas',
+  sGroupBox in 'sGroupBox.pas',
+  sStatusBar in 'sStatusBar.pas',
+  sVclUtils in 'sVclUtils.pas',
+  sTrackBar in 'sTrackBar.pas',
+  sCalculator in 'sCalculator.pas',
+  sCalcUnit in 'sCalcUnit.pas' {sCalcForm},
+  sMessages in 'sMessages.pas',
+  sDateUtils in 'sDateUtils.pas',
+  sGauge in 'sGauge.pas',
+  sStoreUtils in 'sStoreUtils.pas',
+  sComboEdit in 'sComboEdit.pas',
+  sCurrEdit in 'sCurrEdit.pas',
+  sCurrencyEdit in 'sCurrencyEdit.pas',
+  sCustomComboEdit in 'sCustomComboEdit.pas',
+  sToolEdit in 'sToolEdit.pas',
+  sMonthCalendar in 'sMonthCalendar.pas',
+  sPopupClndr in 'sPopupClndr.pas' {sPopupCalendar},
+  sHtmlParse in 'sHtmlParse.pas',
+  sGlyphUtils in 'sGlyphUtils.pas',
+  sStyleSimply in 'sStyleSimply.pas',
+  sGradient in 'sGradient.pas',
+  sDefaults in 'sDefaults.pas',
+  sMaskEdit in 'sMaskEdit.pas',
+  sBorders in 'sBorders.pas',
+  sSkinManager in 'sSkinManager.pas',
+  sMaskData in 'sMaskData.pas',
+  sSkinProps in 'sSkinProps.pas',
+  sSkinProvider in 'sSkinProvider.pas',
+  sStrings in 'sStrings.pas',
+  sSkinMenus in 'sSkinMenus.pas',
+  sScrollBar in 'sScrollBar.pas',
+  sMDIForm in 'sMDIForm.pas',
+  sScrollBox in 'sScrollBox.pas',
+  sCommonData in 'sCommonData.pas',
+  sAlphaGraph in 'sAlphaGraph.pas',
+  sComboBox in 'sComboBox.pas',
+  sSplitter in 'sSplitter.pas',
+  sTabControl in 'sTabControl.pas',
+  sCheckListBox in 'sCheckListBox.pas',
+  sTreeView in 'sTreeView.pas',
+  sListView in 'sListView.pas',
+  sFrameAdapter in 'sFrameAdapter.pas',
+  sUpDown in 'sUpDown.pas',
+  sDialogs in 'sDialogs.pas',
+  sButton in 'sButton.pas',
+  sSpeedButton in 'sSpeedButton.pas',
+  sBitBtn in 'sBitBtn.pas',
+  sFade in 'sFade.pas',
+  sLabel in 'sLabel.pas',
+  sToolBar in 'sToolBar.pas',
+  sColorSelect in 'sColorSelect.pas',
+  sHintManager in 'sHintManager.pas',
+  sRichEdit in 'sRichEdit.pas',
+  sFileCtrl in 'sFileCtrl.pas',
+  sFontCtrls in 'sFontCtrls.pas',
+  sThirdParty in 'sThirdParty.pas',
+  sFrameBar in 'sFrameBar.pas',
+  sColorDialog in 'sColorDialog.pas' {sColorDialogForm},
+  acShellCtrls in 'acShellCtrls.pas',
+  acPathDialog in 'acPathDialog.pas' {PathDialogForm},
+  acCoolBar in 'acCoolBar.pas',
+  acProgressBar in 'acProgressBar.pas',
+  acNotebook in 'acNotebook.pas',
+  acHeaderControl in 'acHeaderControl.pas',
+  acSBUtils in 'acSBUtils.pas',
+  acMagn in 'acMagn.pas' {acMagnForm},
+  acntUtils in 'acntUtils.pas',
+  sListBox in 'sListBox.pas',
+  acDials in 'acDials.pas',
+  acSkinPack in 'acSkinPack.pas',
+  acAlphaImageList in 'acAlphaImageList.pas',
+  acPNG in 'acPNG.pas',
+  acThumbForm in 'acThumbForm.pas' {ThumbForm},
+  acAlphaHints in 'acAlphaHints.pas',
+  acThdTimer in 'acThdTimer.pas',
+  acGlow in 'acGlow.pas',
+  acTitleBar in 'acTitleBar.pas',
+  acZLibEx in 'acZLibEx.pas';
+
+end.

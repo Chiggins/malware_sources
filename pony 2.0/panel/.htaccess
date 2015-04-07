@@ -1,0 +1,2 @@
+ErrorDocument 404 /404.html
+AddDefaultCharset windows-1251

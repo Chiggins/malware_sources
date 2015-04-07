@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "AdminPanel", "AdminPanel.phpproj", "{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|PHP 5.4 = Local|PHP 5.4
+		Production|PHP 5.4 = Production|PHP 5.4
+		Staging|PHP 5.4 = Staging|PHP 5.4
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Local|PHP 5.4.ActiveCfg = Local|PHP 5.4
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Local|PHP 5.4.Deploy.0 = Local|PHP 5.4
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Production|PHP 5.4.ActiveCfg = Production|PHP 5.4
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Production|PHP 5.4.Deploy.0 = Production|PHP 5.4
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Staging|PHP 5.4.ActiveCfg = Staging|PHP 5.4
+		{14E37020-C4AB-4561-BB4D-D6EFBFB0C913}.Staging|PHP 5.4.Deploy.0 = Staging|PHP 5.4
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

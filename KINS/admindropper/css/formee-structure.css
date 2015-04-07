@@ -1,0 +1,187 @@
+﻿/********************************************************************
+
+Project: Formee - http://www.formeeee.org
+Launched: 
+Version: 3.1
+Authors: Bernard De Luna - http://www.bernarddeluna.com
+         Daniel Araujo - http://www.dnlaraujo.com.br
+		 Marcello Manso - http://www.marcellomanso.com.br
+
+********************************************************************
+Structure
+********************************************************************/
+
+/* Little CSS Reset to preserv form structure */
+
+/* fix  ff bugs */
+.formee:after, .formee div:after, .formee ol:after, .formee ul:after, .formee li:after, .formee dl:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	overflow:hidden;
+}
+
+/* Form Structure */
+
+.formee {margin:0;padding:0;}
+.formee fieldset {
+	border: 1px solid #d4d4d4;
+	position: relative;
+	height:100%;
+	padding: 1.2em 0;
+	margin: 0 0 4em;
+}
+.formee legend {
+	margin-left:1%;
+	margin-right:1%;
+	padding: 0.5% 0.5% 0.8%;
+}
+.formee h3 {
+	margin:2em 1% .8%;
+	padding: 0.5% 0.5% 0.8%;
+}
+
+/* Field Grid */
+.grid-1-12, .grid-2-12, .grid-3-12, .grid-4-12, .grid-5-12, .grid-6-12, .grid-7-12, .grid-8-12, .grid-9-12, .grid-10-12, .grid-11-12, .grid-12-12 {
+	display:inline-block;
+	position:relative;
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+	padding: 0.8% 0.5% 1%;
+	height:100%;
+/*ie7*/
+*margin-left:.8%;
+*margin-right:.8%;
+*padding: 0.8% 0.25% 1%;
+}
+
+/* 12-column Grid (thanks for Fluid 960 Grid System) */
+.grid-1-12 {width: 5.333%;}
+.grid-2-12 {width: 13.666%;}
+.grid-3-12 {width: 22%;}
+.grid-4-12 {width: 30.333%;}
+.grid-5-12 {width: 38.666%;}
+.grid-6-12 {width: 47%;}
+.grid-7-12 {width: 55.333%;}
+.grid-8-12 {width: 63.666%;}
+.grid-9-12 {width: 72%;}
+.grid-10-12 {width: 80.333%;}
+.grid-11-12 {width: 88.666%;}
+.grid-12-12 {width: 97%;}
+
+
+/* first item */ .formee .alpha {margin-left:0;}
+/* last item */ .formee .omega {margin-right:0;}
+/* clear */ .formee .clear {clear:both;}
+/* input without label */ .formee-no-lbl {position:relative;padding-bottom:0;}
+/* input without label */ .formee-no-lbl input,  .formee-no-lbl label,  .formee-no-lbl span,  .formee-no-lbl ul,  .formee-no-lbl p {position:absolute;bottom:0;}
+
+/* multiple containers inside field-grid */
+.formee .left {
+	clear:none;
+	float:left !important;
+	margin-right:0.3em !important;
+}
+.formee .right {
+	clear:none;
+	float:right !important;
+	margin-left:0.3em !important;
+}
+
+
+/* form elements  */
+.formee-lbl, .formee label {
+	display: block;
+	height: auto;
+	margin: 0.2em 0 0.5em;
+}
+.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select{
+	vertical-align: middle;
+	line-height: 1.1em;
+	width: 100%;
+	padding:10px;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+/*ie7*/
+*width: 99%;
+}
+.formee textarea {height: 10em;}
+.formee select {padding:9px;height:2.7em;}
+.formee-list .formee-lbl, .formee-list label {
+	display: inline;
+	height: auto;
+	margin: 0.5em 0 0.8em 2px;
+}
+.formee-req {
+	position: relative;
+	top:3px;
+}
+
+.formee-msg-info, .formee-msg-warning, .formee-msg-error, .formee-msg-success {
+	padding:20px 20px 15px 38px;
+	border: 1px solid #ccc;
+	display: block;
+	height: auto;
+	margin: 0 1.5% 0.8em;
+	clear:both;
+}
+.formee-msg-info li, .formee-msg-warning li, .formee-msg-error li, .formee-msg-success li {
+	list-style: none;
+	padding:0;	
+	margin-bottom: .4%;
+	font-size:1.4em;
+	line-height:1.1em;
+	vertical-align: top;
+}
+
+
+/* form button  */
+.formee-button, .formee input[type="submit"], .formee input[type="button"], .formee input[type="reset"] {
+  padding:8px 15px 9px;
+  cursor: pointer;
+  text-align: center;
+  display:inline-block;
+  border:1px solid #D4D4D4;
+}
+
+/* lista de chk e rdo */
+.formee-list {
+	height: 100%;
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.formee-list li, .formee-list li {
+	margin: 0.5em 0.6em 0.8em;
+	float:left;
+	display: inline-block;
+	list-style:none;
+}
+.formee-list input {margin-right: 0.2em}
+
+/* input size */
+.formee-small {
+	width: 30% !important;
+	float:left;
+	margin-right: 10px;
+	display:inline;
+/*ie7*/
+*width: 25% !important;
+}
+
+.formee-medium {
+	width: 50% !important;
+	float:left;
+	margin-right: 10px;
+	display:inline;
+/*ie7*/
+*width: 45% !important;
+}
+

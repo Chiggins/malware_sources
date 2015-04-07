@@ -1,0 +1,3 @@
+Inside Config.php edit db name, db username, db password
+Inside upload.php edit $Site_Url and $DirName
+Inside load.php edit $DirName

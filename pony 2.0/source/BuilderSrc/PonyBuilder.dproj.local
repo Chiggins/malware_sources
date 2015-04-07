@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Resources"/>
+    <File Path="Resources\Images"/>
+    <File Path="Resources\Images\Resources.rc"/>
+    <File Path="Error.pas"/>
+    <File Path="Error.dfm"/>
+    <File Path="Main.pas"/>
+    <File Path="Main.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

@@ -1,0 +1,24 @@
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\bin\Debug\DendroidBinder.exe
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\bin\Debug\DendroidBinder.pdb
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\bin\Debug\DendroidBinder.xml
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\DendroidBinder.Resources.resources
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\DendroidBinder.exe
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\DendroidBinder.xml
+C:\Users\COMPUTER\AppData\Local\Temporary Projects\DendroidBinder\obj\x86\Debug\DendroidBinder.pdb
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\DendroidBinder.exe
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\DendroidBinder.xml
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\DendroidBinder.pdb
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Debug\DendroidBinder.exe.config
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Debug\DendroidBinder.exe
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Debug\DendroidBinder.pdb
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Debug\DendroidBinder.xml
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\DendroidBinder.Form1.resources
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\DendroidBinder.Resources.resources
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Debug\GenerateResource.write.1.tlog

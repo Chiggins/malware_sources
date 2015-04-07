@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+	<Protection
+		InputFileName=".\builder.exe"
+		Options="71624"
+		CheckKernelDebugger="true"
+		VMCodeSectionName=".ovz"
+		VMExecutorCount="2"
+		>
+		<Messages
+		/>
+		<Folders
+		/>
+		<Procedures>
+			<Procedure
+				MapAddress="string &quot;settings&quot;"
+			/>
+			<Procedure
+				MapAddress="string &quot;settings.ini&quot;"
+			/>
+			<Procedure
+				MapAddress="string &quot;activation&quot;"
+			/>
+			<Procedure
+				MapAddress="string &quot;Error number: %u&quot;"
+			/>
+			<Procedure
+				MapAddress="string &quot;Error&quot;"
+			/>
+			<Procedure
+				MapAddress="BuildDll::_run(struct HWND__ *,struct HWND__ *,struct Config0::CFGDATA *,wchar_t *)"
+				Options="8193"
+			/>
+			<Procedure
+				MapAddress="BuildDropper1(char *)"
+				Options="8193"
+			/>
+			<Procedure
+				MapAddress="BuildDropper::_run(struct HWND__ *,struct HWND__ *,struct Config0::CFGDATA *,wchar_t *)"
+				Options="8193"
+			/>
+			<Procedure
+				MapAddress="buildThread(void *)"
+				Options="8193"
+			/>
+			<Procedure
+				MapAddress="Fs::_saveToFile(wchar_t * const,void const *,unsigned long)"
+			/>
+			<Procedure
+				MapAddress="Fs::_fileToMem(wchar_t *,struct Fs::MEMFILE *,unsigned long)"
+			/>
+			<Procedure
+				MapAddress="PeImage::_createFromMemory(struct PeImage::PEDATA *,void *,unsigned long,bool)"
+			/>
+			<Procedure
+				MapAddress="PeImage64::_createFromMemory(struct PeImage64::PEDATA *,void *,unsigned long,bool)"
+			/>
+			<Procedure
+				MapAddress="entryPoint(void)"
+			/>
+		</Procedures>
+	</Protection>
+	<DLLBox
+	/>
+	<Script
+	/>
+	<LicenseManager
+		ProductCode="jK+3peoGLAE="
+		ActivationServer="http://181.191.255.130"
+		Algorithm="RSA"
+		Bits="4096"
+		PublicExp="AAEAAQ=="
+		PrivateExp="FWoWz5Gi/MBTcfQMWLdu3VMzbaxmSOK5Gkyq4+V3nX5sqVhrkOdodsNDYesnA3g6M6s/DdBft+kRdK0+nR1D9QPeDHTe3ppw6YQWF6fxEoAEZp/dQKrgQDuruziQoMu2pywbN2Pr3AmztFYv0aHcumBvpDCMeBwOabY3Qnw7JIWQBt7f5WP1gSCI5TODWkQwwYlWKHN+JZmSEdVyHAp8dBiI2kSTRFnxCIrALJGpiwPjiO95x2efGTuZBvVHhQsY1sjPFMQe17Y5y5lL3KMsvyu4UCfBmMBvgnUM05OHtGxboj+aCl7WFid0Fj94thrSV4ui6DBSN82R765cFpwHnvIVpUisZlYCixBC5I5SNQFxZGcV1L4D4+lew9MUVEhLQYo4vl8cM1hOd8dZ5ou/4uVuep2ucs7RNrWVeb9rU1Y0Ca6+QT246Q/VkOo4aajqwttTRCYde9lOj4t5dfMcWRLR1BJZuA4ggVa4V7LGEVvsX86tTMnxKq1eZat35/gu4OQVKXVGmJIgvg6xRvME9L4/8/7w6V+K2jttZsbxmCbwvo9fzHwC46/z/o1wEKbaIDABSIkw8BGZ5B2YbrQ5YaAlvTTp7siMwFcmN9Br1MtCjB6g5UNtSAwKmrMYc6Nhz3PkkdorReMuoKKpBhjik7mG6o/Z9ZIF8vL4TwORESE="
+		Modulus="vG5o0l6tukVMy7zZHhobqS3ySAl8Mc4F8nMd/dAAGg4ZA7/TOZJVLcYN7UBgMXgVTo36z9wrLjj3Zfhp8hwVhrsWSLF41SY0YYMmEy44dBN8Pb2W+oFE2aN4ZnAL3uCiVVYmEQTJR2jBg4COJ6dm/FPvqR1x3IvpGbtKRFA1660dTK4D/whZRCA9yogheGwrF7g4tLbPF6NSm+SjYpktUmNvdeAEtNYdO4Y2JXWfpSurv8J/0vPZiHq3OE+wnNMbSXl2+uKzsG6XTEYZgGEc8+rPMB9oO3bMISdL6gOv+zCsFdWGzfwqhHPXOZd5dG9hJZoRutFWWIi4r/40amstwSjwxdu+XTVeuaYAs9VshVuOiRjuKIO6gUK8dGjh4Jpi5qv9tlXvho6l75sv3cpdZovMhkSBTHGXNzhx+f1iBYGlm0M71C5xSrFSv5UyxbWDZLZHt5pwt1ErIrEIKdMHW8EwGuyTg2R/DHf5NGANtsl63XOc6tD0sUEIWy4y4fh0Y2tn2rgyR2E5KVoXvGFOdDN6P+QwnH7eSGzz0G71SN4/W0sWU0Onh2B4QapTRDKFmNoFdeNQcPykipvT/n/wR3WYBXvLlZoCLtU/2dcE4fOmwY3mqqT+4U3VwwrKAO8F3Nr7ss60+V6YpQm2sCUnkFy7rzz0r6+k2OjEtpm7TaU="
+	/>
+</Document>

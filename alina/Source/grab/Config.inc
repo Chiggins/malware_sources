@@ -1,0 +1,1 @@
+#define DIRECTORY_NAME "Installed"

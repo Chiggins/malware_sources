@@ -1,0 +1,284 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{553C6B7E-72C8-4AF3-98DC-8EEC7826C22C}</ProjectGuid>
+        <MainSource>acntDelphiXE3_R.dpk</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <TargetedPlatforms>3</TargetedPlatforms>
+        <AppType>Package</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>14.4</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_DebugInformation>false</DCC_DebugInformation>
+        <DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+        <DCC_S>false</DCC_S>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <VerInfo_Locale>1049</VerInfo_Locale>
+        <DCC_F>false</DCC_F>
+        <DCC_WriteableConstants>true</DCC_WriteableConstants>
+        <GenDll>true</GenDll>
+        <DCC_K>false</DCC_K>
+        <GenPackage>true</GenPackage>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_E>false</DCC_E>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=;CFBundleDisplayName=;CFBundleIdentifier=;CFBundleVersion=;CFBundlePackageType=;CFBundleSignature=;CFBundleAllowMixedLocalizations=;CFBundleExecutable=</VerInfo_Keys>
+        <DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+        <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+        <DCC_PentiumSafeDivide>true</DCC_PentiumSafeDivide>
+        <DCC_N>false</DCC_N>
+        <DCC_Description>AlphaControls run-time library</DCC_Description>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_DebugInformation>false</DCC_DebugInformation>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="vcl.dcp"/>
+        <DCCReference Include="vclx.dcp"/>
+        <DCCReference Include="rtl.dcp"/>
+        <DCCReference Include="vclimg.dcp"/>
+        <DCCReference Include="sEdit.pas"/>
+        <DCCReference Include="sMemo.pas"/>
+        <DCCReference Include="sComboBoxes.pas"/>
+        <DCCReference Include="sPanel.pas"/>
+        <DCCReference Include="sConst.pas"/>
+        <DCCReference Include="sRadioButton.pas"/>
+        <DCCReference Include="sCheckbox.pas"/>
+        <DCCReference Include="sPageControl.pas"/>
+        <DCCReference Include="sGraphUtils.pas"/>
+        <DCCReference Include="sSpinEdit.pas"/>
+        <DCCReference Include="sBevel.pas"/>
+        <DCCReference Include="sGroupBox.pas"/>
+        <DCCReference Include="sStatusBar.pas"/>
+        <DCCReference Include="sVclUtils.pas"/>
+        <DCCReference Include="sTrackBar.pas"/>
+        <DCCReference Include="sCalculator.pas"/>
+        <DCCReference Include="sCalcUnit.pas">
+            <Form>sCalcForm</Form>
+        </DCCReference>
+        <DCCReference Include="sMessages.pas"/>
+        <DCCReference Include="sDateUtils.pas"/>
+        <DCCReference Include="sGauge.pas"/>
+        <DCCReference Include="sStoreUtils.pas"/>
+        <DCCReference Include="sComboEdit.pas"/>
+        <DCCReference Include="sCurrEdit.pas"/>
+        <DCCReference Include="sCurrencyEdit.pas"/>
+        <DCCReference Include="sCustomComboEdit.pas"/>
+        <DCCReference Include="sToolEdit.pas"/>
+        <DCCReference Include="sMonthCalendar.pas"/>
+        <DCCReference Include="sPopupClndr.pas">
+            <Form>sPopupCalendar</Form>
+        </DCCReference>
+        <DCCReference Include="sHtmlParse.pas"/>
+        <DCCReference Include="sGlyphUtils.pas"/>
+        <DCCReference Include="sStyleSimply.pas"/>
+        <DCCReference Include="sGradient.pas"/>
+        <DCCReference Include="sDefaults.pas"/>
+        <DCCReference Include="sMaskEdit.pas"/>
+        <DCCReference Include="sBorders.pas"/>
+        <DCCReference Include="sSkinManager.pas"/>
+        <DCCReference Include="sMaskData.pas"/>
+        <DCCReference Include="sSkinProps.pas"/>
+        <DCCReference Include="sSkinProvider.pas"/>
+        <DCCReference Include="sStrings.pas"/>
+        <DCCReference Include="sSkinMenus.pas"/>
+        <DCCReference Include="sScrollBar.pas"/>
+        <DCCReference Include="sMDIForm.pas"/>
+        <DCCReference Include="sScrollBox.pas"/>
+        <DCCReference Include="sCommonData.pas"/>
+        <DCCReference Include="sAlphaGraph.pas"/>
+        <DCCReference Include="sComboBox.pas"/>
+        <DCCReference Include="sSplitter.pas"/>
+        <DCCReference Include="sTabControl.pas"/>
+        <DCCReference Include="sCheckListBox.pas"/>
+        <DCCReference Include="sTreeView.pas"/>
+        <DCCReference Include="sListView.pas"/>
+        <DCCReference Include="sFrameAdapter.pas"/>
+        <DCCReference Include="sUpDown.pas"/>
+        <DCCReference Include="sDialogs.pas"/>
+        <DCCReference Include="sButton.pas"/>
+        <DCCReference Include="sSpeedButton.pas"/>
+        <DCCReference Include="sBitBtn.pas"/>
+        <DCCReference Include="sFade.pas"/>
+        <DCCReference Include="sLabel.pas"/>
+        <DCCReference Include="sToolBar.pas"/>
+        <DCCReference Include="sColorSelect.pas"/>
+        <DCCReference Include="sHintManager.pas"/>
+        <DCCReference Include="sRichEdit.pas"/>
+        <DCCReference Include="sFileCtrl.pas"/>
+        <DCCReference Include="sFontCtrls.pas"/>
+        <DCCReference Include="sThirdParty.pas"/>
+        <DCCReference Include="sFrameBar.pas"/>
+        <DCCReference Include="sColorDialog.pas">
+            <Form>sColorDialogForm</Form>
+        </DCCReference>
+        <DCCReference Include="acShellCtrls.pas"/>
+        <DCCReference Include="acPathDialog.pas">
+            <Form>PathDialogForm</Form>
+        </DCCReference>
+        <DCCReference Include="acCoolBar.pas"/>
+        <DCCReference Include="acProgressBar.pas"/>
+        <DCCReference Include="acNotebook.pas"/>
+        <DCCReference Include="acHeaderControl.pas"/>
+        <DCCReference Include="acSBUtils.pas"/>
+        <DCCReference Include="acMagn.pas">
+            <Form>acMagnForm</Form>
+        </DCCReference>
+        <DCCReference Include="acntUtils.pas"/>
+        <DCCReference Include="sListBox.pas"/>
+        <DCCReference Include="acDials.pas"/>
+        <DCCReference Include="acSkinPack.pas"/>
+        <DCCReference Include="acAlphaImageList.pas"/>
+        <DCCReference Include="acPNG.pas"/>
+        <DCCReference Include="acThumbForm.pas">
+            <Form>ThumbForm</Form>
+        </DCCReference>
+        <DCCReference Include="acAlphaHints.pas"/>
+        <DCCReference Include="acThdTimer.pas"/>
+        <DCCReference Include="acGlow.pas"/>
+        <DCCReference Include="acTitleBar.pas"/>
+        <DCCReference Include="acZLibEx.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>Package</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">acntDelphiXE3_R.dpk</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1049</VersionInfo>
+                    <VersionInfo Name="CodePage">1251</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\10.0\BPL\acntBuilderXE3.bpl">File C:\Users\Public\Documents\RAD Studio\10.0\BPL\acntBuilderXE3.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k170.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp170.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k170.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp170.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

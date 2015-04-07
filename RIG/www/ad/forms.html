@@ -1,0 +1,1289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Aquincum - premium admin template by Eugene Kopyov</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/ui.spinner.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.chosen.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/files/bootstrap.js"></script>
+<script type="text/javascript" src="js/files/functions.js"></script>
+
+</head>
+
+<body>
+
+<!-- Top line begins -->
+<div id="top">
+	<div class="wrapper">
+    	<a href="index.html" title="" class="logo"><img src="images/logo.png" alt="" /></a>
+        
+        <!-- Right top nav -->
+        <div class="topNav">
+            <ul class="userNav">
+                <li><a title="" class="search"></a></li>
+                <li><a href="#" title="" class="screen"></a></li>
+                <li><a href="#" title="" class="settings"></a></li>
+                <li><a href="#" title="" class="logout"></a></li>
+                <li class="showTabletP"><a href="#" title="" class="sidebar"></a></li>
+            </ul>
+            <a title="" class="iButton"></a>
+            <a title="" class="iTop"></a>
+            <div class="topSearch">
+            	<div class="topDropArrow"></div>
+                <form action="">
+                    <input type="text" placeholder="search..." name="topSearch" />
+                    <input type="submit" value="" />
+                </form>
+            </div>
+        </div>
+        
+        <!-- Responsive nav -->
+        <ul class="altMenu">
+            <li><a href="index.html" title="">Dashboard</a></li>
+            <li><a href="ui.html" title="" class="exp">UI elements</a>
+                <ul>
+                    <li><a href="ui.html">General elements</a></li>
+                    <li><a href="ui_icons.html">Icons</a></li>
+                    <li><a href="ui_buttons.html">Button sets</a></li>
+                    <li><a href="ui_grid.html">Grid</a></li>
+                    <li><a href="ui_custom.html">Custom elements</a></li>
+                    <li><a href="ui_experimental.html">Experimental</a></li>
+                </ul>
+            </li>
+            <li><a href="forms.html" title="" class="exp" id="current">Forms stuff</a>
+                <ul>
+                    <li><a href="forms.html" class="active">Inputs &amp; elements</a></li>
+                    <li><a href="form_validation.html">Validation</a></li>
+                    <li><a href="form_editor.html">File uploads &amp; editor</a></li>
+                    <li><a href="form_wizards.html">Form wizards</a></li>
+                </ul>
+            </li>
+            <li><a href="messages.html" title="">Messages</a></li>
+            <li><a href="statistics.html" title="">Statistics</a></li>
+            <li><a href="tables.html" title="" class="exp">Tables</a>
+                <ul>
+                    <li><a href="tables.html">Standard tables</a></li>
+                    <li><a href="tables_dynamic.html">Dynamic tables</a></li>
+                    <li><a href="tables_control.html">Tables with control</a></li>
+                    <li><a href="tables_sortable.html">Sortable &amp; resizable</a></li>
+                </ul>
+            </li>
+            <li><a href="other_calendar.html" title="" class="exp">Other pages</a>
+                <ul>
+                    <li><a href="other_calendar.html">Calendar</a></li>
+                    <li><a href="other_gallery.html">Images gallery</a></li>
+                    <li><a href="other_file_manager.html">File manager</a></li>
+                    <li><a href="other_404.html">Sample error page</a></li>
+                    <li><a href="other_typography.html">Typography</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- Top line ends -->
+
+
+<!-- Sidebar begins -->
+<div id="sidebar">
+
+	<!-- Main nav -->
+    <div class="mainNav">
+        <div class="user">
+            <a title="" class="leftUserDrop"><img src="images/user.png" alt="" /><span><strong>3</strong></span></a><span>Eugene</span>
+            <ul class="leftUser">
+                <li><a href="#" title="" class="sProfile">My profile</a></li>
+                <li><a href="#" title="" class="sMessages">Messages</a></li>
+                <li><a href="#" title="" class="sSettings">Settings</a></li>
+                <li><a href="#" title="" class="sLogout">Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Responsive nav -->
+        <div class="altNav">
+            <div class="userSearch">
+                <form action="">
+                    <input type="text" placeholder="search..." name="userSearch" />
+                    <input type="submit" value="" />
+                </form>
+            </div>
+            
+            <!-- User nav -->
+            <ul class="userNav">
+                <li><a href="#" title="" class="profile"></a></li>
+                <li><a href="#" title="" class="messages"></a></li>
+                <li><a href="#" title="" class="settings"></a></li>
+                <li><a href="#" title="" class="logout"></a></li>
+            </ul>
+        </div>
+        
+        <!-- Main nav -->
+        <ul class="nav">
+            <li><a href="index.html" title=""><img src="images/icons/mainnav/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+            <li><a href="ui.html" title=""><img src="images/icons/mainnav/ui.png" alt="" /><span>UI elements</span></a>
+                <ul>
+                    <li><a href="ui.html" title=""><span class="icol-fullscreen"></span>General elements</a></li>
+                    <li><a href="ui_icons.html" title=""><span class="icol-images2"></span>Icons</a></li>
+                    <li><a href="ui_buttons.html" title=""><span class="icol-coverflow"></span>Button sets</a></li>
+                    <li><a href="ui_grid.html" title=""><span class="icol-view"></span>Grid</a></li>
+                    <li><a href="ui_custom.html" title=""><span class="icol-cog2"></span>Custom elements</a></li>
+                    <li><a href="ui_experimental.html" title=""><span class="icol-beta"></span>Experimental</a></li>
+                </ul>
+            </li>
+            <li><a href="forms.html" title="" class="active"><img src="images/icons/mainnav/forms.png" alt="" /><span>Forms stuff</span></a>
+                <ul>
+                    <li><a href="forms.html" title=""><span class="icol-list"></span>Inputs &amp; elements</a></li>
+                    <li><a href="form_validation.html" title=""><span class="icol-alert"></span>Validation</a></li>
+                    <li><a href="form_editor.html" title=""><span class="icol-pencil"></span>File uploader &amp; WYSIWYG</a></li>
+                    <li><a href="form_wizards.html" title=""><span class="icol-signpost"></span>Form wizards</a></li>
+                </ul>
+            </li>
+            <li><a href="messages.html" title=""><img src="images/icons/mainnav/messages.png" alt="" /><span>Messages</span></a></li>
+            <li><a href="statistics.html" title=""><img src="images/icons/mainnav/statistics.png" alt="" /><span>Statistics</span></a></li>
+            <li><a href="tables.html" title=""><img src="images/icons/mainnav/tables.png" alt="" /><span>Tables</span></a>
+                <ul>
+                    <li><a href="tables.html" title=""><span class="icol-frames"></span>Standard tables</a></li>
+                    <li><a href="tables_dynamic.html" title=""><span class="icol-refresh"></span>Dynamic table</a></li>
+                    <li><a href="tables_control.html" title=""><span class="icol-bullseye"></span>Tables with control</a></li>
+                    <li><a href="tables_sortable.html" title=""><span class="icol-transfer"></span>Sortable and resizable</a></li>
+                </ul>
+            </li>
+            <li><a href="other_calendar.html" title=""><img src="images/icons/mainnav/other.png" alt="" /><span>Other pages</span></a>
+                <ul>
+                    <li><a href="other_calendar.html" title=""><span class="icol-dcalendar"></span>Calendar</a></li>
+                    <li><a href="other_gallery.html" title=""><span class="icol-images2"></span>Images gallery</a></li>
+                    <li><a href="other_file_manager.html" title=""><span class="icol-files"></span>File manager</a></li>
+                    <li><a href="#" title="" class="exp"><span class="icol-alert"></span>Error pages <span class="dataNumRed">6</span></a>
+                        <ul>
+                            <li><a href="other_403.html" title="">403 error</a></li>
+                            <li><a href="other_404.html" title="">404 error</a></li>
+                            <li><a href="other_405.html" title="">405 error</a></li>
+                            <li><a href="other_500.html" title="">500 error</a></li>
+                            <li><a href="other_503.html" title="">503 error</a></li>
+                            <li><a href="other_offline.html" title="">Website is offline error</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="other_typography.html" title=""><span class="icol-create"></span>Typography</a></li>
+                    <li><a href="other_invoice.html" title=""><span class="icol-money2"></span>Invoice template</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Secondary nav -->
+    <div class="secNav">
+        <div class="secWrapper">
+            <div class="secTop">
+                <div class="balance">
+                <div class="balInfo">Balance:<span>Apr 21 2012</span></div>
+                <div class="balAmount"><span class="balBars"><!--5,10,15,20,18,16,14,20,15,16,12,10--></span><span>$58,990</span></div>
+                </div>
+                <a href="#" class="triangle-red"></a>
+            </div>
+            
+            <!-- Tabs container -->
+            <div id="tab-container" class="tab-container">
+                <ul class="iconsLine ic3 etabs">
+                    <li><a href="#general" title=""><span class="icos-fullscreen"></span></a></li>
+                    <li><a href="#alt1" title=""><span class="icos-user"></span></a></li>
+                    <li><a href="#alt2" title=""><span class="icos-archive"></span></a></li>
+                </ul>
+                
+                <div class="divider"><span></span></div>
+                
+                <div id="general">
+                    <ul class="subNav">
+                        <li><a href="forms.html" title="" class="this"><span class="icos-list"></span>Inputs &amp; elements</a></li>
+                        <li><a href="form_validation.html" title=""><span class="icos-alert"></span>Validation</a></li>
+                        <li><a href="form_editor.html" title=""><span class="icos-pencil"></span>File uploader &amp; WYSIWYG</a></li>
+                        <li><a href="form_wizards.html" title=""><span class="icos-signpost"></span>Form wizards</a></li>
+                    </ul>
+                </div>
+                
+                <div id="alt1">
+                    <div class="widget">
+                        <div class="whead">
+                            <h6><span class="icon-tree-view"></span>Simple jQuery file tree</h6>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="filetree"></div>
+                    </div>
+                    
+                    <div class="divider"><span></span></div>
+                
+                    <div class="sidePad">
+                        <a href="#" title="" class="sideB bBlue">Add new session</a>
+                        <a href="#" title="" class="sideB bRed mt10">Add new session</a>
+                        <a href="#" title="" class="sideB bGreen mt10">Add new session</a>
+                        <a href="#" title="" class="sideB bBrown mt10">Add new session</a>
+                        <a href="#" title="" class="sideB bGreyish mt10">Add new session</a>
+                    </div>
+                </div>
+                
+                <div id="alt2">
+                    <div class="sideWidget">
+                        <div class="inlinedate"></div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="divider"><span></span></div>
+            
+            <!-- Sidebar buttons -->
+            <div class="fluid sideWidget">
+                <div class="grid6"><input type="submit" class="buttonS bRed" value="Cancel" /></div>
+                <div class="grid6"><input type="submit" class="buttonS bGreen" value="Submit" /></div>
+            </div>
+    
+            <div class="divider"><span></span></div>
+        
+        	<!-- Sidebar form -->
+            <div class="sideWidget">
+                <div class="formRow">
+                    <label>Usual input field:</label>
+                    <input type="text" name="regular" placeholder="Your name" />
+                </div>
+                <div class="formRow">
+                   <label>Usual password field:</label>
+                    <input type="password" name="regular" placeholder="Your password" /> 
+                </div>
+                <div class="formRow">
+                    <label>Single file uploader:</label>
+                    <input type="file" class="fileInput" id="fileInputS" />
+                </div>
+                <div class="formRow">
+                    <label>Dropdown menu:</label>
+                    <select name="select2" >
+                        <option value="opt1">Usual select box</option>
+                        <option value="opt2">Option 2</option>
+                        <option value="opt3">Option 3</option>
+                        <option value="opt4">Option 4</option>
+                        <option value="opt5">Option 5</option>
+                        <option value="opt6">Option 6</option>
+                        <option value="opt7">Option 7</option>
+                        <option value="opt8">Option 8</option>
+                    </select>
+                </div>
+                
+                <div class="formRow searchDrop">
+                    <label>Dropdown with search:</label>
+                    <select data-placeholder="Choose a Country..." class="select" tabindex="2">
+                        <option value=""></option> 
+                        <option value="Cambodia">Cambodia</option> 
+                        <option value="Cameroon">Cameroon</option> 
+                        <option value="Canada">Canada</option> 
+                        <option value="Cape Verde">Cape Verde</option> 
+                        <option value="Cayman Islands">Cayman Islands</option> 
+                        <option value="Central African Republic">Central African Republic</option> 
+                        <option value="Chad">Chad</option> 
+                        <option value="Chile">Chile</option> 
+                        <option value="China">China</option> 
+                        <option value="Christmas Island">Christmas Island</option> 
+                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option> 
+                        <option value="Colombia">Colombia</option> 
+                        <option value="Comoros">Comoros</option> 
+                        <option value="Congo">Congo</option> 
+                        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option> 
+                        <option value="Cook Islands">Cook Islands</option> 
+                        <option value="Costa Rica">Costa Rica</option> 
+                        <option value="Cote D'ivoire">Cote D'ivoire</option> 
+                        <option value="Croatia">Croatia</option> 
+                        <option value="Cuba">Cuba</option> 
+                        <option value="Cyprus">Cyprus</option> 
+                        <option value="Czech Republic">Czech Republic</option> 
+                        <option value="Denmark">Denmark</option> 
+                        <option value="Djibouti">Djibouti</option> 
+                        <option value="Dominica">Dominica</option> 
+                        <option value="Dominican Republic">Dominican Republic</option> 
+                        <option value="Ecuador">Ecuador</option> 
+                        <option value="Egypt">Egypt</option> 
+                        <option value="El Salvador">El Salvador</option> 
+                        <option value="Equatorial Guinea">Equatorial Guinea</option> 
+                        <option value="Eritrea">Eritrea</option> 
+                        <option value="Estonia">Estonia</option> 
+                        <option value="Ethiopia">Ethiopia</option> 
+                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option> 
+                        <option value="Faroe Islands">Faroe Islands</option> 
+                        <option value="Fiji">Fiji</option> 
+                        <option value="Finland">Finland</option> 
+                        <option value="France">France</option> 
+                        <option value="French Guiana">French Guiana</option> 
+                        <option value="French Polynesia">French Polynesia</option> 
+                        <option value="French Southern Territories">French Southern Territories</option> 
+                        <option value="Gabon">Gabon</option> 
+                        <option value="Gambia">Gambia</option> 
+                        <option value="Georgia">Georgia</option> 
+                        <option value="Germany">Germany</option> 
+                        <option value="Ghana">Ghana</option> 
+                        <option value="Gibraltar">Gibraltar</option> 
+                        <option value="Greece">Greece</option> 
+                    </select>
+                </div>
+            
+                <div class="formRow">
+                    <input type="checkbox" id="check2S" name="chbox1" checked="checked" class="check" />
+                    <label for="check2S"  class="nopadding">Checkbox checked</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <input type="radio" id="radio1S" name="question1" checked="checked" />
+                    <label for="radio1S"  class="nopadding">Usual radio button</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <label>Usual textarea:</label>
+                    <textarea rows="8" cols="" name="textarea" placeholder="Your message"></textarea>
+                </div>
+                <div class="formRow">
+                    <input type="submit" class="buttonS bLightBlue" value="Submit button" />
+                </div>
+            </div>
+        
+            <div class="divider"><span></span></div>
+            
+       </div> 
+       <div class="clear"></div>
+   </div>
+</div>
+<!-- Sidebar ends -->
+
+
+<!-- Content begins -->
+<div id="content">
+    <div class="contentTop">
+        <span class="pageTitle"><span class="icon-link"></span>General form elements</span>
+        <ul class="quickStats">
+            <li>
+                <a href="" class="blueImg"><img src="images/icons/quickstats/plus.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">5489</strong><span>visits</span></div>
+            </li>
+            <li>
+                <a href="" class="redImg"><img src="images/icons/quickstats/user.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">4658</strong><span>users</span></div>
+            </li>
+            <li>
+                <a href="" class="greenImg"><img src="images/icons/quickstats/money.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">1289</strong><span>orders</span></div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <!-- Breadcrumbs line -->
+    <div class="breadLine">
+        <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="forms.html">Forms stuff</a>
+                    <ul>
+                        <li><a href="form_validation.html" title="">Validation</a></li>
+                        <li><a href="form_editor.html" title="">File uploader &amp; WYSIWYG</a></li>
+                        <li><a href="form_wizards.html" title="">Form wizards</a></li>
+                    </ul>
+                </li>
+                <li class="current"><a href="forms.html" title="">Inputs &amp; elements</a></li>
+            </ul>
+        </div>
+        
+        <div class="breadLinks">
+            <ul>
+                <li><a href="#" title=""><i class="icos-list"></i><span>Orders</span> <strong>(+58)</strong></a></li>
+                <li><a href="#" title=""><i class="icos-check"></i><span>Tasks</span> <strong>(+12)</strong></a></li>
+                <li class="has">
+                    <a title="">
+                        <i class="icos-money3"></i>
+                        <span>Invoices</span>
+                        <span><img src="images/elements/control/hasddArrow.png" alt="" /></span>
+                    </a>
+                    <ul>
+                        <li><a href="#" title=""><span class="icos-add"></span>New invoice</a></li>
+                        <li><a href="#" title=""><span class="icos-archive"></span>History</a></li>
+                        <li><a href="#" title=""><span class="icos-printer"></span>Print invoices</a></li>
+                    </ul>
+                </li>
+            </ul>
+             <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!-- Main content -->
+    <div class="wrapper">
+        <ul class="middleNavR">
+            <li><a href="#" title="Add an article" class="tipN"><img src="images/icons/middlenav/create.png" alt="" /></a></li>
+            <li><a href="#" title="Upload files" class="tipN"><img src="images/icons/middlenav/upload.png" alt="" /></a></li>
+            <li><a href="#" title="Add something" class="tipN"><img src="images/icons/middlenav/add.png" alt="" /></a></li>
+            <li><a href="#" title="Messages" class="tipN"><img src="images/icons/middlenav/dialogs.png" alt="" /></a><strong>8</strong></li>
+            <li><a href="#" title="Check statistics" class="tipN"><img src="images/icons/middlenav/stats.png" alt="" /></a></li>
+        </ul>
+    
+        <form action="" class="main">
+            <fieldset>
+                <div class="widget fluid">
+                    <div class="whead"><h6>Input fields</h6><div class="clear"></div></div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Usual input field:</label></div>
+                        <div class="grid9"><input type="text" name="regular" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Password field:</label></div>
+                        <div class="grid9"><input type="password" name="pass" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>With placeholder:</label></div>
+                        <div class="grid9"><input type="text" name="placeholder" placeholder="Bazinga" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Read only field:</label></div>
+                        <div class="grid9"><input type="text" name="readonly" readonly="readonly" value="read only" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Disabled field:</label></div>
+                        <div class="grid9"><input type="text" name="disabled" disabled="disabled" value="disabled" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Field with notice:</label></div>
+                        <div class="grid9"><input type="text" name="regular" /><span class="note">Some nice stuff goes here</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Label with notice:<span class="note">The same stuff here</span></label></div>
+                        <div class="grid9"><input type="text" name="regular" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Predefined value:</label></div>
+                        <div class="grid9"><input type="text" name="regular" value="http://" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Field with tooltip:</label></div>
+                        <div class="grid9"><input type="text" name="regular" title="Tooltip in different directions" class="tipS" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Max 10 characters:</label></div>
+                        <div class="grid9"><input type="text" name="regular" maxlength="10" placeholder="Max 10 characters" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label><span class="icos-user"></span>With icons:</label></div>
+                        <div class="grid9">
+                            <input type="text" name="regular" />
+                            <img src="images/icons/usual/icon-download.png" alt="" class="fieldIcon" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label for="labelfor">Clickable label:</label></div>
+                        <div class="grid9"><input type="text" name="labelfor" id="labelfor" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Textarea:</label></div>
+                        <div class="grid9"><textarea rows="8" cols="" name="textarea"></textarea> </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Elastic textarea:</label></div>
+                        <div class="grid9"><textarea rows="8" cols="" name="textarea" class="auto"></textarea></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>With character counter:</label></div>
+                        <div class="grid9">
+                            <textarea rows="8" cols="" name="textarea" class="auto lim"></textarea>
+                            <span class="note" id="limitingtext">Field limited to 100 characters.</span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Tags:</label></div>
+                        <div class="grid9"><input type="text" id="tags" name="tags" class="tags" value="these,are,sample,tags" /></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <div class="widget fluid">
+                    <div class="whead"><h6>Fields with masked values</h6><div class="clear"></div></div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Date:</label></div>
+                        <div class="grid9"><input type="text" class="maskDate" id="maskDate" value="value" /><span class="note">99/99/9999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Phone:</label></div>
+                        <div class="grid9"><input type="text" class="maskPhone" value="" /><span class="note">(999) 999-9999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Phone + Ext:</label></div>
+                        <div class="grid9"><input type="text" class="maskPhoneExt" value="" /><span class="note">(999) 999-9999? x99999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Int'l Phone:</label></div>
+                        <div class="grid9"><input type="text" class="maskIntPhone" value="" /><span class="note">+33 999 999 999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Tax ID:</label></div>
+                        <div class="grid9"><input type="text" class="maskTin" value="" /><span class="note">99-9999999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>SSN:</label></div>
+                        <div class="grid9"><input type="text" class="maskSsn" /><span class="note">999-99-9999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Product Key:</label></div>
+                        <div class="grid9"><input type="text" class="maskProd" /><span class="note">a*-999-a999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Eye Script:</label></div>
+                        <div class="grid9"><input type="text" class="maskEye" /><span class="note">~9.99 ~9.99 999</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Purchase Order:</label></div>
+                        <div class="grid9"><input type="text" class="maskPo" value="" /><span class="note">aaa-999-***</span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Percent:</label></div>
+                        <div class="grid9"><input type="text" class="maskPct" value="" /><span class="note">99%</span></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="unmask"></div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="widget fluid">
+                    <div class="whead"><h6>Autotabs</h6><div class="clear"></div></div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Simple data row</label> </div>
+                        <div class="grid9 moreFields">
+                            <ul class="rowData">
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                            </ul> 
+                            <div class="clear"></div>  
+                        </div> 
+                        <div class="clear"></div> 
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="grid3"><label>Numbers only</label> </div>
+                        <div class="grid9 moreFields onlyNums">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                            </ul>  
+                            <div class="clear"></div> 
+                        </div> 
+                        <div class="clear"></div> 
+                    </div>
+    
+                    <div class="formRow">
+                        <div class="grid3"><label>Letters only</label> </div>
+                        <div class="grid9 moreFields onlyText">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                            </ul>  
+                            <div class="clear"></div> 
+                        </div> 
+                        <div class="clear"></div> 
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="grid3"><label>Alpha only</label></div>
+                        <div class="grid9 moreFields onlyAlpha">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                            </ul>  
+                            <div class="clear"></div> 
+                        </div> 
+                        <div class="clear"></div> 
+                    </div>
+    
+                    <div class="formRow">
+                        <div class="grid3"><label>Regular expressions</label> </div>
+                        <div class="grid9 moreFields onlyRegex">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                            </ul>  
+                            <div class="clear"></div> 
+                        </div> 
+                        <div class="clear"></div> 
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="grid3"><label>Uppercase converting</label> </div>
+                        <div class="grid9 moreFields allUpper">
+                            <ul>
+                                <li><input type="text" name="up1" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up2" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up3" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up4" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up5" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up6" maxlength="6" /></li>
+                            </ul>  
+                            <div class="clear"></div> 
+                        </div> 
+                        <div class="clear"></div>
+                    </div>
+                </div>   
+            </fieldset>
+        
+            <fieldset>
+                <div class="fluid">
+                    <div class="widget grid6">
+                        <div class="whead"><h6>Dropdowns and selects</h6><div class="clear"></div></div>
+                        <div class="formRow">
+                            <div class="grid3"><label>Select with scrolling :</label></div>
+                            <div class="grid9">
+                            <select name="select2" >
+                                <option value="opt1">Usual select box</option>
+                                <option value="opt2">Option 2</option>
+                                <option value="opt3">Option 3</option>
+                                <option value="opt4">Option 4</option>
+                                <option value="opt5">Option 5</option>
+                                <option value="opt6">Option 6</option>
+                                <option value="opt7">Option 7</option>
+                                <option value="opt8">Option 8</option>
+                            </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="formRow">
+                            <div class="grid3"><label>Styled dropdown :</label></div>
+                            <div class="grid9 noSearch">
+                            <select name="select2" class="select">
+                                <option value="opt1">Usual select box with dropdown styling</option>
+                                <option value="opt2">Option 2</option>
+                                <option value="opt3">Option 3</option>
+                                <option value="opt4">Option 4</option>
+                                <option value="opt5">Option 5</option>
+                                <option value="opt6">Option 6</option>
+                                <option value="opt7">Option 7</option>
+                                <option value="opt8">Option 8</option>
+                            </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="formRow">
+                            <div class="grid3"><label>Select with search:</label></div>
+                            <div class="grid9 searchDrop">
+                                <select data-placeholder="Choose a Country..." class="select" style="width:350px;" tabindex="2">
+                                    <option value=""></option> 
+                                    <option value="Cambodia">Cambodia</option> 
+                                    <option value="Cameroon">Cameroon</option> 
+                                    <option value="Canada">Canada</option> 
+                                    <option value="Cape Verde">Cape Verde</option> 
+                                    <option value="Cayman Islands">Cayman Islands</option> 
+                                    <option value="Central African Republic">Central African Republic</option> 
+                                    <option value="Chad">Chad</option> 
+                                    <option value="Chile">Chile</option> 
+                                    <option value="China">China</option> 
+                                    <option value="Christmas Island">Christmas Island</option> 
+                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option> 
+                                    <option value="Colombia">Colombia</option> 
+                                    <option value="Comoros">Comoros</option> 
+                                    <option value="Congo">Congo</option> 
+                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option> 
+                                    <option value="Cook Islands">Cook Islands</option> 
+                                    <option value="Costa Rica">Costa Rica</option> 
+                                    <option value="Cote D'ivoire">Cote D'ivoire</option> 
+                                    <option value="Croatia">Croatia</option> 
+                                    <option value="Cuba">Cuba</option> 
+                                    <option value="Cyprus">Cyprus</option> 
+                                    <option value="Czech Republic">Czech Republic</option> 
+                                    <option value="Denmark">Denmark</option> 
+                                    <option value="Djibouti">Djibouti</option> 
+                                    <option value="Dominica">Dominica</option> 
+                                    <option value="Dominican Republic">Dominican Republic</option> 
+                                    <option value="Ecuador">Ecuador</option> 
+                                    <option value="Egypt">Egypt</option> 
+                                    <option value="El Salvador">El Salvador</option> 
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option> 
+                                    <option value="Eritrea">Eritrea</option> 
+                                    <option value="Estonia">Estonia</option> 
+                                    <option value="Ethiopia">Ethiopia</option> 
+                                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option> 
+                                    <option value="Faroe Islands">Faroe Islands</option> 
+                                    <option value="Fiji">Fiji</option> 
+                                    <option value="Finland">Finland</option> 
+                                    <option value="France">France</option> 
+                                    <option value="French Guiana">French Guiana</option> 
+                                    <option value="French Polynesia">French Polynesia</option> 
+                                    <option value="French Southern Territories">French Southern Territories</option> 
+                                    <option value="Gabon">Gabon</option> 
+                                    <option value="Gambia">Gambia</option> 
+                                    <option value="Georgia">Georgia</option> 
+                                    <option value="Germany">Germany</option> 
+                                    <option value="Ghana">Ghana</option> 
+                                    <option value="Gibraltar">Gibraltar</option> 
+                                    <option value="Greece">Greece</option> 
+                                </select>
+                            </div>             
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="formRow">
+                            <div class="grid3"><label>Bootstrap dropdowns:</label></div>
+                            <div class="grid9">
+                                <ul class="navi nav-pills">
+                                  <li class="active"><a href="#">Regular link</a></li>
+                                  <li>|</li>
+                                  <li class="active"><a href="#">Regular link</a></li>
+                                  <li>|</li>
+                                  <li class="dropdown" id="menu1">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                                      Dropdown
+                                      <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="icos-add"></span>Add</a></li>
+                                    <li><a href="#"><span class="icos-trash"></span>Remove</a></li>
+                                    <li><a href="#" class=""><span class="icos-pencil"></span>Edit</a></li>
+                                    <li><a href="#" class=""><span class="icos-heart"></span>Do whatever you like</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>                        
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="formRow">
+                            <div class="grid3"><label>Multiple with search:</label></div>
+                            <div class="grid9">
+                                <select data-placeholder="Your Favorite Football Team" class="fullwidth select" multiple="multiple" tabindex="6">
+                                    <option value=""></option>
+                                    <optgroup label="NFC EAST">
+                                        <option>Dallas Cowboys</option>
+                                        <option selected="selected">New York Giants</option>
+                                        <option>Philadelphia Eagles</option>
+                                        <option>Washington Redskins</option>
+                                    </optgroup>
+                                    <optgroup label="NFC NORTH">
+                                        <option selected="selected">Chicago Bears</option>
+                                        <option>Detroit Lions</option>
+                                        <option>Green Bay Packers</option>
+                                        <option>Minnesota Vikings</option>
+                                    </optgroup>
+                                    <optgroup label="NFC SOUTH">
+                                        <option selected="selected">Atlanta Falcons</option>
+                                        <option>Carolina Panthers</option>
+                                        <option>New Orleans Saints</option>
+                                        <option>Tampa Bay Buccaneers</option>
+                                    </optgroup>
+                                    <optgroup label="NFC WEST">
+                                        <option>Arizona Cardinals</option>
+                                        <option>St. Louis Rams</option>
+                                        <option>San Francisco 49ers</option>
+                                        <option>Seattle Seahawks</option>
+                                    </optgroup>
+                                    <optgroup label="AFC EAST">
+                                        <option>Buffalo Bills</option>
+                                        <option>Miami Dolphins</option>
+                                        <option>New England Patriots</option>
+                                        <option>New York Jets</option>
+                                    </optgroup>
+                                    <optgroup label="AFC NORTH">
+                                        <option>Baltimore Ravens</option>
+                                        <option>Cincinnati Bengals</option>
+                                        <option>Cleveland Browns</option>
+                                        <option>Pittsburgh Steelers</option>
+                                    </optgroup>
+                                    <optgroup label="AFC SOUTH">
+                                        <option>Houston Texans</option>
+                                        <option>Indianapolis Colts</option>
+                                        <option>Jacksonville Jaguars</option>
+                                        <option>Tennessee Titans</option>
+                                    </optgroup>
+                                    <optgroup label="AFC WEST">
+                                        <option>Denver Broncos</option>
+                                        <option>Kansas City Chiefs</option>
+                                        <option>Oakland Raiders</option>
+                                        <option>San Diego Chargers</option>
+                                    </optgroup>
+                                </select>  
+                            </div>             
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="formRow">
+                            <div class="grid3"><label>Multiple selects :</label></div>
+                            <div class="grid9">
+                                <select multiple="multiple" class="multiple" title="Click to Select a City">
+                                <option selected="selected">Amsterdam</option>      
+                                <option selected="selected">Atlanta</option>
+                                <option>Baltimore</option>
+                                <option>Boston</option>
+                                <option>Buenos Aires</option>
+                                <option>Calgary</option>
+                                <option selected="selected">Chicago</option>
+                                <option>Denver</option>
+                                <option>Dubai</option>
+                                <option>Frankfurt</option>
+                                <option>Hong Kong</option>
+                                <option>Honolulu</option>
+                                <option>Houston</option>
+                                <option>Kuala Lumpur</option>
+                                <option>London</option>
+                                <option>Los Angeles</option>
+                                <option>Melbourne</option>
+                                <option>Mexico City</option>
+                                <option>Miami</option>
+                                <option>Minneapolis</option>
+                                <option>Montreal</option>
+                                <option>New York City</option>
+                                <option>Paris</option>
+                                <option>Philadelphia</option>
+                                <option>Rotterdam</option>
+                                <option>San Diego</option>
+                                <option>San Francisco</option>
+                                <option>Sao Paulo</option>
+                                <option>Seattle</option>
+                                <option>Seoul</option>
+                                <option>Shanghai</option>
+                                <option>Singapore</option>
+                                <option>Sydney</option>
+                                <option>Tokyo</option>
+                                <option>Toronto</option>
+                                <option>Vancouver</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="widget grid6">
+                        <div class="whead"><h6>Checkboxes, radios and file input</h6><div class="clear"></div></div>
+                        <div class="formRow">
+                            <div class="grid3"><label>Checkbox: </label></div>
+                            <div class="grid9 on_off">
+                                <div class="floatL mr10"><input type="checkbox" id="check20" checked="checked" name="chbox" /></div>
+                                <div class="floatL mr10"><input type="checkbox" id="check21" name="chbox1" /></div>
+                                <div class="floatL mr10"><input type="checkbox" name="chbox1" checked="checked" disabled="disabled" /></div>
+                                <div class="floatL"><input type="checkbox" name="chbox1" disabled="disabled" /></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Radio: </label></div>
+                            <div class="grid9 on_off">
+                                <div class="floatL mr10"><input type="radio" id="radio10"  name="question11" checked="checked" /></div>
+                                <div class="floatL mr10"><input type="radio" id="radio11"  name="question11" /></div>
+                                <div class="floatL mr10"><input type="radio" id="radio12" disabled="disabled"  name="question11" /></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Checkbox: </label></div>
+                            <div class="grid9 yes_no">
+                                <div class="floatL mr10"><input type="checkbox" id="check6" checked="checked" name="chbox" /></div>
+                                <div class="floatL mr10"><input type="checkbox" id="check7" name="chbox1" /></div>
+                                <div class="floatL"><input type="checkbox" name="chbox1" checked="checked" disabled="disabled" /></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Radio: </label></div>
+                            <div class="grid9 yes_no">
+                                <div class="floatL mr10"><input type="radio" id="radio13"  name="question12" checked="checked" /></div>
+                                <div class="floatL mr10"><input type="radio" id="radio14"  name="question12" /></div>
+                                <div class="floatL"><input type="radio" id="radio15" disabled="disabled"  name="question11" /></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Checkbox: </label></div>
+                            <div class="grid9 enabled_disabled">
+                                <div class="floatL mr10"><input type="checkbox" id="check4" checked="checked" name="chbox" /></div>
+                                <div class="floatL mr10"><input type="checkbox" id="check5" name="chbox1" /></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Usual checkbox: </label></div>
+                            <div class="grid9 check">
+                                <input type="checkbox" id="check1" checked="checked" name="chbox" />
+                                <label for="check1"  class="mr20">Checked</label>
+                                
+                                <input type="checkbox" id="check2" name="chbox1" />
+                                <label for="check2"  class="mr20">Unchecked</label>
+                                
+                                <input type="checkbox" name="chbox1" id="check3" checked="checked" disabled="disabled" />
+                                <label for="check3"  class="mr20 labelDisabled">Disabled</label>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                                                
+                        <div class="formRow">
+                            <div class="grid3"><label>Usual radio :</label> </div>
+                            <div class="grid9">
+                                <input type="radio" id="radio1" name="question1" /><label for="radio1"  class="mr20">Radio</label>
+                                <input type="radio" id="radio2" name="question1" checked="checked" /><label for="radio2"  class="mr20">Radio checked</label>
+                                <input type="radio" name="question" checked="checked" disabled="disabled" /><label class="labelDisabled">Disabled</label>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Usual file input :</label> </div>
+                            <div class="grid9">
+                                <input type="file" class="fileInput" id="fileInput" />
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Simple numbers input:</label></div>
+                            <div class="grid9"><input type="text" id="s1" value="10" /></div><div class="clear"></div>
+                        </div>
+                        
+                        <div class="formRow">
+                            <div class="grid3"><label>Decimal:</label></div>
+                            <div class="grid9"><input type="text" id="s2" value="10.25" /></div><div class="clear"></div>
+                        </div>
+                        
+                        <div class="formRow">
+                            <div class="grid3"><label>Currency:</label></div>
+                            <div class="grid9"><input type="text" id="s3" /></div><div class="clear"></div>
+                        </div>
+                        
+                        <div class="formRow">
+                            <div class="grid3"><label>Inline data:</label></div>
+                            <div class="grid9">
+                                <ul id="s4">
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+                                    <li>item 4</li>
+                                    <li>item 5</li>
+                                    <li>item 6</li>
+                                    <li>item 7</li>
+                                    <li>item 8</li>
+                                    <li>item 9</li>
+                                    <li>item 10</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                            
+                        <div class="formRow">
+                            <div class="grid3"><label>Inline data (links):</label></div>
+                            <div class="grid9"><div id="s5"></div></div><div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="widget">
+                    <div class="whead"><span class="icon-glass"></span><h6>Multiple selects with filter</h6><div class="clear"></div></div>
+                    <div class="body">
+                        <div class="leftBox">
+                            <input type="text" id="box1Filter" class="boxFilter" placeholder="Filter entries..." /><button type="button" id="box1Clear" class="dualBtn fltr">x</button><br />
+                            
+                            <select id="box1View" multiple="multiple" class="multiple" style="height:300px;">
+                            <option value="501649">2008-2009 "Mini" Baja</option>
+                            <option value="501497" selected="selected">AAPA - Asian American Psychological Association</option>
+                            <option value="501493">Agape</option>
+                            <option value="501562" selected="selected">AGE-Alliance for Graduate Excellence</option>
+                            <option value="500676">AICHE (American Inst of Chemical Engineers)</option>
+                            <option value="501460">AIDS Sensitivity Awareness Project ASAP</option>
+                            <option value="500004">Aikido Club</option>
+                            <option value="500336">Akanke</option>
+                            </select>
+                            <br/>
+                            <span id="box1Counter" class="countLabel"></span>
+                            
+                            <div class="displayNone"><select id="box1Storage"></select></div>
+                        </div>
+                                
+                        <div class="dualControl">
+                            <button id="to2" type="button" class="dualBtn mr5 mb15">&nbsp;&gt;&nbsp;</button>
+                            <button id="allTo2" type="button" class="dualBtn">&nbsp;&gt;&gt;&nbsp;</button><br />
+                            <button id="to1" type="button" class="dualBtn mr5">&nbsp;&lt;&nbsp;</button>
+                            <button id="allTo1" type="button" class="dualBtn">&nbsp;&lt;&lt;&nbsp;</button>
+                        </div>
+                                
+                        <div class="rightBox">
+                            <input type="text" id="box2Filter" class="boxFilter" placeholder="Filter entries..." /><button type="button" id="box2Clear" class="dualBtn fltr">x</button><br />
+                            <select id="box2View" multiple="multiple" class="multiple" style="height:300px;">
+                            <option value="501053">Academy of Film Geeks</option>
+                            <option value="500001">Accounting Association</option>
+                            <option value="501227" selected="selected">ACLU</option>
+                            <option value="501610" selected="selected">Active Minds</option>
+                            <option value="501514">Activism with A Reel Edge (A.W.A.R.E.)</option>
+                            <option value="501656">Adopt a Grandparent Program</option>
+                            <option value="501050">Africa Awareness Student Organization</option>
+                            <option value="501075">African Diasporic Cultural RC Interns</option>
+                            </select><br/>
+                            <span id="box2Counter" class="countLabel"></span>
+                            
+                            <div class="displayNone"><select id="box2Storage"></select></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <div class="divider"><span></span></div>
+        
+            <fieldset>
+                <div class="widget">
+                    <div class="whead"><h6>Full width grid</h6><div class="clear"></div></div>
+                    <div class="formRow fluid">
+                        <div class="grid12"><input type="text" name="regular" value="grid12" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow fluid">
+                        <div class="grid6"><input type="text" name="regular" value="grid12" /></div>
+                        <div class="grid6"><input type="text" name="regular" value="grid12" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow fluid">
+                        <div class="grid4"><input type="text" name="regular" value="grid4" /></div>
+                        <div class="grid8"><input type="text" name="regular" value="grid8" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow fluid">
+                        <div class="grid8"><input type="text" name="regular" value="grid8" /></div>
+                        <div class="grid4"><input type="text" name="regular" value="grid4" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow fluid">
+                        <div class="grid4"><input type="text" name="regular" value="grid4" /></div>
+                        <div class="grid4"><input type="text" name="regular" value="grid4" /></div>
+                        <div class="grid4"><input type="text" name="regular" value="grid4" /></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow fluid">
+                        <div class="grid3"><input type="text" name="g3" value="grid3" /></div>
+                        <div class="grid3"><input type="text" name="g3" value="grid3" /></div>
+                        <div class="grid3"><input type="text" name="g3" value="grid3" /></div>
+                        <div class="grid3"><input type="text" name="g3" value="grid3" /></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="widget fluid">
+                    <div class="whead"><h6 id="grid">Grid with labels</h6><div class="clear"></div></div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Clickable label:</label></div>
+                        <div class="grid9">
+                            <span class="grid6"><input type="text" name="g6" value="grid6" /></span>
+                            <span class="grid6"><input type="text" name="g6" value="grid6" /></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Clickable label:</label></div>
+                        <div class="grid9">
+                            <span class="grid4"><input type="text" name="g4" value="grid4" /></span>
+                            <span class="grid8"><input type="text" name="g8" value="grid8" /></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Clickable label:</label></div>
+                        <div class="grid9">
+                            <span class="grid8"><input type="text" name="g8" value="grid8" /></span>
+                            <span class="grid4"><input type="text" name="g4" value="grid4" /></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Clickable label:</label></div>
+                        <div class="grid9">
+                            <span class="grid4"><input type="text" name="g4" value="grid4" /></span>
+                            <span class="grid4"><input type="text" name="g4" value="grid4" /></span>
+                            <span class="grid4"><input type="text" name="g4" value="grid4" /></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3"><label>Clickable label:</label></div>
+                        <div class="grid9">
+                            <span class="grid3"><input type="text" name="g3" value="grid3" /></span>
+                            <span class="grid3"><input type="text" name="g3" value="grid3" /></span>
+                            <span class="grid3"><input type="text" name="g3" value="grid3" /></span>
+                            <span class="grid3"><input type="text" name="g3" value="grid3" /></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+            <div class="fluid">
+                <div class="widget grid6 rtl-inputs">
+                    <div class="whead"><h6>Grid with labels</h6><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid2"><input type="text" name="g8" value="grid2" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid3"><input type="text" name="g8" value="grid3" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid4"><input type="text" name="g4" value="grid4" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid5"><input type="text" name="g3" value="grid5" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid6"><input type="text" name="g3" value="grid6" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid7"><input type="text" name="g3" value="grid7" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid8"><input type="text" name="g3" value="grid8" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid9"><input type="text" name="g3" value="grid9" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid10"><input type="text" name="g3" value="grid10" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid11"><input type="text" name="g3" value="grid11" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid12"><input type="text" name="g3" value="grid12" /></span><div class="clear"></div></div>
+                </div>
+                <div class="widget grid6">
+                    <div class="whead"><h6>Grid with labels</h6><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid2"><input type="text" name="g8" value="grid2" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid3"><input type="text" name="g8" value="grid3" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid4"><input type="text" name="g4" value="grid4" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid5"><input type="text" name="g3" value="grid5" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid6"><input type="text" name="g3" value="grid6" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid7"><input type="text" name="g3" value="grid7" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid8"><input type="text" name="g3" value="grid8" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid9"><input type="text" name="g3" value="grid9" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid10"><input type="text" name="g3" value="grid10" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid11"><input type="text" name="g3" value="grid11" /></span><div class="clear"></div></div>
+                    <div class="formRow"><span class="grid12"><input type="text" name="g3" value="grid12" /></span><div class="clear"></div></div>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- Content ends -->  
+        
+</body>
+</html>

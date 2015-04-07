@@ -1,0 +1,229 @@
+body {
+	background-color: #cfcfcf;
+}
+
+h1 {
+	font-size: 1.9em;
+	text-shadow: 3px 3px 3px #999;
+}
+
+a {
+	text-decoration: none;
+	color: #08C;
+	transition: color 0.2s, background-color 0.5s;
+	-webkit-transition: color 0.2s, background-color 0.5s; /* Safari */
+}
+
+a:hover {
+	text-decoration: none;
+	color: #3ae;
+	transition: color 0.2s, background-color 0.5s;
+	-webkit-transition: color 0.2s, background-color 0.5s; /* Safari */
+	text-decoration: none;
+	background-color: rgba(0,130,255,0.1);
+}
+
+header button.show-menu {
+	background-color: #0E0E0E;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #151515), color-stop(1, #040404));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #151515 0%, #040404 100%);
+	width:45px;
+	height:30px;
+	margin-top:0.4em;
+	float: right;
+	cursor: pointer;
+	margin-right: 2.7624309392265194%;
+	display: none;
+}
+
+header button.show-menu:hover {
+	background-color: #0E0E0E;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #151515), color-stop(1, #040404));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #151515 0%, #040404 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #151515 0%, #040404 100%);
+	width:45px;
+	height:30px;
+	margin-top:0.4em;
+	float: right;
+	cursor: pointer;
+	margin-right: 2.7624309392265194%;
+}
+
+
+
+menu ul li {
+	border-top: 1px solid #777;
+	border-bottom: 2px solid #444;
+	padding-left: 1em;
+}
+
+menu ul li:first-child {
+	border-top: none;
+}
+
+menu ul:after {
+	display: block;
+	border-top: 1px solid #777;
+	content: " ";
+}
+
+menu ul li a {
+	text-transform: capitalize;
+	display: block;
+	height: 1.8em;
+	padding-top: 0.5em;
+	width: 100%;
+}
+
+menu ul li:hover {
+	background-color: rgba(10,10,10,0.3);
+}
+
+menu div.hmenu table tr td div { width:16px;height:16px;display:block; cursor: pointer;}
+menu div.hmenu table tr td div.ico_home { background: url('../bootstrap/img/glyphicons-halflings.png') 0px -22px no-repeat; }
+menu div.hmenu table tr td div.ico_home:hover { background: url('../bootstrap/img/glyphicons-halflings-white.png') 0px -22px no-repeat; }
+menu div.hmenu table tr td div.ico_reload { background: url('../bootstrap/img/glyphicons-halflings.png') -240px -22px no-repeat; }
+menu div.hmenu table tr td div.ico_reload:hover { background: url('../bootstrap/img/glyphicons-halflings-white.png') -240px -22px no-repeat; }
+menu div.hmenu table tr td div.ico_exit { background: url('../bootstrap/img/glyphicons-halflings.png') -385px 0px no-repeat; }
+menu div.hmenu table tr td div.ico_exit:hover { background: url('../bootstrap/img/glyphicons-halflings-white.png') -385px 0px no-repeat; }
+
+header { background-color: #121212; position: absolute; top:0; left: 0; width: 100%; z-index: 1; height: 60px;}
+header img { margin-left: 25px; }
+menu { margin: 0; padding: 0; height: 100%; width: 15%; position: fixed; z-index: 0; background-color: rgba(69,69,69,1); overflow: hidden; }
+menu ul { list-style: none; padding: 0; margin: 0; }
+menu ul li { margin: 0; padding: 0;  }
+menu ul li a { display: block; width: 100%; height: 100%; height: 2em; padding: 10px 0 0 0;}
+menu ul li a span {padding-left: 40px;}
+menu ul li:nth-child(even) {background: rgba(255,255,255,0.05);}
+menu ul li:nth-child(odd) {background: rgba(255,255,255,0.01);}
+menu div.hmenu { height:60px; }
+
+#copy {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	color: gray;
+	font-size: 0.65em;
+}
+
+#content { float:right; background-color: #cfcfcf; padding: 60px 0px 0px 0px; width: 85%;}
+
+#content .filtresTable {
+	margin-bottom: 10px;
+}
+
+#content table.filtresTable tbody tr td * {
+	font-size:0.85em;
+	color:black;
+}
+
+#content table.filtresTable tbody tr td input[type=text] {
+	width:140px;
+	height: 14px;
+}
+
+
+#content .filtresTable td {
+	padding: 5px 10px 5px 10px;
+	vertical-align: middle;
+}
+
+#content .filtresTable td input[type=checkbox] {
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+
+#wrapper { 
+	overflow: hidden;
+	padding: 10px 10px 10px 10px; 
+	opacity: 1;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+}
+
+#wrapper.fadeout {
+	opacity: 0;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+}
+
+body, html { margin:0; padding:0; font-family: sans-serif, serif, Helvetica, Arial}
+
+
+/* ==== АДАПТИВНАЯ ТАБЛИЦА ==== */
+
+	table.listing { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+	table.listing tr.odd { background: #eee; }
+	table.listing tr.even { background: #e1e1e1; }
+	table.listing th { background: #333; color: white; font-weight: bold; text-transform: capitalize; padding: 10px; }
+	table.listing tbody tr td { padding: 6px; border: 1px solid #ccc; text-align: left; }
+	table.listing thead tr th { padding: 6px; border: 1px solid #ccc; text-align: left; }
+	table.listing tbody tr td span { display: none; }
+
+
+/* ! адаптивность */
+
+/* Landscape - телефоны */
+@media (max-width: 480px) {}
+ 
+/* От ландшафтного экрана телефона до портретного планшета */
+@media (max-width: 767px) {
+	#copy { display: none; }
+	header { position: relative; text-align: center;}
+	header img {margin: 0 auto 0 auto; height: 100%;}
+	header button.show-menu { margin-top:10px !important; display: block;}
+	menu { position: relative; width: 100%; height: auto; }
+	menu div.hmenu { display: none; }
+	menu ul li { width: 100%; }
+	menu ul li a  { text-align: center; }
+	menu ul li a span { padding: 0; margin: 0; }
+	#content { width: 100%; float: none; position: relative; padding: 0; margin: 0; }
+
+		table.listing tbody tr td span { display: block; float:left; width: 40%; font-weight: bold; text-transform: uppercase; }
+
+		table.listing tr:nth-of-type(odd) { background: #eee; }
+		table.listing tr:nth-of-type(even) { background: #eee; }
+
+		table.listing thead { display: block; }
+		table.listing tbody { display: block; }
+		table.listing thead tr th { display: block; }
+		table.listing:not(.no-adaptive) tbody tr td { display: block; }
+		table.listing tr { display: block; }
+		table.listing thead tr { position: absolute; top: -9999px; left: -9999px; }
+		table.listing tbody tr { border: 1px solid #ccc; }		
+		table.listing tbody tr td { position: relative; border:none;}
+
+}
+
+/* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+@media (min-width: 768px) and (max-width: 979px) {}
+ 
+/* Большой дисплей */
+@media (min-width: 1200px) {}

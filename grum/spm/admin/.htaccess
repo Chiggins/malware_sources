@@ -1,0 +1,3 @@
+<Files passwd.inc>
+Deny from all
+</Files>

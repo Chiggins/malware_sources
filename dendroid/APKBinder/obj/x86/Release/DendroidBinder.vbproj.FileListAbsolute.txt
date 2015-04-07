@@ -1,0 +1,12 @@
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Release\APKBinder.exe.config
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Release\APKBinder.exe
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Release\APKBinder.pdb
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\bin\Release\APKBinder.xml
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\APKBinder.Form1.resources
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\APKBinder.Resources.resources
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\APKBinder.exe
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\APKBinder.xml
+C:\Users\COMPUTER\Desktop\DendroidBinder\DendroidBinder\obj\x86\Release\APKBinder.pdb

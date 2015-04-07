@@ -1,0 +1,55 @@
+#include <windows.h>
+
+#include "../../common/config.h"
+#include "resources.h"
+
+#define TOOL_WIDTH  275
+#define TOOL_HEIGHT 205
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Dialog
+////////////////////////////////////////////////////////////////////////////////////////////////////
+DIALOG_MAIN DIALOGEX 0, 0, 400, 230
+CAPTION ""
+FONT  8, "Tahoma"
+STYLE DS_CENTER | DS_SHELLFONT | WS_MINIMIZEBOX | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+{
+  LISTBOX      IDC_TOOLSLIST,   5, 5, 100, 220, LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+  GROUPBOX "", IDC_TITLE,     110, 5, 285, 220
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+DIALOG_TOOL_BUILDER DIALOGEX 115, 15, TOOL_WIDTH, TOOL_HEIGHT
+FONT  8, "Tahoma"
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD
+{
+  EDITTEXT       IDC_BUILDER_VERSION,                          0, 0,  TOOL_WIDTH, 30, ES_AUTOVSCROLL | ES_MULTILINE | ES_READONLY
+  LTEXT      "", IDC_BUILDER_SOURCE_TITLE,                     0, 30, TOOL_WIDTH,                      8
+  EDITTEXT       IDC_BUILDER_SOURCE,                           0, 43, TOOL_WIDTH - 110,               12, ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_TABSTOP
+  PUSHBUTTON "", IDC_BUILDER_SOURCE_BROWSE,     TOOL_WIDTH - 105, 42,               50,               14, WS_TABSTOP
+  PUSHBUTTON "", IDC_BUILDER_SOURCE_EDIT,       TOOL_WIDTH -  50, 42,               50,               14, WS_TABSTOP
+  GROUPBOX   "", IDC_BUILDER_BUILD_TITLE,                      0, 58, TOOL_WIDTH,       TOOL_HEIGHT - 58
+  PUSHBUTTON "", IDC_BUILDER_BUILD_BOT,                      161, 68,                104,              14, WS_TABSTOP
+  PUSHBUTTON "", IDC_BUILDER_BUILD_DROPPER,                   10, 68,                104,              14, WS_TABSTOP
+  EDITTEXT       IDC_BUILDER_BUILD_OUTPUT,                     5, 87,  TOOL_WIDTH  - 10, TOOL_HEIGHT - 92, ES_READONLY | ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | WS_BORDER | WS_TABSTOP
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+DIALOG_TOOL_SETTINGS DIALOGEX 115, 15, TOOL_WIDTH, TOOL_HEIGHT
+FONT  8, "Tahoma"
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD
+{
+  LTEXT         "", IDC_SETTINGS_LANGUAGE_TITLE, 0,                0, TOOL_WIDTH,  8
+  COMBOBOX          IDC_SETTINGS_LANGUAGE,       0,               13, TOOL_WIDTH, 100, CBS_DROPDOWNLIST | WS_TABSTOP
+  DEFPUSHBUTTON "", IDC_SETTINGS_APPLY,          0, TOOL_HEIGHT - 14, TOOL_WIDTH,  14, WS_TABSTOP
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Icon
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ICON_MAIN ICON "main.ico"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Manifest
+////////////////////////////////////////////////////////////////////////////////////////////////////
+1 RT_MANIFEST "guimanifest.xml"

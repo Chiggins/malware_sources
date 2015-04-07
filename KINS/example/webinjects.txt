@@ -1,0 +1,14 @@
+set_url http://ya.ru* GP
+data_before
+</body>
+data_end
+
+data_inject
+<script type="text/javascript">
+alert("Test")
+//%opensocks%
+</script>
+data_end
+
+data_after
+data_end

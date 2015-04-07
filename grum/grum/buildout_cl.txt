@@ -1,0 +1,9 @@
+main.cpp
+main.cpp(480) : warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+main.cpp(528) : warning C4244: 'initializing' : conversion from 'ULONG' to 'char', possible loss of data
+main.cpp(574) : warning C4018: '<' : signed/unsigned mismatch
+main.cpp(655) : warning C4311: 'type cast' : pointer truncation from 'char *' to 'DWORD'
+main.cpp(655) : warning C4312: 'type cast' : conversion from 'DWORD' to 'PCHAR' of greater size
+main.cpp(656) : warning C4311: 'type cast' : pointer truncation from 'char *' to 'DWORD'
+main.cpp(656) : warning C4312: 'type cast' : conversion from 'DWORD' to 'PCHAR' of greater size
+main.cpp(2329) : warning C4410: illegal size for operand

@@ -1,0 +1,163 @@
+/********************************************************************
+
+Project: Formee - http://www.formeeee.org
+Last Updated: 
+Version: 3.1
+Authors: Bernard De Luna - http://www.bernarddeluna.com
+         Daniel Araujo - http://www.dnlaraujo.com.br
+		 Marcello Manso - http://www.marcellomanso.com.br
+			 
+********************************************************************
+Style
+********************************************************************/
+
+.formee fieldset {
+	background:#fff;
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* hover effect */
+.grid-1-12:hover, .grid-2-12:hover, .grid-3-12:hover, .grid-4-12:hover, .grid-5-12:hover, .grid-6-12:hover, .grid-7-12:hover, .grid-8-12:hover, .grid-9-12:hover, .grid-10-12:hover, .grid-11-12:hover, .grid-12-12:hover {}
+.field-button:hover {background:transparent;}
+
+
+/* Form legend and titles */
+
+.formee {font: normal 10px/1.1em Arial,Sans-Serif;}
+.formee legend, .formee h3 {
+	font-size:3em;
+	line-height:1.2em;
+	letter-spacing: -.035em;
+	color:#2b2b2b;
+	font-weight: normal;
+}
+
+/* form elements  */
+.formee-lbl, .formee label {
+	color:#2b2b2b;
+	font-size:1.4em;
+	line-height: 1.3em;
+	vertical-align:middle;
+}
+.formee-req {
+	font-weight: bold;
+	font-style:normal;
+	color:#d10000;
+	font-size:1.2em;
+	line-height: .85em;
+}
+.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select {
+	border-color:#c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color:#999;
+	font-size:1.4em;
+	font-family:inherit;
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.formee select {
+	border-color:#c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color:#999;
+}
+.formee .formee-txt:hover, .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee textarea:hover, .formee select:hover {
+	color:#666;
+	background: #fff none;
+	border-color:#c6c6c6;
+}
+form .formee-txt:focus, .formee input[type="text"]:focus, .formee input[type="password"]:focus, .formee input[type="file"]:focus, .formee textarea:focus, .formee select:focus  {
+	color:#333;
+	background: #fff none;
+	border-color:#659ec9 #70aedd #a8cfec;
+	outline: 0;
+}
+
+
+/* form msg status  */
+.formee-msg-info, .formee-msg-warning, .formee-msg-error, .formee-msg-success {
+	color:#2b2b2b;
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.formee-msg-info h3, .formee-msg-warning h3, .formee-msg-error h3, .formee-msg-success h3 {
+	font-size:2em;
+	line-height:1.1em;
+	letter-spacing:-.02em;
+	padding:0;
+	margin:0 0 .3em 0;
+}
+.formee-msg-info {
+	background: #d1ecf7 url(../img/form-ic-info.png) no-repeat 12px 23px;
+	border-color:#bcdfef;
+}
+.formee-msg-warning {
+	background: #fff6bf url(../img/form-ic-warning.png) no-repeat 12px 23px;
+	border-color:#fceb77;
+}
+.formee-msg-error {
+	background: #fad0d0 url(../img/form-ic-error.png) no-repeat 12px 23px;
+	border-color:#f6abab;
+}
+.formee-msg-success {
+	background: #e5f8ce url(../img/form-ic-success.png) no-repeat 12px 23px;
+	border-color:#d0f1a6;
+}
+
+.formee-msg-success strong, .formee-msg-success a{color:#62b548;}
+.formee-msg-info strong, .formee-msg-info a {color:#11689e;}
+.formee-msg-warning strong, .formee-msg-warning a {color:#957210;}
+.formee-msg-error strong, .formee-msg-error a {color:#b01717;}
+
+/* form validation */
+.formee-error {
+	border-color: #FAD0D0 !important;
+	color: #b01717 !important;
+  /* shadow */
+  -moz-box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+  -webkit-box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+  box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+}
+
+/* form buttons */
+.formee-button, .formee input[type="submit"], .formee input[type="button"], .formee input[type="reset"] {
+  font-size:1.4em;
+  line-height:1.4em;
+  font-weight:bolder;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  color:#fff;
+  border-color:#3a77a4;
+  background:#5393c2;
+  /* gradient */
+  background: -moz-linear-gradient(top, #5393c2 40%, #3a77a4);
+  background: -webkit-linear-gradient(top, #5393c2 40%, #3a77a4);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5393c2', endColorstr='#3a77a4');
+  /* corner */
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  /* shadow */
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+}
+.formee-button:hover, .formee input[type="submit"]:hover, .formee input[type="button"]:hover, .formee input[type="reset"]:hover {
+  background:#70aedd;
+  /* gradient */
+  background: -moz-linear-gradient(top, #70aedd 40%, #69a4d0);
+  background: -webkit-linear-gradient(top, #70aedd 40%, #69a4d0);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#70aedd', endColorstr='#69a4d0');
+  /* shadow */
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), inset 0 1px 0 0 rgba(255,255,255,.4);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+  box-shadow:  0 1px 1px 0 rgba(0,0,0,.2), inset 0 1px 0 0 rgba(255,255,255,.4);
+}
+
+

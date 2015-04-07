@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="injector">
+</Property><Property Name="Файл решения" Value="D:\Sources\grum\grum\injector.sln">
+</Property><Property Name="Date" Value="22 марта 2013 г.">
+</Property><Property Name="Time" Value="20:54">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="injector.sln" Description="Успешно создана резервная копия файла D:\Sources\grum\grum\injector.sln.old">
+</Event><Event ErrorLevel="0" Project="injector" Source="injector.vcproj" Description="Converting project file 'D:\Sources\grum\grum\injector.vcproj'.">
+</Event><Event ErrorLevel="1" Project="injector" Source="injector.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="injector" Source="injector.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="injector" Source="injector.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="injector" Source="injector.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="injector" Source="injector.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="injector" Source="injector.vcproj" Description="Done converting to new project file 'D:\Sources\grum\grum\injector.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="injector" Source="injector.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="injector.sln" Description="Преобразование решения успешно завершено">
+</Event><Event ErrorLevel="3" Project="" Source="injector.sln" Description="Converted">
+</Event></UpgradeLog>
