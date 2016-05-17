@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDD0FD9C-92CF-4FB0-851D-ABE1FB0AFA10}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>LokiRAT Client</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="SkinSoft.OSSkin">
+      <HintPath>..\SkinSoft.OSSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="LokiRAT_Server\message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\registryEditKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\processManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\registryNewKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\fileManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\visitpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\keylogger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\programManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\builder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\Properties\Resources.cs" />
+    <Compile Include="LokiRAT_Server\scripting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\Program.cs" />
+    <Compile Include="LokiRAT_Client\registry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\clipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Server\execute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\screenshot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\ddos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\webcam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LokiRAT_Client\Properties\Settings.cs" />
+    <EmbeddedResource Include="LokiRAT_Client.ddos.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.webcam.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.scripting.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.visitpage.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.execute.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.about.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.clipboard.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.keylogger.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.print.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.stub.txt" />
+    <EmbeddedResource Include="LokiRAT_Server.message.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.screenshot.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.registryEditKey.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.fileManager.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.builder.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.register.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.processManager.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.registryNewKey.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.configuration.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.main.resources" />
+    <EmbeddedResource Include="LokiRAT_Server.programManager.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.Properties.Resources.resources" />
+    <EmbeddedResource Include="LokiRAT_Client.registry.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

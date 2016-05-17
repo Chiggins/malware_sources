@@ -1,0 +1,53 @@
+package madBasic_;
+
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $57000000}
+{$DESCRIPTION 'madBasic 1.1r  -  www.madshi.net'}
+{$IMPLICITBUILD OFF}
+
+requires
+  {$ifdef ver140}
+    Vcl;
+  {$else}
+    {$ifdef ver130}
+      Vcl50;
+    {$else}
+      {$ifdef ver120}
+        Vcl40;
+      {$else}
+        Vcl;
+      {$endif}
+    {$endif}
+  {$endif}
+
+contains
+  madTypes in 'madTypes.pas',
+  madStrings in 'madStrings.pas',
+  madBasic in 'madBasic.pas',
+  madTools in 'madTools.pas',
+  madLists in 'madLists.pas',
+  madGraphics in 'madGraphics.pas',
+  madZip in 'madZip.pas',
+  madCrypt in 'madCrypt.pas',
+  madRes in 'madRes.pas';
+
+end.

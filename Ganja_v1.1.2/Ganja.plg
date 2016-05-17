@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ganja - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP3CED.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/Ganja.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\avk.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\botkill.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\botrestart.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\Dowload.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\Intstall.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\IRC_Connect.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\msn.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\ssyn.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\udp.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wGanja.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wThreads.cpp"
+"C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wUSB.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP3CED.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP3CEE.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Ganja.pdb" /machine:I386 /out:"Release/Ganja.exe" 
+".\Release\avk.obj"
+".\Release\botkill.obj"
+".\Release\botrestart.obj"
+".\Release\Dowload.obj"
+".\Release\Intstall.obj"
+".\Release\IRC_Connect.obj"
+".\Release\msn.obj"
+".\Release\ssyn.obj"
+".\Release\udp.obj"
+".\Release\wGanja.obj"
+".\Release\wOthers.obj"
+".\Release\wThreads.obj"
+".\Release\wUSB.obj"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP3CEE.tmp"
+<h3>Output Window</h3>
+Compiling...
+avk.cpp
+botkill.cpp
+botrestart.cpp
+Dowload.cpp
+Intstall.cpp
+IRC_Connect.cpp
+msn.cpp
+ssyn.cpp
+udp.cpp
+wGanja.cpp
+wOthers.cpp
+C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp(119) : error C2039: 'wProductType' : is not a member of '_OSVERSIONINFOEXA'
+        C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\winbase.h(7998) : see declaration of '_OSVERSIONINFOEXA'
+C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp(119) : error C2065: 'VER_NT_WORKSTATION' : undeclared identifier
+C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp(121) : error C2039: 'wProductType' : is not a member of '_OSVERSIONINFOEXA'
+        C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\winbase.h(7998) : see declaration of '_OSVERSIONINFOEXA'
+C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp(123) : error C2039: 'wProductType' : is not a member of '_OSVERSIONINFOEXA'
+        C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\winbase.h(7998) : see declaration of '_OSVERSIONINFOEXA'
+C:\Users\Pro\Desktop\Ganja v1.1.2\Ganja v1.1.2\wOthers.cpp(125) : error C2039: 'wProductType' : is not a member of '_OSVERSIONINFOEXA'
+        C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\winbase.h(7998) : see declaration of '_OSVERSIONINFOEXA'
+wThreads.cpp
+wUSB.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Ganja.exe - 5 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

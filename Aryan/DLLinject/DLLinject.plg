@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DLLinject - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Release/Res.res" /d "NDEBUG" "C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\Res.rc"" 
+Creating temporary file "C:\DOCUME~1\ALBINO~1\LOCALS~1\Temp\RSPE41.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/DLLinject.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ALBINO~1\LOCALS~1\Temp\RSPE41.tmp" 
+Creating temporary file "C:\DOCUME~1\ALBINO~1\LOCALS~1\Temp\RSPE42.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/DLLinject.pdb" /machine:I386 /out:"Release/DLLinject.exe" 
+".\Release\main.obj"
+".\Release\Res.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ALBINO~1\LOCALS~1\Temp\RSPE42.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+main.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp(41) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp(52) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp(63) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp(74) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\EdgarRat\DLLinject\main.cpp(182) : warning C4129: '%' : unrecognized character escape sequence
+Linking...
+
+
+
+<h3>Results</h3>
+DLLinject.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

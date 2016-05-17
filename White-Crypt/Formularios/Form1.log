@@ -1,0 +1,56 @@
+Línea 43: la clase Proyecto1.Button del control cmdCrear no era una clase de control cargada.
+Línea 307: la clase Proyecto1.Button del control cmdBuscar no era una clase de control cargada.
+Línea 337: la clase Proyecto1.Button del control cmdGenerar no era una clase de control cargada.
+Línea 462: la clase Proyecto1.Button del control Button1 no era una clase de control cargada.
+Línea 49: el nombre de la propiedad _ExtentX de cmdCrear no es válido.
+Línea 50: el nombre de la propiedad _ExtentY de cmdCrear no es válido.
+Línea 51: el nombre de la propiedad ButtonStyle de cmdCrear no es válido.
+Línea 52: el nombre de la propiedad PictureAlignment de cmdCrear no es válido.
+Línea 54: el nombre de la propiedad BackColorPressed de cmdCrear no es válido.
+Línea 55: el nombre de la propiedad BackColorHover de cmdCrear no es válido.
+Línea 56: el nombre de la propiedad BorderColor de cmdCrear no es válido.
+Línea 57: el nombre de la propiedad BorderColorPressed de cmdCrear no es válido.
+Línea 58: el nombre de la propiedad BorderColorHover de cmdCrear no es válido.
+Línea 59: el nombre de la propiedad ForeColorPressed de cmdCrear no es válido.
+Línea 60: el nombre de la propiedad ForeColorHover de cmdCrear no es válido.
+Línea 61: el nombre de la propiedad Caption de cmdCrear no es válido.
+Línea 43: no se pudo establecer la propiedad Picture de cmdCrear.
+Línea 313: el nombre de la propiedad _ExtentX de cmdBuscar no es válido.
+Línea 314: el nombre de la propiedad _ExtentY de cmdBuscar no es válido.
+Línea 315: el nombre de la propiedad ButtonStyle de cmdBuscar no es válido.
+Línea 316: el nombre de la propiedad PictureAlignment de cmdBuscar no es válido.
+Línea 318: el nombre de la propiedad BackColorPressed de cmdBuscar no es válido.
+Línea 319: el nombre de la propiedad BackColorHover de cmdBuscar no es válido.
+Línea 320: el nombre de la propiedad BorderColor de cmdBuscar no es válido.
+Línea 321: el nombre de la propiedad BorderColorPressed de cmdBuscar no es válido.
+Línea 322: el nombre de la propiedad BorderColorHover de cmdBuscar no es válido.
+Línea 323: el nombre de la propiedad ForeColorPressed de cmdBuscar no es válido.
+Línea 324: el nombre de la propiedad ForeColorHover de cmdBuscar no es válido.
+Línea 325: el nombre de la propiedad Caption de cmdBuscar no es válido.
+Línea 307: no se pudo establecer la propiedad Picture de cmdBuscar.
+Línea 343: el nombre de la propiedad _ExtentX de cmdGenerar no es válido.
+Línea 344: el nombre de la propiedad _ExtentY de cmdGenerar no es válido.
+Línea 345: el nombre de la propiedad ButtonStyle de cmdGenerar no es válido.
+Línea 346: el nombre de la propiedad PictureAlignment de cmdGenerar no es válido.
+Línea 348: el nombre de la propiedad BackColorPressed de cmdGenerar no es válido.
+Línea 349: el nombre de la propiedad BackColorHover de cmdGenerar no es válido.
+Línea 350: el nombre de la propiedad BorderColor de cmdGenerar no es válido.
+Línea 351: el nombre de la propiedad BorderColorPressed de cmdGenerar no es válido.
+Línea 352: el nombre de la propiedad BorderColorHover de cmdGenerar no es válido.
+Línea 353: el nombre de la propiedad ForeColorPressed de cmdGenerar no es válido.
+Línea 354: el nombre de la propiedad ForeColorHover de cmdGenerar no es válido.
+Línea 355: el nombre de la propiedad Caption de cmdGenerar no es válido.
+Línea 337: no se pudo establecer la propiedad Picture de cmdGenerar.
+Línea 468: el nombre de la propiedad _ExtentX de Button1 no es válido.
+Línea 469: el nombre de la propiedad _ExtentY de Button1 no es válido.
+Línea 470: el nombre de la propiedad ButtonStyle de Button1 no es válido.
+Línea 471: el nombre de la propiedad PictureAlignment de Button1 no es válido.
+Línea 473: el nombre de la propiedad BackColorPressed de Button1 no es válido.
+Línea 474: el nombre de la propiedad BackColorHover de Button1 no es válido.
+Línea 475: el nombre de la propiedad BorderColor de Button1 no es válido.
+Línea 476: el nombre de la propiedad BorderColorPressed de Button1 no es válido.
+Línea 477: el nombre de la propiedad BorderColorHover de Button1 no es válido.
+Línea 478: el nombre de la propiedad ForeColorPressed de Button1 no es válido.
+Línea 479: el nombre de la propiedad ForeColorHover de Button1 no es válido.
+Línea 480: el nombre de la propiedad Caption de Button1 no es válido.
+Línea 462: no se pudo establecer la propiedad Picture de Button1.

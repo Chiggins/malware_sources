@@ -1,0 +1,88 @@
+D:\My Source\NJRAT.exe.config
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.vbprojResolveAssemblyReference.cache
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.About.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Builder.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Cam.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Chat.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.DW.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Form1.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FromLink.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FURL.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.kl.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Manager.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Mic.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Resources.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Note.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.notf.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Pass.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.port.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.RGv.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.sc.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.script.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.STNG.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.up.resources
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.vbproj.GenerateResource.Cache
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.exe
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.xml
+D:\My Source\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.pdb
+D:\My Source\NJRAT.exe
+D:\My Source\NJRAT.pdb
+D:\My Source\NJRAT.xml
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.vbprojResolveAssemblyReference.cache
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.About.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Builder.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Cam.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Chat.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.DW.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Form1.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FromLink.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FURL.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.kl.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Manager.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Mic.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Resources.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Note.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.notf.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Pass.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.port.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.RGv.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.sc.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.script.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.STNG.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.up.resources
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.vbproj.GenerateResource.Cache
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT.exe.config
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.exe
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.xml
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.pdb
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT.exe
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT.pdb
+C:\Users\azizo\AppData\Roaming\Skype\My Skype Received Files\NJRAT 7 Original\NJRAT.xml
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT.exe.config
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.xml
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.pdb
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT0.7D By Raja.exe.config
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.About.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Builder.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Cam.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Chat.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.DW.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Form1.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FromLink.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.FURL.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.kl.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Manager.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Mic.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Resources.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Note.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.notf.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.Pass.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.port.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.RGv.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.sc.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.script.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.STNG.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\NJRAT.up.resources
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\ResGen.read.1.tlog
+C:\Users\IMRAN\Desktop\NJRAT 7 Original\NJRAT 7 Original\NJRAT\obj\Debug\ResGen.write.1.tlog

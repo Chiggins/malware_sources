@@ -1,0 +1,207 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DDAB0433-557D-4942-93AF-9CB1723B991D}</ProjectGuid>
+        <ProjectVersion>16.0</ProjectVersion>
+        <MainSource>XtremeRAT.dpr</MainSource>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <Base>True</Base>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <SanitizedProjectName>XtremeRAT</SanitizedProjectName>
+        <DCC_UsePackage>vclx;vcl;vclimg;dbrtl;Rave77VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;vcltouch;xmlrtl;dsnap;dsnapcon;TeeUI;TeeDB;Tee;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_100_140;Intraweb_100_140;VclSmp;vclie;websnap;webdsnap;inetdb;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DbxClientDriver;DataSnapServer;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXFirebirdDriver;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;tmsd2010;tmsexd2010;VirtualTreesR;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_UnitSearchPath>.\Resources;.\Units;.\Units\MadComponentes;.\Units\zLib;.\NewIOHandler;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_DependencyCheckOutputName>XtremeRAT.exe</DCC_DependencyCheckOutputName>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_Platform>x86</DCC_Platform>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <PostBuildEvent><![CDATA["$(PROJECTDIR)\xupx.exe" -9 -f "$(PROJECTDIR)\XtremeRAT.exe"
+"$(PROJECTDIR)\Clean.bat"
+$(PostBuildEvent)]]></PostBuildEvent>
+        <Icon_MainIcon>XtremeRAT_Icon3.ico</Icon_MainIcon>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <PreBuildEvent><![CDATA[copy /Y "$(PROJECTDIR)\português.ini" "$(PROJECTDIR)\Resources\lang.ini"
+copy /Y "$(PROJECTDIR)\xupx.exe" "$(PROJECTDIR)\Resources\xupx.exe"
+copy /Y "$(PROJECTDIR)\xrar.exe" "$(PROJECTDIR)\Resources\rar.exe"
+"$(PROJECTDIR)\Resources\CryptFile.exe" "$(PROJECTDIR)\Resources\servidor.exe"
+"$(PROJECTDIR)\Resources\CryptFile.exe" "$(PROJECTDIR)\Resources\stub.exe"
+"$(PROJECTDIR)\Resources\CryptFile.exe" "$(PROJECTDIR)\Resources\xupx.exe"
+"$(PROJECTDIR)\Resources\CryptFile.exe" "$(PROJECTDIR)\Resources\rar.exe"
+"$(BDS)\Bin\brcc32.exe" "$(PROJECTDIR)\Resources\resources.rc"
+$(PreBuildEvent)]]></PreBuildEvent>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>XtremeRAT_Icon3.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="UnitMain.pas">
+            <Form>FormMain</Form>
+        </DCCReference>
+        <DCCReference Include="UnitDesktopPreview.pas">
+            <Form>FormDesktopPreview</Form>
+        </DCCReference>
+        <DCCReference Include="UnitPasswords.pas">
+            <Form>FormPasswords</Form>
+        </DCCReference>
+        <DCCReference Include="UnitAbout.pas">
+            <Form>FormAbout</Form>
+        </DCCReference>
+        <DCCReference Include="UnitKeySearch.pas">
+            <Form>FormKeySearch</Form>
+        </DCCReference>
+        <DCCReference Include="UnitFileSearch.pas">
+            <Form>FormFileSearch</Form>
+        </DCCReference>
+        <DCCReference Include="UnitConnectionsLog.pas">
+            <Form>FormConnectionsLog</Form>
+        </DCCReference>
+        <DCCReference Include="UnitDISCLAIMER.pas">
+            <Form>FormDISCLAIMER</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">XtremeRAT.dpr</Source>
+                </Source>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1046</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Documents and Settings\All Users\Documents\Embarcadero\Studio\15.0\Bpl\VirtualTreesD210.bpl">VirtualTreeView Controls</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <ModelSupport>False</ModelSupport>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win32'">
+        <PreBuildEvent>copy /Y &quot;$(PROJECTDIR)\português.ini&quot; &quot;$(PROJECTDIR)\Resources\lang.ini&quot;&amp;&amp;copy /Y &quot;$(PROJECTDIR)\xupx.exe&quot; &quot;$(PROJECTDIR)\Resources\xupx.exe&quot;&amp;&amp;copy /Y &quot;$(PROJECTDIR)\xrar.exe&quot; &quot;$(PROJECTDIR)\Resources\rar.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\servidor.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\stub.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\xupx.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\rar.exe&quot;&amp;&amp;&quot;$(BDS)\Bin\brcc32.exe&quot; &quot;$(PROJECTDIR)\Resources\resources.rc&quot;</PreBuildEvent>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>&quot;$(PROJECTDIR)\xupx.exe&quot; -9 -f &quot;$(PROJECTDIR)\XtremeRAT.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Clean.bat&quot;</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win32'">
+        <PreBuildEvent>copy /Y &quot;$(PROJECTDIR)\português.ini&quot; &quot;$(PROJECTDIR)\Resources\lang.ini&quot;&amp;&amp;copy /Y &quot;$(PROJECTDIR)\xupx.exe&quot; &quot;$(PROJECTDIR)\Resources\xupx.exe&quot;&amp;&amp;copy /Y &quot;$(PROJECTDIR)\xrar.exe&quot; &quot;$(PROJECTDIR)\Resources\rar.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\servidor.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\stub.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\xupx.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Resources\CryptFile.exe&quot; &quot;$(PROJECTDIR)\Resources\rar.exe&quot;&amp;&amp;&quot;$(BDS)\Bin\brcc32.exe&quot; &quot;$(PROJECTDIR)\Resources\resources.rc&quot;</PreBuildEvent>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>&quot;$(PROJECTDIR)\xupx.exe&quot; -9 -f &quot;$(PROJECTDIR)\XtremeRAT.exe&quot;&amp;&amp;&quot;$(PROJECTDIR)\Clean.bat&quot;</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+</Project>

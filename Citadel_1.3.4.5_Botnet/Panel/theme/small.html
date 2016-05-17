@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{LANGUAGE}">
+<head>
+  <title>{SUBTITLE}</title>
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+	<script src="{THEME_HTTP_PATH}/js/jquery-1.7.1.min.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/jlog.js"></script>
+
+	<script src="{THEME_HTTP_PATH}/js/global.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/ajax_forms.js"></script>
+
+  <link rel="stylesheet" href="{THEME_HTTP_PATH}/style.css" type="text/css" />
+{JAVASCRIPT}
+</head>
+<body{BODY_JS_EVENTS} id="m-{BODY_PAGE}" class="design-small">
+
+<ul id="jlog"></ul>
+
+{BODY}
+<script>
+function FormNice() {
+	$('#main-message').fadeOut(4000);
+}
+FormNice();
+</script>

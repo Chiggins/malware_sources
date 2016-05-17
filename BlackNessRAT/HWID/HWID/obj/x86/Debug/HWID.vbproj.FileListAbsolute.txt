@@ -1,0 +1,11 @@
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\bin\Debug\HWID.exe
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\bin\Debug\HWID.pdb
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\bin\Debug\HWID.xml
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\HWID.Form1.resources
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\HWID.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\HWID.exe
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\HWID.xml
+C:\Documents and Settings\Administrateur\Bureau\HWID\HWID\obj\x86\Debug\HWID.pdb

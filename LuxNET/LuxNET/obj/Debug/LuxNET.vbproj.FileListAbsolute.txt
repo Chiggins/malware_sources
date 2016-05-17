@@ -1,0 +1,331 @@
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET.exe.config
+C:\Users\BU8\Desktop\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNet DZ\LuxNET.exe.config
+C:\Users\BU8\Desktop\LuxNet DZ\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNet DZ\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNet DZ\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale 1 - Copy\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale - Copy - Copy (2)\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale1 - Copy\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale1\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\BU8\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+D:\My Source\LuxNet DZ\LuxNET.exe.config
+D:\My Source\LuxNET originale\LuxNET\obj\Debug\LuxNET.exe
+D:\My Source\LuxNET originale\LuxNET\obj\Debug\LuxNET.xml
+D:\My Source\LuxNET originale\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\Jamaica\Desktop\LuxNet DZ\LuxNET.exe.config
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\Jamaica\Desktop\LuxNet DZ\LuxNET.exe
+C:\Users\Jamaica\Desktop\LuxNet DZ\LuxNET.pdb
+C:\Users\Jamaica\Desktop\LuxNet DZ\LuxNET.xml
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\Jamaica\Desktop\LuxNET originale\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\Jamaica\Desktop\LuxNET Original Descopilada BY SOOFT T\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache
+C:\Users\Linux\Desktop\LuxNet DZ\LuxNET.exe.config
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.exe
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.xml
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.pdb
+C:\Users\Linux\Desktop\II SOFT\LuxNET.exe.config
+C:\Users\Linux\Desktop\II SOFT\LuxNET.exe
+C:\Users\Linux\Desktop\II SOFT\LuxNET.pdb
+C:\Users\Linux\Desktop\II SOFT\LuxNET.xml
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.vbprojResolveAssemblyReference.cache
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.ChangeWallpaper.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.FileManager.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.FormMain.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.FunManager.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Keylogger.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.MapView.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Microphone.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Modify_Registry.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Resources.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.NewFile.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Notification.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.PasswordRecovery.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RegistryManager.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RemoteAdminTools.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RemoteChat.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RemoteDesktop.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RemoteWebcam.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.RunSound.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.ScarePrank.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.ScreenshotManager.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Scripting.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.SendMessageBox.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.StressTester.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.SysManager.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.TorrentSeeder.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.Updater.resources
+C:\Users\Linux\Desktop\LuxNET\LuxNET\obj\Debug\LuxNET.vbproj.GenerateResource.Cache

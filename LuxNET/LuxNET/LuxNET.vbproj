@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24407736-45AE-4AE4-ACF5-3EBD7F94EF22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LuxNET.My.MyApplication</StartupObject>
+    <RootNamespace>LuxNET</RootNamespace>
+    <AssemblyName>LuxNET</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\II SOFT\</OutputPath>
+    <DocumentationFile>LuxNET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LuxNET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AForge">
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Components">
+      <HintPath>..\..\LuxNET SRC\Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Dissembler Lib">
+      <HintPath>bin\Debug\Dissembler Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageListView">
+      <HintPath>..\..\LuxNET SRC\ImageListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnonScanner.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ChangeWallpaper.Designer.vb">
+      <DependentUpon>ChangeWallpaper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeWallpaper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CookieClient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTabcontrol.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileManager.Designer.vb">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunManager.Designer.vb">
+      <DependentUpon>FunManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FunManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keylogger.Designer.vb">
+      <DependentUpon>Keylogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Keylogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License.vb" />
+    <Compile Include="LicenseGlobal.vb" />
+    <Compile Include="LicenseType.vb" />
+    <Compile Include="MapView.Designer.vb">
+      <DependentUpon>MapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microphone.Designer.vb">
+      <DependentUpon>Microphone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Microphone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Registry.Designer.vb">
+      <DependentUpon>Modify_Registry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Registry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewFile.Designer.vb">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewsPost.vb" />
+    <Compile Include="Notification.Designer.vb">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pack.vb" />
+    <Compile Include="PasswordRecovery.Designer.vb">
+      <DependentUpon>PasswordRecovery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordRecovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomPool.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegistryManager.Designer.vb">
+      <DependentUpon>RegistryManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteAdminTools.Designer.vb">
+      <DependentUpon>RemoteAdminTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteAdminTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteChat.Designer.vb">
+      <DependentUpon>RemoteChat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteChat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteDesktop.Designer.vb">
+      <DependentUpon>RemoteDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteDesktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteWebcam.Designer.vb">
+      <DependentUpon>RemoteWebcam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteWebcam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunSound.Designer.vb">
+      <DependentUpon>RunSound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RunSound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuntimeProtection.vb" />
+    <Compile Include="ScarePrank.Designer.vb">
+      <DependentUpon>ScarePrank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScarePrank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenshotManager.Designer.vb">
+      <DependentUpon>ScreenshotManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenshotManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scripting.Designer.vb">
+      <DependentUpon>Scripting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scripting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMessageBox.Designer.vb">
+      <DependentUpon>SendMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerClient.vb" />
+    <Compile Include="ServerListener.vb" />
+    <Compile Include="Slider.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Slider2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Slider3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StressTester.Designer.vb">
+      <DependentUpon>StressTester.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StressTester.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysManager.Designer.vb">
+      <DependentUpon>SysManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SysManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemeControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TorrentSeeder.Designer.vb">
+      <DependentUpon>TorrentSeeder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TorrentSeeder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updater.Designer.vb">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChangeWallpaper.resx">
+      <DependentUpon>ChangeWallpaper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileManager.resx">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunManager.resx">
+      <DependentUpon>FunManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keylogger.resx">
+      <DependentUpon>Keylogger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapView.resx">
+      <DependentUpon>MapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microphone.resx">
+      <DependentUpon>Microphone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Registry.resx">
+      <DependentUpon>Modify_Registry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFile.resx">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordRecovery.resx">
+      <DependentUpon>PasswordRecovery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistryManager.resx">
+      <DependentUpon>RegistryManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteAdminTools.resx">
+      <DependentUpon>RemoteAdminTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteChat.resx">
+      <DependentUpon>RemoteChat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteDesktop.resx">
+      <DependentUpon>RemoteDesktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteWebcam.resx">
+      <DependentUpon>RemoteWebcam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunSound.resx">
+      <DependentUpon>RunSound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScarePrank.resx">
+      <DependentUpon>ScarePrank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenshotManager.resx">
+      <DependentUpon>ScreenshotManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripting.resx">
+      <DependentUpon>Scripting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMessageBox.resx">
+      <DependentUpon>SendMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StressTester.resx">
+      <DependentUpon>StressTester.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManager.resx">
+      <DependentUpon>SysManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TorrentSeeder.resx">
+      <DependentUpon>TorrentSeeder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updater.resx">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notify.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scream1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scream2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard__arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse__arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Converted_file_04e35b84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageListView.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_488.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_090.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_270.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_import.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_import.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard__arrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse__arrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer__exclamation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer__arrow.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

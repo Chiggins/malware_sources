@@ -1,0 +1,10 @@
+Spread = 50, 50, 603, 511, 
+StubX = 100, 100, 653, 561, 
+Antis = 125, 125, 678, 586, 
+clsDES = 125, 125, 686, 586, 
+clsGost = 0, 0, 0, 0, C
+clsRijndael = 0, 0, 0, 0, C
+clsTEA = 0, 0, 0, 0, C
+clsRC4 = 0, 0, 0, 0, C
+clsXOR = 0, 0, 0, 0, C
+Class2 = 0, 0, 0, 0, C

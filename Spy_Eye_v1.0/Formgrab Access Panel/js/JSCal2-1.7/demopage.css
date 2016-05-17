@@ -1,0 +1,9 @@
+body {
+  font: 14px Arial,"Lucida Grande","Arial","Tahoma","Verdana",sans-serif;
+}
+
+.properties .label {
+  text-align: right;
+}
+
+h1 { font-size: 130%; text-align: center; }

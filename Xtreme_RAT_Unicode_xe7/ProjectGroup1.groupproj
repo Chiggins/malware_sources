@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B1BA8014-1661-4EC3-AF2A-07AE2904B894}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Servidor\servidor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="XtremeRAT.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Stub\stub.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CryptFile.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="servidor">
+			<MSBuild Projects="Servidor\servidor.dproj"/>
+		</Target>
+		<Target Name="servidor:Clean">
+			<MSBuild Targets="Clean" Projects="Servidor\servidor.dproj"/>
+		</Target>
+		<Target Name="servidor:Make">
+			<MSBuild Targets="Make" Projects="Servidor\servidor.dproj"/>
+		</Target>
+		<Target Name="XtremeRAT">
+			<MSBuild Projects="XtremeRAT.dproj"/>
+		</Target>
+		<Target Name="XtremeRAT:Clean">
+			<MSBuild Targets="Clean" Projects="XtremeRAT.dproj"/>
+		</Target>
+		<Target Name="XtremeRAT:Make">
+			<MSBuild Targets="Make" Projects="XtremeRAT.dproj"/>
+		</Target>
+		<Target Name="stub">
+			<MSBuild Projects="Stub\stub.dproj"/>
+		</Target>
+		<Target Name="stub:Clean">
+			<MSBuild Targets="Clean" Projects="Stub\stub.dproj"/>
+		</Target>
+		<Target Name="stub:Make">
+			<MSBuild Targets="Make" Projects="Stub\stub.dproj"/>
+		</Target>
+		<Target Name="CryptFile">
+			<MSBuild Projects="CryptFile.dproj"/>
+		</Target>
+		<Target Name="CryptFile:Clean">
+			<MSBuild Targets="Clean" Projects="CryptFile.dproj"/>
+		</Target>
+		<Target Name="CryptFile:Make">
+			<MSBuild Targets="Make" Projects="CryptFile.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="servidor;XtremeRAT;stub;CryptFile"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="servidor:Clean;XtremeRAT:Clean;stub:Clean;CryptFile:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="servidor:Make;XtremeRAT:Make;stub:Make;CryptFile:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

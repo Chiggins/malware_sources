@@ -1,0 +1,305 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: crypt - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP11.tmp" with contents
+[
+/nologo /ML /W3 /Gi /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/crypt.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\crypt\main.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP11.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP12.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/crypt.pdb" /machine:I386 /out:"../bin/win32/crypt.exe" 
+.\Release\main.obj
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP12.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+<h3>
+--------------------Configuration: getmd5 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP292.tmp" with contents
+[
+/nologo /ML /W3 /Gi /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/getmd5.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\getmd5\main.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\getmd5\md5c.c"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\getmd5\r_random.c"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP292.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP293.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/getmd5.pdb" /machine:I386 /out:"../bin/win32/getmd5.exe" 
+.\Release\main.obj
+.\Release\md5c.obj
+.\Release\r_random.obj
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP293.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+md5c.c
+r_random.c
+Linking...
+<h3>
+--------------------Configuration: agobot3 - Win32 Release No OpenSSL Internal--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP3DC.tmp" with contents
+[
+/nologo /G6 /MT /W3 /Gi /GX /O1 /Ob0 /I "lib/pthreads/win32" /D "NDEBUG" /D "AGOBOT_NO_OPENSSL" /D "INTERNAL" /D "WIN32" /D "_WINDOWS" /D "FORCE_UNICODE" /D "__CLEANUP_SEH" /FR"agobot3___Win32_Release_No_OpenSSL_Internal/" /Fp"agobot3___Win32_Release_No_OpenSSL_Internal/agobot3.pch" /YX /Fo"agobot3___Win32_Release_No_OpenSSL_Internal/" /Fd"agobot3___Win32_Release_No_OpenSSL_Internal/" /FD /c 
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\irc.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\smtp.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\smtp_logic.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\sockets.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\bot.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cmdline.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cmdshell.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\commands.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\config.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\consdbg.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cplugin.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\crypter.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cstring.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cthread.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cvar.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\hook.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\installer.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\logic.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\mac.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\mainctrl.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\polymorph.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\random.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\sdcompat.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\sniffer.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\ssllib.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\utility.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\baglescanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\cpanelscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\dcom2scanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\dcomscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\doomscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\dwscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\locscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\nbscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\scanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\wdscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\wksscanner.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\ddos.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\httpflood.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\phaticmp.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\phatsyn.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\synflood.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\udpflood.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\wonk.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\shellcode.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redir_gre.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redir_http.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redir_https.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redir_socks.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redir_tcp.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\redirect.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\ftplib\ftplib.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\lib\pthreads\win32\pthread.c"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\md5\md5c.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\harvest_aol.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\harvest_cdkeys.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\harvest_emails.cpp"
+"C:\Users\Pro\Desktop\phatbot_alpha1\ago4\harvest_registry.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP3DC.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP3DD.tmp" with contents
+[
+msvcrt.lib msvcprt.lib oldnames.lib kernel32.lib user32.lib advapi32.lib shell32.lib ws2_32.lib netapi32.lib mpr.lib psapi.lib dnsapi.lib /nologo /subsystem:windows /incremental:no /pdb:"agobot3___Win32_Release_No_OpenSSL_Internal/agobot3.pdb" /machine:I386 /nodefaultlib /out:"bin/win32/agobot3.exe" /libpath:"lib/openssl/win32/lib" 
+.\agobot3___Win32_Release_No_OpenSSL_Internal\irc.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\smtp.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\smtp_logic.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\sockets.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\bot.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cmdline.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cmdshell.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\commands.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\config.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\consdbg.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cplugin.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\crypter.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cstring.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cthread.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cvar.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\hook.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\installer.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\logic.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\mac.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\mainctrl.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\polymorph.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\random.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\sdcompat.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\sniffer.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\ssllib.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\utility.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\baglescanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\cpanelscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\dcom2scanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\dcomscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\doomscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\dwscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\locscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\nbscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\scanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\wdscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\wksscanner.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\ddos.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\httpflood.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\phaticmp.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\phatsyn.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\synflood.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\udpflood.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\wonk.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\shellcode.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redir_gre.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redir_http.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redir_https.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redir_socks.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redir_tcp.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\redirect.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\ftplib.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\pthread.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\md5c.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\harvest_aol.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\harvest_cdkeys.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\harvest_emails.obj
+.\agobot3___Win32_Release_No_OpenSSL_Internal\harvest_registry.obj
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP3DD.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '/Ob0'
+irc.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+smtp.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+smtp_logic.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+sockets.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+bot.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cmdline.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cmdshell.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+commands.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+config.cpp
+fatal error C1083: Cannot open source file: 'C:\Users\Pro\Desktop\phatbot_alpha1\ago4\config.cpp': No such file or directory
+consdbg.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cplugin.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+crypter.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cstring.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cthread.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cvar.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+hook.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+installer.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+logic.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+mac.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+mainctrl.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+polymorph.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+random.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+sdcompat.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+sniffer.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+ssllib.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+utility.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+baglescanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+cpanelscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+dcom2scanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+dcomscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+doomscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+dwscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+locscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+nbscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+scanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+wdscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+wksscanner.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+ddos.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+httpflood.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+phaticmp.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+phatsyn.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+synflood.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+udpflood.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+wonk.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+shellcode.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redir_gre.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redir_http.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redir_https.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redir_socks.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redir_tcp.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+redirect.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+ftplib.cpp
+pthread.c
+md5c.cpp
+harvest_aol.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+harvest_cdkeys.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+harvest_emails.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+harvest_registry.cpp
+C:\Users\Pro\Desktop\phatbot_alpha1\ago4\main.h(32) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+agobot3.exe - 55 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

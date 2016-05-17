@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: configgui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Release/configgui.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\configgui.rc"" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPB8A5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "md5" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/configgui.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\configgui.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\configguiDlg.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\md5\md5c.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\sapphire.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSPB8A5.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPB8A6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "md5" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/configgui.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\IRC SETUP\agobot3\agobot3_current\configgui\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSPB8A6.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPB8A7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/configgui.pdb" /machine:I386 /out:"../configgui.exe" 
+".\Release\configgui.obj"
+".\Release\configguiDlg.obj"
+".\Release\md5c.obj"
+".\Release\sapphire.obj"
+".\Release\StdAfx.obj"
+".\Release\configgui.res"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSPB8A7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+configgui.cpp
+configguiDlg.cpp
+md5c.cpp
+sapphire.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1181: cannot open input file ".\Release\configgui.res"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+agobot3.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

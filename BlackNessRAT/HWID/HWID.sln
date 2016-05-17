@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HWID", "HWID\HWID.vbproj", "{04E81FB2-1F31-4B90-996C-C1EF1873D596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04E81FB2-1F31-4B90-996C-C1EF1873D596}.Debug|x86.ActiveCfg = Debug|x86
+		{04E81FB2-1F31-4B90-996C-C1EF1873D596}.Debug|x86.Build.0 = Debug|x86
+		{04E81FB2-1F31-4B90-996C-C1EF1873D596}.Release|x86.ActiveCfg = Release|x86
+		{04E81FB2-1F31-4B90-996C-C1EF1873D596}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

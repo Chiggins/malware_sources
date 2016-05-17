@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: akbot - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP7DAC.tmp" with contents
+[
+/nologo /MD /W3 /GX /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AKBOT_EXPORTS" /Fp"Release/akbot.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\asn.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\dnssrv.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\httpd-exploiter.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\netapi.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\akbot.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\download.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\external_ip.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\ftpd.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\fwbypass.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\ip.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\irc.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\process.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\scanner.cpp"
+"C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\thread.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP7DAC.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP7DBD.tmp" with contents
+[
+ws2_32.lib shell32.lib advapi32.lib wininet.lib user32.lib /nologo /dll /pdb:none /machine:I386 /out:"bin/nope.dll" /implib:"Release/nope.lib" 
+".\Release\asn.obj"
+".\Release\dnssrv.obj"
+".\Release\httpd-exploiter.obj"
+".\Release\netapi.obj"
+".\Release\akbot.obj"
+".\Release\download.obj"
+".\Release\external_ip.obj"
+".\Release\ftpd.obj"
+".\Release\fwbypass.obj"
+".\Release\ip.obj"
+".\Release\irc.obj"
+".\Release\process.obj"
+".\Release\scanner.obj"
+".\Release\thread.obj"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP7DBD.tmp"
+<h3>Output Window</h3>
+Compiling...
+asn.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dnssrv.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+httpd-exploiter.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netapi.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+akbot.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+download.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+external_ip.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ftpd.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+fwbypass.cpp
+ip.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+irc.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+process.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+scanner.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+thread.cpp
+C:\Users\Pro\Desktop\AkBot-x0r-dns\AkBot-x0r-dns\include.h(17) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+nope.dll - 13 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

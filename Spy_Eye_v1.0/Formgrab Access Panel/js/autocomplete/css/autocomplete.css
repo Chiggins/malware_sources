@@ -1,0 +1,178 @@
+/* START AUTOCOMPLETE */
+.ac_holder{
+	position:relative;
+}
+.ac_field{	
+	background-image:url(../images/autocomplete/autocomplete_leftcap.gif);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.ac_field_busy{
+	background-image:url(../images/autocomplete/autocomplete_spinner.gif);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+div.autocomplete
+{
+	position: absolute;
+	background-image: url(../images/autocomplete/ac_pointer.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 10px 0 0 0;
+}
+
+div.autocomplete div.ac_header,
+div.autocomplete div.ac_footer
+{
+	position: relative;
+	height: 6px;
+	padding: 0 6px;
+	background-image: url(../images/autocomplete/ul_corner_tr.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+div.autocomplete div.ac_footer
+{
+	background-image: url(../images/autocomplete/ul_corner_br.gif);
+}
+
+div.autocomplete div.ac_header div.ac_corner,
+div.autocomplete div.ac_footer div.ac_corner
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 6px;
+	width: 6px;
+	/*background-image: url(images/autocomplete/ul_corner_tl.gif);*/
+	background-color: #333;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+div.autocomplete div.ac_footer div.ac_corner
+{
+	background-image: url(../images/autocomplete/ul_corner_bl.gif);
+}
+div.autocomplete div.ac_header div.ac_bar,
+div.autocomplete div.ac_footer div.ac_bar
+{
+	height: 6px;
+	overflow: hidden;
+	background-color: #333;
+}
+
+
+div.autocomplete ul
+{
+	list-style: none;
+	margin: 0 0 -4px 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+div.autocomplete ul li
+{
+	color: #ccc;
+	padding: 0;
+	margin: 0 4px 4px;
+	text-align: left;
+}
+
+div.autocomplete ul li a
+{
+	color: #ccc;
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: #000 0px 0px 5px;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+div.autocomplete ul li a:hover
+{
+	background-color: #444;
+}
+div.autocomplete ul li.ac_highlight a:hover
+{
+	background-color: #1B5CCD;
+}
+
+div.autocomplete ul li a span
+{
+	display: block;
+	padding: 3px 6px;
+	font-weight: bold;
+}
+
+div.autocomplete ul li a span small
+{
+	font-weight: normal;
+	color: #999;
+}
+
+div.autocomplete ul li.ac_highlight a span small
+{
+	color: #ccc;
+}
+
+div.autocomplete ul li.ac_highlight a
+{
+	color: #fff;
+	background-color: #1B5CCD;
+	background-image: url(../images/autocomplete/hl_corner_br.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+div.autocomplete ul li.ac_highlight a span
+{
+	background-image: url(../images/autocomplete/hl_corner_bl.gif);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+div.autocomplete ul li a .tl,
+div.autocomplete ul li a .tr
+{
+	background-image: transparent;
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+div.autocomplete ul li a .tr
+{
+	right: 0;
+}
+
+div.autocomplete ul li.ac_highlight a .tl
+{
+	left: 0;
+	background-image: url(../images/autocomplete/hl_corner_tl.gif);
+	background-position: bottom left;
+}
+
+div.autocomplete ul li.ac_highlight a .tr
+{
+	right: 0;
+	background-image: url(../images/autocomplete/hl_corner_tr.gif);
+	background-position: bottom right;
+}
+div.autocomplete ul li.as_warning
+{
+	font-weight: bold;
+	text-align: center;
+}
+div.autocomplete ul em
+{
+	font-style: normal;
+	color: #6EADE7;
+}
+/* END AUTOCOMPLETE */

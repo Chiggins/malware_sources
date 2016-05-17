@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AryanServerFWB - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Debug/resource.res" /d "_DEBUG" "C:\Users\Pro\Desktop\IRC SETUP\Aryan\ServerA\resource.rc"" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPEB5A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ARYANSERVERFWB_EXPORTS" /Fp"Debug/AryanServerFWB.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Pro\Desktop\IRC SETUP\Aryan\ServerA\main.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\Aryan\ServerA\Spread.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSPEB5A.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPEB5B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/AryanServerFWB.pdb" /debug /machine:I386 /out:"Debug/AryanServerFWB.dll" /implib:"Debug/AryanServerFWB.lib" /pdbtype:sept 
+".\Debug\main.obj"
+".\Debug\Spread.obj"
+".\Debug\resource.res"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSPEB5B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+main.cpp
+c:\users\pro\desktop\irc setup\aryan\servera\main.cpp(5) : fatal error C1083: Cannot open include file: 'userenv.h': No such file or directory
+Spread.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+AryanServerFWB.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

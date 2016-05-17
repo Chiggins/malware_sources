@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{LANGUAGE}">
+<head>
+	<title>{TITLE} :: {SUBTITLE}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="{THEME_HTTP_PATH}/style.css" rel="stylesheet" type="text/css" media="screen" />
+	
+	<script src="{THEME_HTTP_PATH}/js/jquery-1.7.1.min.js"></script>
+	<script src="theme/js/jQueryUI/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<link rel="stylesheet" href="theme/js/jQueryUI/css/smoothness/jquery-ui-1.8.18.custom.css"></script>
+	
+	<script src="theme/js/colorbox/colorbox/jquery.colorbox-min.js"></script>
+	<link rel="stylesheet" href="theme/js/colorbox/example1/colorbox.css"></script>
+
+	<script src="{THEME_HTTP_PATH}/js/jlog.js"></script>
+	
+	<script src="{THEME_HTTP_PATH}/js/global.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/ajax_forms.js"></script>
+
+{JAVASCRIPT}
+</head>
+<body {BODY_JS_EVENTS} id="m-{BODY_PAGE}" class="design-full">
+
+<div class="ajax-spinner" style="display: none;"></div>
+<ul id="jlog"></ul>
+
+<div id="main-header">
+	<div class="image"><a href="cp.php?m=stats_main"><img src="{THEME_HTTP_PATH}/images/citadel.jpg" /></a></div>
+	<h2><a href="cp.php?m=stats_main" style="text-decoration: none;">{TITLE}</a> :: {SUBTITLE}</h2>
+</div>
+<table width="100%">
+<tr>
+  <td width="200" class="menu">
+    <div class="menu_header">{INFO_TITLE}</div>
+    <div class="menu_info">{INFO_USERNAME_TITLE} {INFO_USERNAME}<br/>{INFO_DATE_TITLE} {INFO_DATE}<br/>{INFO_TIME_TITLE} {INFO_TIME}</div>
+    {MAINMENU}
+  </td>
+  <td class="context">

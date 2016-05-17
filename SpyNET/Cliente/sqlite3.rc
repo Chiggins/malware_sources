@@ -1,0 +1,1 @@
+SQLITE3 sqlite3file ..\Servidor\Plugin\sqlite3.dll

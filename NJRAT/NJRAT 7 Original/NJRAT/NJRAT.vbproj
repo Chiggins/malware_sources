@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75B9CB49-03B1-4EFE-B100-CB83C232D62E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NJRAT.My.MyApplication</StartupObject>
+    <RootNamespace>NJRAT</RootNamespace>
+    <AssemblyName>NJRAT0.7D By Raja</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\</OutputPath>
+    <DocumentationFile>NJRAT0.7D By Raja.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Optimize>false</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NJRAT0.7D By Raja.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.Ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WinMM.Net">
+      <HintPath>..\nj 7\WinMM.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Builder.Designer.vb">
+      <DependentUpon>Builder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Builder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cam.Designer.vb">
+      <DependentUpon>Cam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.vb">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class6.vb" />
+    <Compile Include="Client.vb" />
+    <Compile Include="DW.Designer.vb">
+      <DependentUpon>DW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLink.Designer.vb">
+      <DependentUpon>FromLink.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FromLink.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FURL.Designer.vb">
+      <DependentUpon>FURL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FURL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GClass12.vb" />
+    <Compile Include="GClass2.vb" />
+    <Compile Include="GClass3.vb" />
+    <Compile Include="GClass4.vb" />
+    <Compile Include="GClass5.vb" />
+    <Compile Include="GClass7.vb" />
+    <Compile Include="kl.Designer.vb">
+      <DependentUpon>kl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GClass6.vb" />
+    <Compile Include="Manager.Designer.vb">
+      <DependentUpon>Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mic.Designer.vb">
+      <DependentUpon>Mic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Note.Designer.vb">
+      <DependentUpon>Note.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Note.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notf.Designer.vb">
+      <DependentUpon>notf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="notf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pass.Designer.vb">
+      <DependentUpon>Pass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="port.Designer.vb">
+      <DependentUpon>port.vb</DependentUpon>
+    </Compile>
+    <Compile Include="port.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pp1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RGv.Designer.vb">
+      <DependentUpon>RGv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RGv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sc.Designer.vb">
+      <DependentUpon>sc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="script.Designer.vb">
+      <DependentUpon>script.vb</DependentUpon>
+    </Compile>
+    <Compile Include="script.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SK.vb" />
+    <Compile Include="Class7.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IconN.vb" />
+    <Compile Include="GClass9.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="L1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GClass8.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="STNG.Designer.vb">
+      <DependentUpon>STNG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STNG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="up.Designer.vb">
+      <DependentUpon>up.vb</DependentUpon>
+    </Compile>
+    <Compile Include="up.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Builder.resx">
+      <DependentUpon>Builder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cam.resx">
+      <DependentUpon>Cam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DW.resx">
+      <DependentUpon>DW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLink.resx">
+      <DependentUpon>FromLink.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FURL.resx">
+      <DependentUpon>FURL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kl.resx">
+      <DependentUpon>kl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mic.resx">
+      <DependentUpon>Mic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Note.resx">
+      <DependentUpon>Note.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notf.resx">
+      <DependentUpon>notf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass.resx">
+      <DependentUpon>Pass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="port.resx">
+      <DependentUpon>port.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGv.resx">
+      <DependentUpon>RGv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sc.resx">
+      <DependentUpon>sc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="script.resx">
+      <DependentUpon>script.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STNG.resx">
+      <DependentUpon>STNG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="up.resx">
+      <DependentUpon>up.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.Ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JPEG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.Ico" />
+    <None Include="Resources\control_play_blue.bmp" />
+    <None Include="Resources\control_pause_blue.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

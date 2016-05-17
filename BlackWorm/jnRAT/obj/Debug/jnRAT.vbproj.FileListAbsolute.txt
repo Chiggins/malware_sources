@@ -1,0 +1,70 @@
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.Resources.resources
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.vbproj.GenerateResource.Cache
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.Form3.resources
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\bin\Debug\Mono.Cecil.dll
+C:\Users\فارس\Desktop\New Folder (3)\jnRAT\jnRAT\obj\Debug\jnRAT.vbprojResolveAssemblyReference.cache
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.vbprojResolveAssemblyReference.cache
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Resources.resources
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.vbproj.GenerateResource.Cache
+C:\Users\فارس\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form3.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Resources.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\obj\Debug\jnRAT.Form3.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\jnRAT\jnRAT\bin\Debug\Mono.Cecil.dll
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Resources.resources
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.vbprojResolveAssemblyReference.cache
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.vbproj.GenerateResource.Cache
+C:\Users\Sweet\Desktop\Black WorM SC v0.3.0\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form5.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form5.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Resources.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.Form6.resources
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.vbprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\‫jnRAT - نسخة\jnRAT\obj\Debug\jnRAT.vbproj.GenerateResource.Cache
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\bin\Debug\Black Worm.exe.config
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\Black Worm.exe
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\Black Worm.pdb
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.Form1.resources
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.Form2.resources
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.Form5.resources
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.Form6.resources
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.vbproj.GenerateResource.Cache
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\bin\Debug\Black Worm.exe
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\bin\Debug\Black Worm.pdb
+C:\Users\Black\Desktop\‫jnRAT\jnRAT\obj\Debug\jnRAT.Resources.resources

@@ -1,0 +1,77 @@
+.jpager3k {
+	font-size: 1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin: 15px 5%;
+	}
+
+/* ======[ Pages ]====== */
+.jpager3k li {
+	margin-right: 9px;
+	padding: 2px 5px;
+	}
+
+.jpager3k li {
+	color: #333;
+	background: none;
+	font-weight: normal;
+	text-decoration: underline;
+	}
+.jpager3k li:hover {
+	text-decoration:none !important;
+	}
+/* Current page */
+.jpager3k li.this {
+	color: #EEE;
+	background: #2B90D0;
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+/* ======[ Prev/Next side floaters ]====== */
+.jpager3k div.sidelnk {
+	}
+/* Float containers */
+.jpager3k div.sidelnk.jpag_l {
+	margin-right: 10px;
+	}
+.jpager3k div.sidelnk.jpag_r {
+	margin-left: 10px;
+	}
+/* Active & Passive links */
+.jpager3k div.sidelnk span {
+	color: #555;
+	}
+.jpager3k div.sidelnk a {
+	color: #2B90D0;
+	}
+/* Link classes: next/prev, first/last */
+.jpager3k div.sidelnk div.prevnext {
+	font-size: 0.9em;
+	}
+.jpager3k div.sidelnk div.prevnext a {
+	}
+
+.jpager3k div.sidelnk div.firstlast {
+	font-size: 0.8em;
+	}
+.jpager3k div.sidelnk div.firstlast a {
+	}
+
+/* ======[ ScrollBar & ScrollThumb ]====== */
+/* ScrollBar, ThisPage marker */
+.jpager3k div.scrollbar {
+	margin-top: 2px;
+	border-top: 2px solid #999;
+	}
+.jpager3k div.scrollbar div.thispage {
+	border-top: 2px solid #2B90D0;
+	}
+/* ScrollThumb */
+.jpager3k div.scrollbar div.scrollthumb {
+	width: 10px; height: 10px;
+	}
+.jpager3k div.scrollbar div.scrollthumb div {
+	margin-top: 1px;
+	border-bottom: 5px solid #000;
+	}
+
