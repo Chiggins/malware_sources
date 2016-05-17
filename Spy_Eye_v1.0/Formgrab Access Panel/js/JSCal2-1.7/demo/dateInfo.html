@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Dynarch Calendar -- Special date information</title>
+    <script src="../src/js/jscal2.js"></script>
+    <script src="../src/js/lang/en.js"></script>
+    <link rel="stylesheet" type="text/css" href="../src/css/jscal2.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/border-radius.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/matrix/matrix.css" />
+    <style type="text/css">
+      .highlight { color: #f00 !important; }
+      .highlight2 { color: #0f0 !important; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><div id="cont"></div></td>
+        <td></td>
+      </tr>
+    </table>
+    <script type="text/javascript">//<![CDATA[
+
+      var DATE_INFO = {
+              20090507: { klass: "highlight", tooltip: "%Y/%m/%d (%A)<br />That was yesterday" },
+              20090508: { klass: "highlight", tooltip: "And this is TODAY" }
+      };
+
+      function getDateInfo(date, wantsClassName) {
+              var as_number = Calendar.dateToInt(date);
+              if (as_number >= 20090518 && as_number <= 20090524)
+                      return {
+                              klass   : "highlight2",
+                              tooltip : "<div style='text-align: center'>This is the green week</div>"
+                      };
+              return DATE_INFO[as_number];
+      };
+
+      var cal = Calendar.setup({
+              cont     : "cont",
+              fdow     : 1,
+              date     : 20090501,
+              dateInfo : getDateInfo
+      });
+
+    //]]></script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="src/css/jscal2.css" />
+    <link type="text/css" rel="stylesheet" href="src/css/border-radius.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="src/css/reduce-spacing.css" /> -->
+
+    <link id="skin-win2k" title="Win 2K" type="text/css" rel="alternate stylesheet" href="src/css/win2k/win2k.css" />
+    <link id="skin-steel" title="Steel" type="text/css" rel="alternate stylesheet" href="src/css/steel/steel.css" />
+    <link id="skin-gold" title="Gold" type="text/css" rel="alternate stylesheet" href="src/css/gold/gold.css" />
+    <link id="skin-matrix" title="Matrix" type="text/css" rel="alternate stylesheet" href="src/css/matrix/matrix.css" />
+
+    <link id="skinhelper-compact" type="text/css" rel="alternate stylesheet" href="src/css/reduce-spacing.css" />
+
+    <script src="src/js/jscal2.js"></script>
+
+    <!-- you actually only need to load one of these; we put them all here for demo purposes -->
+    <script src="src/js/lang/ru.js"></script>
+    <script src="src/js/lang/de.js"></script>
+    <script src="src/js/lang/fr.js"></script>
+    <script src="src/js/lang/ro.js"></script>
+    <script src="src/js/lang/es.js"></script>
+    <script src="src/js/lang/cz.js"></script>
+    <script src="src/js/lang/pl.js"></script>
+    <script src="src/js/lang/pt.js"></script>
+    <script src="src/js/lang/jp.js"></script>
+    <script src="src/js/lang/cn.js"></script>
+    <script src="src/js/lang/en.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="demopage.css" />
+  </head>
+  <body style="background-color: #fff">
+
+    <table>
+      <tr>
+        <td valign="top" style="width: 30em;">
+          <h1><a href="http://www.dynarch.com/projects/calendar/">The new coolest JavaScript calendar</a></h1>
+          <div id="cont"></div>
+          <script type="text/javascript">
+            var LEFT_CAL = Calendar.setup({
+                    cont: "cont",
+                    weekNumbers: true,
+                    selectionType: Calendar.SEL_MULTIPLE,
+                    showTime: 12
+                    // titleFormat: "%B %Y"
+            })
+          </script>
+
+          <p>
+            <a href="http://www.dynarch.com/projects/calendar/doc/">Extensive API documentation is available at www.dynarch.com</a>
+          </p>
+
+          <p>
+            To select a date range, click the start date, then
+            SHIFT+click on the end date.  You can also use CTRL+click
+            to select/unselect individual dates.
+          </p>
+          <p>
+            You can use the mouse wheel to scroll through months.  If
+            the » or « or “Today” buttons are hovered, scroll through
+            years.
+          </p>
+          <p>
+            Keyboard operations, when the calendar is focused (note
+            you can focus it with TAB):
+          </p>
+          <ul>
+            <li><b>Arrows</b>: highlight a date</li>
+            <li><b>ENTER</b>: select highlighted date</li>
+            <li><b>CTRL-ENTER</b>: toggle selection for highlighted date</li>
+            <li><b>SHIFT-ENTER</b>: select range end</li>
+            <li><b>PAGE UP/DOWN</b>, or <b>CTRL-LEFT/RIGHT</b>: select month</li>
+            <li><b>CTRL-UP/DOWN</b>: select year</li>
+            <li><b>HOME</b>: go Today</li>
+            <li><b>SPACE</b>: display menu, focus the year entry</li>
+            <li><b>Type digit</b>: display the menu, begin typing year</li>
+            <li><b>Type letter</b>: toggle between months that start with that letter (according to selected language)</li>
+            <li><b>ESC</b>: dismiss menu (if present).  Otherwise, dismiss calendar popup if in popup mode</li>
+          </ul>
+        </td>
+
+        <td valign="top" style="padding-left: 2em">
+          <table class="properties">
+            <tr>
+              <td class="label">
+                <label for="f_language">Language:</label>
+              </td>
+              <td>
+                <script type="text/javascript">//<![CDATA[
+
+                  var html = [ "<select id='f_language' onchange='changeLanguage(this)'>" ];
+                  var def = Calendar.I18N.__;
+                  for (var i in Calendar.I18N) {
+                          if (!/^_/.test(i)) {
+                                  var data = Calendar.I18N[i];
+                                  html.push("<option value='", i, "'");
+                                  if (data === def)
+                                          html.push(" selected='selected'");
+                                  html.push(">", data.name, "</option>");
+                          }
+                  }
+                  html.push("</select>");
+                  document.write(html.join(""));
+
+                  function changeLanguage(select) {
+                          LEFT_CAL.setLanguage(select.value);
+                  }
+
+                //]]></script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <label for="f_skin">Color theme:</label>
+              </td>
+              <td>
+                <script type="text/javascript">//<![CDATA[
+
+                  var html = [ "<select id='f_skin' onchange='changeSkin(this)'><option value='-'>Bare</option>" ];
+                  var links = document.getElementsByTagName("link");
+                  var skins = {};
+                  for (var i = 0; i < links.length; i++) {
+                          if (/^skin-(.*)/.test(links[i].id)) {
+                                  var id = RegExp.$1;
+                                  skins[id] = links[i];
+                                  html.push("<option value='", id, "'>", links[i].title, "</option>");
+                          }
+                  }
+                  html.push("</select>");
+
+                  document.write(html.join(""));
+
+                  function changeSkin(select) {
+                          var skin = select.value;
+                          for (var i in skins) {
+                                  if (skins.hasOwnProperty(i))
+                                          skins[i].disabled = true;
+                          }
+                          if (skins[skin])
+                                  skins[skin].disabled = false;
+                  };
+
+                //]]></script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <input id="f_compactSkin" type="checkbox" onclick="changeCompactSkin(this)" />
+              </td>
+              <td>
+                <label for="f_compactSkin">Compact</label>
+                <script type="text/javascript">//<![CDATA[
+
+                  function changeCompactSkin(checkbox) {
+                          var skin = document.getElementById("skinhelper-compact");
+                          skin.rel = "stylesheet";
+                          skin.disabled = true;
+                          if (checkbox.checked)
+                                  skin.disabled = false;
+                  }
+                  changeCompactSkin({ checked: false });
+
+                //]]></script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <label for="f_fdow">First day of week:</label>
+              </td>
+              <td>
+                <script type="text/javascript">//<![CDATA[
+
+                  var html = [ "<select id='f_fdow' onchange='changeFDOW(this)'>" ];
+
+                  for (var i = 0; i < 7; ++i) {
+                          html.push("<option value='", i, "'");
+                          if (i == LEFT_CAL.fdow)
+                                  html.push(" selected='selected'");
+                          html.push(">", Calendar.i18n("dn")[i], "</option>");
+                  }
+
+                  html.push("</select>");
+                  document.write(html.join(""));
+
+                       function changeFDOW(select) {
+                               LEFT_CAL.fdow = parseInt(select.value, 10);
+                               LEFT_CAL.redraw();
+                       }
+
+                //]]></script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <script type="text/javascript">//<![CDATA[
+
+                  if (LEFT_CAL.args.animation)
+                          document.write('<input id="f_animation" onclick="changeAnimation(this)" type="checkbox" checked="checked" />');
+                  else
+                          document.write('<input id="f_animation" onclick="changeAnimation(this)" type="checkbox" />');
+
+                  function changeAnimation(checkbox) {
+                          LEFT_CAL.args.animation = checkbox.checked;
+                  };
+
+                //]]></script>
+              </td>
+              <td>
+                <label for="f_animation">Animation</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <script type="text/javascript">//<![CDATA[
+
+                  if (LEFT_CAL.args.weekNumbers)
+                          document.write('<input id="f_weekNumbers" onclick="changeWeekNumbers(this)" type="checkbox" checked="checked" />');
+                  else
+                          document.write('<input id="f_weekNumbers" onclick="changeWeekNumbers(this)" type="checkbox" />');
+
+                  function changeWeekNumbers(checkbox) {
+                          LEFT_CAL.args.weekNumbers = checkbox.checked;
+                          LEFT_CAL.redraw();
+                  };
+
+                //]]></script>
+              </td>
+              <td>
+                <label for="f_weekNumbers">Week numbers</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <script type="text/javascript">//<![CDATA[
+                  if (LEFT_CAL.args.showTime)
+                          document.write('<input id="f_showTime" onclick="changeShowTime(this)" type="checkbox" checked="checked" />');
+                  else
+                          document.write('<input id="f_showTime" onclick="changeShowTime(this)" type="checkbox" />');
+                  function changeShowTime(checkbox) {
+                          LEFT_CAL.args.showTime = checkbox.checked ? 12 : false;
+                          LEFT_CAL.redraw();
+                          document.getElementById("f_ampm").checked = checkbox.checked;
+                          document.getElementById("tr_timeprops").style.display = checkbox.checked ? "" : "none";
+                  };
+                //]]></script>
+              </td>
+              <td>
+                <label for="f_showTime">Show time</label>
+              </td>
+            </tr>
+
+            <tr id="tr_timeprops">
+              <td></td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="label">
+                      <script type="text/javascript">//<![CDATA[
+                        if (LEFT_CAL.args.showTime == 12)
+                                document.write('<input id="f_ampm" onclick="changeAMPM(this)" type="checkbox" checked="checked" />');
+                        else
+                                document.write('<input id="f_ampm" onclick="changeAMPM(this)" type="checkbox" />');
+                        function changeAMPM(checkbox) {
+                                LEFT_CAL.args.showTime = checkbox.checked ? 12 : true;
+                                LEFT_CAL.redraw();
+                        };
+                      //]]></script>
+                    </td>
+                    <td>
+                      <label for="f_ampm">12-hour time</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label"><label for="f_timePos">Time position:</label></td>
+                    <td>
+                      <script type="text/javascript">//<![CDATA[
+                        var html = [ "<select id='f_timePos' onchange='changeTimePos(this)'>" ];
+                        var a = [ "left", "right" ];
+                        for (var i = 0; i < a.length; i++) {
+                                html.push("<option value='", a[i], "'");
+                                if (LEFT_CAL.args.timePos == a[i])
+                                        html.push(" selected='selected'");
+                                html.push(">", a[i], "</option>");
+                        }
+                        html.push("</select>");
+                        document.write(html.join(""));
+
+                        function changeTimePos(select) {
+                                LEFT_CAL.args.timePos = select.value;
+                                LEFT_CAL.redraw();
+                        };
+                      //]]></script>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <label for="f_rangeStart">Disable dates before:</label>
+              </td>
+              <td>
+                <input id="f_rangeStart" />
+                <button id="f_rangeStart_trigger">...</button>
+                <button id="f_clearRangeStart" onclick="clearRangeStart()">clear</button>
+                <script type="text/javascript">
+                  new Calendar({
+                          inputField: "f_rangeStart",
+                          dateFormat: "%B %d, %Y",
+                          trigger: "f_rangeStart_trigger",
+                          bottomBar: false,
+                          onSelect: function() {
+                                  var date = Calendar.intToDate(this.selection.get());
+                                  LEFT_CAL.args.min = date;
+                                  LEFT_CAL.redraw();
+                                  this.hide();
+                          }
+                  });
+                  function clearRangeStart() {
+                          document.getElementById("f_rangeStart").value = "";
+                          LEFT_CAL.args.min = null;
+                          LEFT_CAL.redraw();
+                  };
+                </script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <label for="f_rangeEnd">Disable dates after:</label>
+              </td>
+              <td>
+                <input id="f_rangeEnd" />
+                <button id="f_rangeEnd_trigger">...</button>
+                <button id="f_clearRangeEnd" onclick="clearRangeEnd()">clear</button>
+                <script type="text/javascript">
+                  new Calendar({
+                          inputField: "f_rangeEnd",
+                          dateFormat: "%B %d, %Y",
+                          trigger: "f_rangeEnd_trigger",
+                          bottomBar: false,
+                          onSelect: function() {
+                                  var date = Calendar.intToDate(this.selection.get());
+                                  LEFT_CAL.args.max = date;
+                                  LEFT_CAL.redraw();
+                                  this.hide();
+                          }
+                  });
+                  function clearRangeEnd() {
+                          document.getElementById("f_rangeEnd").value = "";
+                          LEFT_CAL.args.max = null;
+                          LEFT_CAL.redraw();
+                  };
+                </script>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">
+                <label for="f_selection">Selection:</label>
+              </td>
+              <td>
+                <textarea id="f_selection" style="width: 20em; height: 10em"></textarea>
+                <script type="text/javascript">//<![CDATA[
+
+                  LEFT_CAL.addEventListener("onSelect", function(){
+                          var ta = document.getElementById("f_selection");
+                          ta.value = this.selection.countDays() + " days selected:\n\n" + this.selection.print("%Y/%m/%d").join("\n");
+                  });
+
+                //]]></script>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
