@@ -1,0 +1,37 @@
+﻿  stdafx.cpp
+  aes256.cpp
+  AssemblyInfo.cpp
+  GUI.cpp
+C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\GUI\usg.h(129): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(867) : see declaration of 'itoa'
+C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\GUI\usg.h(130): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\GUI\usg.h(131): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\GUI\usg.h(132): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1658): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1691): warning C4101: 'ex' : unreferenced local variable
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2135): warning C4244: '=' : conversion from 'unsigned long' to 'char', possible loss of data
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2213): warning C4018: '<' : signed/unsigned mismatch
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2347): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2349): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+  USG.cpp
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\USG.h(129): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(867) : see declaration of 'itoa'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\USG.h(130): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\USG.h(131): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\USG.h(132): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+  Generating code
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\form1.h(2122): warning C4715: 'GUI::Form1::to_int' : not all control paths return a value
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\form1.h(1941): warning C4715: 'GUI::Form1::HasEOF' : not all control paths return a value
+  Finished generating code
+  GUI.vcxproj -> C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\Debug\GUI.exe

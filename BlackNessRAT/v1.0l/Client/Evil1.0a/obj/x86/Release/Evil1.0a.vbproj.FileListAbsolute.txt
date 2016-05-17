@@ -1,0 +1,188 @@
+C:\Evil1.0a\Evil1.0a\bin\Release\Evil1.0a.exe
+C:\Evil1.0a\Evil1.0a\bin\Release\Evil1.0a.pdb
+C:\Evil1.0a\Evil1.0a\bin\Release\Evil1.0a.xml
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+C:\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+G:\SECRET\MOST ADVANCED VERSION\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+G:\SECRET\MOST ADVANCED VERSION\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+G:\SECRET\MOST ADVANCED VERSION\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.IPTracer.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+C:\Documents and Settings\Administrateur\Mes documents\Mes fichiers reçus\Evil1.0a\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.background.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.closeprocess.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.IPTracer.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.notif.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Speak.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\Evil1._0a.startprocess.resources
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+E:\EvilRAT Versions\v1.0e\Client\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Evil1.0a.exe
+E:\Evil1.0a.pdb
+E:\Evil1.0a.xml
+C:\Users\The Madness\Desktop\The Devil's Eye\Evil1.0a.exe
+C:\Users\The Madness\Desktop\The Devil's Eye\Evil1.0a.pdb
+C:\Users\The Madness\Desktop\The Devil's Eye\Evil1.0a.xml
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.background.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.changehomepage.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.closeprocess.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.IPTracer.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.notif.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.skypespread.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Speak.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.startprocess.resources
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+E:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.exe
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.xml
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1.0a.pdb
+C:\Users\The Madness\Desktop\The Devil's Eye v1.0k\Evil1.0a.exe
+C:\Users\The Madness\Desktop\The Devil's Eye v1.0k\Evil1.0a.pdb
+C:\Users\The Madness\Desktop\The Devil's Eye v1.0k\Evil1.0a.xml
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.background.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.changehomepage.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.closeprocess.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.IPTracer.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.notif.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.skypespread.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Speak.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\Evil1._0a.startprocess.resources
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+D:\EvilRAT Versions\v1.0k\Client\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.about.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.background.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.blockwebsite.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.builder.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.changehomepage.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.cinfo.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.closeprocess.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.dl.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.fakemessage.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Form1.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.IPTracer.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.ipport.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.keylogger.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.msn.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.notif.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openprog.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.openurl.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.pw.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.settings.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.skypespread.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Speak.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.startprocess.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.noip.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\BlackNess.exe
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\BlackNess.xml
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\BlackNess.pdb
+C:\Documents and Settings\Administrateur\Bureau\BlackNess.exe
+C:\Documents and Settings\Administrateur\Bureau\BlackNess.pdb
+C:\Documents and Settings\Administrateur\Bureau\BlackNess.xml
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Html.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.vbs.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.httpf.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.udp.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.IP_Grabber.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.Syn.resources
+C:\Documents and Settings\Administrateur\Bureau\BlackNess.exe.config
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource-ResGen.read.6.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Administrateur\Bureau\BlackNess\v1.0l\Client\Evil1.0a\obj\x86\Release\Evil1._0a.gport.resources

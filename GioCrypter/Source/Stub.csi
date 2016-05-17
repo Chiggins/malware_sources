@@ -1,0 +1,11 @@
+[History]
+B0=Stub/mPEL
+B1=Stub/mMain/TimerProc
+B2=Stub/mPEL/InjectExe
+B3=Stub/clsCryptAPI/EncryptDecrypt
+B4=Stub/clsCryptAPI
+B5=Stub/mMain/Main
+B6=Stub/clsCryptAPI/DecryptString
+B7=Stub/mMain
+B8=Stub/clsCryptAPI/EncryptString
+B9=Stub/mPEL/CallAPI

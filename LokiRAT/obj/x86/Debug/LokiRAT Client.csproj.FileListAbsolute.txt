@@ -1,0 +1,7 @@
+C:\Reversing\12_Malware\LokiRAT\Source\bin\Debug\LokiRAT Client.exe.config
+C:\Reversing\12_Malware\LokiRAT\Source\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Reversing\12_Malware\LokiRAT\Source\bin\Debug\LokiRAT Client.exe
+C:\Reversing\12_Malware\LokiRAT\Source\bin\Debug\LokiRAT Client.pdb
+C:\Reversing\12_Malware\LokiRAT\Source\bin\Debug\SkinSoft.OSSkin.dll
+C:\Reversing\12_Malware\LokiRAT\Source\obj\x86\Debug\LokiRAT Client.exe
+C:\Reversing\12_Malware\LokiRAT\Source\obj\x86\Debug\LokiRAT Client.pdb

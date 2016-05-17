@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ChodeBase - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Debug/modRewjgistry.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modRewjgistry.rc"" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPF39A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "VBtoVSCPP" /Fp"Debug/ChodeBase.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\clsCPUID.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\clsExitWindows.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\clsStringBuilder.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\frmMain.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modAccessibility.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modCPUSpeed.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modCRC32.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modData.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modDoS.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modDOSOutput.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modEncrypt.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modFileSearch.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modHomepage.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modKillProc.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modKillStuff.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modMD5.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modMutex.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modPatchTCPIP.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modRewjgistry.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modSettings.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modShellExec.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modSocketPlus.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modSpreadAIM.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modSpreadMSN.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modStartup.cpp"
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\modSysInfo.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSPF39A.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPF39B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "VBtoVSCPP" /Fp"Debug/ChodeBase.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Pro\Desktop\ChodeBot C++ v1 base\ChodeBot C++ v1 base\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSPF39B.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSPF39C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ChodeBase.pdb" /debug /machine:I386 /out:"Debug/ChodeBase.exe" /pdbtype:sept 
+".\Debug\clsCPUID.obj"
+".\Debug\clsExitWindows.obj"
+".\Debug\clsStringBuilder.obj"
+".\Debug\frmMain.obj"
+".\Debug\modAccessibility.obj"
+".\Debug\modCPUSpeed.obj"
+".\Debug\modCRC32.obj"
+".\Debug\modData.obj"
+".\Debug\modDoS.obj"
+".\Debug\modDOSOutput.obj"
+".\Debug\modEncrypt.obj"
+".\Debug\modFileSearch.obj"
+".\Debug\modHomepage.obj"
+".\Debug\modKillProc.obj"
+".\Debug\modKillStuff.obj"
+".\Debug\modMD5.obj"
+".\Debug\modMutex.obj"
+".\Debug\modPatchTCPIP.obj"
+".\Debug\modRewjgistry.obj"
+".\Debug\modSettings.obj"
+".\Debug\modShellExec.obj"
+".\Debug\modSocketPlus.obj"
+".\Debug\modSpreadAIM.obj"
+".\Debug\modSpreadMSN.obj"
+".\Debug\modStartup.obj"
+".\Debug\modSysInfo.obj"
+".\Debug\StdAfx.obj"
+".\Debug\modRewjgistry.res"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSPF39C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+clsCPUID.cpp
+clsExitWindows.cpp
+clsStringBuilder.cpp
+frmMain.cpp
+modAccessibility.cpp
+modCPUSpeed.cpp
+modCRC32.cpp
+modData.cpp
+modDoS.cpp
+modDOSOutput.cpp
+modEncrypt.cpp
+modFileSearch.cpp
+modHomepage.cpp
+modKillProc.cpp
+modKillStuff.cpp
+modMD5.cpp
+modMutex.cpp
+modPatchTCPIP.cpp
+modRewjgistry.cpp
+modSettings.cpp
+Generating Code...
+Compiling...
+modShellExec.cpp
+modSocketPlus.cpp
+modSpreadAIM.cpp
+modSpreadMSN.cpp
+modStartup.cpp
+modSysInfo.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1104: cannot open file ".\Debug\modRewjgistry.res"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+ChodeBase.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

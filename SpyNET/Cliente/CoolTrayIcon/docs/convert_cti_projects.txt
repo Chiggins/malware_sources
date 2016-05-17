@@ -1,0 +1,26 @@
+A few things have changed in ver. 4.0.0 of CoolTrayIcon which means you may
+have to slightly adjust your previous projects that use CooltrayIcon or
+TextTrayIcon.
+
+
+1) The IconVisible property is now default false in stead of true.
+
+The reason for this is that the tray icon would apparently show itself,
+regardless of the property being false, if CoolTrayIcon was used in a
+DLL file.
+
+This change means that you have to reset the property to true in your old 
+projects, in case the value was originally true.
+
+
+2) The StartMinimized property no longer exists. It has been replaced by the
+OnStartup event. This event has a ShowMainForm parameter, which you set to
+false if you don't want the main form to show when your app. starts.
+
+The reason for this change is that StartMinimized only worked at design-time,
+meaning you could not determine at run-time if you wanted to show the form
+or not. With the change it is now possible to have a user option for this
+in your app.
+
+See the StartHidden demo for an example.
+

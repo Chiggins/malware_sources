@@ -1,0 +1,17 @@
+C:\Users\Sweet\Desktop\مجلد جديد (4)\E\Backup\E\bin\Debug\svchost.exe
+C:\Users\Sweet\Desktop\مجلد جديد (4)\E\Backup\E\bin\Debug\svchost.pdb
+C:\Users\Sweet\Desktop\مجلد جديد (4)\E\Backup\E\obj\Debug\svchost.exe
+C:\Users\Sweet\Desktop\مجلد جديد (4)\E\Backup\E\obj\Debug\svchost.pdb
+C:\Users\Sweet\Desktop\سسسطح المكتب\مجلد جديد (4)\E\Backup\E\bin\Debug\E.exe
+C:\Users\Sweet\Desktop\سسسطح المكتب\مجلد جديد (4)\E\Backup\E\bin\Debug\E.pdb
+C:\Users\Sweet\Desktop\سسسطح المكتب\مجلد جديد (4)\E\Backup\E\obj\Debug\E.exe
+C:\Users\Sweet\Desktop\سسسطح المكتب\مجلد جديد (4)\E\Backup\E\obj\Debug\E.pdb
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\E\Backup\E\obj\Debug\E.exe
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\E\Backup\E\obj\Debug\E.pdb
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\E\Backup\E\bin\Debug\E.exe
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\E\Backup\E\bin\Debug\E.pdb
+C:\Users\USER\Desktop\مجلد جديد ‫(2)‬\E\Backup\E\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Black\Desktop\‫jnRAT\Stub Folder\E\obj\Debug\E.exe
+C:\Users\Black\Desktop\‫jnRAT\Stub Folder\E\obj\Debug\E.pdb
+C:\Users\Black\Desktop\‫jnRAT\Stub Folder\E\bin\Debug\E.exe
+C:\Users\Black\Desktop\‫jnRAT\Stub Folder\E\bin\Debug\E.pdb

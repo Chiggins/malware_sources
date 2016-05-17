@@ -1,0 +1,235 @@
+CoolTrayIcon, ver. 4.4.0
+
+
+- ver. 4.4.0:
+  Time for an update after a pause of over three years:
+  * Added support for custom icons in balloon hints (only supported in 
+    WinXP SP 2).  
+  * Added SetFocus method (supported from IE ver. 5.0).  
+  * Added Popup method.  
+  * Fixed a bug that made the main form minimize outside the taskbar 
+    in case the form's WindowState was set to wsMinimized and the application 
+    was initially minimized to the tray. Thanks to Oleg Gusakov.
+  * Fixed a bug that caused the CycleInterval property to not change properly.
+  * Redefined compiler directives to make CoolTrayIcon compatible with 
+    newer Delphi versions.
+  * Fixed the CoolService demo, which used way too many CPU resources.
+
+- ver. 4.3.1:
+  * Fixed a bug introduced in 4.3.0 that caused forms to disappear when 
+    changing their BorderStyle or FormStyle property.
+
+- ver. 4.3.0:
+  * Changed the method for hooking the application's message handling.
+    This fixes a bug, so that CoolTrayIcon will no longer conflict with
+    ThemeManager and possibly other third-party components.
+  * Added event OnBalloonHintShow.
+  * Added method GetBalloonHintHandle.
+  * Fixed the MinimizeAnimation demo to work in D5 and below.
+  * Added globe animation made by Werner Pamler to CoolTrayTest demo.
+  Big thanks go to Randall Sell, who pointed out a number of bugs:
+  * Overloaded methods are not supported in D2 and D3, so the SimpleTimer
+    unit now uses two constructors with different names.
+  * The main form's Visible property could differ from the value returned
+    by IsWindowVisible.
+  * In runtime it was possible to remove the runtime icon rather than the
+    design preview icon when DesignPreview was true.
+
+- ver. 4.2.0:
+  * Added new event, OnMinimizeToTray.
+  * Added animation effect demo demonstrating the OnMinimizeToTray event.
+  * Changed Hint to a simple AnsiString. This fixes a problem with BCB.
+  * The SimpleTimer class was updated to ver. 2. See convert_st_projects.txt 
+    if you are using SimpleTimer in your existing projects.
+  * Included a chm help file. It contains the same information as various 
+    text and html files.
+
+- ver. 4.1.2: Bugfix:
+  * Fixed a bug in the SimpleTimer unit.
+
+- ver. 4.1.1: Bugfixes:
+  * CTI could cause an infinite loop when switching from a popup window
+    (not a child window) to the main form. Thanks to Oliver Häger for
+    telling me.
+  * BCB 6 didn't like the type ShortString. Added compiler directive to
+    change it to AnsiString in BCB. Thanks to Dick Tsai for telling me.
+
+- ver. 4.1.0:
+  * New (public) property, Behavior, which determines if the tray icon
+    should have classic (Win95) or extended (Win2000) behavior. For
+    further explanation, see cooltrayicon.html.
+  * Added methods ShowTaskbarIcon and HideTaskbarIcon.
+  * Most constants are now private to the unit (moved from interface to
+    implementation). This also fixes a name clash conflict experienced 
+    by BCB users.
+  * The SimpleTimer class was updated.
+
+- ver. 4.0.2: Bugfixes:
+  The previous version had some serious bugs, which are hopefully fixed:
+  * Less aggressive handling of the WM_DESTROY message. Some users
+    experienced their Delphi editor terminated when a project using
+    CTI was closed.
+  * Saving an icon gave an access violation in some cases.
+  * Changed the hint type to a simple string so it can compile in BCB.
+  * The unit would not compile in D2 and D3 due to the D4-specific use
+    of TCustomImageList and some other details. Thanks to John Kostura
+    for helping me find solutions.
+  * The dpk files were missing from the 4.0.1 package.
+
+- ver. 4.0.1: Bugfixes:
+  * The component could not be used in D4 and below because I used
+    the FreeAndNil method. So much for testing.
+  * You would get an Access Violation upon termination if the Icon
+    property was previously destroyed. Thanks to MDM for pointing it out
+    (which BTW he did a long time ago).
+  * Possibly I fixed the "NT bug" (the tray icon may disappear in an
+    interactive service when you log out, then log back in). I couldn't
+    test this, though, so please tell me if you get the error.
+    Thanks to Christopher Riley for pointing me towards a solution.
+
+- ver. 4.0.0: First of all a big thanks to Jouni Airaksinen
+  (http://www.bluecave.net) who made some major contributions to
+  restructuring CoolTrayIcon. The most important are:
+  * Introduction of an internal container class, meaning less overhead
+    when using multiple instances of CoolTrayIcon
+  * Suggestions for improving Click/DblClick events
+  * Suggestions for replacing TTimer objects with API methods (I took
+    this all the way and created the SimpleTimer class, a more
+    low-resource timer than TTimer)
+  * Various bug fixes, mostly related to string lengths of hints
+  * New separate unit for registering the tray icons
+  Other changes include:
+  * StartMinimized property is replaced by new OnStartup event; this
+    allows you to decide at run-time whether to show the form at startup
+    (StartMinimized only worked at design-time)
+  * New events: MouseEnter and MouseExit
+  * New balloon hint events
+  * New method GetTooltipHandle which I got from Eduardo A. Morcillo's
+    VB code (http://www.domaindlx.com/e_morcillo)
+  * New method GetClientIconPos which actually retrieves the cursor's
+    position inside the tray icon (with some caveats)
+  * WindowHandle property discarded; don't know why I put it in anyway
+  * No more compiler warnings in D6 that AllocateHWnd is deprecated
+  * No more need to call the Refresh method
+  * More demos, see demos.txt for descriptions
+  * Documentation updated
+
+- ver. 3.2.0: The component no longer fires a click event along with a 
+  doubleclick event. Thanks to MDM for code suggestions.
+  Some people have experienced problems logging off or shutting down
+  Windows while CTI was running. This should now be fixed.
+  Thanks to Peter T. Roux. A few minor adjustments.
+
+- ver. 3.1.2: Fixed a bug pertaining to C++ Builder ver. 5. A few
+  constants were already declared by CB5. These have been renamed.
+
+- ver. 3.1.1: A default icon is assigned to the component when it is 
+  created initially. Thanks to Jaro Griscik. Bug-fix: the design
+  preview icon was not cleared from the tray upon project exit.
+
+- ver. 3.1.0: You can now use CoolTrayIcon in a service app. as the
+  component no longer automatically assumes its owner is a form.
+  Some properties and methods don't make sense without a form. See
+  the documentation for details.
+
+- ver. 3.0.0: CoolTrayIcon is now distributed together with the
+  new TextTrayIcon component. New method: BitmapToIcon which
+  renders an icon from a bitmap. Bug fixed: app. was displayed on
+  the taskbar even though StartMinimized was true if the main form
+  was an MDI form. Updated the documentation.
+
+- ver. 2.5.1: Fixed the bug that required the main form to have
+  focus in order to determine keyboard status in the OnMouseDown,
+  OnMouseUp, and OnMouseMove events.
+
+- ver. 2.5.0: Added support for "balloon hint". This feature is
+  implemented in WinMe, Win2000 and WinXP only. Invoking the balloon
+  hint in other Windows versions method will not have any effect.
+
+- ver. 2.4.1: Fixed a bug that sometimes caused a stack overflow
+  as a graphic method repeatedly called itself. Thanks to Nihat
+  Yorganzi and others. Improved the demo so the "Close to tray"
+  option will not prevent Windows from shutting down.
+
+- ver. 2.4.0: Added a little trick suggested by Damien Honeyford:
+  When the Explorer crashes, the all too familiar result is that all 
+  tray icons disappear. CoolTrayIcon will now intercept the taskbar 
+  re-creation message, and automatically re-display the tray icon. 
+  This feature will only work with Win98 and above or Internet 
+  Explorer 4 and above. Other things: Documentation is now in HTML. 
+  Added another icon animation to the demo.
+
+- ver. 2.3.0: Various minor bugs fixed: 1) Calling the ShowMainForm
+  and HideMainForm methods before the main form was created would
+  crash the app. Fixed thanks to James Legg. 2) The tooltip would
+  give trouble if it was 64 chars. Thanks to Toms Baugis and
+  Teus de Jong. 3) The popup menu would not close itself auto-
+  matically if the StartMinimized property was true. Thanks to
+  Ingo Krueger, Chris Witt, and Reister HansJoerg.
+
+- ver. 2.2.2: When there was more than one form visible the taskbar
+  icon would not hide when the main form was minimized. Fixed.
+
+- ver. 2.2.1: Fixed a popup menu bug. Also fixed a bug which meant
+  D2 and D3 users could not compile the component. Added more icon
+  animations in the demo. Thanks to Daniele Gervasoni for the
+  "tray graph".
+
+- ver. 2.2.0: IconIndex is now a property, allowing you to specify
+  an icon at run-time. The OnCycle event is changed so it returns
+  the index to the next icon that will display when cycling.
+  Finally, I fixed a bug that caused the taskbar icon not to
+  display itself when MinimizeToTray was true. Thanks to Lorenz
+  Graf for pointing it out to me.
+
+- ver. 2.1.4: The main form will no longer show itself untimely
+  after the form's BorderStyle property is changed. Thanks to
+  Thomas Reimann.
+
+- ver. 2.1.3: Fixed a bug that caused the main form not to display
+  itself (how embarassing).
+
+- ver. 2.1.2: I *finally* found the bug that would cause some
+  compound controls (like controls on notebook pages or tab sheets)
+  not to display properly when StartMinimized was true. Incidently,
+  this also means that TForm.Position now works.
+  Also fixed a minor bug that caused modal forms owned by the
+  main form to appear behind the main form when the popup menu
+  appeared (thanks to Arash Ramin).
+
+- ver. 2.1.1: Added notification method to properly detect whether
+  the associated popup menu and imagelist are deleted. Thanks to
+  Hui Jin Ong for pointing it out to me and making suggestions.
+
+- ver. 2.1.0: Added property MinimizeToTray. This was done by
+  hooking into the application's message processing.
+
+- ver. 2.0.0: Name is now TCoolTrayIcon. Added icon cycling and
+  design preview capabilities. Added method Refresh. Fixed a bug
+  that caused some controls to not redraw when starting your app.
+  as invisible.
+
+- ver. 1.0.3: Added property Enabled. Also fixed a bug reported by
+  David Knaack, which caused a runtime error if you double-clicked
+  when no popup menu was assigned to the icon.
+
+- ver. 1.0.2: Added a Handle property, and enabled handling of
+  default menu items. (Partially) fixed a bug so the icon will
+  update itself when a new icon is assigned.
+
+- ver. 1.0.1: The associated popup menu now behaves as it is
+  supposed to. Also fixed that forms using the tray icon didn't
+  go in front of other windows when restored. Thanks to Chris Hope
+  for telling me.
+
+- ver. 1.0.0: First release. Component was called TTrayIcon at
+  the time.
+
+
+
+If you have any comments or corrections, I would very much like to
+hear them. If you develop some cool tray animations you want to
+share, send them to me  :-)
+
+Troels Jakobsen
+troels.jakobsen@gmail.com

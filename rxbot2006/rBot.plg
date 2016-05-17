@@ -1,0 +1,305 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: rBot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP6A96.tmp" with contents
+[
+/nologo /MTd /W3 /Gi /GX /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/rBot.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\autostart.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\crc32.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\crypt.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\ehandler.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\irc_send.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\loaddlls.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\netutils.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\rBot.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\rndnick.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\shellcode.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\threads.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\wildcard.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\advscan.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\scan.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\cisco.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\dcom.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\iis5ssl.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\imail.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\lsass.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\messenger.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\ms04_007_asn1.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\msmq.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\netbios.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\plsass.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\upnp.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\veritas.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\webdav.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\wkssvc.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\backdoor.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\connback.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\ftpd.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\httpd.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\ident.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\redirect.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\rlogind.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\session.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\socks4.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\tftpd.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\keylogger.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\psniff.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\sniffer.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\ddos.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\icmpflood.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\pingudp.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\skysyn.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\synflood.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\targa3.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\tcpflood.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\tsunami.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\wisdom.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\wonk.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\aliaslog.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\capture.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\cdkeys.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\dcc.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\download.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\driveinfo.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\findfile.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\findpass.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\flood.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\fphost.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\misc.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\net.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\processes.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\remotecmd.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\secure.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\speedtest.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\sysinfo.cpp"
+"C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\visit.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP6A96.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP6A97.tmp" with contents
+[
+/nologo /subsystem:windows /profile /map:"Debug/rBot.map" /debug /machine:I386 /out:"Debug/rBot.exe" 
+".\Debug\autostart.obj"
+".\Debug\crc32.obj"
+".\Debug\crypt.obj"
+".\Debug\ehandler.obj"
+".\Debug\irc_send.obj"
+".\Debug\loaddlls.obj"
+".\Debug\netutils.obj"
+".\Debug\rBot.obj"
+".\Debug\rndnick.obj"
+".\Debug\shellcode.obj"
+".\Debug\threads.obj"
+".\Debug\wildcard.obj"
+".\Debug\advscan.obj"
+".\Debug\scan.obj"
+".\Debug\cisco.obj"
+".\Debug\dcom.obj"
+".\Debug\iis5ssl.obj"
+".\Debug\imail.obj"
+".\Debug\lsass.obj"
+".\Debug\messenger.obj"
+".\Debug\ms04_007_asn1.obj"
+".\Debug\msmq.obj"
+".\Debug\netbios.obj"
+".\Debug\plsass.obj"
+".\Debug\upnp.obj"
+".\Debug\veritas.obj"
+".\Debug\webdav.obj"
+".\Debug\wkssvc.obj"
+".\Debug\backdoor.obj"
+".\Debug\connback.obj"
+".\Debug\ftpd.obj"
+".\Debug\httpd.obj"
+".\Debug\ident.obj"
+".\Debug\redirect.obj"
+".\Debug\rlogind.obj"
+".\Debug\session.obj"
+".\Debug\socks4.obj"
+".\Debug\tftpd.obj"
+".\Debug\keylogger.obj"
+".\Debug\psniff.obj"
+".\Debug\sniffer.obj"
+".\Debug\ddos.obj"
+".\Debug\icmpflood.obj"
+".\Debug\pingudp.obj"
+".\Debug\skysyn.obj"
+".\Debug\synflood.obj"
+".\Debug\targa3.obj"
+".\Debug\tcpflood.obj"
+".\Debug\tsunami.obj"
+".\Debug\wisdom.obj"
+".\Debug\wonk.obj"
+".\Debug\aliaslog.obj"
+".\Debug\capture.obj"
+".\Debug\cdkeys.obj"
+".\Debug\dcc.obj"
+".\Debug\download.obj"
+".\Debug\driveinfo.obj"
+".\Debug\findfile.obj"
+".\Debug\findpass.obj"
+".\Debug\flood.obj"
+".\Debug\fphost.obj"
+".\Debug\misc.obj"
+".\Debug\net.obj"
+".\Debug\processes.obj"
+".\Debug\remotecmd.obj"
+".\Debug\secure.obj"
+".\Debug\speedtest.obj"
+".\Debug\sysinfo.obj"
+".\Debug\visit.obj"
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP6A97.tmp"
+<h3>Output Window</h3>
+Compiling...
+autostart.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+crc32.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+crypt.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ehandler.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+irc_send.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+loaddlls.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netutils.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rBot.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rndnick.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+shellcode.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+threads.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+wildcard.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+advscan.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+scan.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+cisco.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dcom.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+iis5ssl.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+imail.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+lsass.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+messenger.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ms04_007_asn1.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+msmq.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netbios.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+plsass.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+upnp.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+veritas.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+webdav.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+wkssvc.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+backdoor.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+connback.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ftpd.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+httpd.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ident.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+redirect.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rlogind.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+session.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+socks4.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+tftpd.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+keylogger.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+psniff.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+sniffer.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ddos.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+icmpflood.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+pingudp.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+skysyn.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+synflood.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+targa3.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+tcpflood.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+tsunami.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+wisdom.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+wonk.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+aliaslog.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+capture.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+cdkeys.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dcc.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+download.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+driveinfo.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+findfile.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+findpass.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+flood.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+fphost.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+misc.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+net.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+processes.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+remotecmd.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+secure.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+speedtest.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+sysinfo.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+visit.cpp
+C:\Users\Pro\Desktop\IRC SETUP\rxbot2006\rxbot2006\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+rBot.exe - 69 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

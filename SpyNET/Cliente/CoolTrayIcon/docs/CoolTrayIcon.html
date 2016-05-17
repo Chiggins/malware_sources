@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CoolTrayIcon, ver. 4.4.0</title>
+
+<style type='text/css'>
+/*  body         { font-family: MS Sans Serif; font-size: 12pt; } */
+  h1           { font: bold 14pt Arial; margin-bottom: 10px; }
+  h2           { font: bold 12pt Arial; margin-bottom: 10px; margin-top: 40px; }
+  td.name      { background-color: #FFFFC0; width: 120px; font-weight: bold; }
+  td.name2     { background-color: #FFCCCC; width: 120px; font-weight: bold; }
+  td.desc      { background-color: #F0F0F0; }
+  td.default   { background-color: #F0F0F0; }
+  ul           { margin-left: 15px; margin-top: 5px; }
+  li           { margin-bottom: 10px; }
+  .declaration { font-weight: bold; }
+</style>
+
+</head>
+
+
+<body topmargin='15' bottommargin='15' leftmargin='10' rightmargin='10'>
+
+<a name='Top'><h1>CoolTrayIcon, ver. 4.4.0</h1>
+
+
+<a href='#Properties'>[Properties]</a> <a href='#Methods'>[Methods]</a> <a href='#Events'>[Events]</a>
+<br>
+<a href='#Hints'>[Hints]</a> <a href='#Bugs'>[Known Bugs]</a> <a href='#Comments'>[Comments]</a>
+<br>
+
+
+<p>
+CoolTrayIcon is a tray icon component. It allows you to easily implement tray icons
+in your own applications, with various appearances and behaviors.
+</p>
+
+<!--
+<p>
+CoolTrayIcon can be used in a service. See my <a href='#Service'>developer remarks</a> on services.
+</p>
+-->
+
+
+<a name='Properties'></a><h2>Properties</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>Icon</td>
+  <td class='desc' valign='top'><span class='declaration'>property Icon: TIcon;</span><br>
+  The icon to display in the tray. This icon is 16x16 pixels and can be up to 16 colors (4 bit)
+  in Win9x and WinNT 4, 4 billion colors (32 bit) in WinXP, and WinME and Win2000 
+  support icons of a color depth up to the user's display mode. I don't know about 
+  Win2003 and Vista, but my guess is 32 bit support.
+  If you use an icon file (*.ico) containing more than one icon, Delphi will use the first icon. 
+  If it's not 16x16 pixels it will be scaled, which probably won't look good.<br>
+<!--
+  <b>NOTE:</b> Assigning a new TIcon object to Icon will cause the icon in the tray
+  to redraw. However, this is not the case if you change Icon through the TIcon.Assign
+  method, or change it through TIcon.Handle. In those cases you must call the method
+  Refresh (see below) to redraw it.
+-->
+  </td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>IconVisible</td>
+  <td class='desc' valign='top'><span class='declaration'>property IconVisible: Boolean;</span><br>
+  Whether to display the icon. This property has no effect in design mode.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Hint</td>
+  <td class='desc' valign='top'><span class='declaration'>type THintString = ShortString;<br>
+  property Hint: THintString;</span><br>
+  The tray icon's hint (max 128 chars), which is displayed when you move the mouse cursor
+  over the tray icon. Use &#35;13 as a separator in multi-line hints.<br>
+  <b>NOTE:</b> WinNT doesn't appear to support multi-line hints.<br>
+  <b>NOTE:</b> On some older Windows versions (before IE 5) the hint is max 64 chars.<br>
+  <b>NOTE:</b> The time until the hint window closes is determined by Windows,
+  so don't bother trying to change the interval, because you can't. Setting
+  Application.HintPause and Application.HintHidePause has no effect.
+  </td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>ShowHint</td>
+  <td class='desc' valign='top'><span class='declaration'>property ShowHint: Boolean;</span><br>
+  Whether to show the hint.</td>
+  <td class='default' valign='top' nowrap>Default true</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>PopupMenu</td>
+  <td class='desc' valign='top'><span class='declaration'>property PopupMenu: TPopupMenu;</span><br>
+  The popup menu you want to display when the icon is clicked.</td>
+  <td class='default' valign='top' nowrap>Default true</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>LeftPopup</td>
+  <td class='desc' valign='top'><span class='declaration'>property LeftPopup: Boolean;</span><br>
+  Whether you want the popup menu to pop up when you click the left mouse button.
+  Default is false, meaning only the right button will work.<br>
+  <b>NOTE:</b> LeftPopup must be false (or the popup menu unassigned) if you want to
+  double click the tray icon without displaying the popup menu.
+  LeftPopup must be false if you want CoolTrayIcon to handle a menu that has a default
+  menu item.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Enabled</td>
+  <td class='desc' valign='top'><span class='declaration'>property Enabled: Boolean;</span><br>
+  Works like Enabled for other controls, enabling/disabling keyboard and mouse input.
+  Useful when you want to temporarily disable the popup menu, say while you are displaying
+  an about box or some other modal window.</td>
+  <td class='default' valign='top' nowrap>Default true</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>IconList</td>
+  <td class='desc' valign='top'><span class='declaration'>property IconList: TCustomImageList;</span><br>
+  An ImageList containing icons. If it contains other images than icons, the tray icon
+  won't change when using CycleIcons, but no error occurs.<br>
+  <b>NOTE:</b> When you assign to IconList IconIndex is set to 0.<br>
+  <b>NOTE:</b> In D2 and D3 the property is of type TImageList in stead of TCustomImageList.</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>IconIndex</td>
+  <td class='desc' valign='top'><span class='declaration'>property IconIndex: Integer;</span><br>
+  The current icon in the assigned iconlist (or 0 if no iconlist is assigned).</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>CycleIcons</td>
+  <td class='desc' valign='top'><span class='declaration'>property CycleIcons: Boolean;</span><br>
+  Animates the tray icon by cycling through all the icons stored in IconList and assigning them
+  to Icon. When you set CycleIcons to true, it will begin with the first icon in IconList.<br>
+  <b>NOTE:</b> CycleIcons can be true even though you have no IconList.
+  No cycling will occur in that case, but the cycle timer is still active, which will consume
+  some resources.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>CycleInterval</td>
+  <td class='desc' valign='top'><span class='declaration'>property CycleInterval: Cardinal;</span><br>
+  The time interval in milisecs. before selecting a new icon from IconList.</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>DesignPreview</td>
+  <td class='desc' valign='top'><span class='declaration'>property DesignPreview: Boolean;</span><br>
+  Enables you to preview the tray icon in design mode. You can watch what the icon looks like,
+  see its hint, enable/disable it, test the popupmenu, and animate it via CycleIcons.<br>
+  <b>NOTE:</b> Set DesignPreview to false to avoid the design time icon appearing when you run
+  your program. This is only a problem in the Delphi IDE, not in the finished exe-file.
+  I couldn't find a way to kill the design icon in run-time, so you'll have to do it yourself.<br>
+  <b>NOTE:</b> Setting DesignPreview in run-time has no effect.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Handle</td>
+  <td class='desc' valign='top'><span class='declaration'>property Handle: HWND;</span><br>
+  The tray icon's handle.</td>
+  <td class='default' valign='top' nowrap>Read-only</td>
+</tr>
+<!--
+<tr>
+  <td class='name' valign='top'>WindowHandle</td>
+  <td class='desc' valign='top'><span class='declaration'>property WindowHandle: HWND;</span><br>
+  The tray icon's window handle.</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+-->
+<tr>
+  <td class='name' valign='top'>WantEnterExitEvents</td>
+  <td class='desc' valign='top'><span class='declaration'>property WantEnterExitEvents: Boolean;</span><br>
+  Whether you would like to receive the OnMouseEnter and OnMouseExit events.
+  These events require an internal timer to be active, so if you have no use for them
+  set WantEnterExitEvents to false to minimize resource usage.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Behavior</td>
+  <td class='desc' valign='top'><span class='declaration'>type TBehavior = (bhWin95, bhWin2000);<br>
+  property Behavior: TBehavior;</span><br>
+  This property does not affect the tray icon's behavior in any visible way.
+  It determines which messages are dispatched to the application when the user interacts
+  with the tray icon (specifically, right mouse clicks result in a WM_RBUTTONDOWN followed 
+  by a WM_RBUTTONUP message in Win95 mode, but in Win2000 mode a WM_CONTEXTMENU, NIN_SELECT, 
+  or NIN_KEYSELECT message is dispatched. For details, see the Remarks section on
+  <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/Shell/reference/functions/shell_notifyicon.asp'>this page</a>).<br>
+  Probably the only case where you should consider changing the value of this property, is
+  when you send messages to the tray icon programmatically, using PostMessage or SendMessage.<br>
+  <b>NOTE:</b> This property is public, not published.</td>
+  <td class='default' valign='top' nowrap>Default bhWin95</td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>MinimizeToTray</td>
+  <td class='desc' valign='top'><i>This property applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>property MinimizeToTray: Boolean;</span><br>
+  Whether you want to hide the main form instead of minimizing it. The form will hide
+  and the tray icon will show.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+</table>
+
+
+
+<a name='Methods'></a><h2>Methods</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>Refresh</td>
+  <td class='desc' valign='top'><span class='declaration'>function Refresh: Boolean;</span><br>
+  Redraws the tray icon.
+<!--
+  May be necessary when changing the icon, depending on how you do it (see above).
+-->
+  You probably don't need to ever call this method.
+  </td>
+  <td class='default' valign='top'>Returns true or false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>ShowBalloonHint</td>
+  <td class='desc' valign='top'><span class='declaration'>type TBalloonHintIcon = (bitNone, bitInfo, bitWarning, bitError, bitCustom);<br>
+  type TBalloonHintTimeOut = 10..60;<br>
+  function ShowBalloonHint(Title: String; Text: String; IconType: TBalloonHintIcon; TimeoutSecs: TBalloonHintTimeOut): Boolean;</span><br>
+  Shows a balloon hint (a kind of "sticky" popup hint).
+  You can use up to 64 chars for the title and up to 255 chars for the text. 
+  The hint is visible for 10-60 seconds, or until the user clicks it (or until you 
+  programmatically hide it). You cannot show a balloon hint if the tray icon is not showing, 
+  and hiding the tray icon hides any balloon hint.<br>
+  <b>NOTE:</b> Balloon hints are not available in Win95 and Win98. Calling this method 
+  in those Windows versions has no effect.<br>
+  <b>NOTE:</b> From WinXP SP 2 the balloon hint supports a custom icon, which is the 
+  tray icon itself (the Icon property). To do this, set IconType to bitCustom. 
+  If you want the balloon hint to show a custom icon which is not the same as Icon, 
+  you must change Icon before calling ShowBalloonHint, then change Icon back again.<br>
+  <b>NOTE:</b> The HideBalloonHint method is automatically called by ShowBalloonHint,
+  so you don't get multiple balloon hints.<br>
+  <b>NOTE:</b> There appears to be a bug with the timeout value in WinXP. 
+  See <a href='#XPBalloonTimeoutBug'>bugs section</a>.</td>
+  <td class='default' valign='top'>Returns true or false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>HideBalloonHint</td>
+  <td class='desc' valign='top'><span class='declaration'>function HideBalloonHint: Boolean;</span><br>
+  Hides the balloon hint (if any).</td>
+  <td class='default' valign='top'>Returns true or false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Popup</td>
+  <td class='desc' valign='top'><span class='declaration'>procedure Popup(X, Y: Integer);</span><br>
+  Shows the associated popupmenu (if any) at the specified screen coordinates.</td>
+  <td class='default' valign='top'><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>PopupAtCursor</td>
+  <td class='desc' valign='top'><span class='declaration'>procedure PopupAtCursor;</span><br>
+  Shows the associated popupmenu (if any) at the current cursor coordinates. 
+  This method is usually called automatically in response to an OnClick event, but you can 
+  call it manually if you want the popupmenu to appear at other times.</td>
+  <td class='default' valign='top'><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>BitmapToIcon</td>
+  <td class='desc' valign='top'><span class='declaration'>function BitmapToIcon(const Bitmap: TBitmap; const Icon: TIcon; MaskColor: TColor): Boolean;</span><br>
+  Renders and returns an existing icon based on the specified bitmap.
+  The bitmap should be 16x16 pixels. Specify a color to be shown transparently or clNone
+  for no transparency.<br>
+  <b>NOTE:</b> Bitmaps that are not exactly 16x16 will be scaled up or down.</td>
+  <td class='default' valign='top'>Returns true or false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>GetTooltipHandle</td>
+  <td class='desc' valign='top'><span class='declaration'>function GetTooltipHandle: HWND;</span><br>
+  All tray icons share the same tooltip window (the hint popup).
+  This method returns the tooltip handle.</td>
+  <td class='default' valign='top'>Returns handle or 0 if error</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>GetBalloonHintHandle</td>
+  <td class='desc' valign='top'><span class='declaration'>function GetBalloonHintHandle: HWND;</span><br>
+  All applications share the same balloon hint (if supported by the Windows version). 
+  This method returns the balloon hint handle.</td>
+  <td class='default' valign='top'>Returns handle or 0 if error</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>GetClientIconPos</td>
+  <td class='desc' valign='top'><span class='declaration'>function GetClientIconPos(X, Y: Integer): TPoint;</span><br>
+  Returns the cursor position <i>inside</i> the tray icon.
+  Will return coordinates between (-1,-1) and (16,16).
+  You would expect the coordinates to vary between 0 and 15, but Windows adds a border
+  1 pixel wide to all tray icons, which is appparently considered to be part of the tray icons.
+  Depending on whether the tray icon has other tray icons as neighbours to the left, right,
+  top, or bottom, the border is inserted as Windows sees fit.
+  So in other words, <i>this method is not exact</i>. You should expect a variation of 2 pixels.
+  If anyone sees a way to patch this, let me know.</td>
+  <td class='default' valign='top'>Returns position in a TPoint</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>SetFocus</td>
+  <td class='desc' valign='top'><span class='declaration'>function SetFocus: Boolean;</span><br>
+  Sets focus to the tray icon (if it is visible).<br>
+  <b>NOTE:</b> Supported from ver. 5.0 of Internet Explorer.</td>
+  <td class='default' valign='top'>Returns true or false</td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>ShowMainForm</td>
+  <td class='desc' valign='top'><i>This method applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>procedure ShowMainForm;</span><br>
+  Shows the main form.<br>
+  <b>NOTE:</b> It is important that you use this method when displaying the form,
+  as it contains important calls that affect how the form and the application display
+  themselves. See the demo app.</td>
+  <td class='default' valign='top'><br></td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>HideMainForm</td>
+  <td class='desc' valign='top'><i>This method applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>procedure HideMainForm;</span><br>
+  Hides the main form.</td>
+  <td class='default' valign='top'><br></td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>ShowTaskbarIcon</td>
+  <td class='desc' valign='top'><i>This method applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>procedure ShowTaskbarIcon;</span><br>
+  Shows the application's taskbar icon (not to be confused with the tray icon).<br>
+  <td class='default' valign='top'><br></td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>HideTaskbarIcon</td>
+  <td class='desc' valign='top'><i>This method applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>procedure HideTaskbarIcon;</span><br>
+  Hides the application's taskbar icon (not to be confused with the tray icon).<br>
+  <b>NOTE:</b> If you display a child form the taskbar icon will become visible again
+  automatically. This is standard Windows behavior.</td>
+  <td class='default' valign='top'><br></td>
+</tr>
+</table>
+
+
+
+<a name='Events'></a><h2>Events</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>OnClick</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Works like the similar event for window controls.<br>
+  <b>NOTE:</b> The Click event corresponds to a MouseDown followed by a MouseUp.
+  If no DblClick event is assigned the Click event fires immediately (ie. after
+  the MouseUp). Otherwise it will wait for a small period of time to see if the
+  user clicks again, in which case we have a double click. If no DblClick event
+  is assigned a double click will actually cause the Click event to fire.
+  This is intentional.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnDblClick</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Works like the similar event for window controls.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnMouseDown</td>
+  <td class='desc' valign='top'><span class='declaration'>TMouseEvent;</span><br>
+  Works like the similar event for window controls.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnMouseUp</td>
+  <td class='desc' valign='top'><span class='declaration'>TMouseEvent;</span><br>
+  Works like the similar event for window controls.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnMouseMove</td>
+  <td class='desc' valign='top'><span class='declaration'>TMouseMoveEvent;</span><br>
+  Works like the similar event for window controls.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnMouseEnter</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired after the cursor enters the tray icon. Requires
+  the WantEnterExitEvents property to be true.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnMouseExit</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired after the cursor leaves the tray icon. Requires
+  the WantEnterExitEvents property to be true.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnCycle</td>
+  <td class='desc' valign='top'><span class='declaration'>procedure(Sender: TObject; NextIndex: Integer) of object;</span><br>
+  Fired just before the icon changes via CycleIcons.
+  Returns the next index in the assigned imagelist.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnBalloonHintShow</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired after the balloon hint shows itself. This doesn't have to occur immediately
+  after you call the ShowBalloonHint method. In case another application is already
+  showing a balloon hint, your application must wait for it to close before it gets 
+  to show the balloon hint itself. This event will tell you when it has shown the hint.<br>
+  <b>NOTE:</b> Not supported in Win2000. See <a href='#2000BalloonEventsBug'>bugs section</a>.
+</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnBalloonHintHide</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired after the balloon hint closes because another application needs to show a
+  balloon hint, or because you called either the ShowBalloonHint or the
+  HideBalloonHint method.<br>
+  <b>NOTE:</b> Not supported in Win2000.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnBalloonHintTimeout</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired after the balloon hint closes because it timed out.<br>
+  <b>NOTE:</b> Not supported in Win2000.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>OnBalloonHintClick</td>
+  <td class='desc' valign='top'><span class='declaration'>TNotifyEvent;</span><br>
+  Fired when the user clicks the balloon hint.<br>
+  <b>NOTE:</b> Not supported in Win2000.</td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>OnMinimizeToTray</td>
+  <td class='desc' valign='top'><i>This event applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>TNotifyEvent;</span><br>
+  Fired when the application is about to minimize to tray. Useful if you want to do special
+  processing, like animation effects, when the app. gets minimized (hidden).<br>
+  <b>NOTE:</b> MinimizeToTray must be true for this event to fire.</td>
+</tr>
+<tr>
+  <td class='name2' valign='top'>OnStartup</td>
+  <td class='desc' valign='top'><i>This event applies only when the owner of the
+  tray icon component is a form.</i><br>
+  <span class='declaration'>procedure(Sender: TObject; var ShowMainForm: Boolean) of object;</span><br>
+  Fired initially at application startup when the main form is about to display.
+  Set the ShowMainForm parameter to false if you don't want the form to display.<br>
+  <b>NOTE:</b> May fire multiple times for an MDI form (once for every child form
+  created at startup).<br>
+  <b>NOTE:</b> This event occurs before the form's OnCreate method (if used with a form).<br>
+  <b>NOTE:</b> Replaces the StartMinimized property found in earlier versions.</td>
+</tr>
+</table>
+
+
+
+<a name='Hints'></a><h2>Hints</h2>
+
+<ul>
+<li><b>How do I start my app. with the tray icon visible and the main form invisible?</b><br>
+At design time set IconVisible to true and set the form's Visible property to false.
+Set the ShowMainForm parameter to false in the OnStartup event. See the StartHidden demo.
+</li>
+
+<li><b>What is the proper way to restore the form?</b><br>
+ALWAYS use the method ShowMainForm! This method contains important calls that affect
+how the form and the application display themselves. Simply setting the form visible
+or calling Application.Restore is not enough. A common symptom is the form with tabpages
+that don't update themselves because ShowMainForm wasn't used.
+</li>
+
+<li><b>I used the OnStartup event to hide the form, but I can still see a quick flash on
+the taskbar when the app. is starting?</b><br>
+If it bothers you you can set the Application.ShowMainForm property in the main
+project source, like this:
+  <pre>  .....
+  Application.Initialize;
+  Application.ShowMainForm := False;
+  .....</pre>
+</li>
+
+<li><b>Why does the tray icon not appear in my NT/2000/XP service app.?</b><br>
+Set the service's Interactive property to true, set ServiceType to stWin32, and set the tray icon's 
+IconVisible property to true.
+See also the <a href='#NTServiceIconBug'>bugs section</a> concerning services in NT4.
+</li>
+
+<li><b>I want multiple tray icons in my app.?</b><br>
+Just create a CoolTrayIcon object for each tray icon you want. The component is optimized
+to share resources between the tray icons.
+</li>
+
+<li><b>How do I send a message to the tray icon through code?</b><br>
+Use PostMessage or SendMessage and specify the message as the LParam parameter.
+Here's an example of sending a WM_LBUTTONDOWN message, invoking the tray icon's
+OnMouseDown event:
+  <pre>  PostMessage(CoolTrayIcon1.Handle, WM_TRAYNOTIFY, Integer(CoolTrayIcon1), WM_LBUTTONDOWN);</pre>
+</li>
+
+<li><b>I want to hide ALL windows, including dialogs and popup forms?</b><br>
+Minimize the app. before calling HideMainForm, like this:
+  <pre>
+  Application.Minimize;
+  CoolTrayIcon1.HideMainForm;</pre>
+</li>
+
+<li><b>I want to override the "hide inactive tray icons" feature in WinXP?</b><br>
+Calling the tray icon's Refresh method at regular intervals should do the trick (I think). 
+Anyway, it's not a good idea to override standard Windows behavior.
+</li>
+
+<li><b>When does the OnStartup event occur?</b><br>
+The OnStartup event occurs before the owner form's OnCreate event.
+</li>
+
+<li><b>How do I show the balloon hint for less than 10 seconds?</b><br>
+Set a timer to close the hint prematurely, using the HideBalloonHint method.
+</li>
+
+<li><b>How do I check if balloon hints are available (since they don't work in Win95 and Win98)?</b><br>
+This should work in D4 and up:
+<pre>  uses ComCtrls;
+  if (GetComCtlVersion < ComCtlVersionIE4) or
+     ((Win32Platform = VER_PLATFORM_WIN32_WINDOWS) and
+      (Win32MinorVersion <> 90)) then
+    // Balloon hints NOT supported</pre>
+</li>
+
+<li><b>Can I use the ballon hints without the tray icon?</b><br>
+Take a look at the <a href='http://www.finances-ltd.narod.ru/' target='_blank'>zBalloon</a> component.
+</li>
+</ul>
+
+
+
+<a name='Bugs'></a><h2>Known Bugs</h2>
+
+<ul>
+<!--
+<li>Someone complains the component's hint will not show when CycleIcons is true.
+This happens in WinME. I've been unable to reproduce this error, but please tell me if
+you get it.
+</li>
+-->
+<!--
+<li>CoolTrayIcon has previously had a bug that prevented the user from logging off
+unless he manually terminated the application CoolTrayIcon was used in.
+This should be fixed by now, but if not, please tell me.
+</li>
+-->
+<a name='XPBalloonTimeoutBug'></a>
+<li>It appears there's a bug in WinXP (apparently both with SP 1 and SP 2 versions of 
+WinXP - possibly it's a general bug independent of service packs).
+The bug makes the balloon hint appear for a random amount of time, no matter which timeout 
+value you specify in the call to ShowBalloonHint. I haven't verified this with Microsoft, 
+but it is not a problem in other Windows versions. Also, other tray icon components 
+suffer from this problem, so it is most likely an issue with WinXP. Please tell me if 
+you have this problem and you are not running WinXP SP 1 or SP 2.
+</li>
+
+<a name='2000BalloonEventsBug'></a>
+<li>Some people report that the balloon hint events never fire. This is a Win2000 issue.
+It doesn't appear to matter which service pack, Internet Explorer version, or comctl32.dll
+version you use. This makes me suspect that Win2000 simply does not support these events.
+</li>
+
+<a name='NTServiceIconBug'></a>
+<li>The tray icon may disappear in NT4 if it is used in an interactive service and
+you log off, then log back on. I've been trying to fix this, but have so far been
+unsuccessful.
+An explanation for why the problem occurs can be found
+<a href='http://support.microsoft.com/default.aspx?scid=kb;EN-US;q238721'>here</a>.
+(BTW: some service packs, like SP6 seem to fix this problem).
+</li>
+
+<li>It is possible to disable balloon hints in Windows. If the balloon hint doesn't 
+display when it's supposed to (and if you're not using Win9x), you should verify this setting.
+</li>
+
+<li>Occasionally someone reports that an application using CoolTrayIcon prevents the
+user from logging off or shutting down until he manually terminates the application.
+I've more or less come to the conclusion that this is not a bug in CoolTrayIcon.
+More likely it's a bug in some other third party component. At least it seems
+people always get this error when they use CoolTrayIcon together with other
+third party components. If you get this error try removing the other components
+one at a time and see if that doesn't solve the problem (or even simpler - run my
+demo app. and see if it has the problem). Afterwards, if you still have reason to
+believe CoolTrayIcon is the problem, don't hesitate to tell me, but please perform
+this simple test of exclusion first. (NOTE: It would seem various components in
+Delphi's FastNet collection have this problem - independently of CoolTrayIcon).
+<br><br>
+Also make sure you use CoolTrayIcon correctly. If your app. &quot;closes to tray&quot;
+(goes to the tray when the user clicks the form's close button) you need to handle
+the WM_QUERYENDSESSION message manually, or the app. (unsurprisingly) won't terminate
+when Windows shuts down. See the source in the CoolTrayTest demo for a solution.
+</li>
+
+<!--
+<li>One person has reported that the default icon that is created when you add a
+CoolTrayIcon component to your application is invalid. You get a runtime error:
+&quot;Error reading CoolTrayIcon1.Icon.Data: The parameter is incorrect.&quot;.
+I've not had anyone else report this, but please tell me if it happens to you.
+To get around it, simply assign an icon to the Icon property.
+</li>
+-->
+
+<li>If you're using CoolTrayIcon with an ActionList (associated with popup menu items),
+you'll find that actions based on TCustomAction (like TFileExit) don't execute if the
+form that owns the tray icon is invisible. I'm guessing TCustomAction is designed to
+behave like this. However, this problem doesn't occur with standard actions.
+</li>
+</ul>
+
+
+
+<a name='Comments'></a><h2>Comments</h2>
+
+The CoolTrayIcon component is <i>free for personal and commercial use</i>. 
+Feel free to use and improve it, but <i>please include all original files if you 
+redistribute the zip-file</i>. If you have any comments or corrections to the component 
+I would very much like to hear them. A lot of Delphi programmers have already told me 
+they like the component and use it, which is a huge boost for my ego. Thanks a lot, 
+guys - especially those of you who gave suggestions and pointed out the bugs.
+</p>
+
+<p>
+If you use the component some credit somewhere in your application would be a nice gesture,
+but it is not a requirement.
+</p>
+
+<p>
+The component should work on any Windows platform (Win9x, ME, NT, 2000, XP, 2003, Vista).
+If you experience any problems related to the operating system you use, please tell me.
+Also, it should work in Delphi 3 and up (Delphi 2?) and C++Builder 3 and up.
+Again, tell me if I'm wrong.
+</p>
+
+<p>
+<a name='Service'></a><b>A word about services:</b> CoolTrayIcon does not require its
+owner to be a form. This allows you to use it for non-windowed apps. such as services.
+Some of the properties, methods, and events don't make sense without a form, but rather
+than creating a superclass without these properties/methods/events I've simply let them
+stay in CoolTrayIcon itself. You can use them in your service app., but they will not do
+anything. I figured the component would be more flexible and easier to extend into
+subclasses this way.
+</p>
+
+<p>
+Get the latest version from <a href='http://subsimple.com/delphi.asp' target='_blank'>
+http://subsimple.com/delphi.asp</a>.
+</p>
+
+<p>
+Troels Jakobsen<br>
+<a href='mailto:troels.jakobsen@gmail.com'>troels.jakobsen@gmail.com</a>
+</p>
+
+</body>
+</html>

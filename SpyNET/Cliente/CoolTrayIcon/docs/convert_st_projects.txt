@@ -1,0 +1,16 @@
+Version 2.0.0 of SimpleTimer is incompatible with older versions, which
+means you will have to adjust your previous projects that use SimpleTimer.
+
+
+1) The Start and Stop methods have been replaced with the Enabled and Interval
+properties, to make SimpleTimer more interchangeable with TTimer.
+
+To start the timer you will need to first set the Interval, then set Enabled 
+to True (just like TTimer). Also, you must specify an OnTimer event method 
+(see below).
+
+
+2) The callback method you used for receiving notifications from a SimpleTimer
+object has been replaced by an OnTimer event. This both makes SimpleTimer
+easier to use and makes it look more like TTimer.
+

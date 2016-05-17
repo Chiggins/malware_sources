@@ -1,0 +1,28 @@
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\ShadowTech Rat.exe.config
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\ShadowTech Rat.exe
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\ShadowTech Rat.pdb
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\ShadowTech Rat.xml
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\Interop.NATUPNPLib.dll
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\bin\Release\upnp.dll
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.ChatSystem.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Clipboard.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.DialogBox.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Download.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.FileManager.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Information.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.KeystrokeCapture.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Resources.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.ProcessManager.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Profile.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.RemoteDesktop.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Script.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.SendMessage.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.ShadowTechRat.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.Webcam.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech_Rat.WebcamDevice.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech Rat.exe
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech Rat.xml
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Rat\ShadowTech Rat\obj\x86\Release\ShadowTech Rat.pdb

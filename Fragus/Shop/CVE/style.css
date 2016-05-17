@@ -1,0 +1,29 @@
+html  {
+height: 100%;
+}
+
+body { 
+	font-family: Verdana;
+	font-size: 10px;
+	background-image: url(Images/bg.png);
+	text-align: center;
+}
+
+div.background
+  {
+  width:1000px;
+  height:750px;
+  background:url() repeat;
+  border:0px solid black;
+  }
+div.transbox
+  {
+  width:1400px;
+  height:900px;
+  margin:30px 30px;
+  background-color:#000000;
+  border:0px solid black;
+  opacity:0.3;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+
+  }

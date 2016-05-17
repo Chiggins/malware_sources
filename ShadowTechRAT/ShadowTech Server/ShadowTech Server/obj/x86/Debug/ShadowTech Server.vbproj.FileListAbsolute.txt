@@ -1,0 +1,11 @@
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\bin\Debug\ShadowTech Rat.exe.config
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\bin\Debug\ShadowTech Rat.exe
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\bin\Debug\ShadowTech Rat.pdb
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\bin\Debug\ShadowTech Rat.xml
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ShadowTech_Rat.Resources.resources
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ShadowTech Rat.exe
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ShadowTech Rat.xml
+C:\Users\Bobby\documents\visual studio 2010\Projects\ShadowTech Server\ShadowTech Server\obj\x86\Debug\ShadowTech Rat.pdb

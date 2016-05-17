@@ -1,0 +1,426 @@
+/****************************************/
+/* LeanBack Player | HTML5 Media Player */
+/* Release: 0.8.x 						*/
+/****************************************/
+/* LeanBack Player - no HTML5, no Flash */
+.leanback-player-html-fallback {position: relative; text-align: center; font: 13px/1.231 arial, helvetica, sans-serif !important; color: #000 !important; z-index: 1002;}
+.leanback-player-html-fallback img {border: 1px solid #555; z-index: 1000;}
+.leanback-player-html-fallback div {position: absolute; width: auto; min-width: 220px; height: 20px; bottom: -2px; left: 0; right: -2px; margin: 0; border: 1px solid #555; padding: 5px 5px 0; background: #fff; z-index: 1001;}
+.leanback-player-html-fallback a {font-size: 12px; color: #000 !important; text-decoration: none;}
+.leanback-player-html-fallback a:hover {border-bottom: dotted 1px #000;}
+.leanback-player-audio .leanback-player-html-fallback {position: relative; min-width: 220px !important; height: 20px !important;}
+.leanback-player-audio .leanback-player-html-fallback div {bottom: auto; left: auto; right: auto;}
+/************************************/
+/* LeanBack Player - Flash Fallback */
+.leanback-player-flash-fallback {position: absolute; margin: auto; text-align: center; border: 1px solid #555; z-index: 1003;}
+/*******************/
+/* IFrame Settings */
+iframe.h5_lb_player_smallscreen::-webkit-scrollbar, iframe.h5_lb_player_fullscreen::-webkit-scrollbar {display: none;}
+iframe.h5_lb_player_fullscreen {
+	position: fixed; top: 0; left: 0; border: 0;
+	z-index: 1004;
+}
+iframe.h5_lb_player_smallscreen {
+	margin: 0 !important; padding: 0 !important; overflow: hidden;
+	z-index: 1000;
+}
+body.h5_lb_iframe {
+	position: absolute !important; border: 0 !important; margin: 0 !important; padding: 0 !important; top: 0 !important; right: 0 !important; left: -2px !important; bottom: 0 !important;
+}
+/*******************/
+/* LeanBack Player */
+.h5_lb_player {cursor: pointer; direction: ltr;}
+.h5_lb_player .h5_lb_video {border: 1px solid #555; background: #000; cursor: pointer; z-index: 1000; outline: 0;}
+.h5_lb_player .h5_lb_audio {cursor: pointer; outline: 0;}
+.h5_lb_player audio {display: none !important;}
+.h5_lb_smallscreen {position: relative; margin: auto; text-align: center;}
+.h5_lb_fullscreen {position: fixed !important; top: 0; left: 0; margin: auto; text-align: center; border: 0; background: #000; z-index: 9999;}
+.h5_lb_fullscreen .h5_lb_video {border: 0;}
+.h5_lb_unfocused {opacity: 0.7;}
+.h5_lb_unfocused:hover {opacity: 1.0;}
+/*******************/
+/* Big Play Button */
+.h5_lb_player .big_play_button {
+	position: absolute; top: 50%; left: 50%; margin:-40px 0 0 -40px; width: 80px; height: 80px;
+	border: 1px solid #f5f5f5; cursor: pointer !important; display: block; z-index: 1003;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.6 opacity */
+	background: rgba(0,0,0,0.6);
+}
+.h5_lb_player .big_play_button:hover {
+	/* Background RGBa with 0.8 opacity */
+	background: rgba(0, 0, 0, 0.8);
+}
+.h5_lb_player .big_play_button div {
+	margin: 20px 0 0 22px; padding: 0; height: 0; width: 0; font-size: 0; line-height: 0;
+	border-top: 20px solid transparent; border-left: 40px solid #f5f5f5; border-bottom: 20px solid transparent; 
+}
+/*******************/
+/* Loading Spinner */
+.h5_lb_player .h5_lb_spinner {position: absolute; top: 50%; left: 50%; margin:-7px 0 0 -7px; width: 28px; height: 28px; z-index: 1002;}
+.h5_lb_player .h5_lb_spinner div {
+	position: absolute; width: 12px; height: 12px; background: #f5f5f5;
+	/* Border Radius */
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+}
+/******************/
+/* Logo */
+.h5_lb_player .logo {position: absolute; margin: 0; top: 12px; left: 12px; border: 1px solid transparent; display: block; z-index: 1000;}
+/******************/
+/* Poster, Object */
+.h5_lb_player .poster {position: absolute; margin: 0; top: 0; left: auto; right: auto; border: 1px solid transparent; display: block; z-index: 1001;}
+.h5_lb_fullscreen .poster {border: 0;}
+/***************/
+/* Control Bar */
+.h5_lb_controls {
+	position: absolute; top: auto; right: -1px; bottom: -1px; left: 1px; height: 36px; cursor: default; z-index: 1001;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.6 opacity */
+	background: rgba(0,0,0,0.6);
+	/* Disable selection */
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.h5_lb_controls_below {
+	right: -2px !important; bottom: -38px !important; left: 0 !important;
+	border-left: 1px solid #555; border-right: 1px solid #555; border-bottom: 1px solid #555;
+	/* Background */
+	background: #000 !important;
+}
+.h5_lb_fullscreen .h5_lb_controls {
+	position: absolute; top: auto; bottom: -1px; left: 0; margin: 0 !important; padding: 0 !important; border: 0;
+}
+.h5_lb_player:hover .h5_lb_controls {display: block;}
+.h5_lb_controls_audio {
+	position: relative !important; margin: auto !important; bottom: auto !important; border: 0 !important;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.8 opacity */
+	background: rgba(0, 0, 0, 0.8);
+}
+/********************/
+/*  Control Buttons */
+.h5_lb_controls > div {
+	float: left; text-align: center !important; margin: 0; padding: 0; width: 32px; height: 36px;
+}
+/*****************/
+/* Control Items */
+.h5_lb_controls div.h5_lb_play_control {display: block;}
+.h5_lb_controls div.h5_lb_pause_control {display: none;}
+.h5_lb_controls div.h5_lb_stop_control {display: block;}
+.h5_lb_controls div.h5_lb_progress_control {cursor: pointer; float: none; cursor: pointer; width: 0; height: 1px !important; display: block;}
+.h5_lb_controls div.h5_lb_timer_control {display: block; width: 120px; cursor: default !important;}
+.h5_lb_controls div.h5_lb_volume_control {display: block; width: auto; padding: 0 6px;}
+.h5_lb_controls div.h5_lb_playback_control {cursor: pointer; display: block; width: 40px;}
+.h5_lb_controls div.h5_lb_subtitle_control {cursor: pointer; display: block; width: 50px;}
+.h5_lb_controls div.h5_lb_sources_control {cursor: pointer; display: block; width: 50px;}
+.h5_lb_controls div.h5_lb_fullscreen_control {display: block; width: 45px; padding: 0 6px;}
+/****************************/
+/* Play Control: Inner Item */
+.h5_lb_controls div.h5_lb_play_control div {margin: 10px 0 0 9px; font-size: 0; line-height: 0; width: 0; border-top: 9px solid transparent; border-left: 18px solid #f5f5f5; border-bottom: 9px solid transparent; cursor: pointer;}
+/*****************************/
+/* Pause Control: Inner Item */
+.h5_lb_controls div.h5_lb_pause_control div {height: 18px; width: 5px; background: #f5f5f5; float: left; cursor: pointer;}
+.h5_lb_controls div.h5_lb_pause_control div:nth-child(1) {margin: 10px 0 0 9px;}
+.h5_lb_controls div.h5_lb_pause_control  div:nth-child(2) {margin: 10px 0 0 5px;}
+/***************************/
+/* Stop Control: Inner Item */
+.h5_lb_controls div.h5_lb_stop_control div {margin: 10px 0 0 9px; width: 18px; height: 18px; background: #f5f5f5; cursor: pointer;}
+/********************************/
+/* Progress Control: Inner Item */
+.h5_lb_controls div.h5_lb_progress_control .progress_bar_bg {
+	position: absolute; margin: 0; height: 1px; z-Index: 1001;
+	/* Background */
+	background: #222;
+}
+.h5_lb_controls:hover div.h5_lb_progress_control .progress_bar_bg {
+	margin-top: -4px; height: 4px;
+}
+.h5_lb_controls div.h5_lb_progress_control .progress_bar_buffered {
+	position: absolute; margin: 0; height: 1px; z-Index: 1001;
+	/* Background */
+	background: #555;
+}
+.h5_lb_controls:hover div.h5_lb_progress_control .progress_bar_buffered {
+	margin-top: -4px; height: 4px;
+}
+.h5_lb_controls div.h5_lb_progress_control .progress_bar_played {
+	position: absolute; margin: 0; height: 1px; z-Index: 1001;
+	/* Background */
+	background: #f5f5f5;
+}
+.h5_lb_controls:hover div.h5_lb_progress_control .progress_bar_played {
+	margin-top: -4px; height: 4px;
+}
+.h5_lb_controls div.h5_lb_progress_control div.progress_bar_time {
+	position: absolute; margin: -5px 0 0; height: 4px; border: 1px solid transparent; background: transparent; z-Index: 1001; display: none;
+}
+.progress_bar_time div.progress_bar_time_line {
+	position: absolute; top: -10px; margin: 0 0 0 -9px; width: 0; height: 0; display: none;
+	font-size: 0; line-height: 0; width: 0;
+	border-top: 10px solid #f5f5f5; border-bottom: 10px solid transparent; border-left: 10px solid transparent; border-right: 10px solid transparent;
+}
+.h5_lb_controls_below .progress_bar_time div.progress_bar_time_line {
+	margin: 0 0 0 -10px !important;
+}
+.progress_bar_time div.progress_bar_time_txt {
+	position: absolute; top: -30px; margin: 0 0 0 -3px; padding: 3px 5px; height: 12px;
+	color: #f5f5f5; border: 1px solid #f5f5f5; font: 10px/1.231 arial, helvetica, sans-serif; font-weight: bold; display: none;
+	/* Background */
+	background: #000;
+}
+.h5_lb_controls_below .progress_bar_time div.progress_bar_time_txt {
+	margin: 0 0 0 -4px !important;
+}
+.progress_bar_time:hover .progress_bar_time_line,
+.progress_bar_time:hover .progress_bar_time_txt {z-Index: 1004; display: block;}
+/*****************************/
+/* Timer Control: Inner Item */
+.h5_lb_timer_control div {margin: 11px 0 0; font: 11px/1.231 "bitstream vera sans", "lucida grande", verdana; text-align: center; color: #f5f5f5;}
+/*************************/
+/* Volume Control: Items */
+/* Mute Items */
+.h5_lb_controls div.h5_lb_volume_control .h5_lb_mute div {position: absolute;}
+.h5_lb_mute div:nth-child(1), .h5_lb_mute div:nth-child(2), .h5_lb_mute div:nth-child(3), .h5_lb_mute div:nth-child(4) {
+	border-width: 1px 0 1px 1px; border-color: #f5f5f5; border-style: solid; cursor: pointer;
+}
+.h5_lb_mute div:nth-child(2), .h5_lb_mute div:nth-child(3), .h5_lb_mute div:nth-child(4) {
+	/* Border Radius */
+	-moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 8px 0 0 8px; border-radius: 8px 0 0 8px;
+}
+.h5_lb_mute div:nth-child(1) {margin: 15px 0 0 4px; height: 5px; width: 4px; z-index: 1001;}
+.h5_lb_mute div:nth-child(2) {margin: 13px 0 0 8px; height: 9px; width: 2px; z-index: 1000;}
+.h5_lb_mute div:nth-child(3) {margin: 12px 0 0 10px; height: 11px; width: 2px; border-width: 1px 0;}
+.h5_lb_mute div:nth-child(4) {margin: 11px 0 0 11px; height: 13px; width: 1px; border-width: 1px 1px 1px 0;}
+.h5_lb_mute div:nth-child(5), .h5_lb_mute div:nth-child(6), .h5_lb_mute div:nth-child(7) {
+	border-top: 1px solid #f5f5f5; border-right: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5;
+	/* Border Radius */
+	-moz-border-radius: 0 8px 8px 0; -webkit-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0;
+}
+.h5_lb_mute div:nth-child(5) {margin: 17px 0 0 14px; height: 2px; width: 1px;}
+.h5_lb_mute div:nth-child(6) {margin: 15px 0 0 15px; height: 6px; width: 2px;}
+.h5_lb_mute div:nth-child(7) {margin: 13px 0 0 16px; height: 10px; width: 3px;}
+.h5_lb_mute div:nth-child(1).is, .h5_lb_mute div:nth-child(2).is, .h5_lb_mute div:nth-child(3).is, .h5_lb_mute div:nth-child(4).is {
+	/* Background */
+	background: #f5f5f5;
+}
+.h5_lb_mute div:nth-child(1).isnot, .h5_lb_mute div:nth-child(2).isnot, .h5_lb_mute div:nth-child(3).isnot, .h5_lb_mute div:nth-child(4).isnot {
+	/* Background */
+	background: #555;
+}
+/* Volume Items */
+.h5_lb_controls div.h5_lb_volume_control .h5_lb_volume {margin: 0 6px 0 28px;}
+.h5_lb_controls div.h5_lb_volume_control .h5_lb_volume div {position: relative; margin: 11px 1px 0 0; width: 4px; height: 16px; float: left; cursor: pointer;}
+.h5_lb_controls div.h5_lb_volume_control .h5_lb_volume div.is {
+	/* Background */
+	background: #f5f5f5;
+}
+.h5_lb_controls div.h5_lb_volume_control .h5_lb_volume div.isnot {
+	/* Background */
+	background: #555;
+}
+/*********************************/
+/* Playback Control: Inner Items */
+.h5_lb_controls div.h5_lb_playback_control div {text-align: center !important; padding: 11px 0 0; font: 12px/1.231 arial, helvetica, sans-serif; font-weight: bold; color: #f5f5f5;}
+.h5_lb_controls div.h5_lb_playback_control div.playback_nav {
+	position: absolute; width: 38px; margin: 0 0 1px -1px; padding: 0; display: none;
+	border: 1px solid #000; border-bottom: 1px solid transparent;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.5 opacity */
+	background: rgba(0,0,0,0.5);
+}
+.h5_lb_controls div.h5_lb_playback_control:hover div.playback_nav {display: block; padding: 2px; z-index: 1004;}
+.h5_lb_controls div.h5_lb_playback_control .playback_nav div {color: #f5f5f5; font-weight: normal; font: 0.9em arial, helvetica, sans-serif; height: 15px; margin: 0; padding: 0 2px;}
+.h5_lb_controls div.h5_lb_playback_control .playback_nav div:hover {color: #000; background: #f5f5f5; display: block;}
+/*********************************/
+/* Subtitle Control: Inner Items */
+.h5_lb_controls div.h5_lb_subtitle_control div {text-align: center !important; padding: 11px 0 0; font: 12px/1.231 arial, helvetica, sans-serif; font-weight: bold; color: #f5f5f5;}
+.h5_lb_controls div.h5_lb_subtitle_control div.subtitle_nav {
+	position: absolute; width: 52px; margin: 0 0 1px -3px; padding: 0; display: none;
+	border: 1px solid #000; border-bottom: 1px solid transparent;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.5 opacity */
+	background: rgba(0,0,0,0.5);
+}
+.h5_lb_controls div.h5_lb_subtitle_control:hover div.subtitle_nav {display: block; padding: 2px; z-index: 1004;}
+.h5_lb_controls div.h5_lb_subtitle_control .subtitle_nav div {color: #f5f5f5; font-weight: normal; font: 0.9em arial, helvetica, sans-serif;  height: 15px; padding: 0 2px;}
+.h5_lb_controls div.h5_lb_subtitle_control .subtitle_nav div:hover {color: #000; background: #f5f5f5; display: block;}
+/*********************************/
+/* Sources Control: Inner Items */
+.h5_lb_controls div.h5_lb_sources_control div {text-align: center !important; padding: 11px 0 0; font: 12px/1.231 arial, helvetica, sans-serif; font-weight: bold; color: #fff;}
+.h5_lb_controls div.h5_lb_sources_control div.sources_nav {
+	position: absolute; width: 52px; margin: 0 0 1px -3px; padding: 0; display: none;
+	border: 1px solid #000; border-bottom: 1px solid transparent;
+	/* Background Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* Background RGBa with 0.5 opacity */
+	background: rgba(0, 0, 0, 0.5);
+}
+.h5_lb_controls div.h5_lb_sources_control:hover div.sources_nav {display: block; padding: 2px; z-index: 1004;}
+.h5_lb_controls div.h5_lb_sources_control div.sources_nav div {color: #fff; line-height: normal !important; vertical-align: bottom !important; font-weight: normal !important; font: 11px/1.231 arial, helvetica, sans-serif !important; height: 17px; padding: 0 2px;}
+.h5_lb_controls div.h5_lb_sources_control div.sources_nav div span {line-height: normal; vertical-align: text-top; font-weight: lighter; font: 8px/1.231 arial, helvetica, sans-serif !important;  padding: 0;}
+.h5_lb_controls div.h5_lb_sources_control .sources_nav div:hover {color: #000; background: #f5f5f5; display: block;}
+/***********************************/
+/* Fullscreen Control: Inner Items */
+.h5_lb_controls div.h5_lb_fullscreen_control div {
+	position: absolute; border: 1px solid #f5f5f5; background: #555; cursor: pointer;
+}
+.h5_lb_controls div.h5_lb_fullscreen_control div.h5_lb_fullscreen_control_fs1 {
+	margin: 14px 0 0 12px; height: 7px; width: 14px; z-index: 1000;
+}
+.h5_lb_controls div.h5_lb_fullscreen_control div.h5_lb_fullscreen_control_fs2 {
+	margin: 11px 0 0 8px; height: 14px; width: 24px; z-index: 1001; display: none;
+}
+.h5_lb_controls div.h5_lb_fullscreen_control:hover div.h5_lb_fullscreen_control_fs2 {display: block;}
+/*********************/
+/* In-video Subtitle */
+.h5_lb_player .h5_lb_subtitles {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: 0; margin-bottom: 0; color: #fff; text-align: center; display: none; z-index: 1000;
+}
+.h5_lb_player .h5_lb_subtitles .plain {
+	display: inline-block; position: absolute; top: auto; right: -1px; bottom: 44px; left: 1px; margin: 0; padding: 0; z-index: 1000;
+}
+.h5_lb_player .h5_lb_subtitles .vtt {
+	position: absolute; font: 12px/1.231 arial, helvetica, sans-serif !important;
+}
+.h5_lb_player .h5_lb_subtitles .vtt div {
+	display: inline-block; position: relative !important;
+}
+.h5_lb_player .h5_lb_subtitles .plain div {
+	display: inline-block; padding: 5px 10px; background: rgba(0,0,0,0.5); white-space: normal;
+}
+.h5_lb_fullscreen  .h5_lb_subtitles .plain {font: 22px/1.231 arial, helvetica, sans-serif;}
+.h5_lb_smallscreen  .h5_lb_subtitles .plain {font: 12px/1.231 arial, helvetica, sans-serif;}
+/***********************/
+/* Embedding Code/Link */
+.h5_lb_player .h5_lb_embed {
+	position: absolute; top: 5px; right: 5px; margin: 5px; width: auto; height: 40px; text-align: right; z-index: 1001;
+}
+.h5_lb_fullscreen  .h5_lb_embed {
+	visibility: hidden;
+}
+.h5_lb_player .h5_lb_embed .h5_lb_embed_inner {
+	margin: 0 0 3px auto; padding: 5px;
+	border: 1px solid #000; color: #f5f5f5; text-align: center !important; width: auto; height: auto;
+	line-height: normal !important; font-size: 11px !important; font-family: arial, helvetica, sans-serif !important;
+	/* Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* RGBa with 0.5 opacity */
+	background: rgba(0, 0, 0, 0.5);
+}
+.h5_lb_player .h5_lb_embed .h5_lb_embed_inner:hover {
+	/* Background RGBa with 0.9 opacity */
+	background: rgba(0, 0, 0, 0.9);
+}
+.h5_lb_player div.h5_lb_embed_code {
+	position: absolute; top: 15px; right: 20px; bottom: 55px; left: 20px; text-align: center; color: #f5f5f5; z-index: 1005; cursor: default; display: none;
+	/* Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* RGBa with 0.8 opacity */
+	background: rgba(0, 0, 0, 0.8);
+}
+.h5_lb_player div.h5_lb_embed_code textarea.h5_lb_embed_code_user {
+	margin: 10px 20px 5px 20px; padding: 5px; width: 90%; height: 175px;
+	line-height: normal !important; vertical-align: baseline; font-size: 12px !important; font-family: arial, helvetica, sans-serif !important; background: #fff; color: #000; border: 1px solid #323232; overflow: auto; cursor: default;
+}
+.h5_lb_player div.h5_lb_embed_code div.h5_lb_embed_code_txt {
+	line-height: normal !important; vertical-align: baseline; font-size: 10px !important; font-family: arial, helvetica, sans-serif !important; cursor: default; text-align: center !important;
+}
+.h5_lb_player div.h5_lb_embed_code button.h5_lb_embed_code_btn {
+	position: absolute; bottom: 0; left: 50%; margin: 5px -35px 5px; padding: 2px 5px; width: 70px;
+}
+/*********************/
+/* Info Control Item */
+.h5_lb_controls div.h5_lb_info_control {display: block; width: 40px; cursor: pointer;}
+.h5_lb_controls div.h5_lb_info_control div {
+	text-align: center !important; height: 30px; margin: 12px 0 0 4px;
+	/* Background - Gradients - "LEANBACK PLAYER" LOGO */
+	background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAANCAYAAABVRWWUAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAKdQAACnUBSiXd/QAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAACVSURBVDiNvZJBCsMgEEX/lIB3aY7o0fRKLqM1Ln4XbRpbKDhKfDAgMt+nOCCJqppxzqn6a88NnZR914dEAKBf+si5N9ovTSnNl25xmy+NMepD5JeUrz0213pfVT7v/cezHAsAkPd0tRBCUEmrfgrJQ9pu7IQkSymQ03m++ELEWjtfCgxM7wjL7y1yzgQAY8zwH/876wnyF8XX1PkYhQAAAABJRU5ErkJggg==') no-repeat;
+}
+.leanback-player-audio .h5_lb_info_content {
+	width: 500px !important; height: 240px !important; top: 50% !important; right: 50% !important; bottom: auto !important; left: 50% !important; margin: -120px 0 0 -250px !important;
+}
+.h5_lb_player .h5_lb_info_content {
+	position: absolute; top: 40px; right: 40px; bottom: 45px; left: 40px; margin: -20px 0 0 -20px; text-align: center; color: #f5f5f5; cursor: default; display: none; z-index: 1003;
+}
+.h5_lb_fullscreen .h5_lb_info_content {
+	position: absolute; top: 25%; right: 22%; bottom: 25%; left: 22%; margin: -20px 0 0 -20px; text-align: center; color: #f5f5f5; cursor: default; display: none; z-index: 1003;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_menu {
+	position: absolute; top: 0;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_menu .entry {
+	position: relative; top: 4px; left: 20px; padding: 4px 6px; min-width: 65px; width: auto; height: 10px; font: 12px/1.231 arial, helvetica, sans-serif; font-weight: bold;
+	border: 1px solid #7a7a7a; border-bottom: 0; cursor: pointer; display: block; float: left; z-index: 1003;
+	/* Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* RGBa with 0.8 opacity */
+	background: rgba(0, 0, 0, 0.8);
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_menu .entry_active {
+	 top: 0; height: 14px;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt {
+	position: absolute; top: 23px; bottom: 0; padding: 20px 0 35px 20px; width: 100%; text-align: left; line-height: 14px !important; font: 12px/1.231 arial, helvetica, sans-serif;
+	border: 1px solid #000; border-top: 0; display: block; clear: both; z-index: 1002;
+	/* Fallback for web browsers doesn't support RGBa */
+	background: #000;
+	/* RGBa with 0.8 opacity */
+	background: rgba(0, 0, 0, 0.8);
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt div.info_txt {
+	position: relative; margin: 0 20px 0 0 !important; padding: 0 !important; overflow-y: auto;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt div a {
+	font: 10px/1.231 arial, helvetica, sans-serif; text-decoration: none; cursor: pointer; border-bottom: 1px dotted #f5f5f5; color: #f5f5f5;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt div ul {margin: 5px 0 0; padding: 0 18px 0;}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt div li {font: 10px/1.231 arial, helvetica, sans-serif; line-height: 14px !important;}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt button.keys {font: 10px/1.231 "Arial Unicode MS", Arial, sans-serif; margin: 1px; padding: 0 2px 2px 2px; color: #222; text-shadow: 0 0 0; vertical-align: middle;}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt_shortcuts {padding-bottom: 40px;}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt button.h5_lb_info_content_btn {
+	position: absolute; bottom: 5px; right: 5px; margin: 0; padding: 2px 5px; width: 70px; z-index: 1003;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt .headline {
+	margin: 0 0 0 0; padding: 10px 10px 5px 10px; display: block;
+	background: #222; border-bottom: 1px solid #7a7a7a; font-size: 11px !important; font-weight: bold;
+}
+.h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt .about_txt, .h5_lb_player .h5_lb_info_content .h5_lb_info_content_txt .shortcuts_txt {
+	color: #f5f5f5; height: 100%; font-size: 10px !important; font-family: arial, helvetica, sans-serif !important;
+}
+.about_txt div, .shortcuts_txt div {
+	margin: 0; padding: 5px 10px; background: #222;
+}
+.about_txt div {
+	padding: 10px;
+}
+.h5_lb_info_content_txt ul{
+	list-style-type: circle !important;
+}
+/*******************/
+/* Default Content */
+.h5_lb_player .btn {
+	color: #fff; line-height: normal !important; vertical-align: baseline; font-size: 10px !important; font-family: arial, helvetica, sans-serif !important;
+	border-top: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #bababa; border-left: 1px solid #bababa; cursor: pointer;
+	/* Background */
+	background: #555;
+}
+.h5_lb_player .btn:hover {
+	/* Background */
+	background: #222;
+}
+/*******************/
+/* Hacking Content */
+.elem_visible {display: block !important;}
+.elem_visibility_hidden {visibility: hidden !important;}
+.h5_lb_fullscreen_fix {margin: 0 !important;}
+/****************************************/
+/* CSS Loaded Test - do not change this */
+.h5_lb_css_loaded_test {display: none;}

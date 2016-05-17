@@ -1,0 +1,1 @@
+char CheckDNS(char reg_dns[]);

@@ -1,0 +1,68 @@
+[align=center][size=xx-large][color=#1E90FF]*[/color][color=#00BFFF]AthenaHTTP Bot[/color][color=#1E90FF]*[/color][/size]
+[i]created by [url=http://www.hackforums.net/member.php?action=profile&uid=1070595]_Stoner[/url][/i][/align]
+
+[size=large][color=#1E90FF][b]About:[/b][/color][/size]
+After months of pushing from customers and spectators of AthenaIRC alike, AthenaHTTP has finally been coded and completed. This new bot is very similar to AthenaIRC in functionality, however communication with the Command&Control hub is done through means of HTTP(Hyper Text Transfer Protocol) instead of IRC(Internet Relay Chat).
+
+[b]Athena[/b] is a stable DDoS bot coded in C++ (zero dependencies) perfect for infecting and herding Windows machines. This bot features some of the best, most advanced DDoS tactics available on the market that will take down webservers, gaming servers, teamspeak/VoiP servers, home connections, etc with ease. It is resistant to botkilling, and will kill most other bots available.
+
+The bot comes equipped with:
+[color=#1E90FF]-[/color] Botkiller capable of wiping out bots such as Andromeda, Zeus, SpyEye, Insomnia, SmokeLoader, ngrBot, etc...
+[color=#1E90FF]-[/color] 10 methods of DDoS, the same tactics used in AthenaIRC(some of the strongest DDoS tactics available on the market)
+[color=#1E90FF]-[/color] A built-in website checker that utilizes bots, not unlike hyperspin.com or just-ping.com
+[color=#1E90FF]-[/color] SmartView/normal view/view hidden(from random existing brower)
+[color=#1E90FF]-[/color] In-depth statistics about each bot
+[color=#1E90FF]-[/color] Download/Update/Uninstall
+[color=#1E90FF]-[/color] Shell commands(because you never know)
+[b]Please note:[/b] The bin is not FUD.
+
+Here are some pictures of the panel:
+[b]Botlist:[/b] [url]http://i.imgur.com/p1WhEiU.png[/url]
+[b]DDoS Panel:[/b] [url]http://i.imgur.com/xJGOGtE.png[/url]
+[b]Website Checker:[/b] [url]http://i.imgur.com/94T2GBO.png[/url]
+[b]Command Creation:[/b] [url]http://i.imgur.com/oCMm1r5.png[/url]
+[b]User Management:[/b] [url]http://i.imgur.com/IvDvwip.png[/url]
+[b]Preferences:[/b] [url]http://i.imgur.com/uv5AcOy.png[/url]
+
+[size=large][color=#1E90FF][b]Pricing:[/b][/color][/size]
+[color=#1E90FF]-[/color] 250$ for binary+panel (Resting price will be 300$ after the first 30 days of sales) [Release date: March 24, 2013] [Price increase date: April 24, 2013]
+[color=#1E90FF]-[/color] 15$ per rebuild/update
+[b]Accepted Payment Methods:[/b] Paypal and Liberty Reserve
+
+[b]Deals!:[/b] ([i]The deals are applied in the order they are listed[/i])
+[color=#1E90FF]-[/color] All customers of AthenaIRC are entitled to receive a 20% discount on AthenaHTTP
+[color=#1E90FF]-[/color] All customers of AthenaHTTP are entitled to receive free web-hosting for a month from a generous friend of mine optionally
+
+[size=large][color=#1E90FF][b]Additional Details:[/b][/color][/size]
+[color=#1E90FF]-[/color] Buyers will require their own hosting for the panel.
+[color=#1E90FF]-[/color] The panel is coded to be compatible with all versions of PHP/MySQL.
+
+[b]Contact:[/b]
+Jabber: AthenaIRC@thesecure.biz
+ICQ: 618099251
+
+[align=center]
+[b]Terms of Service:[/b]
+[code]
+You may not resell your product.
+All sales are final. I do not do refunds.
+I do not sell installs, do not ask me for them.
+Policies and pricing are subject to change at any point in time.
+I reserve the right to refuse sales to anybody I deem untrustworthy.
+Chargebacks or related deal disputes _will_ result in negative consequences.
+Disrespect will result in no more support & no more updates. You've been warned.
+Excessive complaining about the TOS will not be tolerated.
+[/code]
+
+- - - - -
+
+If you want to support Athena by wearing a signature representing it:
+[spoiler]
+
+[url=http://www.hackforums.net/showthread.php?tid=3353583][img]http://i.minus.com/ibwFS17cmZPu15.gif[/img][/url]
+
+[code]
+[align=center][url=http://www.hackforums.net/showthread.php?tid=3353583][img]http://i.minus.com/ibwFS17cmZPu15.gif[/img][/url][/align]
+[/code]
+[/spoiler]
+[/align]

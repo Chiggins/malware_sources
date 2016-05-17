@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TextTrayIcon, ver. 1.2.1</title>
+
+<style type='text/css'>
+/*  body         { font-family: MS Sans Serif; font-size: 12pt; } */
+  h1           { font: bold 14pt Arial; margin-bottom: 10px; }
+  h2           { font: bold 12pt Arial; margin-bottom: 10px; margin-top: 40px; }
+  td.name      { background-color: #C0E0FF; width: 120px; font-weight: bold; }
+  td.desc      { background-color: #F0F0F0; }
+  td.default   { background-color: #F0F0F0; }
+  ul           { margin-left: 15px; margin-top: 5px; }
+  li           { margin-bottom: 10px; }
+  .declaration { font-weight: bold; }
+</style>
+
+</head>
+
+
+<body topmargin='15' bottommargin='15' leftmargin='10' rightmargin='10'>
+
+<a name='Top'><h1>TextTrayIcon, ver. 1.2.1</h1>
+
+
+<a href='#Properties'>[Properties]</a> <a href='#Methods'>[Methods]</a> <a href='#Events'>[Events]</a>
+<br>
+<a href='#Hints'>[Hints]</a> <a href='#Bugs'>[Known Bugs]</a> <a href='#Comments'>[Comments]</a>
+<br>
+
+
+<p>
+TextTrayIcon is a tray icon component. It is an extended version of the CoolTrayIcon
+component, so you need CoolTrayIcon to make it work.
+</p>
+
+<p>
+TextTrayIcon allows you to easily show custom text inside the tray icon. If you need
+tray icons with just regular icons I suggest you use CoolTrayIcon in stead.
+</p>
+
+<p>
+This document describes <i>only</i> the added features of TextTrayIcon. For an explanation of
+all the standard features of this tray icon component, see the CoolTrayIcon documentation.
+</p>
+
+
+<a name='Properties'></a><h2>Properties</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%' bgcolor='white'>
+<tr>
+  <td class='name' valign='top'>Text</td>
+  <td class='desc' valign='top'><span class='declaration'>property Text: String;</span><br>
+  The text to show in the tray icon. The text is always centered horizontally and vertically.<br>
+  <b>NOTE:</b> You can have multiple lines of text. Separate the lines with
+  #13 (CR).</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Font</td>
+  <td class='desc' valign='top'><span class='declaration'>property Font: TFont;</span><br>
+  The font to use when drawing the text.</td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Color</td>
+  <td class='desc' valign='top'><span class='declaration'>property Color: TColor;</span><br>
+  The (background) color of the tray icon. Use clBtnFace to show it in the color of
+  the task bar.</td>
+  <td class='default' valign='top' nowrap>Default clBtnFace</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Border</td>
+  <td class='desc' valign='top'><span class='declaration'>property Border: Boolean;</span><br>
+  Whether to draw a border at the edges of the tray icon.
+  This is a rectangle 1 px. wide using the color specified by BorderColor.</td>
+  <td class='default' valign='top' nowrap>Default false</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>BorderColor</td>
+  <td class='desc' valign='top'><span class='declaration'>property BorderColor: TColor;</span><br>
+  The color of the tray icon's border rectangle.</td>
+  <td class='default' valign='top' nowrap>Default clBlack</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>BackgroundIcon</td>
+  <td class='desc' valign='top'><span class='declaration'>property BackgroundIcon: TIcon;</span><br>
+  If no background icon is specified the tray icon will be rendered using the text,
+  font, color, and border properties you've specified.
+  If a background icon is specified then it will be rendered beneath the text as if the
+  tray icon was transparent. In other words: the background color is ignored and the
+  background icon is shown in stead.</td>
+  <td class='default' valign='top' nowrap>Default true</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Options</td>
+  <td class='desc' valign='top'>You will likely prefer to adjust the text inside the
+  tray icon. Use the following layout options for that purpose:<br>
+  <table cellpadding='3' cellspacing='0' border='0' width='100%' bgcolor='white'>
+  <tr>
+    <td class='name' valign='top'>OffsetX</td>
+    <td class='desc' valign='top'><span class='declaration'>property OffsetX: Integer;</span><br>
+    Adjusts the text X pixels horizontally.</td>
+  </tr>
+  <tr>
+    <td class='name' valign='top'>OffsetY</td>
+    <td class='desc' valign='top'><span class='declaration'>property OffsetY: Integer;</span><br>
+    Adjusts the text Y pixels vertically.</td>
+  </tr>
+  <tr>
+    <td class='name' valign='top'>LineDistance</td>
+    <td class='desc' valign='top'><span class='declaration'>property LineDistance: Integer;</span><br>
+    Adds or deletes pixels between multiple lines of text.
+    A value of -2 is a good idea in most cases of multiline text.</td>
+  </tr>
+  </table>
+  </td>
+  <td class='default' valign='top' nowrap><br></td>
+</tr>
+</table>
+
+
+
+<a name='Methods'></a><h2>Methods</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>Draw</td>
+  <td class='desc' valign='top'><span class='declaration'>procedure Draw;</span><br>
+  Redraws the tray icon using the current colors, font, and
+  border properties described above.<br>
+  <b>NOTE:</b> The tray icon is automatically redrawn when one of those
+  properties change.<br>
+  <b>NOTE:</b> Calling Draw directly (or by assigning to one of the properties mentioned) 
+  will set CycleIcons to false, as it doesn't make sense to draw an icon and then 
+  immediately replace it with a new one.</td>
+</tr>
+</table>
+
+
+
+<a name='Events'></a><h2>Events</h2>
+
+No new events.
+
+
+
+<a name='Hints'></a><h2>Hints</h2>
+
+<ul>
+<li><b>What are some good rules for showing text in a tray icon?</b><br>
+You only have 16x16 pixels to draw inside, so use only 1 or 2 lines of text. Use
+high contrast colors, like white background and black text, perhaps with a border.
+Don't use fonts with serifs. For multiline text I think the font 'Small Fonts'
+approx. size 6 looks best. Set OffsetY to -1 and LineDistance to -2.
+NOTE: It's easy to experiment if you enable the DesignPreview property.
+</li>
+
+<li><b>How do I start my app. with the tray icon visible and the main form invisible?</b><br>
+At design time set IconVisible to true and set the form's Visible property to false.
+Set the ShowMainForm parameter to false in the OnStartup event. See the StartHidden demo.
+</li>
+
+<li><b>What is the proper way to restore the form?</b><br>
+ALWAYS use the method ShowMainForm! This method contains important calls that affect
+how the form and the application display themselves. Simply setting the form visible
+or calling Application.Restore is not enough. A common symptom is the form with tabpages
+that don't update themselves because ShowMainForm wasn't used.
+</li>
+</ul>
+
+
+
+<a name='Bugs'></a><h2>Known Bugs</h2>
+
+<!--
+<ul>
+<li>If you select a background icon that is partially transparent the transparent
+part may not be rendered as it should. This is because the transparent part is
+substituted with the task bar's color (clBtnFace). However, since a tray icon
+can only contain 16 colors, the color that is supposed to be transparent will
+show if the user's task bar color is outside the common 16 colors. I'm trying to
+find a way out of this so you get true transparency, but so far without success.
+</li>
+</ul>
+-->
+See the bugs documentation for the CoolTrayIcon component.
+</p>
+
+
+<a name='Comments'></a><h2>Comments</h2>
+
+The TextTrayIcon component is <i>free for personal and commercial use</i> 
+(along with the CoolTrayIcon component). Feel free to use and improve it, 
+but <i>please include all original files if you redistribute the zip-file</i>. 
+If you have any comments or corrections to the component I would very much like 
+to hear them.
+</p>
+
+<p>
+The component should work on any Windows platform (Win9x, ME, NT, 2000, XP, 2003, Vista). 
+If you experience any problems related to the operating system you use, please tell me.
+Also, it should work in Delphi 3 and up (Delphi 2?) and C++Builder 3 and up.
+Again, tell me if I'm wrong.
+</p>
+
+<p>
+Get the latest version from <a href='http://subsimple.com/delphi.asp' target='_blank'>
+http://subsimple.com/delphi.asp</a>.
+</p>
+
+<p>
+Troels Jakobsen<br>
+<a href='mailto:troels.jakobsen@gmail.com'>troels.jakobsen@gmail.com</a>
+</p>
+
+</body>
+</html>

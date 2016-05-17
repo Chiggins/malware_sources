@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SimpleTimer, ver. 2.0.3</title>
+
+<style type='text/css'>
+/*  body         { font-family: MS Sans Serif; font-size: 12pt; } */
+  h1           { font: bold 14pt Arial; margin-bottom: 10px; }
+  h2           { font: bold 12pt Arial; margin-bottom: 10px; margin-top: 40px; }
+  td.name      { background-color: #00FFCC; width: 120px; font-weight: bold; }
+  td.desc      { background-color: #F0F0F0; }
+  td.default   { background-color: #F0F0F0; }
+  ul           { margin-left: 15px; margin-top: 5px; }
+  li           { margin-bottom: 10px; }
+  .declaration { font-weight: bold; }
+</style>
+
+</head>
+
+
+<body topmargin='15' bottommargin='15' leftmargin='10' rightmargin='10'>
+
+<a name='Top'><h1>SimpleTimer, ver. 2.0.3</h1>
+
+
+<a href='#Properties'>[Properties]</a> <a href='#Methods'>[Methods]</a> <a href='#Events'>[Events]</a> <a href='#StandAloneMethods'>[Stand-alone Methods]</a>
+<br>
+<a href='#Howto'>[How To Use]</a> <a href='#Bugs'>[Known Bugs]</a> <a href='#Comments'>[Comments]</a>
+<br>
+
+
+<p>
+SimpleTimer is a timer class. It has the same timer resolution as TTimer, but it is more
+lightweight because it's derived from TObject in stead of TComponent. Furthermore, the same
+handle is shared between multiple instances of SimpleTimer. This makes it ideal for developers
+who need a timer in their own components or applications, but want to keep the resource
+usage minimal.
+</p>
+
+
+<a name='Properties'></a><h2>Properties</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>Enabled</td>
+  <td class='desc' valign='top'><span class='declaration'>property Enabled: Boolean;</span><br>
+  Enables (starts) or disables (stops) the timer.</td>
+  <td class='default' valign='top' nowrap>Default False</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Interval</td>
+  <td class='desc' valign='top'><span class='declaration'>property Interval: Cardinal;</span><br>
+  The interval of the timer in millisecs.<br>
+  <b>NOTE:</b> Specifying a value of 0 will cause the timer to stop, but will not set the
+  Enabled property to false.</td>
+  <td class='default' valign='top' nowrap>Default 1000</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>AutoDisable</td>
+  <td class='desc' valign='top'><span class='declaration'>property AutoDisable: Boolean;</span><br>
+  If true, the timer will disable itself (Enabled is set to False) immediately after the next
+  time it fires. Useful when you want a one-shot timer.</td>
+  <td class='default' valign='top' nowrap>Default False</td>
+</tr>
+</table>
+
+
+
+<a name='Methods'></a><h2>Methods</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>Create</td>
+  <td class='desc' valign='top'><span class='declaration'>constructor Create;</span><br>
+  Creates a new TSimpleTimer object.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>CreateEx</td>
+  <td class='desc' valign='top'><span class='declaration'>constructor CreateEx(AInterval: Cardinal; AOnTimer: TNotifyEvent);</span><br>
+  Creates a new TSimpleTimer object with the specified Interval property and OnTimer event.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>Destroy</td>
+  <td class='desc' valign='top'><span class='declaration'>destructor Destroy; override;</span><br>
+  Destroys the TSimpleTimer object.</td>
+</tr>
+</table>
+
+
+
+<a name='Events'></a><h2>Events</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>OnTimer</td>
+  <td class='desc' valign='top'><span class='declaration'>property OnTimer: TNotifyEvent;</span><br>
+  Called when the timer fires.</td>
+</tr>
+</table>
+
+
+
+<a name='StandAloneMethods'></a><h2>Stand-alone Methods</h2>
+
+<table cellpadding='2' cellspacing='2' border='0' width='100%'>
+<tr>
+  <td class='name' valign='top'>GetSimpleTimerCount</td>
+  <td class='desc' valign='top'><span class='declaration'>function GetSimpleTimerCount: Cardinal;</span><br>
+  Returns the number of TSimpleTimer objects currently allocated.</td>
+</tr>
+<tr>
+  <td class='name' valign='top'>GetSimpleTimerActiveCount</td>
+  <td class='desc' valign='top'><span class='declaration'>function GetSimpleTimerActiveCount: Cardinal;</span><br>
+  Returns the number of TSimpleTimer objects that are currently active (enabled).</td>
+</tr>
+</table>
+
+
+
+<a name='Howto'></a><h2>How To Use</h2>
+
+This example creates a SimpleTimer object, initializing Interval to 500 milliseconds and 
+the OnTimer event to TForm1.TimerProc1, then starts the timer:
+<pre>procedure TForm1.FormCreate(Sender: TObject);
+begin
+  SimpleTimer1 := TSimpleTimer.CreateEx(500, TimerProc1);
+  SimpleTimer1.Enabled := True;
+end;</pre>
+
+This is what TimerProc1 might look like:
+<pre>procedure TForm1.TimerProc1(Sender: TObject);
+begin
+  ListBox1.Items.Add('SimpleTimer1 fired');
+end;</pre>
+</li>
+
+Remember to destroy the SimpleTimer object when your app. terminates.
+
+
+
+<a name='Bugs'></a><h2>Known Bugs</h2>
+
+<ul>
+<li>You may experience occasionally that you lose a timer event when you work with
+small intervals (approx. below 100 ms.). This is normal, and the same thing happens
+with a TTimer object. If you want precision you need a multimedia timer, not
+TTimer or TSimpleTimer which use the low-priority WM_TIMER message. WinXP has better
+handling of timers and will generally lose fewer timer events than other Windows versions.
+</li>
+</ul>
+
+
+
+<a name='Comments'></a><h2>Comments</h2>
+
+SimpleTimer is <i>free for personal and commercial use</i>. Feel free to use and improve it,
+but <i>please include all original files if you redistribute the zip-file</i>.
+If you have any comments or corrections I would very much like to hear them.
+</p>
+
+<p>
+Get the latest version from <a href='http://subsimple.com/delphi.asp' target='_blank'>
+http://subsimple.com/delphi.asp</a>.
+</p>
+
+<p>
+Troels Jakobsen<br>
+<a href='mailto:troels.jakobsen@gmail.com'>troels.jakobsen@gmail.com</a>
+</p>
+
+</body>
+</html>

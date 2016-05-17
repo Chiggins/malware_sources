@@ -1,0 +1,12 @@
+#define MAX_RANDOM_LETTERS		50000000
+#define MAX_LINE				512
+#define MAX_RECEIVE_BUFFER		2048
+#define MAX_WORDS				64
+#define THREAD_WAIT_TIME		30
+#define MAX_THREADS				256
+#define MAX_NICKLEN				40
+#define REQ_NICKLEN				7
+#define S						777
+#define NAMELEN 				15
+#define MAXUDPPORT				65535
+#define MAXPINGSIZE				65500

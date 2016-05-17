@@ -1,0 +1,396 @@
+a:link { text-decoration: none; color: inherit; }
+a:visited { text-decoration: none; color: inherit; }
+a:active { text-decoration: underline; color: inherit; }
+a:hover { text-decoration: underline; color: inherit; }
+
+body, html
+{
+	background-color: #F0F0F0;
+	background-image: url('../img/background.png');
+	font-family: Arimo, sans-serif;
+	height: 100%;
+}
+body #header
+{
+	background-color: #202020;
+	border-bottom: 1px solid #000000;
+	color: #BBBBBB;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+body #header #logo
+{
+	background-image: url('../img/logo.png');
+	height: 40px;
+	margin-left: 5px;
+	width: 250px;
+}
+body #header #sidemenu
+{
+	float: right;
+	font-size: 15px;
+	margin-top: -27px;
+	margin-right: 10px;
+}
+body #header #sidemenu span
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+body #header #sidemenu span a:hover
+{
+	color: #DDDDDD;
+}
+body #sidebarhelp
+{
+	background-color: #252525;
+	border-right: 1px solid #000000;
+	bottom: 0px;
+	float: left;
+	height: 100%;
+	position: fixed;
+	width: 250px;
+	z-index: -1;
+}
+body #sidebar
+{
+	background-color: #252525;
+	border-right: 1px solid #000000;
+	float: left;
+	height: 100%;
+	width: 250px;
+}
+body #sidebar #menu
+{
+	padding-top: 40px;
+}
+body #sidebar #menu .menuitem
+{
+	background-color: #252525;
+	border-bottom: 1px solid #303030;
+	border-right: 1px solid #000000;
+	cursor: pointer;
+	color: #CCCCCC;
+	font-size: 15px;
+	padding: 13px 0px 13px 10px;
+	width: 240px;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body #sidebar #menu .menuitem:hover
+{
+	background-color: #212121;
+}
+body #sidebar #menu .menuitem p 
+{
+	background-image: url('../img/arrow.png');
+	float: right;
+	height: 41px;
+	margin-top: -13px;
+	margin-right: -30px;
+	width: 30px;
+}
+body #sidebar #statistics
+{
+	padding-top: 20px;
+}
+body #sidebar #statistics .statsitem
+{
+	background-color: #252525;
+	border-right: 1px solid #000000;
+	cursor: pointer;
+	color: #CCCCCC;
+	font-size: 15px;
+	padding: 0px 0px 0px 10px;
+	width: 240px;
+}
+body #sidebar #statistics .statsitem span
+{
+	display: block;
+	margin-left: -10px;
+	padding: 10px 0px 10px 10px;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body #sidebar #statistics .statsitem span:hover
+{
+	background-color: #212121;
+}
+body #sidebar #statistics .statsitem span p
+{
+	height: 15px;
+	font-size: 17px;
+	margin-right: 20px;
+	padding: 0px 0px 0px 0px;
+	width: 15px;
+	float: right;
+}
+body #sidebar #statistics .statsitem span .down
+{
+	margin-top: 3px;
+	background-image: url('../img/stats-arrow-down.png');
+}
+body #sidebar #statistics .statsitem span .up
+{
+	background-image: url('../img/stats-arrow-up.png');
+}
+body #sidebar #statistics .statsitem .statscontent.hide
+{
+	display: none;
+}
+body #sidebar #statistics .statsitem .statscontent p
+{
+	cursor: text;
+	font-size: 13px;
+	padding: 5px 20px 5px 10px;
+	text-align: right;
+}
+body #sidebar #statistics .statsitem .statscontent p span
+{
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 130px;
+	
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+body #sidebar #statistics .statsitem .statscontent p span:hover
+{
+	background-color: inherit;
+}
+body #outer
+{
+	margin-right: 80px;
+	padding-left: 330px;
+	padding-top: 80px;
+}
+body #outer.login
+{
+	padding: 80px 0px 0px 0px;
+	margin-right: 0px;
+}
+body #outer .content
+{
+	background-color: #FDFDFD;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 0px 20px 20px 20px;
+	margin-bottom: 30px;
+}
+body #outer .content.small
+{
+	margin: auto;
+	width: 500px;
+	margin-bottom: 30px;
+}
+body #outer .content .title
+{
+	background-color: #303030;
+	border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	color: #FEFEFE;
+	display: block;
+	font-size: 20px;
+	margin: -1px -21px 10px -21px;
+	padding: 8px 20px 8px 19px;
+}
+body #outer .content .foot
+{
+	border-radius: 0px 0px 4px 4px;
+	-moz-border-radius: 0px 0px 4px 4px;
+	bottom: 0px;
+	display: block;	
+	font-size: 14px;
+	margin: 0px -20px -20px -20px;
+	padding: 10px 18px 10px 20px;
+	text-align: right;
+}
+body #outer .content.small .foot
+{
+	margin: 0px 6px -12px -20px;
+}
+body #outer .content .foot input[type=button], 
+body #outer .content .foot input[type=submit],
+body #outer .content table tr td input[type=button]
+{
+	background-color: #303030;
+	border: 1px solid #252525;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #EEEEEE;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: inherit;
+	padding: 5px 10px 5px 10px;
+}
+body #outer .content .foot input.paginate[type=button], 
+body #outer .content .foot input.paginate[type=submit],
+body #outer .content table tr td input.paginate[type=button]
+{
+	color: #CCCCCC;
+	font-size: 12px;
+	font-family: inherit;
+	padding: 2px 8px 2px 8px;
+}
+body #outer .content table tr td input.paginate.botlist[type=button]
+{
+	margin: -1px;
+}
+body #outer .content .foot input.selected[type=button], 
+body #outer .content .foot input.selected[type=submit],
+body #outer .content table tr td input[type=button]
+{
+	color: #FFFFFF;
+}
+body #outer .content .foot input[type=button]:hover, 
+body #outer .content .foot input[type=submit]:hover,
+body #outer .content table tr td input[type=button]:hover
+{
+	color: #FFFFFF;
+}
+body #outer .content .foot input[type=button]:active, 
+body #outer .content .foot input[type=submit]:active,
+body #outer .content table tr td input[type=button]:active
+{
+	background-color: #212121;
+}
+body #outer .content table
+{
+	font-size: 14px;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+body #outer .content table tr
+{
+	height: 23px;
+}
+body #outer .content table td.on
+{
+	color: rgb(42, 160, 42);
+}
+body #outer .content table td.off
+{
+	color: #FF0000
+}
+body #outer .content table tr:nth-child(odd)
+{
+	background-color: #EEEEEE;
+}
+body #outer .content table tr:last-child td
+{
+	background-color: #303030;
+}
+body #outer .content table tr:last-child td:first-child
+{
+	border-radius: 0px 0px 0px 4px;
+	-moz-border-radius: 0px 0px 0px 4px;
+}
+body #outer .content table tr:last-child td:last-child
+{
+	border-radius: 0px 0px 4px 0px;
+	-moz-border-radius: 0px 0px 4px 0px;
+}
+body #outer .content table tr th
+{
+	border: 0px;
+	background-color: #303030;
+	color: #FEFEFE;	
+	padding: 5px 5px 5px 5px;
+}
+body #outer .content table tr th:first-child
+{
+	border-radius: 4px 0px 0px 0px;
+	-moz-border-radius: 4px 0px 0px 0px;
+}
+body #outer .content table tr th:last-child
+{
+	border-radius: 0px 4px 0px 0px;
+	-moz-border-radius: 0px 4px 0px 0px;
+}
+body #outer .content table tr td
+{
+	padding: 4px 5px 4px 5px;
+}
+body #outer .content p
+{
+	padding: 10px;
+}
+body #outer .content p span.left
+{
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	padding: 11px;
+	width: 120px;
+}
+body #outer .content p span.right
+{
+	display: inline-block;
+}
+body #outer .content p span.right input[type=text],
+body #outer .content p span.right input[type=password]
+{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 15px;
+	padding: 7px 10px 7px 10px;
+	width: 300px;
+}
+body #outer .content p span.right select
+{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 15px;
+	padding: 7px 7px 7px 7px;
+	width: 323px;
+}
+body #outer .content p span.right span.small
+{
+	font-size: 11px;
+}
+
+body #outer .content #help
+{
+	font-family: Courier New;
+	font-size: 14px;
+}
+body #outer .content #help b
+{
+	font-weight: bold;
+}
+
+/*
+##########################################
+*/
+
+#misc_command,
+#misc_args,
+#misc_open,
+#misc_close
+{
+	display: none;
+}

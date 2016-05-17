@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1359817218 source:f:\storage\all else\current project stuff\temp2\newversion\athena_tool\main.cpp
+	<windows.h>
+	<iostream>
+	<time.h>
+

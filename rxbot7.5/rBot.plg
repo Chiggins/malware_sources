@@ -1,0 +1,261 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: rBot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP9D3.tmp" with contents
+[
+/nologo /MTd /W3 /Gi /GX /Od /I "C:\Program Files\Microsoft SDK\Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "NO_AVFW_KILL" /D "NO_SECSYSTEM" /D "NO_REGISTRY" /D "NO_EHANDLER" /D "NO_CRYPT" /D "DEBUG_LOGGING" /FR"Debug/" /Fp"Debug/rBot.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\advscan.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\aliaslog.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\autostart.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\beagle.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\capture.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\cdkeys.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\crc32.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\crypt.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\dameware.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\dcc.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\dcom.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\dcom2.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\ddos.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\download.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\driveinfo.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\ehandler.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\findfile.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\findpass.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\fphost.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\httpd.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\icmpflood.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\ident.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\irc_send.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\keylogger.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\kuang2.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\loaddlls.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\lsass.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\misc.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\mssql.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\mydoom.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\net.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\netbios.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\netdevil.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\netutils.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\optix.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\pingudp.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\processes.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\psniff.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\rBot.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\redirect.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\remotecmd.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\rlogind.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\rndnick.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\scan.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\secure.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\session.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\shellcode.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\socks4.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\sub7.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\synflood.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\sysinfo.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\tcpflood.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\tftpd.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\threads.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\upnp.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\visit.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\webdav.cpp"
+"C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\wildcard.cpp"
+]
+Creating command line "cl.exe @C:\Users\Pro\AppData\Local\Temp\RSP9D3.tmp" 
+Creating temporary file "C:\Users\Pro\AppData\Local\Temp\RSP9D4.tmp" with contents
+[
+/nologo /subsystem:windows /profile /map:"Debug/rBot.map" /debug /machine:I386 /out:"Debug/rBot.exe" 
+.\Debug\advscan.obj
+.\Debug\aliaslog.obj
+.\Debug\autostart.obj
+.\Debug\beagle.obj
+.\Debug\capture.obj
+.\Debug\cdkeys.obj
+.\Debug\crc32.obj
+.\Debug\crypt.obj
+.\Debug\dameware.obj
+.\Debug\dcc.obj
+.\Debug\dcom.obj
+.\Debug\dcom2.obj
+.\Debug\ddos.obj
+.\Debug\download.obj
+.\Debug\driveinfo.obj
+.\Debug\ehandler.obj
+.\Debug\findfile.obj
+.\Debug\findpass.obj
+.\Debug\fphost.obj
+.\Debug\httpd.obj
+.\Debug\icmpflood.obj
+.\Debug\ident.obj
+.\Debug\irc_send.obj
+.\Debug\keylogger.obj
+.\Debug\kuang2.obj
+.\Debug\loaddlls.obj
+.\Debug\lsass.obj
+.\Debug\misc.obj
+.\Debug\mssql.obj
+.\Debug\mydoom.obj
+.\Debug\net.obj
+.\Debug\netbios.obj
+.\Debug\netdevil.obj
+.\Debug\netutils.obj
+.\Debug\optix.obj
+.\Debug\pingudp.obj
+.\Debug\processes.obj
+.\Debug\psniff.obj
+.\Debug\rBot.obj
+.\Debug\redirect.obj
+.\Debug\remotecmd.obj
+.\Debug\rlogind.obj
+.\Debug\rndnick.obj
+.\Debug\scan.obj
+.\Debug\secure.obj
+.\Debug\session.obj
+.\Debug\shellcode.obj
+.\Debug\socks4.obj
+.\Debug\sub7.obj
+.\Debug\synflood.obj
+.\Debug\sysinfo.obj
+.\Debug\tcpflood.obj
+.\Debug\tftpd.obj
+.\Debug\threads.obj
+.\Debug\upnp.obj
+.\Debug\visit.obj
+.\Debug\webdav.obj
+.\Debug\wildcard.obj
+]
+Creating command line "link.exe @C:\Users\Pro\AppData\Local\Temp\RSP9D4.tmp"
+<h3>Output Window</h3>
+Compiling...
+advscan.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+aliaslog.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+autostart.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+beagle.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+capture.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+cdkeys.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+crc32.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+crypt.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dameware.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dcc.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dcom.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+dcom2.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ddos.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+download.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+driveinfo.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ehandler.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+findfile.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+findpass.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+fphost.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+httpd.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+icmpflood.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+ident.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+irc_send.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+keylogger.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+kuang2.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+loaddlls.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+lsass.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+misc.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+mssql.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+mydoom.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+net.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netbios.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netdevil.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+netutils.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+optix.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+pingudp.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+processes.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+psniff.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rBot.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+redirect.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+remotecmd.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rlogind.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+rndnick.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+scan.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+secure.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+session.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+shellcode.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+socks4.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+sub7.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+synflood.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+sysinfo.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+tcpflood.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+tftpd.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+threads.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+upnp.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+visit.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+webdav.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+wildcard.cpp
+C:\Users\Pro\Desktop\rxbot7.5\rxbot7.5\includes.h(18) : fatal error C1083: Cannot open include file: 'windns.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+rBot.exe - 58 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

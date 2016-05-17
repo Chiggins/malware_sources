@@ -1,0 +1,52 @@
+﻿  GUI.cpp
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1745): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1785): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1786): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1788): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1789): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(1822): warning C4101: 'ex' : unreferenced local variable
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2272): warning C4244: '=' : conversion from 'unsigned long' to 'char', possible loss of data
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2351): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2352): warning C4018: '<' : signed/unsigned mismatch
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2359): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2360): warning C4018: '<' : signed/unsigned mismatch
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2374): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2377): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2380): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2383): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2388): warning C4018: '<' : signed/unsigned mismatch
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2484): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2486): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2496): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2505): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2506): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2507): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2519): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2520): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\Form1.h(2521): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+  aes256.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\form1.h(2259): warning C4715: 'GUI::Form1::to_int' : not all control paths return a value
+c:\users\pike.pike-pc\documents\visual studio 2010\projects\gui\gui\form1.h(2078): warning C4715: 'GUI::Form1::HasEOF' : not all control paths return a value
+  Finished generating code
+  GUI.vcxproj -> C:\Users\Pike.Pike-PC\Documents\Visual Studio 2010\Projects\GUI\Release\GUI.exe

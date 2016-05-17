@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "z3r0xWrMod", "z3r0xb0t.vcproj", "{E0AE521E-BB7C-4136-B9C9-C0A628CE1D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0AE521E-BB7C-4136-B9C9-C0A628CE1D8B}.Debug|Win32.ActiveCfg = Release|Win32
+		{E0AE521E-BB7C-4136-B9C9-C0A628CE1D8B}.Debug|Win32.Build.0 = Release|Win32
+		{E0AE521E-BB7C-4136-B9C9-C0A628CE1D8B}.Release|Win32.ActiveCfg = Release|Win32
+		{E0AE521E-BB7C-4136-B9C9-C0A628CE1D8B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

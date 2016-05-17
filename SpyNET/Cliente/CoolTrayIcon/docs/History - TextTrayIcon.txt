@@ -1,0 +1,28 @@
+TextTrayIcon, ver. 1.2.1
+
+
+- ver. 1.2.1: Bugfix: The background icon was not freed when TextTrayIcon
+  was destroyed.
+
+- ver. 1.2.0: A big thanks to Jouni Airaksinen, who suggested
+  improvements to the drawing/painting methods. The background
+  icon should now display with the correct colors.
+
+- ver. 1.1.1: Some internal class-level handling is introduced as a
+  result of updating the parent component CoolTrayIcon. Updated the
+  documentation.
+
+- ver. 1.1.0: A background icon is introduced. Property ShowTextIcon
+  is discarded.
+
+- ver. 1.0.0: First release. TextTrayIcon is distributed together 
+  with the CoolTrayIcon component (ver. 3.0.0). Some of the code 
+  was inspired by an example Robert Price sent me.
+
+
+
+If you have any comments or corrections, I would very much like to 
+hear them.
+
+Troels Jakobsen
+troels.jakobsen@gmail.com

@@ -1,0 +1,61 @@
+.jpager3k {
+	white-space: nowrap;
+	max-width: 100%;
+	overflow: auto;
+	}
+.jpager3k * {
+	margin: 0; padding: 0;
+	}
+
+/* <ul> and its URLs*/
+.jpager3k div.jpag_ul {
+	overflow: hidden;
+	position: relative; z-index: 2; /* IE likes that */
+	}
+.jpager3k ul {
+	margin: 0; padding: 0;
+	position: relative; z-index: 1;
+	list-style: none;
+	overflow: auto;
+	}
+.jpager3k ul li {
+	display: block; float: left;
+	}
+.jpager3k ul li a {
+	color: inherit; background: none;
+	text-decoration: inherit;
+	font-weight: inherit;
+	}
+
+/* Prev/Next side floaters */
+.jpager3k div.jpag_l {
+	display: block; float: left;
+	}
+.jpager3k div.jpag_r {
+	display: block; float: right;
+	}
+
+/* The scrollbar */
+.jpager3k div.scrollbar {
+	margin-top: 3px;
+	border-top: 2px solid #999;
+	}
+.jpager3k div.scrollbar div.thispage {
+	position: relative; z-index: 1;
+	height: 0px; width: 0px;
+	border-top: 2px solid #000;
+	}
+
+.jpager3k div.scrollbar div.scrollthumb {
+	cursor: pointer;
+	position: relative; z-index: 2;
+	width: 10px; height: 10px;
+	vertical-align: top; text-align: center;
+	}
+
+.jpager3k div.scrollbar div.scrollthumb div {
+	border-width: 0px 5px 5px 5px;
+	border-style: none solid solid solid;
+	border-color: transparent transparent #000 transparent;
+	width: 0px; height: 0px;
+	}
